@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(75, 85, 99, 0.2);
+  border-radius: 100vw;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 184, 1);
+  border-radius: 100vw;
+}
+
+/* 
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 184, 0.6);
+} */
+
+.mySwiper {
+  --swiper-navigation-size: 32px;
+  --swiper-navigation-top-offset: 40%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: #ffb800;
+  position: relative;
+}
+
+@media (min-width: 1024) {
+  .mySwiper {
+    --swiper-navigation-size: 32px;
+  }
+}
+
+@media (min-width: 768) {
+  .mySwiper {
+    --swiper-navigation-size: 24px;
+  }
+}
+@media (min-width: 200) {
+  .mySwiper {
+    --swiper-navigation-size: 10px;
+  }
+}
+
+.mySwiper {
+  --swiper-pagination-color: #ffb800;
+  --swiper-pagination-left: auto;
+  --swiper-pagination-right: 8px;
+  --swiper-pagination-bottom: 8px;
+  --swiper-pagination-top: auto;
+  --swiper-pagination-fraction-color: inherit;
+  --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
+  --swiper-pagination-progressbar-size: 4px;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #000;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+}
+
+.mySwiperVertical .swiper-pagination::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translate(-50%, -50%);
+  height: 140%; /* Set the height of the line */
+  width: 3px; /* Set the width of the line */
+  background-color: #d9d9d9; /* Set the color of the line */
+  z-index: -1;
+}
+
+.mySwiperVertical .swiper-pagination {
+  left: 0;
+  /* margin-right: 220px; */
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-color: #ffb800;
+  --swiper-pagination-bullet-size: 16px;
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 16px;
+  --swiper-pagination-bullet-vertical-gap: 24px;
+}
+
+.mySwiperVertical .swiper-pagination-bullet {
+  border: 2px solid #ffb800; /* Set bullet border color */
+}
+
+.industrySwiper {
+  margin-left: 8%;
+}
+
+@media (min-width: 768px) {
+  .industrySwiper {
+    margin-right: 0;
+    margin-left: 15%;
+  }
+}
+
+.industrySwiper .swiper-pagination {
+  display: none;
+  width: auto;
+  left: 0;
+  bottom: 0;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-color: #ffb800;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bullet-vertical-gap: 24px;
+}
+
+.industrySwiper .swiper-pagination-bullet {
+  border: 2px solid #ffb800; /* Set bullet border color */
+}
+
+/* HOW IT WORKS */
+.hero {
+  height: 100vh;
+  background-image: url("./assets//hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-solutions {
+  height: 100vh;
+  background-image: url("./assets/Solutions/solutions-hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(#000 0 0);
+  background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: l1 1s infinite linear;
+}
+@keyframes l1 {
+  0% {
+    background-size: 20% 100%, 20% 100%, 20% 100%;
+  }
+  33% {
+    background-size: 20% 10%, 20% 100%, 20% 100%;
+  }
+  50% {
+    background-size: 20% 100%, 20% 10%, 20% 100%;
+  }
+  66% {
+    background-size: 20% 100%, 20% 100%, 20% 10%;
+  }
+  100% {
+    background-size: 20% 100%, 20% 100%, 20% 100%;
+  }
+}
+
+.storiesSlider .swiper-button-next,
+.storiesSlider .swiper-button-prev {
+  --swiper-navigation-size: 24px;
+  color: #ffb800; /* Set the text color */
+  border: solid 2px #ffb800;
+  padding: 22px;
+  border-radius: 50%; /* Make the buttons circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a transition for a smoother effect */
+}
+.storiesSlider .swiper-button-prev {
+  left: 90%;
+  top: 90%;
+}
+
+.storiesSlider .swiper-button-next {
+  right: 2%; /* Adjust the left position for the previous button */
+  top: 90%;
+  z-index: 99999;
+}
+
+@media (max-width: 1760px) {
+  .storiesSlider .swiper-button-prev {
+    left: 87%;
+    top: 90%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .storiesSlider .swiper-button-prev {
+    left: 85%;
+    top: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .storiesSlider .swiper-button-prev {
+    left: 85%;
+    top: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .storiesSlider .swiper-button-prev {
+    left: 7%;
+    top: 90%;
+  }
+  .storiesSlider .swiper-button-next {
+    right: 5%;
+    top: 90%;
+  }
+}
+/* @media (min-width: 200) {
+  .storiesSlider .swiper-button-prev {
+    left: 0%;
+    top: 90%;
+  }
+} */
+
+.gradient {
+  /* background-image: linear-gradient(
+    0deg,
+    hsl(43deg 100% 50%) 0%,
+    hsl(41deg 100% 61%) 25%,
+    hsl(40deg 100% 67%) 40%,
+    hsl(40deg 100% 72%) 51%,
+    hsl(40deg 100% 77%) 61%,
+    hsl(40deg 100% 81%) 69%,
+    hsl(40deg 100% 86%) 76%,
+    hsl(39deg 100% 91%) 83%,
+    hsl(39deg 100% 95%) 90%,
+    hsl(0deg 0% 100%) 100%
+  ); */
+  background-image: linear-gradient(
+    0deg,
+    hsl(43deg 100% 50%) 0%,
+    hsl(41deg 100% 61%) 11%,
+    hsl(40deg 100% 67%) 22%,
+    hsl(40deg 100% 72%) 33%,
+    hsl(40deg 100% 77%) 44%,
+    hsl(40deg 100% 81%) 56%,
+    hsl(40deg 100% 86%) 67%,
+    hsl(39deg 100% 91%) 78%,
+    hsl(39deg 100% 95%) 89%,
+    hsl(0deg 0% 100%) 100%
+  );
+}
