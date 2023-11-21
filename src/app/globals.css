@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb {
 /* HOW IT WORKS */
 .hero {
   height: 100vh;
-  background-image: url("./assets//hero-bg.png");
+  background-image: url("../../public/assets/hero-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -142,7 +142,7 @@ body::-webkit-scrollbar-thumb {
 
 .hero-solutions {
   height: 100vh;
-  background-image: url("./assets/Solutions/solutions-hero-bg.png");
+  background-image: url("../../public/assets/Solutions/solutions-hero-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
