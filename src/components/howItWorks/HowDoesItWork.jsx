@@ -1,6 +1,6 @@
 "use client";
 
-import Heading from "../components/Heading";
+import Heading from "../Heading";
 import { motion } from "framer-motion";
 
 function HowDoesItWork({ content }) {

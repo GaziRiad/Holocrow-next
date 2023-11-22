@@ -1,11 +1,11 @@
 import Features from "@/components/Features";
-import HeroMain from "@/components/HeroMain";
-import HowItWorks from "@/components/HowItWorks";
+import HeroMain from "@/components/home/HeroMain";
+import HowItWorks from "@/components/home/HowItWorks";
 import MainFooter from "@/components/MainFooter";
-import PlatformOverview from "@/components/PlatformOverview";
+import PlatformOverview from "@/components/home/PlatformOverview";
 import SlidersSection from "@/components/SlidersSection";
-import Statics from "@/components/Statics";
-import Testimonials from "@/components/Testimonials";
+import Statics from "@/components/home/Statics";
+import Testimonials from "@/components/home/Testimonials";
 
 export default function Home() {
   const content = {

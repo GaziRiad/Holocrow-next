@@ -1,14 +1,14 @@
 "use client";
 
-import Logo from "./Logo";
-import Navigation from "./Navigation";
+import Logo from "../Logo";
+import Navigation from "../Navigation";
 // import { FaPlay } from "react-icons/fa6";
 import Socials from "./Socials";
 
 import { useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import HeroPattern from "./HeroPattern";
-import { navigation } from "../constants/navigation";
+import HeroPattern from "../HeroPattern";
+import { navigation } from "../../constants/navigation";
 
 function HeroMain() {
   // Make nav sticky when scrolling

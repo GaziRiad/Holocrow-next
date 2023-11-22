@@ -1,6 +1,6 @@
 "use client";
 
-import Heading from "./Heading";
+import Heading from "../Heading";
 import { motion } from "framer-motion";
 import Accordion from "./Accordion";
 

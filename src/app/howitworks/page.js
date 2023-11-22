@@ -1,8 +1,8 @@
-import CardsSection from "@/components/CardsSection";
+import CardsSection from "@/components/howItWorks/CardsSection";
 import Footer from "@/components/Footer";
 import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
-import HowDoesItWork from "@/components/HowDoesItWork";
+import HowDoesItWork from "@/components/howItWorks/HowDoesItWork";
 import TrustedBySection from "@/components/TrustedBySection";
 
 function HowItWorks() {

@@ -1,10 +1,10 @@
 "use client";
 
-import Button from "./Button";
-import Heading from "./Heading";
+import Button from "../Button";
+import Heading from "../Heading";
 
 import { motion } from "framer-motion";
-import LinkButton from "./LinkButton";
+import LinkButton from "../LinkButton";
 
 function HowItWorks({ content }) {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import Heading from "./Heading";
+import Heading from "../Heading";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

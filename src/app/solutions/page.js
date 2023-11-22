@@ -45,7 +45,7 @@ function solutions() {
       >
         <div className="flex items-center justify-center gap-8 flex-wrap mb-10 ">
           {content.features.map((feature) => (
-            <Link key={feature.name} href={`/${feature.link}`}>
+            <Link key={feature.name} href={`/solutions/${feature.link}`}>
               <Feature name={feature.name} src={feature.icon} />
             </Link>
           ))}

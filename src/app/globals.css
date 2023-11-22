@@ -142,7 +142,7 @@ body::-webkit-scrollbar-thumb {
 
 .hero-solutions {
   height: 100vh;
-  background-image: url("../../public/assets/Solutions/solutions-hero-bg.png");
+  background-image: url("/assets/Solutions/solutions-hero-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
