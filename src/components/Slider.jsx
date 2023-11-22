@@ -1,3 +1,5 @@
+"use client";
+
 import Heading from "./Heading";
 
 // Import Swiper React components
@@ -23,38 +25,14 @@ function Slider({ slider }) {
     },
   };
 
-  function getStyleForBreakpoint() {
-    if (window.innerWidth < 768) {
-      return { padding: "0 0px", paddingBottom: "40px" };
-    }
-
-    if (window.innerWidth >= 768) {
-      return { padding: "0 20px", paddingBottom: "40px" };
-    }
-
-    if (window.innerWidth >= 1024) {
-      return { padding: "0 40px", paddingBottom: "60px" };
-    }
-  }
-
   return (
     <div className="px-6 pb-2 relative">
       <Heading type="h3">{slider.heading}</Heading>
-      {/* <div>
-        <img src="/src/assets/sliders/Dangeruos 1.png" />
-        <p className="font-semibold text-xl text-black-800 capitalize mb-5">
-          Restricted Area Control
-        </p>
-        <p className="text-lg text-black-800">
-          Watch your assets with only true alarms according to your security
-          rule.
-        </p>
-      </div> */}
 
       <Swiper
         slidesPerView={1}
-        // style={{ padding: "0 0px", paddingBottom: "75px" }}
-        style={getStyleForBreakpoint()}
+        // style={getStyleForBreakpoint()}
+        style={{ padding: "0 0px", paddingBottom: "40px" }}
         loop={true}
         pagination={{
           clickable: true,
@@ -67,11 +45,7 @@ function Slider({ slider }) {
         {slider?.slides.map((slide) => (
           <SwiperSlide key={slide.title}>
             <div className="flex flex-col items-center justify-center">
-              <img
-                // src="/src/assets/sliders/Dangeruos 1.png"
-                src={slide.icon}
-                className="w-1/5 mb-8"
-              />
+              <img src={slide.icon} className="w-1/5 mb-8" />
               <p className="font-semibold text-lg text-black-800 capitalize mb-3">
                 {slide.title}
               </p>
