@@ -9,14 +9,15 @@ import { FaChevronDown } from "react-icons/fa6";
 import Button from "./Button";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 function Navigation({ content, sticky, home = false }) {
   const [navIsOpen, setNavIsOpen] = useState(false);
   const [displayLangs, setDisplayLangs] = useState(false);
 
-  // const { activeLanguage, setActiveLanguage } = useLanguage();
+  const { activeLanguage, setActiveLanguage } = useLanguage();
 
-  const activeLanguage = "en";
+  // const activeLanguage = "en";
 
   useEffect(() => {
     if (navIsOpen) document.body.style.overflow = "hidden";

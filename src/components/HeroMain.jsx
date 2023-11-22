@@ -9,7 +9,6 @@ import { useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import HeroPattern from "./HeroPattern";
 import { navigation } from "../constants/navigation";
-import Image from "next/image";
 
 function HeroMain() {
   // Make nav sticky when scrolling
