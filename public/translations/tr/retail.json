@@ -1,21 +1,21 @@
 {
-  "heroImg": "assets/Solutions/MarketingHero.png",
+  "heroImg": "/assets/Solutions/MarketingHero.png",
   "heroHeading": "PERAKENDE & FMCG",
   "subHero": ["Her zaman", "Milyar Saat Eğitim", "Güvenlik Görevlisi"],
   "firstSection": {
     "content": [
       {
-        "img": "assets/Solutions/img-7.png",
+        "img": "/assets/Solutions/img-7.png",
         "title": "Anlık Uyarılar",
         "text": "Kapsamlı video sahne analizi ile şüpheli durumlarda anında uyarı alın ve yanlış alarmları %90 azaltın."
       },
       {
-        "img": "assets/Solutions/img-8.png",
+        "img": "/assets/Solutions/img-8.png",
         "title": "Gerçek Zamanlı Uyarılar",
         "text": "İşyerinde güvenlik protokolleri ihlal edildiğinde ilgili çalışanlara canlı uyarı gönderin."
       },
       {
-        "img": "assets/Solutions/img-3.jpg",
+        "img": "/assets/Solutions/img-3.jpg",
         "title": "Veri goruntuleme",
         "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
       }
@@ -62,7 +62,7 @@
   "thirdSection": {
     "heading": "Özel Veri Toplama",
     "content": {
-      "img": "assets/Solutions/data-collection.jpg",
+      "img": "/assets/Solutions/data-collection.jpg",
       "text": "Holocrow, işlediğimiz görsel içeriklerden hiçbir zaman kişisel kimlik bilgilerini toplamaz. Öncelikli hedefimiz insanların gizliliğini korurken güvenliği artırmaktır."
     }
   },
@@ -72,11 +72,11 @@
     "slides": [
       {
         "title": "Inventory Management:",
-        "img": "assets/Solutions/industriesSlider/Inventory Management-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Inventory Management-min.jpg"
       },
       {
         "title": "Customer Experience:",
-        "img": "assets/Solutions/industriesSlider/industry2.png **"
+        "img": "/assets/Solutions/industriesSlider/industry2.png **"
       }
     ]
   }

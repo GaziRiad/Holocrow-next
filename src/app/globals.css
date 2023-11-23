@@ -80,15 +80,14 @@ body::-webkit-scrollbar-thumb {
   top: 50%;
   left: 8px;
   transform: translate(-50%, -50%);
-  height: 140%; /* Set the height of the line */
-  width: 3px; /* Set the width of the line */
-  background-color: #d9d9d9; /* Set the color of the line */
+  height: 140%;
+  width: 3px;
+  background-color: #d9d9d9;
   z-index: -1;
 }
 
 .mySwiperVertical .swiper-pagination {
   left: 0;
-  /* margin-right: 220px; */
   --swiper-pagination-bullet-inactive-color: #fff;
   --swiper-pagination-bullet-inactive-opacity: 1;
   --swiper-pagination-color: #ffb800;
@@ -100,6 +99,15 @@ body::-webkit-scrollbar-thumb {
 
 .mySwiperVertical .swiper-pagination-bullet {
   border: 2px solid #ffb800; /* Set bullet border color */
+}
+
+.swiper-vertical > .swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets {
+  left: var(--swiper-pagination-left, 0px) !important;
+}
+
+.swiper-vertical > .swiper-wrapper {
+  margin-top: 80px;
 }
 
 .industrySwiper {

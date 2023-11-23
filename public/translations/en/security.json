@@ -1,21 +1,21 @@
 {
-  "heroImg": "assets/Solutions/SecurityHero.png",
+  "heroImg": "/assets/Solutions/SecurityHero.png",
   "heroHeading": "Security",
   "subHero": ["Allways On", "Billion Hours Trained", "Security Guard"],
   "firstSection": {
     "content": [
       {
-        "img": "assets/Solutions/img-1.jpg",
+        "img": "/assets/Solutions/img-1.jpg",
         "title": "Instant Alerts",
         "text": "Get instant alerts in suspicious situations and reduce false alarms by %90 with comprehensive video scene analysis."
       },
       {
-        "img": "assets/Solutions/img-2.jpg",
+        "img": "/assets/Solutions/img-2.jpg",
         "title": "Fast Investigations",
         "text": "Utilize the visual characteristics of items to effectively locate every video instance where that item appeared."
       },
       {
-        "img": "assets/Solutions/img-3.jpg",
+        "img": "/assets/Solutions/img-3.jpg",
         "title": "Data Visualization",
         "text": "Get live reports and alerts with easy to understand visuals."
       }
@@ -67,7 +67,7 @@
   "thirdSection": {
     "heading": "Private Data Collection",
     "content": {
-      "img": "assets/Solutions/data-collection.jpg",
+      "img": "/assets/Solutions/data-collection.jpg",
       "text": "Holocrow never collects personal identification details from the visual content we handle. Our primary goal is to enhance security while preserving people’s confidentiality."
     }
   },
@@ -77,39 +77,39 @@
     "slides": [
       {
         "title": "Retail:",
-        "img": "assets/Solutions/industriesSlider/Retail-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Retail-min.jpg"
       },
       {
         "title": "Banking and Finance:",
-        "img": "assets/Solutions/industriesSlider/banking.jpg"
+        "img": "/assets/Solutions/industriesSlider/banking.jpg"
       },
       {
         "title": "Transports & Logistics:",
-        "img": "assets/Solutions/industriesSlider/Transportation - Logistics-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Transportation - Logistics-min.jpg"
       },
       {
         "title": "Healthcare:",
-        "img": "assets/Solutions/industriesSlider/Healthcare-min.JPG"
+        "img": "/assets/Solutions/industriesSlider/Healthcare-min.JPG"
       },
       {
         "title": "Manufacturing:",
-        "img": "assets/Solutions/industriesSlider/Manufacturing-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg"
       },
       {
         "title": "Public Security:",
-        "img": "assets/Solutions/industriesSlider/public-security.jpg"
+        "img": "/assets/Solutions/industriesSlider/public-security.jpg"
       },
       {
         "title": "Airports & Transports Hubs:",
-        "img": "assets/Solutions/industriesSlider/Airport-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Airport-min.jpg"
       },
       {
         "title": "Hospitality:",
-        "img": "assets/Solutions/industriesSlider/hospitality-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/hospitality-min.jpg"
       },
       {
         "title": "Smart Cities:",
-        "img": "assets/Solutions/industriesSlider/smart cities-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/smart cities-min.jpg"
       }
     ]
   }

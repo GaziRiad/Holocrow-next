@@ -1,21 +1,21 @@
 {
-  "heroImg": "assets/Solutions/MarketingHero.png",
+  "heroImg": "/assets/Solutions/MarketingHero.png",
   "heroHeading": "RETAIL & FMCG",
   "subHero": ["Allways On", "Billion Hours Trained", "Marketing Analyst"],
   "firstSection": {
     "content": [
       {
-        "img": "assets/Solutions/img-7.png",
+        "img": "/assets/Solutions/img-7.png",
         "title": "Accurate Insights",
         "text": "Obtain visitor count, heatmap, demographic insights, and many more with 99.9% accuracy."
       },
       {
-        "img": "assets/Solutions/img-8.png",
+        "img": "/assets/Solutions/img-8.png",
         "title": "Prevent Out of Stock",
         "text": "Detect and track every single buying transactions only via video streams to prevent stock out and gather precious insights."
       },
       {
-        "img": "assets/Solutions/img-3.jpg",
+        "img": "/assets/Solutions/img-3.jpg",
         "title": "Data Visualization",
         "text": "Get live reports and alerts with easy to understand visuals."
       }
@@ -61,7 +61,7 @@
   "thirdSection": {
     "heading": "Private Data Collection",
     "content": {
-      "img": "assets/Solutions/data-collection.jpg",
+      "img": "/assets/Solutions/data-collection.jpg",
       "text": "Holocrow never collects personal identification details from the visual content we handle. Our primary goal is to enhance security while preserving people’s confidentiality."
     }
   },
@@ -71,11 +71,11 @@
     "slides": [
       {
         "title": "Inventory Management:",
-        "img": "assets/Solutions/industriesSlider/Inventory Management-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Inventory Management-min.jpg"
       },
       {
         "title": "Customer Experience:",
-        "img": "assets/Solutions/industriesSlider/industry2.png **"
+        "img": "/assets/Solutions/industriesSlider/industry2.png **"
       }
     ]
   }

@@ -32,7 +32,7 @@ function Testimonials({ content }) {
     >
       <Heading>{content.testimonialsSection.heading}</Heading>
       <div className="flex flex-col items-center justify-left gap-2 px-4 lg:px-4 xl:gap-40 lg:flex-row  ">
-        <div className=" flex flex-wrap items-center sm:px-20 md:px-0  w-full justify-center xl:w-2/4 ">
+        <div className="flex flex-wrap items-center sm:px-20 md:px-0  w-full justify-center xl:w-2/4 ">
           <img
             src="../assets/testimonials/person1.png"
             alt="holocrow testimonials"
@@ -74,7 +74,7 @@ function Testimonials({ content }) {
             {content.testimonialsSection.testimonials.map((testimonial) => (
               <SwiperSlide
                 key={testimonial.id}
-                className="ml-8 flex items-center gap-6 lg:ml-12 2xl:ml-32 "
+                className=" ml-12 flex items-center gap-6 lg:ml-12 2xl:ml-32 "
               >
                 <span>
                   <FaQuoteLeft
@@ -83,7 +83,7 @@ function Testimonials({ content }) {
                     color="#ffb800"
                   />
                 </span>
-                <p className="w-2/3 md:text-lg md:leading-8">
+                <p className="w-4/5 md:text-lg md:leading-8">
                   {testimonial.text}
                 </p>
               </SwiperSlide>

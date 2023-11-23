@@ -1,21 +1,21 @@
 {
-  "heroImg": "assets/Solutions/WorkplaceHero.png",
+  "heroImg": "/assets/Solutions/WorkplaceHero.png",
   "heroHeading": "İşyeri güvenliği",
   "subHero": ["Her zaman", "Milyar Saat Eğitim", "Güvenlik Görevlisi"],
   "firstSection": {
     "content": [
       {
-        "img": "assets/Solutions/img-1.jpg",
+        "img": "/assets/Solutions/img-1.jpg",
         "title": "Anlık Uyarılar",
         "text": "Kapsamlı video sahne analizi ile şüpheli durumlarda anında uyarı alın ve yanlış alarmları %90 azaltın."
       },
       {
-        "img": "assets/Solutions/img-6.png",
+        "img": "/assets/Solutions/img-6.png",
         "title": "Gerçek Zamanlı Uyarılar",
         "text": "İşyerinde güvenlik protokolleri ihlal edildiğinde ilgili çalışanlara canlı uyarı gönderin."
       },
       {
-        "img": "assets/Solutions/img-3.jpg",
+        "img": "/assets/Solutions/img-3.jpg",
         "title": "Veri goruntuleme",
         "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
       }
@@ -82,43 +82,43 @@
     "slides": [
       {
         "title": "Manufacturing:",
-        "img": "assets/Solutions/industriesSlider/Manufacturing-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg"
       },
       {
         "title": "Construction:",
-        "img": "assets/Solutions/industriesSlider/construction.jpg"
+        "img": "/assets/Solutions/industriesSlider/construction.jpg"
       },
       {
         "title": "Healthcare:",
-        "img": "assets/Solutions/industriesSlider/Healthcare-min.JPG"
+        "img": "/assets/Solutions/industriesSlider/Healthcare-min.JPG"
       },
       {
         "title": "Retail:",
-        "img": "assets/Solutions/industriesSlider/Retail-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Retail-min.jpg"
       },
       {
         "title": "Warehousing & Logistics:",
-        "img": "assets/Solutions/industriesSlider/warehoouse-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/warehoouse-min.jpg"
       },
       {
         "title": "Office Environments:",
-        "img": "assets/Solutions/industriesSlider/office-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/office-min.jpg"
       },
       {
         "title": "Mining:",
-        "img": "assets/Solutions/industriesSlider/mining-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/mining-min.jpg"
       },
       {
         "title": "Agriculture:",
-        "img": "assets/Solutions/industriesSlider/Agriculture-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Agriculture-min.jpg"
       },
       {
         "title": "Food Processing:",
-        "img": "assets/Solutions/industriesSlider/Food processing-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Food processing-min.jpg"
       },
       {
         "title": "Energy and Utilities:",
-        "img": "assets/Solutions/industriesSlider/energy.jpg"
+        "img": "/assets/Solutions/industriesSlider/energy.jpg"
       }
     ]
   }

@@ -5,17 +5,17 @@
   "firstSection": {
     "content": [
       {
-        "img": "../assets/Solutions/img-1.jpg",
+        "img": "/assets/Solutions/img-1.jpg",
         "title": "Anlık Uyarılar",
         "text": "Kapsamlı video sahne analizi ile şüpheli durumlarda anında uyarı alın ve yanlış alarmları %90 azaltın."
       },
       {
-        "img": "../assets/Solutions/img-2.jpg",
+        "img": "/assets/Solutions/img-2.jpg",
         "title": "Hızlı Soruşturmalar",
         "text": "Öğenin göründüğü her video örneğini etkili bir şekilde bulmak için öğelerin görsel özelliklerinden yararlanın."
       },
       {
-        "img": "../assets/Solutions/img-3.jpg",
+        "img": "/assets/Solutions/img-3.jpg",
         "title": "Veri goruntuleme",
         "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
       }
@@ -67,7 +67,7 @@
   "thirdSection": {
     "heading": "Özel Veri Toplama",
     "content": {
-      "img": "../assets/Solutions/data-collection.jpg",
+      "img": "/assets/Solutions/data-collection.jpg",
       "text": "Holocrow, işlediğimiz görsel içeriklerden hiçbir zaman kişisel kimlik bilgilerini toplamaz. Öncelikli hedefimiz insanların gizliliğini korurken güvenliği artırmaktır."
     }
   },
@@ -77,39 +77,39 @@
     "slides": [
       {
         "title": "Retail:",
-        "img": "assets/Solutions/industriesSlider/Retail-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Retail-min.jpg"
       },
       {
         "title": "Banking and Finance:",
-        "img": "assets/Solutions/industriesSlider/banking.jpg"
+        "img": "/assets/Solutions/industriesSlider/banking.jpg"
       },
       {
         "title": "Transports & Logistics:",
-        "img": "assets/Solutions/industriesSlider/Transportation - Logistics-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Transportation - Logistics-min.jpg"
       },
       {
         "title": "Healthcare:",
-        "img": "assets/Solutions/industriesSlider/Healthcare-min.JPG"
+        "img": "/assets/Solutions/industriesSlider/Healthcare-min.JPG"
       },
       {
         "title": "Manufacturing:",
-        "img": "assets/Solutions/industriesSlider/Manufacturing-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg"
       },
       {
         "title": "Public Security:",
-        "img": "assets/Solutions/industriesSlider/public-security.jpg"
+        "img": "/assets/Solutions/industriesSlider/public-security.jpg"
       },
       {
         "title": "Airports & Transports Hubs:",
-        "img": "assets/Solutions/industriesSlider/Airport-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Airport-min.jpg"
       },
       {
         "title": "Hospitality:",
-        "img": "assets/Solutions/industriesSlider/hospitality-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/hospitality-min.jpg"
       },
       {
         "title": "Smart Cities:",
-        "img": "assets/Solutions/industriesSlider/smart cities-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/smart cities-min.jpg"
       }
     ]
   }

@@ -30,13 +30,13 @@ function Footer({ children, icon, btn = "get started", type = "normal" }) {
       <motion.section
         ref={ref}
         style={{ scale: scrollYProgress, opacity: scrollYProgress }}
-        className="px-6 py-8"
+        className="px-6 py-8 overflow-hidden"
       >
         <footer className="flex flex-col items-center justify-center relative ">
           {children}
           <div
-            className={`relative mb-4 z-20 flex items-center justify-center ${
-              type === "home" ? "lg:mb-10" : ""
+            className={`relative z-20 flex items-center justify-center ${
+              type === "home" ? " mb-12 lg:mb-10" : "lg:mb-2 mb-8"
             }`}
           >
             <img

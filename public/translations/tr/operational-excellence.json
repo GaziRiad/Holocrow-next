@@ -1,21 +1,21 @@
 {
-  "heroImg": "assets/Solutions/EfficiencyHero.png",
+  "heroImg": "/assets/Solutions/EfficiencyHero.png",
   "heroHeading": "Operasyonel mükemmellik",
   "subHero": ["Her zaman", "Milyar Saat Eğitim", "Operasyon Müdürü"],
   "firstSection": {
     "content": [
       {
-        "img": "assets/Solutions/img-4.png",
+        "img": "/assets/Solutions/img-4.png",
         "title": "Mükemmel Doğruluk",
         "text": "Yapay zekanın %99,9 doğruluğuyla üretim hatlarınızdaki hataları tespit edin."
       },
       {
-        "img": "assets/Solutions/img-5.png",
+        "img": "/assets/Solutions/img-5.png",
         "title": "Verimliliği Artırın",
         "text": "Tüm çalışanların verimliliğini analiz edin ve operasyonel verimliliğinizi %50'ye kadar artırın."
       },
       {
-        "img": "assets/Solutions/img-3.jpg",
+        "img": "/assets/Solutions/img-3.jpg",
         "title": "Veri goruntuleme",
         "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
       }
@@ -57,7 +57,7 @@
   "thirdSection": {
     "heading": "Özel Veri Toplama",
     "content": {
-      "img": "assets/Solutions/data-collection.jpg",
+      "img": "/assets/Solutions/data-collection.jpg",
       "text": "Holocrow, işlediğimiz görsel içeriklerden hiçbir zaman kişisel kimlik bilgilerini toplamaz. Öncelikli hedefimiz insanların gizliliğini korurken güvenliği artırmaktır."
     }
   },
@@ -67,27 +67,27 @@
     "slides": [
       {
         "title": "Manufacturing:",
-        "img": "assets/Solutions/industriesSlider/Manufacturing-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg"
       },
       {
         "title": "Automotive Industry:",
-        "img": "assets/Solutions/industriesSlider/Automotive-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Automotive-min.jpg"
       },
       {
         "title": "Pharmaceuticals:",
-        "img": "assets/Solutions/industriesSlider/Pharmaceuticals-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Pharmaceuticals-min.jpg"
       },
       {
         "title": "Electronics:",
-        "img": "assets/Solutions/industriesSlider/eloctronics.jpg"
+        "img": "/assets/Solutions/industriesSlider/eloctronics.jpg"
       },
       {
         "title": "Food & Beverage Industry:",
-        "img": "assets/Solutions/industriesSlider/Food and Beverage Industry-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Food and Beverage Industry-min.jpg"
       },
       {
         "title": "Aerospace:",
-        "img": "assets/Solutions/industriesSlider/aerospace manufacturin-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/aerospace manufacturin-min.jpg"
       }
     ]
   }

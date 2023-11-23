@@ -36,7 +36,7 @@ function SuccessStories() {
             centeredSlides
             initialSlide={1}
             // onSlideChange={(swiper) => handleSlideChange(swiper)}
-            className="storiesSlider w-[95%] absolute right-1/2 translate-x-1/2 top-[40%] -translate-y-1/3 sm:top-[40%] md:top-[35%] lg:w-[80%] xl:top-[45%] xl:w-[65%] shadow-2xl rounded-2xl h-[80%] md:h-[60%]"
+            className="storiesSlider w-[95%] absolute top-[40%] -translate-y-1/3 sm:top-[40%] md:top-[35%] lg:w-[80%] xl:top-[45%] xl:w-[65%] shadow-2xl rounded-2xl h-[80%] md:h-[60%]"
           >
             {content.stories.map((story, index) => (
               <SwiperSlide

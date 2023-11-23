@@ -45,8 +45,8 @@ function Slider({ slider }) {
         {slider?.slides.map((slide) => (
           <SwiperSlide key={slide.title}>
             <div className="flex flex-col items-center justify-center">
-              <img src={slide.icon} className="w-1/5 mb-8" />
-              <p className="font-semibold text-lg text-black-800 capitalize mb-3">
+              <img src={slide.icon} className="w-1/6 h-20 mb-8" />
+              <p className="font-semibold text-lg text-black-800 capitalize mb-3 text-center">
                 {slide.title}
               </p>
               <p className="text-base text-black-800 text-center">
