@@ -1,0 +1,37 @@
+{
+  "heroImg": "/assets/hero-about.png",
+  "heroText": "Making things easier to spot in the smoothest way possible.",
+  "firstSection": {
+    "text": "We solve problems by applying the fundamental engineering law:",
+    "quote": "“Most efficient solution with minimum resource usage.”"
+  },
+  "secondSection": {
+    "heading": "Holocrow is not just an AI-based software production company or a self-service video and image processing platform.",
+    "text": "Holocrow is a group of human beings dedicated to solving real-world problems by applying fundamental engineering principles. Since 2014, our passionate team members have been developing various solutions using deep neural networks and computer vision for different use cases across verticals such as Retail & FMCG, Wide Area Security & Surveillance, Operational Excellence, and Work & Health Safety (WHS & OHS). These solutions were integrated into components that formed the Holocrow ecosystem in 2022."
+  },
+  "thirdSection": {
+    "heading": "Our mission.",
+    "img": "/assets/aboutUs/mission-img.png",
+    "text": [
+      "Cameras are powerful sensors that help us monitor our assets. We believe that if humanity is to advance into a clean and efficient future, it is imperative to increasingly digitize every real-world use case.",
+      "By utilizing Artificial Intelligence in conjunction with computer vision, we can analyze image and video data captured by cameras. This process transforms the analog world into a digital reflection, providing accurate, reliable, and precisely counted or measured data.",
+      "Our goal is to continuously deliver digitized data through our Holocrow B2X video analytics platform, thereby supporting and accelerating humanity's progress as much as possible."
+    ]
+  },
+  "teamSection": {
+    "heading": "Meet the team.",
+    "subHeading": "Over 100 years of experience combined.",
+    "team": [
+      {
+        "img": "/assets/aboutUs/team12.png",
+        "name": "Eray Hangül",
+        "position": "FOUNDER & CO-CEO"
+      },
+      {
+        "img": "/assets/aboutUs/team11.png",
+        "name": "Ali  Güner",
+        "position": "CO-CEO"
+      }
+    ]
+  }
+}

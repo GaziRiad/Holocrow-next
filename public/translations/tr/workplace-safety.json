@@ -1,0 +1,125 @@
+{
+  "heroImg": "assets/Solutions/WorkplaceHero.png",
+  "heroHeading": "İşyeri güvenliği",
+  "subHero": ["Her zaman", "Milyar Saat Eğitim", "Güvenlik Görevlisi"],
+  "firstSection": {
+    "content": [
+      {
+        "img": "assets/Solutions/img-1.jpg",
+        "title": "Anlık Uyarılar",
+        "text": "Kapsamlı video sahne analizi ile şüpheli durumlarda anında uyarı alın ve yanlış alarmları %90 azaltın."
+      },
+      {
+        "img": "assets/Solutions/img-6.png",
+        "title": "Gerçek Zamanlı Uyarılar",
+        "text": "İşyerinde güvenlik protokolleri ihlal edildiğinde ilgili çalışanlara canlı uyarı gönderin."
+      },
+      {
+        "img": "assets/Solutions/img-3.jpg",
+        "title": "Veri goruntuleme",
+        "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
+      }
+    ]
+  },
+
+  "productsSection": {
+    "heading": "İZLEMENİN ÖTESİNDE",
+    "subHeading": "Tüm güvenlik ürünlerimizi görün",
+    "content": [
+      {
+        "icon": "/assets/icons/1.png",
+        "title": "KKD Kontrolü",
+        "text": "İş kazalarının personel üzerindeki etkilerini en aza indirmek için personelin uygun KKD kullanımını kontrol edin."
+      },
+      {
+        "icon": "/assets/icons/2.png",
+        "title": "Makine Etkileşimleri",
+        "text": "Makinenin kötü kullanımı ciddi yaralanmalara neden olabilir. Personelinizi ve işletmenizi korumak için gerçek zamanlı uyarılarla dikkat edin ve kazaları engelleyin."
+      },
+      {
+        "icon": "/assets/icons/15.png",
+        "title": "Temizlik",
+        "text": "Yetersiz temizlik nedeniyle yaralanmalar tamamen önlenebilir. Hızlı tanımlama, hızlı düzeltmeye ve zararın önlenmesine yol açar."
+      },
+      {
+        "icon": "/assets/icons/11.png",
+        "title": "Ergonomi Kontrolü",
+        "text": "İşe bağlı kas-iskelet sistemi bozukluklarını önlemek ve işyeri güvenliğini artırmak için personelin ergonomik uygulamalarını izleyin."
+      },
+      {
+        "icon": "/assets/icons/13.png",
+        "title": "Küpeşte Kullanımı",
+        "text": "Düşme ve yaralanmaları önlemek için kritik alanlardaki korkulukların uygun kullanımını otomatik olarak tespit edin ve teşvik edin."
+      },
+      {
+        "icon": "/assets/icons/22.png",
+        "title": "Alan Kontrolleri",
+        "text": "Görsel tanımlama ve kontrol sistemleri aracılığıyla kısıtlı veya tehlikeli alanlara erişimi yönetin."
+      },
+      {
+        "icon": "/assets/icons/23.png",
+        "title": "Araç kontrol",
+        "text": "Kazaları önlemek ve güvenlik uyumluluğunu sağlamak için tesis içindeki araç hareketini denetleyin ve düzenleyin."
+      },
+      {
+        "icon": "/assets/icons/24.png",
+        "title": "Adam Düşmesi Tespiti",
+        "text": "Hızlı yardım için personelin yetersiz kaldığı veya tehlikede olduğu olayları anında tespit edin ve müdahale edin."
+      }
+    ]
+  },
+
+  "thirdSection": {
+    "heading": "Özel Veri Toplama",
+    "content": {
+      "img": "assets/Solutions/data-collection.jpg",
+      "text": "Holocrow, işlediğimiz görsel içeriklerden hiçbir zaman kişisel kimlik bilgilerini toplamaz. Öncelikli hedefimiz insanların gizliliğini korurken güvenliği artırmaktır."
+    }
+  },
+
+  "sliderSection": {
+    "heading": "endüstriler",
+    "slides": [
+      {
+        "title": "Manufacturing:",
+        "img": "assets/Solutions/industriesSlider/Manufacturing-min.jpg"
+      },
+      {
+        "title": "Construction:",
+        "img": "assets/Solutions/industriesSlider/construction.jpg"
+      },
+      {
+        "title": "Healthcare:",
+        "img": "assets/Solutions/industriesSlider/Healthcare-min.JPG"
+      },
+      {
+        "title": "Retail:",
+        "img": "assets/Solutions/industriesSlider/Retail-min.jpg"
+      },
+      {
+        "title": "Warehousing & Logistics:",
+        "img": "assets/Solutions/industriesSlider/warehoouse-min.jpg"
+      },
+      {
+        "title": "Office Environments:",
+        "img": "assets/Solutions/industriesSlider/office-min.jpg"
+      },
+      {
+        "title": "Mining:",
+        "img": "assets/Solutions/industriesSlider/mining-min.jpg"
+      },
+      {
+        "title": "Agriculture:",
+        "img": "assets/Solutions/industriesSlider/Agriculture-min.jpg"
+      },
+      {
+        "title": "Food Processing:",
+        "img": "assets/Solutions/industriesSlider/Food processing-min.jpg"
+      },
+      {
+        "title": "Energy and Utilities:",
+        "img": "assets/Solutions/industriesSlider/energy.jpg"
+      }
+    ]
+  }
+}

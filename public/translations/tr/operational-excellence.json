@@ -1,0 +1,94 @@
+{
+  "heroImg": "assets/Solutions/EfficiencyHero.png",
+  "heroHeading": "Operasyonel mükemmellik",
+  "subHero": ["Her zaman", "Milyar Saat Eğitim", "Operasyon Müdürü"],
+  "firstSection": {
+    "content": [
+      {
+        "img": "assets/Solutions/img-4.png",
+        "title": "Mükemmel Doğruluk",
+        "text": "Yapay zekanın %99,9 doğruluğuyla üretim hatlarınızdaki hataları tespit edin."
+      },
+      {
+        "img": "assets/Solutions/img-5.png",
+        "title": "Verimliliği Artırın",
+        "text": "Tüm çalışanların verimliliğini analiz edin ve operasyonel verimliliğinizi %50'ye kadar artırın."
+      },
+      {
+        "img": "assets/Solutions/img-3.jpg",
+        "title": "Veri goruntuleme",
+        "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
+      }
+    ]
+  },
+
+  "productsSection": {
+    "heading": "İZLEMENİN ÖTESİNDE",
+    "subHeading": "Tüm güvenlik ürünlerimizi görün",
+    "content": [
+      {
+        "icon": "/assets/icons/21.png",
+        "title": "Stok Kontrolleri",
+        "text": "Stoklarınızı CCTV ile sayın veya ölçün."
+      },
+      {
+        "icon": "/assets/icons/7.png",
+        "title": "Desen ve Renk Kontrolü",
+        "text": "Kalite güvencesini onaylamak için akışlar ve resimler üzerinden üretilen ürünün görünürlüğünü analiz edin."
+      },
+      {
+        "icon": "/assets/icons/10.png",
+        "title": "Operasyonel mükemmellik",
+        "text": "İyileştirmeye açık süreçleri analiz etmek için operasyonlarınızın her adımını tespit edip takip edin."
+      },
+      {
+        "icon": "/assets/icons/26.png",
+        "title": "Personel Verimliliği Analizi",
+        "text": "Video verilerini kullanarak personel hareketlerini ve etkinliklerini analiz ederek iş gücü verimliliğini artırın."
+      },
+      {
+        "icon": "/assets/icons/27.png",
+        "title": "Paketleme Kontrolü",
+        "text": "Uygunluğu görsel olarak denetleyerek ve anormallikleri tespit ederek ambalajın doğruluğunu ve kalitesini sağlayın."
+      }
+    ]
+  },
+
+  "thirdSection": {
+    "heading": "Özel Veri Toplama",
+    "content": {
+      "img": "assets/Solutions/data-collection.jpg",
+      "text": "Holocrow, işlediğimiz görsel içeriklerden hiçbir zaman kişisel kimlik bilgilerini toplamaz. Öncelikli hedefimiz insanların gizliliğini korurken güvenliği artırmaktır."
+    }
+  },
+
+  "sliderSection": {
+    "heading": "endüstriler",
+    "slides": [
+      {
+        "title": "Manufacturing:",
+        "img": "assets/Solutions/industriesSlider/Manufacturing-min.jpg"
+      },
+      {
+        "title": "Automotive Industry:",
+        "img": "assets/Solutions/industriesSlider/Automotive-min.jpg"
+      },
+      {
+        "title": "Pharmaceuticals:",
+        "img": "assets/Solutions/industriesSlider/Pharmaceuticals-min.jpg"
+      },
+      {
+        "title": "Electronics:",
+        "img": "assets/Solutions/industriesSlider/eloctronics.jpg"
+      },
+      {
+        "title": "Food & Beverage Industry:",
+        "img": "assets/Solutions/industriesSlider/Food and Beverage Industry-min.jpg"
+      },
+      {
+        "title": "Aerospace:",
+        "img": "assets/Solutions/industriesSlider/aerospace manufacturin-min.jpg"
+      }
+    ]
+  }
+}

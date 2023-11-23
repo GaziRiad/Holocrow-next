@@ -1,0 +1,83 @@
+{
+  "heroImg": "assets/Solutions/MarketingHero.png",
+  "heroHeading": "PERAKENDE & FMCG",
+  "subHero": ["Her zaman", "Milyar Saat Eğitim", "Güvenlik Görevlisi"],
+  "firstSection": {
+    "content": [
+      {
+        "img": "assets/Solutions/img-7.png",
+        "title": "Anlık Uyarılar",
+        "text": "Kapsamlı video sahne analizi ile şüpheli durumlarda anında uyarı alın ve yanlış alarmları %90 azaltın."
+      },
+      {
+        "img": "assets/Solutions/img-8.png",
+        "title": "Gerçek Zamanlı Uyarılar",
+        "text": "İşyerinde güvenlik protokolleri ihlal edildiğinde ilgili çalışanlara canlı uyarı gönderin."
+      },
+      {
+        "img": "assets/Solutions/img-3.jpg",
+        "title": "Veri goruntuleme",
+        "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
+      }
+    ]
+  },
+
+  "productsSection": {
+    "heading": "İZLEMENİN ÖTESİNDE",
+    "subHeading": "Tüm güvenlik ürünlerimizi görün",
+    "content": [
+      {
+        "icon": "/assets/icons/19.png",
+        "title": "Ziyaretçi Sayma",
+        "text": "Mağazalarınızın potansiyelini ölçmek için personel hariç, anonim kimlikleri kullanarak benzersiz ziyaretçileri sayın."
+      },
+      {
+        "icon": "/assets/icons/20.png",
+        "title": "Demografik Hedefleme",
+        "text": "Doğru segmentasyonu uygulamak için ziyaretçilerinizin demografik çeşitliliğini öğrenin."
+      },
+      {
+        "icon": "/assets/icons/3.png",
+        "title": "A/B Testi",
+        "text": "Müşterilerin yeni ürünlerinize ilişkin tercihlerini hızlı bir şekilde anlayın."
+      },
+      {
+        "icon": "/assets/icons/14.png",
+        "title": "Isı Haritası ve Yaya Sayısı",
+        "text": "Düzeni ve ürün yerleştirmeyi optimize etmek için müşteri hareket modellerini ve mağaza sıcak noktalarını analiz edin."
+      },
+      {
+        "icon": "/assets/icons/4.png",
+        "title": "Ürün Etkileşim Analizi",
+        "text": "Tercihler ve katılım düzeyleri hakkında bilgi edinmek için müşterilerin ürünlerle olan etkileşimlerini izleyin."
+      },
+      {
+        "icon": "/assets/icons/16.png",
+        "title": "Envanter ve Stok Kontrolü",
+        "text": "Gerçek zamanlı görsel veri analizini kullanarak envanter takibini otomatikleştirin ve optimum stok seviyelerini koruyun."
+      }
+    ]
+  },
+
+  "thirdSection": {
+    "heading": "Özel Veri Toplama",
+    "content": {
+      "img": "assets/Solutions/data-collection.jpg",
+      "text": "Holocrow, işlediğimiz görsel içeriklerden hiçbir zaman kişisel kimlik bilgilerini toplamaz. Öncelikli hedefimiz insanların gizliliğini korurken güvenliği artırmaktır."
+    }
+  },
+
+  "sliderSection": {
+    "heading": "endüstriler",
+    "slides": [
+      {
+        "title": "Inventory Management:",
+        "img": "assets/Solutions/industriesSlider/Inventory Management-min.jpg"
+      },
+      {
+        "title": "Customer Experience:",
+        "img": "assets/Solutions/industriesSlider/industry2.png **"
+      }
+    ]
+  }
+}
