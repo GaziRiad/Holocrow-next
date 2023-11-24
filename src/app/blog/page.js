@@ -84,7 +84,7 @@ function About() {
             ea commodo consequat. Duis aute irure dolor in reprehenderit in
             voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. "Sed ut perspiciatis
+            officia deserunt mollit anim id est laborum. Sed ut perspiciatis
             unde omnis iste natus error sit voluptatem accusantium doloremque
             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
             veritatis et quasi architecto beatae vitae dicta sunt explicabo.’’
@@ -155,8 +155,8 @@ function About() {
           className="blogSwiper mb-10 lg:mb-24 3xl:mx-36 !px-24 "
           breakpoints={breakpoints}
         >
-          {slides?.map((slide) => (
-            <SwiperSlide key={slide.title}>
+          {slides?.map((slide, i) => (
+            <SwiperSlide key={i}>
               <div className="flex flex-col items-center justify-center overflow-hidden">
                 <img src={slide.img} className="w-full h-72 rounded-2xl mb-4" />
                 <p className=" w-full font-bold text-lg text-black-800 capitalize mb-3 text-left">
