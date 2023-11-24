@@ -83,44 +83,39 @@ function About() {
         </div>
       </section>
       <section className="container mx-auto flex items-center justify-between flex-col gap-12 mb-12 px-4 lg:flex-row xl:gap-60 lg:px-16 lg:mb-40">
-        <div className=" relative w-full lg:w-1/2 rounded-2xl overflow-hidden ">
-          <img
-            className="w-full h-[280px] lg:h-[480px] object-fill"
-            src={"/assets/aboutUs/mission-img.png"}
-            alt="bannerImgOne"
-          />
-
+        {slides.slice(0, 2).map((slide, i) => (
           <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              background:
-                "linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 40%, rgba(255, 255, 255, 0.4) 100%)",
-            }}
-          />
-        </div>
-        <div className=" relative w-full lg:w-1/2 rounded-2xl overflow-hidden ">
-          <img
-            className="w-full h-[280px] lg:h-[480px] object-fill"
-            src={"/assets/aboutUs/mission-img.png"}
-            alt="bannerImgOne"
-          />
+            key={i}
+            className=" relative w-full lg:w-1/2 rounded-2xl overflow-hidden "
+          >
+            <img
+              className="w-full h-[280px] lg:h-[480px] object-fill"
+              src={"/assets/aboutUs/mission-img.png"}
+              alt="bannerImgOne"
+            />
 
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              background:
-                "linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 40%, rgba(255, 255, 255, 0.4) 100%)",
-            }}
-          />
-        </div>
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                background:
+                  "linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 40%, rgba(255, 255, 255, 0.4) 100%)",
+              }}
+            />
+            <div className=" absolute bottom-0 px-8 pb-6">
+              <p className="w-full font-bold text-xl text-black-800 capitalize mb-3 text-left">
+                Lorem Ipsum Amet
+              </p>
+              <p className="text-base text-black-800 text-left">
+                Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.{" "}
+              </p>
+            </div>
+          </div>
+        ))}
       </section>
 
       <section className="container mx-auto flex items-center justify-center mb-12 px-4 lg:px-16 lg:mb-40">
