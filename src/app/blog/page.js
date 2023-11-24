@@ -1,18 +1,6 @@
-"use client";
-
+import BlogSlider from "@/components/BlogSlider";
 import Hero from "@/components/Hero";
 import MainFooter from "@/components/MainFooter";
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-// import required modules
-import { Pagination, Navigation } from "swiper/modules";
 
 function About() {
   const slides = [
@@ -47,17 +35,6 @@ function About() {
       text: "Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
     },
   ];
-
-  const breakpoints = {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 80,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 120,
-    },
-  };
 
   return (
     <>
@@ -105,10 +82,10 @@ function About() {
           </p>
         </div>
       </section>
-      <section className="container mx-auto flex items-center justify-between gap-60 mb-12 px-4 lg:px-16 lg:mb-40">
-        <div className=" relative w-1/2 rounded-2xl overflow-hidden ">
+      <section className="container mx-auto flex items-center justify-between flex-col gap-12 mb-12 px-4 lg:flex-row xl:gap-60 lg:px-16 lg:mb-40">
+        <div className=" relative w-full lg:w-1/2 rounded-2xl overflow-hidden ">
           <img
-            className="w-full h-[480px] object-fill"
+            className="w-full h-[280px] lg:h-[480px] object-fill"
             src={"/assets/aboutUs/mission-img.png"}
             alt="bannerImgOne"
           />
@@ -125,9 +102,9 @@ function About() {
             }}
           />
         </div>
-        <div className=" relative w-1/2 rounded-2xl overflow-hidden ">
+        <div className=" relative w-full lg:w-1/2 rounded-2xl overflow-hidden ">
           <img
-            className="w-full h-[480px] object-fill"
+            className="w-full h-[280px] lg:h-[480px] object-fill"
             src={"/assets/aboutUs/mission-img.png"}
             alt="bannerImgOne"
           />
@@ -147,28 +124,7 @@ function About() {
       </section>
 
       <section className="container mx-auto flex items-center justify-center mb-12 px-4 lg:px-16 lg:mb-40">
-        <Swiper
-          slidesPerView={1}
-          loop={true}
-          navigation={true}
-          modules={[Navigation]}
-          className="blogSwiper mb-10 lg:mb-24 3xl:mx-36 !px-24 "
-          breakpoints={breakpoints}
-        >
-          {slides?.map((slide, i) => (
-            <SwiperSlide key={i}>
-              <div className="flex flex-col items-center justify-center overflow-hidden">
-                <img src={slide.img} className="w-full h-72 rounded-2xl mb-4" />
-                <p className=" w-full font-bold text-lg text-black-800 capitalize mb-3 text-left">
-                  {slide.title}
-                </p>
-                <p className="text-base text-black-800 text-left">
-                  {slide.text}
-                </p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <BlogSlider slides={slides} />
       </section>
 
       <MainFooter />
