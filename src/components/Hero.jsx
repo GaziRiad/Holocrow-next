@@ -20,7 +20,7 @@ function Hero({ img, heading, herobg = "hero", noPattern = false }) {
   }, [isInView]);
 
   return (
-    <section ref={heroRef} className={`${herobg} relative lg:mb-32`}>
+    <section ref={heroRef} className={`${herobg} lg:mb-32`}>
       <header
         className={`z-50 top-0 w-full flex justify-between px-8 py-8 items-center lg:justify-around lg:px-0 ${
           sticky

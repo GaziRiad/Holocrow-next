@@ -270,3 +270,24 @@ body::-webkit-scrollbar-thumb {
     opacity: 0;
   }
 }
+
+/* .blogSwiper .swiper-button-next,
+.blogSwiper .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 10px);
+  left: auto;
+} */
+
+.blogSwiper .swiper-button-next,
+.blogSwiper .swiper-button-prev {
+  top: 40% !important;
+  --swiper-navigation-size: 24px;
+  color: #ffb800; /* Set the text color */
+  border: solid 2px #ffb800;
+  padding: 22px;
+  border-radius: 50%; /* Make the buttons circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a transition for a smoother effect */
+}

@@ -4,7 +4,7 @@ export const navigation = {
     { text: "Solutions", path: "/solutions" },
     { text: "Success Stories", path: "/success-stories" },
     { text: "About Us", path: "/about" },
-    { text: "News", path: "" },
+    { text: "News", path: "/blog" },
   ],
   languages: [
     { lang: "English", attribute: "en" },
