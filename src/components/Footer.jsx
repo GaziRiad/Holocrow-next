@@ -5,7 +5,7 @@ import Button from "./Button";
 
 import { motion, useInView, useScroll } from "framer-motion";
 
-function Footer({ children, icon, btn = "get started", type = "normal" }) {
+function Footer({ children, icon, btn = "sign up", type = "normal" }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -52,7 +52,7 @@ function Footer({ children, icon, btn = "get started", type = "normal" }) {
             </p>
           </div>
           <p className="text-white font-bold text-4xl tracking-wider absolute top-[66%] lg:top-[60%] xl:tracking-[1.25rem] lg:text-8xl  ">
-            Sign up
+            Let’s Get Started
           </p>
           <Button to="/signup">{btn}</Button>
         </footer>
