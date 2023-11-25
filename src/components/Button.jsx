@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-function Button({ children, type = "medium", to }) {
+function Button({ children, type = "medium", to = "" }) {
   if (type === "mobile-navigation")
     return (
       <motion.button

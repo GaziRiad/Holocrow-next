@@ -24,7 +24,7 @@ function SecondaryPosts({ posts }) {
                 width: "100%",
                 height: "100%",
                 background:
-                  "linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 40%, rgba(255, 255, 255, 1) 100%)",
+                  "linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 50%, rgba(255, 255, 255, 1) 100%)",
               }}
             />
             <div className=" absolute bottom-0 px-8 pb-6">
