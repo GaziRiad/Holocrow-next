@@ -65,28 +65,40 @@
     "heading": "industries",
     "slides": [
       {
-        "title": "Manufacturing:",
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Manufacturing",
+        "subTitle": "Defect Detection and Production Line Monitoring",
+        "text": "Computer Vision systems in manufacturing settings are used for detecting defects in products on assembly lines, ensuring high-quality output. They also monitor the efficiency of production processes, identifying bottlenecks and areas for improvement."
       },
       {
-        "title": "Automotive Industry:",
-        "img": "/assets/Solutions/industriesSlider/Automotive-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Automotive-min.jpg",
+        "title": "Automotive Industry",
+        "subTitle": "Component Inspection and Assembly Verification",
+        "text": "In the automotive sector, Computer Vision is crucial for inspecting automotive parts for precision and correctness, as well as verifying proper assembly, thereby maintaining high standards and operational efficiency."
       },
       {
-        "title": "Pharmaceuticals:",
-        "img": "/assets/Solutions/industriesSlider/Pharmaceuticals-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Pharmaceuticals-min.jpg",
+        "title": "Pharmaceuticals",
+        "subTitle": "Drug Quality Assurance and Packaging Inspection",
+        "text": "Computer Vision ensures the quality of pharmaceutical products by inspecting drug integrity and packaging, including label verification, to comply with health safety standards."
       },
       {
-        "title": "Electronics:",
-        "img": "/assets/Solutions/industriesSlider/eloctronics.jpg"
+        "img": "/assets/Solutions/industriesSlider/eloctronics.jpg",
+        "title": "Electronics",
+        "subTitle": "PCB Inspection and Component Placement",
+        "text": "In electronics manufacturing, Computer Vision is used for inspecting printed circuit boards (PCBs) and ensuring accurate placement of components, crucial for device functionality."
       },
       {
-        "title": "Food & Beverage Industry:",
-        "img": "/assets/Solutions/industriesSlider/Food and Beverage Industry-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Food and Beverage Industry-min.jpg",
+        "title": "Food and Beverage Industry",
+        "subTitle": "Food Quality Control and Packaging Integrity",
+        "text": "Computer Vision systems detect imperfections in food products and ensure the integrity of packaging, including seal quality and correct labeling, essential for consumer safety."
       },
       {
-        "title": "Aerospace:",
-        "img": "/assets/Solutions/industriesSlider/aerospace manufacturin-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/aerospace manufacturin-min.jpg",
+        "title": "Aerospace",
+        "subTitle": "Component Inspection and Safety Checks",
+        "text": "In aerospace manufacturing, precision is paramount. Computer Vision assists in inspecting various components for defects and ensuring that safety standards are rigorously met."
       }
     ]
   }

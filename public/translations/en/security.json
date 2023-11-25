@@ -76,40 +76,58 @@
     "heading": "industries",
     "slides": [
       {
-        "title": "Retail:",
-        "img": "/assets/Solutions/industriesSlider/Retail-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Retail-min.jpg",
+        "title": "Retail",
+        "subTitle": "Loss Prevention and Theft Detection",
+        "text": "Computer Vision systems in retail stores can detect suspicious activities, such as shoplifting or unauthorized access to restricted areas. These systems can also track customer movement patterns to identify potential security risks."
       },
       {
-        "title": "Banking and Finance:",
-        "img": "/assets/Solutions/industriesSlider/banking.jpg"
+        "img": "/assets/Solutions/industriesSlider/banking.jpg",
+        "title": "Banking and Finance",
+        "subTitle": "ATM Security and Fraud Prevention",
+        "text": "Computer Vision is used in ATMs for facial recognition and to detect suspicious behavior around ATMs. It helps in preventing fraud, such as card skimming and identity theft."
       },
       {
-        "title": "Transports & Logistics:",
-        "img": "/assets/Solutions/industriesSlider/Transportation - Logistics-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Transportation - Logistics-min.jpg",
+        "title": "Transportation and Logistics",
+        "subTitle": "Cargo Monitoring and Transit Security",
+        "text": "In transportation, Computer Vision assists in monitoring cargo and ensuring the safety of goods during transit. It can also be used in detecting unauthorized access to restricted areas in ports and logistics centers"
       },
       {
-        "title": "Healthcare:",
-        "img": "/assets/Solutions/industriesSlider/Healthcare-min.JPG"
+        "img": "/assets/Solutions/industriesSlider/Healthcare-min.JPG",
+        "title": "Healthcare",
+        "subTitle": "Patient Safety and Access Control",
+        "text": "In hospitals and clinics, Computer Vision helps monitor patient safety, ensuring they receive the right care and preventing infant abductions. It also secures sensitive areas like pharmacies and data centers."
       },
       {
-        "title": "Manufacturing:",
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Manufacturing",
+        "subTitle": "Equipment Monitoring and Worker Safety",
+        "text": "Computer Vision systems can monitor manufacturing equipment for signs of malfunction, preventing accidents. They also ensure that workers adhere to safety protocols, such as wearing protective gear"
       },
       {
-        "title": "Public Security:",
-        "img": "/assets/Solutions/industriesSlider/public-security.jpg"
+        "img": "/assets/Solutions/industriesSlider/public-security.jpg",
+        "title": "Public Security",
+        "subTitle": "Crowd Monitoring and Crime Prevention",
+        "text": "Computer Vision is used in public spaces for crowd monitoring, identifying potential threats in large gatherings, and helping law enforcement in crime prevention and investigation."
       },
       {
-        "title": "Airports & Transports Hubs:",
-        "img": "/assets/Solutions/industriesSlider/Airport-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Airport-min.jpg",
+        "title": "Airports and Transportation Hubs",
+        "subTitle": "Passenger Screening and Terminal Security",
+        "text": "Airports use Computer Vision for passenger screening, baggage inspection, and to ensure overall terminal security, including detecting unattended baggage or identifying individuals on watchlists."
       },
       {
-        "title": "Hospitality:",
-        "img": "/assets/Solutions/industriesSlider/hospitality-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/hospitality-min.jpg",
+        "title": "Hospitality",
+        "subTitle": "Guest Safety and Facility Security",
+        "text": "In hotels and resorts, Computer Vision is used for securing facilities, monitoring guest safety, and ensuring that only authorized personnel access restricted areas."
       },
       {
-        "title": "Smart Cities:",
-        "img": "/assets/Solutions/industriesSlider/smart cities-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/smart cities-min.jpg",
+        "title": "Smart Cities",
+        "subTitle": "Urban Surveillance and Traffic Management",
+        "text": "In smart cities, Computer Vision contributes to urban surveillance, traffic flow monitoring, and incident detection, enhancing overall city safety and efficiency."
       }
     ]
   }

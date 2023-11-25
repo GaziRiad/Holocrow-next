@@ -4,7 +4,7 @@ function MainFooter() {
   const footer = [
     {
       icon: "../assets/footer/footer-icon1.png",
-      text: "No Installation",
+      text: "EASY CONNECT",
     },
     {
       icon: "../assets/footer/footer-icon2.png",

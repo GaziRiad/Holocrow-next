@@ -6,33 +6,18 @@ import Hero from "@/components/Hero";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-function solutions() {
-  const content = {
-    heading: "Get better",
-    text: "by seamlessly integrating with existing cameras in facilities",
-    features: [
-      {
-        icon: "../assets/features/security.png",
-        name: "Security",
-        link: "security",
-      },
-      {
-        icon: "../assets/features/safety.png",
-        name: "Workplace-Safety",
-        link: "workplace-safety",
-      },
-      {
-        icon: "../assets/features/efficiency.png",
-        name: "OPERATIONAL EXCELLENCE",
-        link: "operational-excellence",
-      },
-      {
-        icon: "../assets/features/sales-marketing.png",
-        name: "RETAIL & FMCG",
-        link: "retail",
-      },
-    ],
-  };
+//
+import enSolutions from "../../../public/translations/en/solutions.json";
+import trSolutions from "../../../public/translations/tr/solutions.json";
+import { useLanguage } from "@/contexts/LanguageContext";
+const translations = {
+  en: enSolutions,
+  tr: trSolutions,
+};
+
+function Solutions() {
+  const { activeLanguage } = useLanguage();
+  const content = translations[activeLanguage];
 
   return (
     <div className="relative">
@@ -59,4 +44,4 @@ function solutions() {
   );
 }
 
-export default solutions;
+export default Solutions;

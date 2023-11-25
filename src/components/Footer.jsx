@@ -52,7 +52,7 @@ function Footer({ children, icon, btn = "get started", type = "normal" }) {
             </p>
           </div>
           <p className="text-white font-bold text-4xl tracking-wider absolute top-[66%] lg:top-[60%] xl:tracking-[1.25rem] lg:text-8xl  ">
-            Let’s Get Started
+            Sign up
           </p>
           <Button to="/signup">{btn}</Button>
         </footer>

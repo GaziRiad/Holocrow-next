@@ -33,7 +33,6 @@ function HeroMain() {
         autoPlay
         playsInline
         loading="lazy"
-        // src="/videos/hero-preview-2.mp4"
         src="/videos/hero-preview-3.mp4"
         type="video/mp4"
       ></video>
@@ -53,8 +52,6 @@ function HeroMain() {
       <div className="absolute top-[25%] left-1/2 -translate-x-[50%] flex flex-col gap-8 text-white text-4xl items-center font-extrabold lg:top-[40%] xl:left-1/2 xl:gap-28 xl:text-6xl 2xl:text-8xl lg:flex-row">
         <p>Beyond</p>
         <img
-          // width={32}
-          // height={32}
           src="/images/camera-vector.png"
           className="w-20 lg:w-32 h-auto"
           alt="camera vector for holocrow"

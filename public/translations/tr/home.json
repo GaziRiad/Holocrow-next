@@ -19,20 +19,20 @@
     "text": "tesislerdeki mevcut kameralarla sorunsuz bir şekilde entegre edilerek",
     "features": [
       {
-        "icon": "../assets/features/security.png",
-        "name": "Güvenlik"
+        "icon": "../assets/features/sales-marketing.png",
+        "name": "PERAKENDE & FMCG"
       },
       {
         "icon": "../assets/features/safety.png",
         "name": "İşyeri güvenliği"
       },
       {
-        "icon": "../assets/features/efficiency.png",
-        "name": "OPERASYONEL MÜKEMMELLİK"
+        "icon": "../assets/features/security.png",
+        "name": "Güvenlik"
       },
       {
-        "icon": "../assets/features/sales-marketing.png",
-        "name": "PERAKENDE & FMCG"
+        "icon": "../assets/features/efficiency.png",
+        "name": "OPERASYONEL MÜKEMMELLİK"
       }
     ]
   },

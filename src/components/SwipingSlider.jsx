@@ -11,6 +11,22 @@ import Heading from "./Heading";
 
 import { motion } from "framer-motion";
 
+const breakpoints = {
+  620: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+  },
+
+  1024: {
+    slidesPerView: 3,
+    spaceBetween: 30,
+  },
+  1520: {
+    slidesPerView: 4,
+    spaceBetween: 42,
+  },
+};
+
 function SwipingSlider({ content }) {
   return (
     <motion.section
@@ -24,19 +40,26 @@ function SwipingSlider({ content }) {
       </Heading>
       <Swiper
         slidesPerView={1}
+        spaceBetween={32}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        className="industrySwiper pb-16 pt-4"
+        breakpoints={breakpoints}
+        className="industrySwiper"
       >
         {content.slides.map((slide) => (
-          <SwiperSlide key={slide.img} className="!w-64 md:!w-72 2xl:!w-72">
-            <div className="w-56 h-80 shadow-[5px_-10px_10px_rgb(0,0,0,0.1)] rounded-t-3xl 2xl:w-60">
-              <p className=" text-center font-semibold py-4 text-lg md:py-8 2xl:py-8 ">
-                {slide.title}
+          <SwiperSlide key={slide.img} className="shadow-xl ">
+            <div className="h-[540px] rounded-xl bg-stone-100 px-8 py-8 text-black-800">
+              <img
+                src={slide.img}
+                className=" h-1/2 w-full block rounded-xl mb-6"
+              />
+              <p className="text-left font-bold text-xl mb-2">{slide.title}</p>
+              <p>
+                <span className="font-medium">{slide.subTitle}:</span>
+                <span>{slide.text}</span>
               </p>
-              <img src={slide.img} className=" h-full" />
             </div>
           </SwiperSlide>
         ))}

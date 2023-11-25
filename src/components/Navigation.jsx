@@ -78,7 +78,9 @@ function Navigation({ content, sticky, home = false }) {
           )}
         </ul>
 
-        <Button type="navigation">Login</Button>
+        <Button type="navigation" to="https://app.holocrow.com/">
+          Login
+        </Button>
       </ul>
 
       {navIsOpen && (
@@ -122,7 +124,9 @@ function Navigation({ content, sticky, home = false }) {
                 </li>
               </Link>
             ))}
-            <Button type="mobile-navigation">Login</Button>
+            <Button type="mobile-navigation" to="https://app.holocrow.com/">
+              Login
+            </Button>
           </motion.ul>
         </div>
       )}

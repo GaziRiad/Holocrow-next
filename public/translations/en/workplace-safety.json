@@ -80,44 +80,64 @@
     "heading": "industries",
     "slides": [
       {
-        "title": "Manufacturing:",
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Manufacturing",
+        "subTitle": "Equipment Monitoring and Worker Safety",
+        "text": "Computer Vision systems in manufacturing plants monitor machinery for signs of malfunction, helping to prevent accidents. They also ensure that workers comply with safety protocols, such as using protective gear correctly."
       },
       {
-        "title": "Construction:",
-        "img": "/assets/Solutions/industriesSlider/construction.jpg"
+        "img": "/assets/Solutions/industriesSlider/construction.jpg",
+        "title": "Construction",
+        "subTitle": "PPE Compliance and Hazard Detection",
+        "text": "In construction sites, Computer Vision technology is used to ensure workers are wearing necessary safety equipment like helmets and vests. It can also identify potential hazards on-site, such as unsafe scaffolding or open pits."
       },
       {
-        "title": "Healthcare:",
-        "img": "/assets/Solutions/industriesSlider/Healthcare-min.JPG"
+        "img": "/assets/Solutions/industriesSlider/Healthcare-min.JPG",
+        "title": "Healthcare",
+        "subTitle": "Patient Handling and Hospital Safety",
+        "text": " Computer Vision aids in monitoring patient handling procedures to prevent injuries and ensure patient safety. It can also detect irregular activities in sensitive areas, enhancing overall hospital security."
       },
       {
+        "img": "/assets/Solutions/industriesSlider/Retail-min.jpg",
         "title": "Retail:",
-        "img": "/assets/Solutions/industriesSlider/Retail-min.jpg"
+        "subTitle": "Slip and Fall Prevention",
+        "text": "In retail environments, Computer Vision can detect spillages and other hazards that might lead to slips and falls, alerting staff to take immediate action."
       },
       {
-        "title": "Warehousing & Logistics:",
-        "img": "/assets/Solutions/industriesSlider/warehoouse-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/warehoouse-min.jpg",
+        "title": "Warehousing and Logistics",
+        "subTitle": "Forklift Operation and Pedestrian Safety",
+        "text": "Computer Vision is employed to monitor forklift operations, ensuring they are conducted safely, especially when pedestrians are nearby, to prevent collisions."
       },
       {
-        "title": "Office Environments:",
-        "img": "/assets/Solutions/industriesSlider/office-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/office-min.jpg",
+        "title": "Office Environments",
+        "subTitle": "Ergonomic Assessments",
+        "text": "Computer Vision technology can analyze an employee's posture and workstation setup, offering suggestions for ergonomic improvements to prevent strain injuries."
       },
       {
-        "title": "Mining:",
-        "img": "/assets/Solutions/industriesSlider/mining-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/mining-min.jpg",
+        "title": "Mining",
+        "subTitle": "Equipment Safety and Hazardous Condition Monitoring",
+        "text": "In mining operations, Computer Vision helps in monitoring equipment and environmental conditions to prevent accidents, such as detecting gas leaks or structural weaknesses."
       },
       {
+        "img": "/assets/Solutions/industriesSlider/Agriculture-min.jpg",
         "title": "Agriculture:",
-        "img": "/assets/Solutions/industriesSlider/Agriculture-min.jpg"
+        "subTitle": "Machinery Operation and Field Safety",
+        "text": "Computer Vision aids in ensuring the safe operation of agricultural machinery and can detect workers or animals in the vicinity to prevent accidents."
       },
       {
-        "title": "Food Processing:",
-        "img": "/assets/Solutions/industriesSlider/Food processing-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Food processing-min.jpg",
+        "title": "Food Processing",
+        "subTitle": "Compliance with Hygiene Standards",
+        "text": "In food processing facilities, Computer Vision ensures that safety and hygiene standards are upheld, monitoring for contamination risks and ensuring workers follow proper safety protocols."
       },
       {
-        "title": "Energy and Utilities:",
-        "img": "/assets/Solutions/industriesSlider/energy.jpg"
+        "img": "/assets/Solutions/industriesSlider/energy.jpg",
+        "title": "Energy and Utilities",
+        "subTitle": "Monitoring of Infrastructure and Safety Compliance",
+        "text": "For energy and utility companies, Computer Vision is crucial in monitoring the condition of infrastructure and ensuring that safety procedures are followed, especially in high-risk environments like power plants."
       }
     ]
   }

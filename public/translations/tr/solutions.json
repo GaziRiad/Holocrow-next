@@ -3,9 +3,9 @@
   "text": "tesislerdeki mevcut kameralarla sorunsuz bir şekilde entegre edilerek",
   "features": [
     {
-      "icon": "../assets/features/security.png",
-      "name": "Güvenlik",
-      "link": "security"
+      "icon": "../assets/features/sales-marketing.png",
+      "name": "Satış ve Pazarlama",
+      "link": "retail"
     },
     {
       "icon": "../assets/features/safety.png",
@@ -13,14 +13,15 @@
       "link": "workplace-safety"
     },
     {
+      "icon": "../assets/features/security.png",
+      "name": "Güvenlik",
+      "link": "security"
+    },
+
+    {
       "icon": "../assets/features/efficiency.png",
       "name": "operasyonel mükemmellik",
       "link": "operational-excellence"
-    },
-    {
-      "icon": "../assets/features/sales-marketing.png",
-      "name": "Satış ve Pazarlama",
-      "link": "retail"
     }
   ]
 }
