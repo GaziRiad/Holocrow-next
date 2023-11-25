@@ -1,0 +1,267 @@
+{
+  "featuresSection": {
+    "heading": "Get better",
+    "text": "by seamlessly integrating with existing cameras in facilities",
+    "features": [
+      {
+        "icon": "../assets/features/security.png",
+        "name": "Security"
+      },
+      {
+        "icon": "../assets/features/safety.png",
+        "name": "Workplace-Safety"
+      },
+      {
+        "icon": "../assets/features/efficiency.png",
+        "name": "OPERATIONAL EXCELLENCE"
+      },
+      {
+        "icon": "../assets/features/sales-marketing.png",
+        "name": "RETAIL & FMCG"
+      }
+    ]
+  },
+
+  "statics": [
+    { "title": "Active Users", "number": "+1k" },
+    { "title": "CONNECTED CAMERAS", "number": "+7500" },
+    { "title": "images generated", "number": "2B Per min" }
+  ],
+
+  "howItWorksSection": {
+    "heading": "How does Holocrow work?",
+    "patternImg": "../assets/homeimgs/how-it-work-pattern.png",
+    "steps": [
+      {
+        "img": "../assets/homeimgs/how-it-work-main-1.png",
+        "text": {
+          "title": "1. Connect Your Existing CCTVs To Holocrow",
+          "desc": "You don't need to purchase new cameras, equipment, or anything else! Holocrow works with your existing cameras, rega rdless of the model. Moreover, connecting it is quite easy. It's plug and play."
+        }
+      },
+      {
+        "img": "../assets/homeimgs/how-it-work-main-3.png",
+        "text": {
+          "title": "2. Select what you want to track",
+          "desc": "Select the things you want to track with a single click from the dropdown menu."
+        }
+      },
+      {
+        "img": "../assets/homeimgs/how-it-work-main-3.png",
+        "text": {
+          "title": "3. Start getting live alerts & reports",
+          "desc": "Start receiving notifications and reports instantly. It's that simple!"
+        }
+      }
+    ]
+  },
+
+  "slidersSection": {
+    "heading": " Empower Your CCTV:",
+    "subHeading": "No Installation - Just Click and Use",
+    "sliders": [
+      {
+        "heading": "security",
+        "slides": [
+          {
+            "icon": "../assets/icons/9.png",
+            "title": "Restricted Area Control",
+            "text": "Watch your assets with only true alarms according to your security rule."
+          },
+          {
+            "icon": "../assets/icons/8.png",
+            "title": "Vehicle Identification",
+            "text": "Access control of vehicles with their plate and other features to prevent violation and fraud."
+          },
+          {
+            "icon": "../assets/icons/17.png",
+            "title": "Suspicious Item Detection",
+            "text": "Detect doubtful attitudes and potential harmful objects, bags, box etc. to secure your area."
+          },
+          {
+            "icon": "../assets/icons/5.png",
+            "title": "Crowd Analysis",
+            "text": "Analyze crowd dynamics to manage large gatherings effectively. Monitor crowd density, flow, and behavior to ensure safety and optimize space utilization."
+          },
+          {
+            "icon": "../assets/icons/12.png",
+            "title": "Facial Recognition",
+            "text": "Enhance security with accurate facial recognition for identity verification."
+          },
+          {
+            "icon": "../assets/icons/6.png",
+            "title": "Behavioral Analysis",
+            "text": "Identify suspicious behaviors through advanced motion and activity analysis."
+          },
+          {
+            "icon": "../assets/icons/25.png",
+            "title": "Surveillance and Real-time Analysis",
+            "text": "Implement real-time video surveillance for immediate incident response and security."
+          }
+        ]
+      },
+      {
+        "heading": "Workplace Safety",
+        "slides": [
+          {
+            "icon": "../assets/icons/1.png",
+            "title": "PPE",
+            "text": "Control proper PPE usage of staff to minimize effects on them from work accidents."
+          },
+          {
+            "icon": "../assets/icons/2.png",
+            "title": "Machine Interactions",
+            "text": "Poor machine usage can cause serious injuries. Watch out and block accidents with real-time warnings to protect your staff and business."
+          },
+          {
+            "icon": "../assets/icons/15.png",
+            "title": "Housekeeping",
+            "text": "Injuries due to inadequate housekeeping are entirely avoidable. Prompt identification leads to swift rectification and the prevention of harm."
+          },
+          {
+            "icon": "../assets/icons/11.png",
+            "title": "Ergonomy Control",
+            "text": "Monitor ergonomic practices of staff to prevent work-related musculoskeletal disorders and enhance workplace safety."
+          },
+          {
+            "icon": "../assets/icons/13.png",
+            "title": "Handrail Usage",
+            "text": "Automatically detect and encourage proper use of handrails in critical areas to prevent falls and injuries."
+          },
+          {
+            "icon": "../assets/icons/22.png",
+            "title": "Area Controls",
+            "text": "Manage access to restricted or hazardous areas through visual identification and control systems."
+          },
+          {
+            "icon": "../assets/icons/23.png",
+            "title": "Vehicle Control",
+            "text": "Oversee and regulate vehicle movement within premises to prevent accidents and ensure safety compliance."
+          },
+          {
+            "icon": "../assets/icons/24.png",
+            "title": "Man-down Detection",
+            "text": "Instantly detect and respond to incidents where staff are incapacitated or in distress for rapid assistance."
+          }
+        ]
+      },
+      {
+        "heading": "Retail & FMCG",
+        "slides": [
+          {
+            "icon": "../assets/icons/19.png",
+            "title": "Visitor Counting",
+            "text": "Count unique visitors using anonymous IDs, excluding staff, to gauge the potential of your stores."
+          },
+          {
+            "icon": "../assets/icons/20.png",
+            "title": "Demographic Targeting",
+            "text": "Get the demographic diversity of your visitors to implement the correct segmentation."
+          },
+          {
+            "icon": "../assets/icons/3.png",
+            "title": "A/B Testing",
+            "text": "Understand customers' choices on your new products in a quick way."
+          },
+          {
+            "icon": "../assets/icons/14.png",
+            "title": "Heatmap & Footfall",
+            "text": "Analyze customer movement patterns and store hotspots to optimize layout and product placement."
+          },
+          {
+            "icon": "../assets/icons/4.png",
+            "title": "Product Engagement Analysis",
+            "text": "Monitor customer interactions with products to gain insights into preferences and engagement levels."
+          },
+          {
+            "icon": "../assets/icons/16.png",
+            "title": "Inventory & Stock Control",
+            "text": "Automate inventory tracking and maintain optimal stock levels using real-time visual data analysis."
+          }
+        ]
+      },
+      {
+        "heading": "Operational Excellence",
+        "slides": [
+          {
+            "icon": "../assets/icons/21.png",
+            "title": "Stock Controls",
+            "text": "Count or measure your stocks by CCTV."
+          },
+          {
+            "icon": "../assets/icons/7.png",
+            "title": "Patterns & Colours Check",
+            "text": "Analyze visibility of product has been produced over streams and images to approve quality assurance."
+          },
+          {
+            "icon": "../assets/icons/10.png",
+            "title": "Operational Excellence",
+            "text": "Detect and track every single step of your operations to analyze processes open to improvement."
+          },
+          {
+            "icon": "../assets/icons/26.png",
+            "title": "Staff Efficiency Analysis",
+            "text": "Enhance workforce productivity by analyzing staff movements and activities using video data."
+          },
+          {
+            "icon": "../assets/icons/27.png",
+            "title": "Packaging Control",
+            "text": "Ensure accuracy and quality in packaging by visually inspecting for conformity and detecting anomalies."
+          }
+        ]
+      }
+    ]
+  },
+
+  "platformDetails": {
+    "heading": "New user-friendly platform",
+    "content": [
+      {
+        "img": "../assets/homeimgs/platformOverView/Plug-Use and Alarms.png",
+        "title": "Plug & Use",
+        "text": "The moment you register and introduce your cameras to Holocrow, you start using the platform. All models of cameras & CCTVs can be connected. From the dedicated page for devices, you can easily view and control the connection status of the devices."
+      },
+      {
+        "img": "../assets/homeimgs/platformOverView/Plug-Use and Alarms.png",
+        "title": "Alerts & Notifications",
+        "text": "Instant alerts and notifications are of vital importance in the solutions you'll use, especially in the fields of workplace safety and security. Holocrow sends instant notifications to relevant departments in risky situations."
+      },
+      {
+        "img": "../assets/homeimgs/platformOverView/Visual.png",
+        "title": "Visual Reports & Analytics",
+        "text": "The collected data is automatically visualized and made as understandable and interpretable as possible. You can view all the reports and data on a weekly, monthly, yearly basis, or for a date range you determine."
+      },
+      {
+        "img": "../assets/homeimgs/platformOverView/Guides.png",
+        "title": "Detailed Guides",
+        "text": "While we take pride in creating the most user-friendly platform, you can find our guides, which will allow you to get instant answers to any questions that might arise, in the Help Center section whenever you want."
+      },
+      {
+        "img": "../assets/homeimgs/platformOverView/helpdesk.png",
+        "title": "Helpdesk",
+        "text": "If you have different questions that might come to your mind, you can immediately reach out to HelpDesk and get assistance from our expert team."
+      }
+    ]
+  },
+  "testimonialsSection": {
+    "heading": "Testimonials",
+    "testimonials": [
+      {
+        "id": 1,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        "id": 2,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        "id": 3,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        "id": 4,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      }
+    ]
+  }
+}

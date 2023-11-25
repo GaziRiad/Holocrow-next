@@ -1,0 +1,116 @@
+{
+  "heroImg": "../assets/Solutions/SecurityHero.png",
+  "heroHeading": "Güvenlik",
+  "subHero": ["Her zaman", "Milyar Saat Eğitim", "Güvenlik görevlisi"],
+  "firstSection": {
+    "content": [
+      {
+        "img": "/assets/Solutions/img-1.jpg",
+        "title": "Anlık Uyarılar",
+        "text": "Kapsamlı video sahne analizi ile şüpheli durumlarda anında uyarı alın ve yanlış alarmları %90 azaltın."
+      },
+      {
+        "img": "/assets/Solutions/img-2.jpg",
+        "title": "Hızlı Soruşturmalar",
+        "text": "Öğenin göründüğü her video örneğini etkili bir şekilde bulmak için öğelerin görsel özelliklerinden yararlanın."
+      },
+      {
+        "img": "/assets/Solutions/img-3.jpg",
+        "title": "Veri goruntuleme",
+        "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
+      }
+    ]
+  },
+
+  "productsSection": {
+    "heading": "İZLEMENİN ÖTESİNDE",
+    "subHeading": "Tüm güvenlik ürünlerimizi görün",
+    "content": [
+      {
+        "icon": "/assets/icons/9.png",
+        "title": "Kısıtlı Alan Kontrolü",
+        "text": "Varlıklarınızı güvenlik kuralınıza göre yalnızca gerçek alarmlarla izleyin."
+      },
+      {
+        "icon": "/assets/icons/8.png",
+        "title": "Ruhsat",
+        "text": "Araçların plakası ve diğer özellikleriyle ihlal ve dolandırıcılığın önlenmesi amacıyla erişim kontrolü."
+      },
+      {
+        "icon": "/assets/icons/17.png",
+        "title": "Şüpheli Öğe Tespiti",
+        "text": "Bölgenizi güvence altına almak için şüpheli tutumları ve potansiyel zararlı nesneleri, çantaları, kutuları vb. tespit edin."
+      },
+      {
+        "icon": "/assets/icons/5.png",
+        "title": "Kalabalık Analizi",
+        "text": "Büyük toplantıları etkili bir şekilde yönetmek için kalabalık dinamiklerini analiz edin. Güvenliği sağlamak ve alan kullanımını optimize etmek için kalabalık yoğunluğunu, akışını ve davranışını izleyin."
+      },
+      {
+        "icon": "/assets/icons/12.png",
+        "title": "Yüz tanıma",
+        "text": "Kimlik doğrulama için doğru yüz tanıma özelliğiyle güvenliği artırın."
+      },
+      {
+        "icon": "/assets/icons/6.png",
+        "title": "Davranış Analizi",
+        "text": "Gelişmiş hareket ve etkinlik analizi yoluyla şüpheli davranışları belirleyin."
+      },
+      {
+        "icon": "/assets/icons/25.png",
+        "title": "Surveillance and Real-time Analysis",
+        "text": "Implement real-time video surveillance for immediate incident response and security."
+      }
+    ]
+  },
+
+  "thirdSection": {
+    "heading": "Özel Veri Toplama",
+    "content": {
+      "img": "/assets/Solutions/data-collection.jpg",
+      "text": "Holocrow, işlediğimiz görsel içeriklerden hiçbir zaman kişisel kimlik bilgilerini toplamaz. Öncelikli hedefimiz insanların gizliliğini korurken güvenliği artırmaktır."
+    }
+  },
+
+  "sliderSection": {
+    "heading": "endüstriler",
+    "slides": [
+      {
+        "title": "Retail:",
+        "img": "/assets/Solutions/industriesSlider/Retail-min.jpg"
+      },
+      {
+        "title": "Banking and Finance:",
+        "img": "/assets/Solutions/industriesSlider/banking.jpg"
+      },
+      {
+        "title": "Transports & Logistics:",
+        "img": "/assets/Solutions/industriesSlider/Transportation - Logistics-min.jpg"
+      },
+      {
+        "title": "Healthcare:",
+        "img": "/assets/Solutions/industriesSlider/Healthcare-min.JPG"
+      },
+      {
+        "title": "Manufacturing:",
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg"
+      },
+      {
+        "title": "Public Security:",
+        "img": "/assets/Solutions/industriesSlider/public-security.jpg"
+      },
+      {
+        "title": "Airports & Transports Hubs:",
+        "img": "/assets/Solutions/industriesSlider/Airport-min.jpg"
+      },
+      {
+        "title": "Hospitality:",
+        "img": "/assets/Solutions/industriesSlider/hospitality-min.jpg"
+      },
+      {
+        "title": "Smart Cities:",
+        "img": "/assets/Solutions/industriesSlider/smart cities-min.jpg"
+      }
+    ]
+  }
+}
