@@ -39,7 +39,7 @@ function HowItWorks({ content }) {
               transition={{ ease: "easeOut", duration: 0.5 }}
               viewport={{ once: true }}
               src={step.img}
-              className=" w-2/3 lg:w-1/2 mx-auto z-20 rounded-2xl"
+              className=" w-2/3 lg:w-1/2 mx-auto z-20 rounded-2xl "
             />
           </div>
         ))}
