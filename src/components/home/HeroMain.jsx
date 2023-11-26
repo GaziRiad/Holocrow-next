@@ -42,13 +42,10 @@ function HeroMain() {
 
   return (
     <>
-      <section
-        ref={heroRef}
-        className={`h-screen w-full cursor-pointer mb-8 lg:mb-44`}
-        onClick={() => setIsPlaying(true)}
-      >
+      <section ref={heroRef} className={`h-screen w-full mb-8 lg:mb-44`}>
         <video
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center cursor-pointer"
+          onClick={() => setIsPlaying(true)}
           muted
           loop
           autoPlay
@@ -69,7 +66,6 @@ function HeroMain() {
           <Navigation content={navigation} sticky={sticky} home={true} />
         </header>
 
-        {/* VID OVERLAY */}
         <div className="absolute top-[25%] left-1/2 -translate-x-[50%] flex flex-col gap-8 text-white text-4xl items-center font-extrabold lg:top-[40%] xl:left-1/2 xl:gap-28 xl:text-6xl 2xl:text-8xl lg:flex-row">
           <p>Beyond</p>
           <img
