@@ -44,7 +44,7 @@
         }
       },
       {
-        "img": "../assets/homeimgs/how-it-work-main-3.png",
+        "img": "../assets/homeimgs/how-it-work-main-2.png",
         "text": {
           "title": "2. Select what you want to track",
           "desc": "Select the things you want to track with a single click from the dropdown menu."
@@ -226,7 +226,7 @@
         "text": "The moment you register and introduce your cameras to Holocrow, you start using the platform. All models of cameras & CCTVs can be connected. From the dedicated page for devices, you can easily view and control the connection status of the devices."
       },
       {
-        "img": "../assets/homeimgs/platformOverView/Plug-Use and Alarms.png",
+        "img": "../assets/homeimgs/platformOverView/Alarms.png",
         "title": "Alerts & Notifications",
         "text": "Instant alerts and notifications are of vital importance in the solutions you'll use, especially in the fields of workplace safety and security. Holocrow sends instant notifications to relevant departments in risky situations."
       },
