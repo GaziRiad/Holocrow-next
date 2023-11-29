@@ -290,3 +290,14 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   transition: background-color 0.3s ease; /* Add a transition for a smoother effect */
 }
+
+.howItWorksSlider {
+  --swiper-pagination-color: #ffb800;
+}
+
+.howItWorksSlider .swiper-button-next,
+.howItWorksSlider .swiper-button-prev {
+  --swiper-navigation-size: 32px;
+  color: #ffb800; /* Set the text color */
+  padding: 22px;
+}

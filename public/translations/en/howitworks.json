@@ -86,6 +86,29 @@
     }
   ],
 
+  "stepsSection": [
+    {
+      "title": "Signup to Holocrow",
+      "text": "Click on the signup button and insert your information.",
+      "img": "/assets/HowItWorksPage/slider/step-1.png"
+    },
+    {
+      "title": "Connect CTTVs",
+      "text": "Holocrow works compatibly with all CCTV brands and models. You can add or remove a camera whenever you want.",
+      "img": "/assets/HowItWorksPage/slider/step-2.png"
+    },
+    {
+      "title": "Select your products",
+      "text": "You can choose products as you wish based on the things you want to follow. Your payment plan will be automatically created based on your selections. You can make changes to the products you use whenever you want.",
+      "img": "/assets/HowItWorksPage/slider/step-3.png"
+    },
+    {
+      "title": "See The Beyond",
+      "text": "Whenever you wish, you can access automatic reports and notifications through app.holocrow, and enjoy seeing more",
+      "img": "/assets/HowItWorksPage/slider/step-4.png"
+    }
+  ],
+
   "trustedBySection": {
     "heading": "We make them see the beyond.",
     "companies": [
