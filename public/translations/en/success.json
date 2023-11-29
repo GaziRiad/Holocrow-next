@@ -1,36 +1,57 @@
 {
   "stories": [
     {
+      "clientName": "Directorate of Forestry",
+      "location": "Turkey",
+      "date": "2017",
       "text": "The Directorate of Forestry in Türkiye used photo-capture devices across the country to protect forests from illegal activities and theft. Initially, these devices weren't centrally managed and used various email types for sending data, which was inefficient. After implementing Holocrow Enterprise, a centralized system with a standard sender address structure was established. This system transformed into an IoT platform for managing 4,000 devices, treating each as an individual 'thing.' With asynchronous architecture, it efficiently handles data capturing and processing using AI. If any real object (like humans, animals, or vehicles if vehicle then type, plate number, make-model, and color) is detected, the system sends an alert with proof snapshots to the relevant staff via email.",
       "img": "/assets/successStories/img1.png",
       "logo": "/assets/successStories/logos/logo1.png"
     },
     {
+      "clientName": "Istanbul Metropolitan Municipality",
+      "location": "İstanbul",
+      "date": "2019",
       "text": "Istanbul is a sprawling metropolis, and the Metropolitan Municipality, making up more than 40% of the city, utilizes over 100,000 cameras to monitor its assets and manage operations. Holocrow Enterprise operates to provide digitized data for various purposes, including visitor analytics, crowd analysis, passenger counting, parking space availability and violation tracking, garbage detection, and the identification of fire, smoke, and water levels. This is achieved by analyzing 2,500 cameras simultaneously, feeding valuable data into smart city platforms.",
       "img": "/assets/successStories/img1.png",
       "logo": "/assets/successStories/logos/logo2.png"
     },
     {
+      "clientName": "Unilever",
+      "location": "International",
+      "date": "2020",
       "text": "1,100 IP cameras across Turkey are integrated with the Holocrow Cloud platform, specifically for monitoring Algida horizontal freezer cabinets. The system detects ice cream products that are taken or left in the cabinet. When the sold quantity reaches half of the box's threshold, an automatic order for the relevant SKU type is generated, triggering Unilever's ERP system. Additionally, by analyzing hand movements, a heatmap is created for each cabinet. This selling data is then combined with the heatmap data, providing valuable insights into consumer behavior at the point of sale.",
       "img": "/assets/successStories/img1.png",
       "logo": "/assets/successStories/logos/logo3.svg"
     },
     {
+      "clientName": "Arvato",
+      "location": "International",
+      "date": "2023",
       "text": "In order to monitor packaging operations, 16 IP cameras are connected to the Holocrow Enterprise system. These cameras detect raw boxes and track their movement onto the automation belt. The system analyzes operation progress trends, and this data is utilized to plan future packaging operations.",
       "img": "/assets/successStories/img1.png",
       "logo": "/assets/successStories/logos/logo4.jpg"
     },
     {
+      "clientName": "Mersin International Port",
+      "location": "Mersin / Türkiye",
+      "date": "2023",
       "text": "There are over 600 IP cameras at Mersin International Port, and initially, 20 of them will be integrated with Holocrow Enterprise to detect WHS & OHS-related violations, particularly those involving machine-to-machine or human-machine interactions. Prohibited areas will be established in each scene by defining virtual zones. By selecting the desired analytics for each zone, Holocrow Enterprise will be capable of reporting violations with proof snapshots and generating alerts for operational teams.",
       "img": "/assets/successStories/img1.png",
       "logo": "/assets/successStories/logos/logo5.svg"
     },
     {
+      "clientName": "North Marmara Autobahn",
+      "location": "Bursa / Türkiye",
+      "date": "2023",
       "text": "KMO provides over 450 km of high-quality autobahn service through numerous tunnels and bridges. Currently, 206 IP cameras are used to operate all roads. In the initial phase, 70 of these cameras will be integrated with Holocrow Enterprise to detect vehicles stopping, moving in the reverse direction, and foreign objects. This will minimize accident risks and enable road users, including drivers and passengers, to receive a higher quality service more promptly.",
       "img": "/assets/successStories/img1.png",
       "logo": "/assets/successStories/logos/logo6.png"
     },
     {
+      "clientName": "Vodafone",
+      "location": "International",
+      "date": "2023",
       "text": "In Q1 of 2024, 855 IP cameras will be connected to the Holocrow Cloud platform for visitor analytics in Vodafone stores across Türkiye. Additionally, 4,275 IP cameras will be installed for showcase and planogram validation. Through these implementations, Vodafone will be able to create campaigns and track their effectiveness with accurate, digitized data, providing insights into visitor demographics.",
       "img": "/assets/successStories/img1.png",
       "logo": "/assets/successStories/logos/logo7.png"

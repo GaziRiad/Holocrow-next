@@ -12,6 +12,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 //
 import enSuccess from "../../../public/translations/en/success.json";
 import trSuccess from "../../../public/translations/tr/success.json";
+import { useState } from "react";
 const translations = {
   en: enSuccess,
   tr: trSuccess,
@@ -20,10 +21,11 @@ const translations = {
 function SuccessStories() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];
+  const [currStory, setCurrStory] = useState(1);
 
   return (
     <div className="mb-24">
-      <section className="relative h-screen mb-12 sm:mb-24 md:mb-12 xl:mb-4">
+      <section className="relative h-screen mb-12 sm:mb-24 md:mb-12 xl:-mb-8">
         <Hero herobg="hero-solutions" noPattern={true} />
         <div className="absolute top-0 w-full h-full">
           <Swiper
@@ -35,40 +37,48 @@ function SuccessStories() {
             effect="coverflow"
             centeredSlides
             initialSlide={1}
-            // onSlideChange={(swiper) => handleSlideChange(swiper)}
+            onSlideChange={(swiper) => {
+              setCurrStory(swiper.activeIndex);
+            }}
             className="storiesSlider w-[95%] absolute top-[40%] -translate-y-1/3 sm:top-[40%] md:top-[35%] lg:w-[80%] xl:top-[45%] xl:w-[65%] shadow-2xl rounded-2xl h-[80%] md:h-[60%]"
           >
-            {content.stories.map((story, index) => (
-              <SwiperSlide
-                className={`transition-transform duration-300 transform`}
-                key={index}
-              >
-                <div className="bg-white/50 h-full flex flex-col items-center justify-center gap-2 px-6 py-6 xl:flex-row xl:p-10 2xl:p-20 2xl:gap-20">
-                  <div className="xl:w-1/2">
-                    <p className="">{story.text}</p>
+            {content.stories.map((story, index) => {
+              // setCurrStory(index);
+              return (
+                <SwiperSlide
+                  className={`transition-transform duration-300 transform`}
+                  key={index}
+                >
+                  <div className="bg-white/50 h-full flex flex-col items-center justify-center gap-2 px-6 py-6 xl:flex-row xl:p-10 2xl:p-20 2xl:gap-20">
+                    <div className="xl:w-1/2">
+                      <p className="">{story.text}</p>
+                    </div>
+                    <div className=" flex flex-col items-center justify-center gap-6 h-full xl:w-1/2">
+                      {/* <img src={story.img} /> */}
+                      {/* <div className="h-44 w-full"></div> */}
+                      <img
+                        src={story.logo}
+                        className="w-32 h-36"
+                        alt={story.text}
+                      />
+                    </div>
                   </div>
-                  <div className=" flex flex-col items-center justify-center gap-6 h-full xl:w-1/2">
-                    {/* <img src={story.img} /> */}
-                    {/* <div className="h-44 w-full"></div> */}
-                    <img
-                      src={story.logo}
-                      className="w-32 h-36"
-                      alt={story.text}
-                    />
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </section>
       <section className=" flex flex-col items-center justify-center">
         <p className=" text-primary text-3xl font-semibold mb-4">
-          Directorate of Forestry
+          {content.stories[currStory].clientName}
         </p>
         <p className=" flex items-center justify-center">
           <span className="text-3xl">{"{"}</span>
-          <span className="px-2 text-lg lg:text-xl">2017 / Turkey</span>
+          <span className="px-2 text-lg lg:text-xl">
+            {content.stories[currStory].date}{" "}
+            {content.stories[currStory].location}
+          </span>
           <span className="text-3xl">{"}"}</span>
         </p>
       </section>
