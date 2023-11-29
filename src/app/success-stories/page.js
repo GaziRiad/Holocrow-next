@@ -25,7 +25,7 @@ function SuccessStories() {
 
   return (
     <div className="mb-24">
-      <section className="relative h-screen mb-12 sm:mb-24 md:mb-12 xl:-mb-8">
+      <section className="relative h-screen mb-12 sm:mb-24 md:-mb-32 xl:-mb-20">
         <Hero herobg="hero-solutions" noPattern={true} />
         <div className="absolute top-0 w-full h-full">
           <Swiper
@@ -76,7 +76,8 @@ function SuccessStories() {
         <p className=" flex items-center justify-center">
           <span className="text-3xl">{"{"}</span>
           <span className="px-2 text-lg lg:text-xl">
-            {content.stories[currStory].date}{" "}
+            {content.stories[currStory].date}
+            {" / "}
             {content.stories[currStory].location}
           </span>
           <span className="text-3xl">{"}"}</span>
