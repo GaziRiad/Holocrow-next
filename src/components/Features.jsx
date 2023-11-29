@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Feature from "./Feature";
 import Heading from "./Heading";
 
@@ -20,7 +21,9 @@ function Features({ content }) {
       </Heading>
       <div className="flex items-center justify-center gap-8 flex-wrap mb-10  ">
         {content.featuresSection.features.map((feature) => (
-          <Feature key={feature.name} name={feature.name} src={feature.icon} />
+          <Link href={`/solutions/${feature.link}`} key={feature.name}>
+            <Feature name={feature.name} src={feature.icon} />
+          </Link>
         ))}
       </div>
 
