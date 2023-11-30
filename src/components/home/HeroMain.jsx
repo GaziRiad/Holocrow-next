@@ -83,7 +83,7 @@ function HeroMain() {
           <Socials />
         </span>
 
-        <HeroPattern />
+        <HeroPattern sticky={sticky} />
       </section>
       {isPlaying && (
         <div className=" absolute top-0 left-0 w-full h-screen z-50 animate-fade animate-duration-[600ms] animate-delay-0 animate-ease-in">

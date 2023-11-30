@@ -90,7 +90,14 @@ function SignupForm({ step, setStep }) {
       )}
 
       <div className="flex items-center justify-between">
-        <Button type="navigation">{step === 1 ? "Next" : "sign up"}</Button>
+        <Button
+          type="signup"
+          onClick={() => {
+            step === 1 ? setStep(2) : setStep(1);
+          }}
+        >
+          {step === 1 ? "Next" : "sign up"}
+        </Button>
       </div>
     </form>
   );

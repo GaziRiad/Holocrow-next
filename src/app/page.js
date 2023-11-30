@@ -22,7 +22,7 @@ export default function Home() {
   const content = translations[activeLanguage];
 
   return (
-    <>
+    <div>
       <HeroMain />
       <Features content={content} />
       <Statics content={content} />
@@ -31,6 +31,9 @@ export default function Home() {
       <PlatformOverview content={content} />
       <Testimonials content={content} />
       <MainFooter />
-    </>
+      {/* <div className="fixed bottom-0 right-0 z-50">
+        <img src="/assets/blob.svg" className="w-80" />
+      </div> */}
+    </div>
   );
 }

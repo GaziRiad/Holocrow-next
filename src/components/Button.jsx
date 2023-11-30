@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function Button({ children, type = "medium", to = "" }) {
+function Button({ children, type = "medium", to = "", onClick }) {
   if (type === "mobile-navigation")
     return (
       <Link
@@ -40,6 +40,17 @@ function Button({ children, type = "medium", to = "" }) {
         {children}
       </Link>
     );
+
+  if (type === "signup") {
+    return (
+      <button
+        onClick={onClick}
+        className={`rounded-full shadow-sm uppercase tracking-wider bg-primary text-white text-center font-secondary font-semibold px-8 py-2`}
+      >
+        {children}
+      </button>
+    );
+  }
 }
 
 export default Button;
