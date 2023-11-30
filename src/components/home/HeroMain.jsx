@@ -45,7 +45,10 @@ function HeroMain() {
       <section ref={heroRef} className={`h-screen w-full mb-8 lg:mb-44`}>
         <video
           className="w-full h-full object-cover object-center cursor-pointer"
-          onClick={() => setIsPlaying(true)}
+          onClick={() => {
+            window.scrollTo({ top: 0 });
+            setIsPlaying(true);
+          }}
           muted
           loop
           autoPlay
