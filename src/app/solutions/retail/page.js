@@ -12,6 +12,8 @@ import { motion } from "framer-motion";
 //
 import enRetail from "../../../../public/translations/en/retail.json";
 import trRetail from "../../../../public/translations/tr/retail.json";
+import OtherSolutions from "@/components/OtherSolutions";
+
 const translations = {
   en: enRetail,
   tr: trRetail,
@@ -36,7 +38,7 @@ function Retail() {
         initial={{ opacity: 0, translateY: 150 }}
         whileInView={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 0.5 }}
-        className="container mx-auto mb-12 px-10 lg:px-0 lg:mb-40 xl:px-4"
+        className="container mx-auto mb-12 px-10 lg:px-0 lg:mb-52 xl:px-4"
       >
         <Heading type="h2" style="lg:!text-left">
           {content.thirdSection.heading}
@@ -55,6 +57,7 @@ function Retail() {
       </motion.section>
 
       {/* <SwipingSlider content={content.sliderSection} /> */}
+      <OtherSolutions content={content} />
 
       <MainFooter />
     </>

@@ -42,7 +42,7 @@ function HowItWorks() {
       <HowDoesItWork content={content} />
       <Heading type="tag">#BeyondWatching</Heading>
       <CardsSection content={content} />
-      <section>
+      <section className="container mx-auto">
         <Swiper
           slidesPerView={1}
           // style={getStyleForBreakpoint()}

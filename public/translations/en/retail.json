@@ -78,5 +78,22 @@
         "img": "/assets/Solutions/industriesSlider/industry2.png **"
       }
     ]
-  }
+  },
+  "features": [
+    {
+      "icon": "../assets/features/safety.png",
+      "name": "Workplace Safety",
+      "link": "workplace-safety"
+    },
+    {
+      "icon": "../assets/features/security.png",
+      "name": "Security",
+      "link": "security"
+    },
+    {
+      "icon": "../assets/features/efficiency.png",
+      "name": "OPERATIONAL EXCELLENCE",
+      "link": "operational-excellence"
+    }
+  ]
 }

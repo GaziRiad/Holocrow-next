@@ -130,5 +130,22 @@
         "text": "In smart cities, Computer Vision contributes to urban surveillance, traffic flow monitoring, and incident detection, enhancing overall city safety and efficiency."
       }
     ]
-  }
+  },
+  "features": [
+    {
+      "icon": "../assets/features/sales-marketing.png",
+      "name": "RETAIL & FMCG",
+      "link": "retail"
+    },
+    {
+      "icon": "../assets/features/safety.png",
+      "name": "Workplace Safety",
+      "link": "workplace-safety"
+    },
+    {
+      "icon": "../assets/features/efficiency.png",
+      "name": "OPERATIONAL EXCELLENCE",
+      "link": "operational-excellence"
+    }
+  ]
 }

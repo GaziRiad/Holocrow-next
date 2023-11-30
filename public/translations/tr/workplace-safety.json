@@ -141,5 +141,22 @@
         "text": "For energy and utility companies, Computer Vision is crucial in monitoring the condition of infrastructure and ensuring that safety procedures are followed, especially in high-risk environments like power plants."
       }
     ]
-  }
+  },
+  "features": [
+    {
+      "icon": "../assets/features/sales-marketing.png",
+      "name": "RETAIL & FMCG",
+      "link": "retail"
+    },
+    {
+      "icon": "../assets/features/security.png",
+      "name": "Security",
+      "link": "security"
+    },
+    {
+      "icon": "../assets/features/efficiency.png",
+      "name": "OPERATIONAL EXCELLENCE",
+      "link": "operational-excellence"
+    }
+  ]
 }

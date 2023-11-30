@@ -13,6 +13,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 //
 import enOperational from "../../../../public/translations/en/operational-excellence.json";
 import trOperational from "../../../../public/translations/tr/operational-excellence.json";
+import OtherSolutions from "@/components/OtherSolutions";
 const translations = {
   en: enOperational,
   tr: trOperational,
@@ -57,6 +58,7 @@ function OperationalExcellence() {
       </motion.section>
 
       <SwipingSlider content={content.sliderSection} />
+      <OtherSolutions content={content} />
 
       <MainFooter />
     </>

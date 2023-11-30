@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import enSecurity from "../../../../public/translations/en/security.json";
 import trSecurity from "../../../../public/translations/tr/security.json";
 import { useLanguage } from "@/contexts/LanguageContext";
+import OtherSolutions from "@/components/OtherSolutions";
 const translations = {
   en: enSecurity,
   tr: trSecurity,
@@ -57,7 +58,7 @@ function Security() {
       </motion.section>
 
       <SwipingSlider content={content.sliderSection} />
-
+      <OtherSolutions content={content} />
       <Footer icon="/assets/footer-img.png" />
     </>
   );

@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import enWorkplace from "../../../../public/translations/en/workplace-safety.json";
 import trWorkplace from "../../../../public/translations/en/workplace-safety.json";
 import { useLanguage } from "@/contexts/LanguageContext";
+import OtherSolutions from "@/components/OtherSolutions";
 const translations = {
   en: enWorkplace,
   tr: trWorkplace,
@@ -57,6 +58,7 @@ function WorkplaceSafety() {
       </motion.section>
 
       <SwipingSlider content={content.sliderSection} />
+      <OtherSolutions content={content} />
 
       <MainFooter />
     </>

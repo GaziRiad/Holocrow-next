@@ -101,6 +101,23 @@
         "subTitle": "Component Inspection and Safety Checks",
         "text": "In aerospace manufacturing, precision is paramount. Computer Vision assists in inspecting various components for defects and ensuring that safety standards are rigorously met."
       }
+    ],
+    "features": [
+      {
+        "icon": "../assets/features/sales-marketing.png",
+        "name": "RETAIL & FMCG",
+        "link": "retail"
+      },
+      {
+        "icon": "../assets/features/safety.png",
+        "name": "Workplace Safety",
+        "link": "workplace-safety"
+      },
+      {
+        "icon": "../assets/features/security.png",
+        "name": "Security",
+        "link": "security"
+      }
     ]
   }
 }
