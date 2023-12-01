@@ -23,8 +23,10 @@ function SuccessStories() {
   const content = translations[activeLanguage];
   const [currStory, setCurrStory] = useState(1);
 
+  console.log(content.stories[0].text.split("**"));
+
   return (
-    <div className="mb-24">
+    <div className="mb-24 text-black-800">
       <section className="relative h-screen mb-12 sm:mb-24 md:-mb-32 xl:-mb-20">
         <Hero herobg="hero-solutions" noPattern={true} />
         <div className="absolute top-0 w-full h-full">
@@ -43,7 +45,6 @@ function SuccessStories() {
             className="storiesSlider w-[95%] absolute top-[40%] -translate-y-1/3 sm:top-[40%] md:top-[35%] lg:w-[80%] xl:top-[45%] xl:w-[65%] shadow-2xl rounded-2xl h-[80%] md:h-[60%]"
           >
             {content.stories.map((story, index) => {
-              // setCurrStory(index);
               return (
                 <SwiperSlide
                   className={`transition-transform duration-300 transform`}
@@ -51,7 +52,17 @@ function SuccessStories() {
                 >
                   <div className="bg-white/50 h-full flex flex-col items-center justify-center gap-2 px-6 py-6 xl:flex-row xl:p-10 2xl:p-20 2xl:gap-20">
                     <div className="xl:w-1/2">
-                      <p className="">{story.text}</p>
+                      <p>
+                        {story.text.split("**").map((text, index) =>
+                          index % 2 === 0 ? (
+                            <span key={index}>{text}</span>
+                          ) : (
+                            <strong className="text-primary" key={index}>
+                              {text}
+                            </strong>
+                          )
+                        )}
+                      </p>
                     </div>
                     <div className=" flex flex-col items-center justify-center gap-6 h-full xl:w-1/2">
                       {/* <img src={story.img} /> */}
