@@ -29,7 +29,7 @@ export default function Home() {
       <HowItWorks content={content} />
       <SlidersSection content={content} />
       <PlatformOverview content={content} />
-      <Testimonials content={content} />
+      {/* <Testimonials content={content} /> */}
       <MainFooter />
       {/* <div className="fixed bottom-0 right-0 z-50">
         <img src="/assets/blob.svg" className="w-80" />
