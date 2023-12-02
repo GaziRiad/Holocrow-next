@@ -1,25 +1,10 @@
 {
   "heroImg": "../assets/hero-crow-img.png",
-  "navigation": {
-    "links": [
-      { "text": "Nasıl çalışır", "path": "/howitworks" },
-      { "text": "Endüstriler", "path": "" },
-      { "text": "Çözümler", "path": "/solutions" },
-      { "text": "Çözümler", "path": "" },
-      { "text": "Hakkımızda", "path": "" },
-      { "text": "Haberler", "path": "" }
-    ],
-    "languages": [
-      { "lang": "English", "attribute": "en" },
-      { "lang": "Turkish", "attribute": "tr" }
-    ]
-  },
-
   "subHero": [
     "Kurulum Yok",
-    "Donanım Yok",
-    "Sadece Tıklayın ve Kullanın",
-    "Mevcut Kameralarla"
+    "Ekstra Ekipman Yok",
+    "Mevcut Kameralar ile",
+    "Tıkla & Kullan"
   ],
 
   "howDoesItWorkSection": {
@@ -27,85 +12,103 @@
     "img": "../assets/HowItWorksPage/mac-intro.png",
     "features": [
       {
-        "icon": "../assets/icons/Certificate 1.png",
-        "text": "Ruhsat"
+        "icon": "../assets/icons/8.png",
+        "text": "Araç Tanımlama"
       },
+      { "icon": "../assets/icons/21.png", "text": "Stock Yönetimi" },
+      { "icon": "../assets/icons/1.png", "text": "PPE Kullanım Denetimi" },
       {
-        "icon": "../assets/icons/To-do-list 1.png",
-        "text": "Stok Kontrolleri"
-      },
-      { "icon": "../assets/icons/Enginerr 1.png", "text": "KKD Kontrolü" },
-      {
-        "icon": "../assets/icons/Protective Cloth 1.png",
+        "icon": "../assets/icons/18.png",
         "text": "Ergonomi Kontrolü"
       },
       {
-        "icon": "../assets/icons/Under Contruction 1.png",
-        "text": "Şüpheli Öğe Tespiti"
+        "icon": "../assets/icons/17.png",
+        "text": "Şüpheli Nesne Tespiti"
       },
-      { "icon": "../assets/icons/Structur 1.png", "text": "Ziyaretçi Sayma" }
+      { "icon": "../assets/icons/19.png", "text": "Ziyaretçi Sayımı" }
     ]
   },
 
   "cardsSection": [
     {
       "icon": "../assets/HowItWorksPage/security-icon.png",
-      "title": "Güvenlik",
+      "title": "İş Emniyeti",
       "options": [
-        "Kısıtlı Alan Kontrolü",
-        "Ruhsat",
-        "Şüpheli Öğe Tespiti",
+        "Sınırlandırılmış Alan Denetimi",
+        "Araç Tanımlama",
+        "Şüpheli Nesne Tespiti",
         "Kalabalık Analizi",
-        "Yüz tanıma",
+        "Yüz Tanımlama",
         "Davranış Analizi",
-        "Gözetim ve Gerçek Zamanlı Analiz"
+        "Gözetleme ve Gerçek Zamanlı Analiz"
       ]
     },
     {
       "icon": "../assets/HowItWorksPage/safety-icon.png",
-      "title": "Emniyet",
+      "title": "İş Güvenliği ve Sağlığı",
       "options": [
-        "KKD",
-        "Temizlik",
-        "İşyeri güvenliği",
-        "Makine Etkileşimleri",
-        "Yaya yolu",
+        "PPE Kullanım Denetimi",
+        "Bakım ve Temizlik",
+        "Workplace Safety",
+        "Makine Kullanımı",
+        "Pedestrian Path",
         "Ergonomi Kontrolü",
-        "Küpeşte Kullanımı",
-        "Alan Kontrolleri",
-        "Araç kontrol",
-        "Adam Düşmesi Tespiti"
+        "El Korkuluğu Kullanımı",
+        "Bölge Yönetimi",
+        "Taşıt Denetimi",
+        "Yere Düşen Kişi Algılama"
       ]
     },
     {
       "icon": "../assets/HowItWorksPage/marketing-icon.png",
-      "title": "Pazarlama",
+      "title": "Perakende & FMCG",
       "options": [
-        "Satış ve Pazarlama",
+        "Ziyaretçi Sayımı",
         "Demografik Hedefleme",
         "A/B Testi",
-        "Isı Haritası ve Yaya Sayısı",
+        "Isı Haritası & Footfall",
         "Ürün Etkileşim Analizi",
         "Envanter ve Stok Kontrolü"
       ]
     },
     {
       "icon": "../assets/HowItWorksPage/quality-control-icon.png",
-      "title": "Kalite kontrol",
+      "title": "Operasyonel Mükemmellik",
       "options": [
-        "Stok Kontrolleri",
-        "Yeterlik",
-        "Desen ve Renk Kontrolü",
-        "Operasyonel mükemmellik",
+        "Stok Yönetimi",
+        "Desen ve Renk Denetimi",
+        "Operasyonel Mükemmellik",
         "Personel Verimliliği Analizi",
-        "Operasyonel mükemmellik",
-        "Paketleme Kontrolü"
+        "Ambalaj Kontrolü"
       ]
     }
   ],
 
+  "stepsSection": [
+    {
+      "title": "Holocrow’a Kaydolun",
+      "text": "Kaydol butonuna tıklayın ve bilgilerinizi girin.",
+      "img": "/assets/HowItWorksPage/slider/step-1.png"
+    },
+    {
+      "title": "Kameralarınzı Bağlayın",
+      "text": "Holocrow, tüm CCTV marka ve modelleriyle uyumlu çalışır. İstediğiniz zaman bir kamerayı ekleyebilir veya çıkarabilirsiniz.",
+      "img": "/assets/HowItWorksPage/slider/step-2.png"
+    },
+    {
+      "title": "Ürünlerinizi Seçin",
+      "text": "Takip ve analiz etmek istediğiniz şeylere göre istediğiniz ürünleri seçin. Ödeme planınız seçimlerinize göre otomatik olarak oluşturulacaktır. Daha sonrasında kullandığınız ürünlerde istediğiniz zaman değişiklik yapabilirsiniz.",
+      "img": "/assets/HowItWorksPage/slider/step-3.png"
+    },
+    {
+      "title": "Ötesini Görün",
+      "text": "İstediğiniz zaman app.holocrow üzerinden otomatik raporlara ve bildirimlere erişin ve daha fazlasını görmenin keyfini çıkartın.",
+      "img": "/assets/HowItWorksPage/slider/step-4.png"
+    }
+  ],
+
   "trustedBySection": {
-    "heading": "Ötesini görmelerini sağlıyoruz.",
+    "heading": "Onlara da ötesini görmeleri sağlıyoruz.",
     "companies": [
       "../assets/HowItWorksPage/companies/image1.png",
       "../assets/HowItWorksPage/companies/image2.png",

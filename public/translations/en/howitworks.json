@@ -47,7 +47,7 @@
       "icon": "../assets/HowItWorksPage/safety-icon.png",
       "title": "Safety",
       "options": [
-        "PPE",
+        "PPE Control",
         "Housekeeping",
         "Workplace Safety",
         "Machine Interactions",
@@ -63,7 +63,6 @@
       "icon": "../assets/HowItWorksPage/marketing-icon.png",
       "title": "Marketing",
       "options": [
-        "Sales & Marketing",
         "Demographic Targeting",
         "A/B Testing",
         "Heatmap & Footfall",
@@ -76,9 +75,7 @@
       "title": "Quality Control",
       "options": [
         "Stock Controls",
-        "Efficiency",
         "Patterns & Colours Check",
-        "Operational Excellence",
         "Staff Efficiency Analysis",
         "Operational Excellence",
         "Packaging Control"
