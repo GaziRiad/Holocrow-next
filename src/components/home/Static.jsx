@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 function Static({ number, name }) {
-  const isImageStat = number.includes("min");
+  const isImageStat = number.includes("min") || number.includes("Dakikada");
   const displayedNum = isImageStat ? number.split(" ") : number;
 
   return (

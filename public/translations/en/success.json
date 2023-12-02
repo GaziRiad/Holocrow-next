@@ -22,7 +22,7 @@
       "date": "2020",
       "text": "**1,100 IP** cameras across Turkey are integrated with the Holocrow Cloud platform, specifically for monitoring **Algida** horizontal freezer cabinets. The system detects ice cream products that are taken or left in the cabinet. When the sold quantity reaches half of the box's threshold, an **automatic order** for the relevant SKU type is generated, **triggering Unilever's ERP system**. Additionally, by analyzing hand movements, a **heatmap is created for each cabinet**. This selling data is then combined with the heatmap data, providing valuable insights into consumer behavior at the point of sale.",
       "img": "/assets/successStories/img1.png",
-      "logo": "/assets/successStories/logos/logo3.svg"
+      "logo": "/assets/successStories/logos/logo3.png"
     },
     {
       "clientName": "Arvato",
@@ -30,7 +30,7 @@
       "date": "2023",
       "text": "In order to monitor packaging operations, **16 IP cameras** are connected to the Holocrow Enterprise system. These cameras detect raw boxes and track their movement onto the automation belt. The system **analyzes operation progress** trends, and this data is **utilized to plan future packaging operations**.",
       "img": "/assets/successStories/img1.png",
-      "logo": "/assets/successStories/logos/logo4.jpg"
+      "logo": "/assets/successStories/logos/logo4.png"
     },
     {
       "clientName": "Mersin International Port",

@@ -1,177 +1,216 @@
 {
-  "navigation": {
-    "links": [
-      { "text": "Nasıl çalışır", "path": "/howitworks" },
-      { "text": "Endüstriler", "path": "" },
-      { "text": "Çözümler", "path": "/solutions" },
-      { "text": "Başarı Öyküleri", "path": "" },
-      { "text": "Hakkımızda", "path": "" },
-      { "text": "Haberler", "path": "" }
-    ],
-    "languages": [
-      { "lang": "English", "attribute": "en" },
-      { "lang": "Turkish", "attribute": "tr" }
-    ]
-  },
-
   "featuresSection": {
-    "heading": "İyileşmek",
-    "text": "tesislerdeki mevcut kameralarla sorunsuz bir şekilde entegre edilerek",
+    "heading": "Daha iyi",
+    "text": "Tesislerdeki mevcut kameralarla sorunsuz entegrasyon",
     "features": [
       {
         "icon": "../assets/features/sales-marketing.png",
-        "name": "PERAKENDE & FMCG"
+        "name": "PERAKENDE & FMCG ",
+        "link": "retail"
       },
       {
         "icon": "../assets/features/safety.png",
-        "name": "İşyeri güvenliği"
+        "name": "İŞ SAĞLIĞI VE GÜVENLİĞİ",
+        "link": "workplace-safety"
       },
       {
         "icon": "../assets/features/security.png",
-        "name": "Güvenlik"
+        "name": "İŞ EMNİYETİ",
+        "link": "security"
       },
       {
         "icon": "../assets/features/efficiency.png",
-        "name": "OPERASYONEL MÜKEMMELLİK"
+        "name": "OPERASYONEL MÜKEMMELLİK",
+        "link": "operational-excellence"
       }
     ]
   },
 
   "statics": [
-    { "title": "Aktif Kullanıcılar", "number": "+1 bin" },
-    { "title": "BAĞLI KAMERALAR", "number": "+7500" },
-    { "title": "oluşturulan görüntüler", "number": "Dakikada 2B" }
+    { "title": "Aktif Kullanıcı", "number": "+1k" },
+    { "title": "Bağlı Kamera", "number": "+7500" },
+    { "title": "İşlenen Görüntü", "number": "2B Dakikada " }
   ],
 
   "howItWorksSection": {
-    "heading": "Holocrow nasıl çalışır?",
+    "heading": "Holocrow Nasıl Çalışır?",
     "patternImg": "../assets/homeimgs/how-it-work-pattern.png",
     "steps": [
       {
         "img": "../assets/homeimgs/how-it-work-main-1.png",
         "text": {
-          "title": "1. Mevcut CCTV'lerinizi Holocrow'a bağlayın",
-          "desc": "Yeni kamera, ekipman veya başka bir şey satın almanıza gerek yok! Holocron, modeli ne olursa olsun mevcut kameralarınızla çalışır. Üstelik bağlamak oldukça kolaydır. Tak ve çalıştır."
+          "title": "1. Mevcut Kameralarınızı Holocrow’a Bağlayın",
+          "desc": "Yeni kameralar, ekipmanlar veya herhangi bir farklı ekipman satın almanıza gerek yok! Holocrow, modeli veya tipi fark etmeksizin tüm kameralarınız ile çalışır. Ayrıca kemara ekleme işlemi oldukça basittir. Kısaca; “tak ve çalıştır.”"
         }
       },
       {
-        "img": "../assets/homeimgs/how-it-work-main-3.png",
+        "img": "../assets/homeimgs/how-it-work-main-2.png",
         "text": {
-          "title": "2. Neyi izlemek istediğinizi seçin",
+          "title": "2. Takip ve Analiz Etmek İstediklerinizi Seçin",
           "desc": "Takip etmek istediğiniz şeyleri açılır menüden tek tıklamayla seçin."
         }
       },
       {
         "img": "../assets/homeimgs/how-it-work-main-3.png",
         "text": {
-          "title": "3. Canlı uyarılar ve raporlar almaya başlayın",
-          "desc": "Bildirimleri ve raporları anında almaya başlayın. Bu kadar basit!"
+          "title": "3. Rapor ve Bildirimleri Almaya Başlayın",
+          "desc": "Bildirimleri ve raporları anında, Holocrow’un yeni kullanıcı dostu platformundan almaya başlayın. İşte bu kadar basit!"
         }
       }
     ]
   },
 
   "slidersSection": {
-    "heading": " CCTV'nizi güçlendirin:",
-    "subHeading": "Kurulum Yok - Sadece Tıklayın ve Kullanın",
+    "heading": "Kameralarınızı Güçlendirin:",
+    "subHeading": "Montaj Gerektirmez - Sadece Tıklayın ve Kullanın",
     "sliders": [
       {
-        "heading": "güvenlik",
+        "heading": "İş Emniyeti",
         "slides": [
           {
             "icon": "../assets/icons/9.png",
-            "title": "Kısıtlı Alan Kontrolü",
-            "text": "Varlıklarınızı güvenlik kuralınıza göre yalnızca gerçek alarmlarla izleyin."
+            "title": "Sınırlandırılmış Alan Denetimi",
+            "text": "Güvenlik kurallarınıza uygun şekilde ve yalnız doğru alarmlarla varlıklarınızı gözetleyin."
           },
           {
             "icon": "../assets/icons/8.png",
-            "title": "Ruhsat",
-            "text": "Araçların plakası ve diğer özellikleriyle ihlal ve dolandırıcılığın önlenmesi amacıyla erişim kontrolü."
+            "title": "Araç Tanımlama",
+            "text": "Araçların plaka ve diğer nitelikleriyle erişimlerini denetleyerek ihlallerin önüne geçin."
           },
           {
             "icon": "../assets/icons/17.png",
-            "title": "Şüpheli Öğe Tespiti",
-            "text": "Bölgenizi güvence altına almak için şüpheli tutumları ve potansiyel zararlı nesneleri, çantaları, kutuları vb. tespit edin."
+            "title": "Şüpheli Nesne Tespiti",
+            "text": "Alanın güvenliğini sağlamak için şüpheli tavırları ve potansiyel zararlı nesneleri, çantaları, kutuları vb. tespit edin."
           },
           {
-            "icon": "../assets/icons/9.png",
-            "title": "Kısıtlı Alan Kontrolü 2",
-            "text": "Varlıklarınızı güvenlik kuralınıza göre yalnızca gerçek alarmlarla izleyin."
+            "icon": "../assets/icons/5.png",
+            "title": "Kalabalık Analizi",
+            "text": "Güvenliği sağlamak ve alan kullanımını optimize etmek için kalabalık yoğunluğunu, akışını ve davranışını izleyerek kalabalık dinamiklerini analiz edin."
+          },
+          {
+            "icon": "../assets/icons/12.png",
+            "title": "Yüz Tanımlama",
+            "text": "Kimlik teyidi için kesin yüz tanıma özelliğiyle güvenliği güçlendirin."
+          },
+          {
+            "icon": "../assets/icons/6.png",
+            "title": "Davranış Analizi",
+            "text": "Gelişmiş hareket ve aktivite analiziyle şüpheni davranışları belirleyin ve anlık bildirim alın."
+          },
+          {
+            "icon": "../assets/icons/25.png",
+            "title": "Gözetleme ve Gerçek Zamanlı Analiz",
+            "text": "Anında olay müdahalesi ve gelişmiş güvenlik için gerçek zamanlı video gözetimi uygulayın."
           }
         ]
       },
       {
-        "heading": "İşyeri güvenliği",
+        "heading": "İş Güvenliği ve Sağlığı",
         "slides": [
           {
             "icon": "../assets/icons/1.png",
-            "title": "KKD",
-            "text": "İş kazalarının personel üzerindeki etkilerini en aza indirmek için personelin uygun KKD kullanımını kontrol edin."
+            "title": "PPE Kullanım Denetimi",
+            "text": "İş kazalarından kaynaklanabilecek etkileri azaltmak için personelin PPE kullanımını otomatik bir şekilde denetleyin."
           },
           {
             "icon": "../assets/icons/2.png",
-            "title": "Makine Etkileşimleri",
-            "text": "Makinenin kötü kullanımı ciddi yaralanmalara neden olabilir. Personelinizi ve işletmenizi korumak için gerçek zamanlı uyarılarla dikkat edin ve kazaları engelleyin."
+            "title": "Makine Kullanımı",
+            "text": "Yanlış makine kullanımı ciddi yaralanmalara yol açabilir. Gerçek zamanlı uyarılarla kazaları önleyerek çalışanlarınızı ve işinizi güvence altına alın."
           },
           {
             "icon": "../assets/icons/15.png",
-            "title": "Temizlik",
-            "text": "Yetersiz temizlik nedeniyle yaralanmalar tamamen önlenebilir. Hızlı tanımlama, hızlı düzeltmeye ve zararın önlenmesine yol açar."
+            "title": "Bakım ve Temizlik",
+            "text": "Yetersiz bakım ve temizlik nedeniyle oluşabilecek kazalar tamamen önlenebilir. Hızlı tanımlama, hızlı düzelte ve zararın önlenmesini sağlar."
           },
           {
-            "icon": "../assets/icons/9.png",
-            "title": "Kısıtlı Alan Kontrolü 2",
-            "text": "Varlıklarınızı güvenlik kuralınıza göre yalnızca gerçek alarmlarla izleyin."
+            "icon": "../assets/icons/11.png",
+            "title": "Ergonomi Kontrolü",
+            "text": "İşe bağlı kas ve iskelet rahatsızlıklarını engellemek ve iş güvenliğini iyileştirmek için çalışanların ergonomi uygulamalarını gözlemleyin."
+          },
+          {
+            "icon": "../assets/icons/13.png",
+            "title": "El Korkuluğu Kullanımı",
+            "text": "Kritik bölgelerde korkuluk kullanımını otomatik olarak algılayın ve düşme ve yaralanmaları önlemek için uygun kullanımı teşvik edin."
+          },
+          {
+            "icon": "../assets/icons/22.png",
+            "title": "Bölge Yönetimi",
+            "text": "Görsel tanımlama ve kontrol sistemleri aracılığıyla kısıtlı veya tehlikeli alanlara erişimi yönetin."
+          },
+          {
+            "icon": "../assets/icons/23.png",
+            "title": "Taşıt Denetimi",
+            "text": "Tesisler içindeki araç hareketlerini denetleyerek kazaları engelleyin ve güvenlik kurallarına uyumu sağlayın."
+          },
+          {
+            "icon": "../assets/icons/24.png",
+            "title": "Yere Düşen Kişi Algılama",
+            "text": "Çalışanın tehlikede olduğu veya acil yardıma ihtiyaç duyduğu durumları anında tespit edin, otomatik olarak ilgili birimleri yönlendirin."
           }
         ]
       },
       {
-        "heading": "Perakende ve FMCG",
+        "heading": "Perakende & FMCG",
         "slides": [
           {
             "icon": "../assets/icons/19.png",
-            "title": "Ziyaretçi Sayma",
-            "text": "Mağazalarınızın potansiyelini ölçmek için personel hariç anonim kimlikleri kullanarak benzersiz ziyaretçileri sayın."
+            "title": "Ziyaretçi Sayımı",
+            "text": "Mağazalarınızın potansiyelini ölçmek için, personeli hariç tutarak anonim kimlikler kullanarak ziyaretçileri sayın."
           },
           {
             "icon": "../assets/icons/20.png",
             "title": "Demografik Hedefleme",
-            "text": "Doğru segmentasyonu uygulamak için ziyaretçilerinizin demografik çeşitliliğini öğrenin."
+            "text": "Doğru segmentasyonu uygulamak için ziyaretçilerinizin demografik çeşitliliğini alın."
           },
           {
             "icon": "../assets/icons/3.png",
             "title": "A/B Testi",
-            "text": "Müşterilerin yeni ürünlerinize ilişkin tercihlerini hızlı bir şekilde anlayın."
+            "text": "Yeni ürünlerinizde müşterilerin tercihlerini hızlı bir şekilde anlayın."
           },
           {
-            "icon": "../assets/icons/9.png",
-            "title": "Kısıtlı Alan Kontrolü 2",
-            "text": "Varlıklarınızı güvenlik kuralınıza göre yalnızca gerçek alarmlarla izleyin."
+            "icon": "../assets/icons/14.png",
+            "title": "Isı Haritası & Footfall",
+            "text": "Mağaza düzenini ve ürün yerleşimlerini iyileştirmek için müşteri hareket modellerini ve mağaza sıcak noktalarını analiz edin."
+          },
+          {
+            "icon": "../assets/icons/4.png",
+            "title": "Ürün Etkileşim Analizi",
+            "text": "Müşterilerin ürünlerle olan etkileşimlerini gözlemleyerek tercihleri ve bağlılık düzeylerine dair iç görüler edinin."
+          },
+          {
+            "icon": "../assets/icons/16.png",
+            "title": "Envanter ve Stok Kontrolü",
+            "text": "Gerçek zamanlı görsel veri analizi kullanarak envanter takibini otomatikleştirin ve optimal stok seviyelerini sürdürün."
           }
         ]
       },
       {
-        "heading": "Operasyonel mükemmellik",
+        "heading": "Operasyonel Mükemmellik",
         "slides": [
           {
             "icon": "../assets/icons/21.png",
-            "title": "Stok Kontrolleri",
-            "text": "Stoklarınızı CCTV ile sayın veya ölçün."
+            "title": "Stok Yönetimi",
+            "text": "Güvenlik kameralarıyla stoklarınızı sayarak veya ölçerek kontrol edin."
           },
           {
             "icon": "../assets/icons/7.png",
-            "title": "Desen ve Renk Kontrolü",
-            "text": "Kalite güvencesini onaylamak için akışlar ve resimler üzerinden üretilen ürünün görünürlüğünü analiz edin."
+            "title": "Desen ve Renk Denetimi",
+            "text": "Üretilen ürünün kalite standartlarını sağladığından emin olmak için, ürünlerin akışlardaki görüntülerini analiz edin."
           },
           {
             "icon": "../assets/icons/10.png",
-            "title": "Operasyonel mükemmellik",
-            "text": "İyileştirmeye açık süreçleri analiz etmek için operasyonlarınızın her adımını tespit edip takip edin."
+            "title": "Operasyonel Mükemmellik",
+            "text": "İyileştirmeye açık süreçleri analiz etmek için operasyonlarınızın her adımını analiz edin ve takip edin."
           },
           {
-            "icon": "../assets/icons/9.png",
-            "title": "Kısıtlı Alan Kontrolü 2",
-            "text": "Varlıklarınızı güvenlik kuralınıza göre yalnızca gerçek alarmlarla izleyin."
+            "icon": "../assets/icons/26.png",
+            "title": "Personel Verimliliği Analizi",
+            "text": "Video verilerini kullanarak personel hareketlerini ve faaliyetlerini analiz ederek iş gücü verimliliğini artırın."
+          },
+          {
+            "icon": "../assets/icons/27.png",
+            "title": "Ambalaj Kontrolü",
+            "text": "Ambalajlamanın doğruluğunu ve kalitesini, uyumluluğu görsel olarak kontrol ederek ve sapmaları algılayarak garanti altına alın."
           }
         ]
       }
@@ -179,37 +218,37 @@
   },
 
   "platformDetails": {
-    "heading": "Yeni kullanıcı dostu platform",
+    "heading": "Yeni Kullanıcı Dostu Platform",
     "content": [
       {
         "img": "../assets/homeimgs/platformOverView/Plug-Use and Alarms.png",
-        "title": "Tak ve Kullan",
-        "text": "Kameralarınızı Holocrow'a kaydedip tanıttığınız anda platformu kullanmaya başlıyorsunuz. Tüm kamera ve CCTV modelleri bağlanabilir. Cihazlara özel sayfadan cihazların bağlantı durumunu kolayca görüntüleyebilir ve kontrol edebilirsiniz."
+        "title": "Bağlan ve Kullan",
+        "text": "Holocrow'a kayıt olduğunuzda ve kameralarınızı tanıttığınızda platformu kullanmaya başlarsınız. Her türlü kamera ve CCTV modeli bağlanabilir. “Cihazlar” sayfasından, cihazların bağlantı durumlarını rahatlıkla görüntüleyip yönetebilirsiniz."
       },
       {
-        "img": "../assets/homeimgs/platformOverView/Plug-Use and Alarms.png",
+        "img": "../assets/homeimgs/platformOverView/Alarms.png",
         "title": "Uyarılar ve Bildirimler",
-        "text": "Özellikle iş yeri emniyeti ve güvenliği alanlarında kullanacağınız çözümlerde anlık uyarılar ve bildirimler hayati önem taşıyor. Holocrow riskli durumlarda ilgili departmanlara anlık bildirimler gönderir."
+        "text": "Özellikle İş Sağlığı ve Güvenliği ve İş Emniyeti alanlarında kullanacağınız çözümlerde anlık uyarılar ve bildirimler hayati öneme sahiptir. Holocrow, riskli ve şüpheli durumlarda ilgili departmanlara anında bildirim gönderir."
       },
       {
         "img": "../assets/homeimgs/platformOverView/Visual.png",
-        "title": "Görsel Raporlar ve Analitikler",
-        "text": "Toplanan veriler otomatik olarak görselleştirilerek mümkün olduğunca anlaşılır ve yorumlanabilir hale getirilir. Haftalık, aylık, yıllık veya belirleyeceğiniz tarih aralığına ait tüm rapor ve verileri görüntüleyebilirsiniz."
+        "title": "Görsel İstatistik ve Çözümlemeler",
+        "text": "Toplanan veriler otomatik olarak görselleştirilerek mümkün olan en anlaşılır ve yorumlanabilir şekilde sunulur. Tüm rapor ve verileri haftalık, aylık, yıllık ya da belirleyeceğiniz tarih aralığında görüntüleyebilirsiniz."
       },
       {
         "img": "../assets/homeimgs/platformOverView/Guides.png",
-        "title": "Ayrıntılı Kılavuzlar",
-        "text": "En kullanıcı dostu platformu oluşturmanın gururunu yaşarken, aklınıza gelebilecek her türlü soruya anında cevap almanızı sağlayacak rehberlerimizi Yardım Merkezi bölümünde dilediğiniz zaman bulabilirsiniz."
+        "title": "Detaylı Kılavuzlar",
+        "text": "Bu alandaki en kullanıcı dostu platforma sahip olmanın gururunu yaşıyoruz. Bununla birlikte herhangi bir soruya sahip olduğunuzda anında cevabı bulabilmeniz için, Yardım Merkezi bölümünde yazılı ve videolu rehberler sağlıyoruz."
       },
       {
         "img": "../assets/homeimgs/platformOverView/helpdesk.png",
-        "title": "Yardım Masası",
-        "text": "Aklınıza gelebilecek farklı sorular olursa hemen HelpDesk'e ulaşarak uzman ekibimizden yardım alabilirsiniz."
+        "title": "Destek Hattı",
+        "text": "Herhangi bir sorunuzda veya desteğe ihtiyaç duyduğunuz anda, derhal Destek Hattımıza ulaşabilir ve uzman ekibimizden yardım alabilirsiniz."
       }
     ]
   },
   "testimonialsSection": {
-    "heading": "Görüşler",
+    "heading": "Referanslarımız",
     "testimonials": [
       {
         "id": 1,
