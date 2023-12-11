@@ -8,7 +8,6 @@ import Socials from "./Socials";
 import { useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import HeroPattern from "../HeroPattern";
-import { navigation } from "../../constants/navigation";
 
 import { motion } from "framer-motion";
 
@@ -66,7 +65,7 @@ function HeroMain() {
           } z-50 top-0 w-full flex justify-between px-10 items-center lg:justify-around lg:px-0`}
         >
           <Logo />
-          <Navigation content={navigation} sticky={sticky} home={true} />
+          <Navigation sticky={sticky} home={true} />
         </header>
 
         <div className="absolute top-[25%] left-1/2 -translate-x-[50%] flex flex-col gap-8 text-white text-4xl items-center font-extrabold lg:top-[40%] xl:left-1/2 xl:gap-28 xl:text-6xl 2xl:text-8xl lg:flex-row">

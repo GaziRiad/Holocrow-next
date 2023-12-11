@@ -57,7 +57,7 @@ function Footer({ children, icon, btn = "sign up", type = "normal" }) {
           <Button to="/signup">{btn}</Button>
         </footer>
       </motion.section>
-      <div className="bg-white flex items-center justify-center py-2 lg:py-6">
+      <div className="bg-white flex items-center justify-center py-1 lg:py-2">
         <img src="/assets/footer/poweredAYVOS.png" />
       </div>
     </motion.div>

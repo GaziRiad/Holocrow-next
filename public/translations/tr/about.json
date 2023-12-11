@@ -1,41 +1,36 @@
 {
   "heroImg": "/assets/hero-about.png",
-  "heroText": "Nesnelerin mümkün olan en yumuşak şekilde tespit edilmesini kolaylaştırır.",
+  "heroText": "Her şeyin daha kolay tespit edilmesini en pürüzsüz şekilde sağlıyoruz.",
   "firstSection": {
-    "text": "Sorunları temel mühendislik yasasını uygulayarak çözüyoruz:",
-    "quote": "“Minimum kaynak kullanımıyla en verimli çözüm.”"
+    "text": "Problemlere en temel mühendislik prensibiyle çözümler üretiyoruz:",
+    "quote": "“En az kaynakla en etkili çözüm.”"
   },
   "secondSection": {
-    "heading": "Holocrow yalnızca yapay zeka tabanlı bir yazılım üretim şirketi ya da self-servis video ve görüntü işleme platformu değildir.",
-    "text": "Holocrow, temel mühendislik ilkelerini uygulayarak gerçek dünya sorunlarını çözmeye kendini adamış bir grup insandan oluşuyor. 2014'ten bu yana tutkulu ekip üyelerimiz, Perakende ve Hızlı Tüketim Ürünleri, Geniş Alan Güvenliği ve Gözetim, Operasyonel Mükemmellik ve İş ve Sağlık Güvenliği (WHS & OHS) gibi sektörlerdeki farklı kullanım örnekleri için derin sinir ağları ve bilgisayar görüşü kullanarak çeşitli çözümler geliştiriyor. . Bu çözümler 2022 yılında Holocrow ekosistemini oluşturan bileşenlere entegre edildi."
+    "heading": "Holocrow, sadece yapay zeka tabanlı bir yazılım üretim şirketi ya da sadece bir video ve görüntü işleme platformu değildir.",
+    "text": "Holocrow, temel mühendislik prensiplerini uygulayarak gerçek dünya sorunlarını çözmeye adanmış insanlardan oluşan bir gruptur. 2014 yılından bu yana, tutkulu takım üyelerimiz, Perakende & FMCG, Alan Güvenliği & Gözetimi, Operasyonel Mükemmellik ve İş & Sağlık Güvenliği (WHS & OHS) gibi çeşitli sektörlerde farklı kullanım durumları için derin neural ağları ve Computer Vision teknolojisi kullanarak çeşitli çözümler geliştirmiştir. Bu çözümler, 2022'de Holocrow ekosistemini oluşturan bileşenlere entegre edilmiştir."
   },
   "thirdSection": {
-    "heading": "Görevimiz.",
+    "heading": "Misyonumuz",
     "img": "/assets/aboutUs/mission-img.png",
     "text": [
-      "Kameralar varlıklarımızı izlememize yardımcı olan güçlü sensörlerdir. İnsanlığın temiz ve verimli bir geleceğe ilerlemesi için, gerçek dünyadaki her kullanım örneğinin giderek daha fazla dijitalleştirilmesinin zorunlu olduğuna inanıyoruz.",
-      "Yapay Zekayı bilgisayar görüşüyle ​​birlikte kullanarak, kameralar tarafından yakalanan görüntü ve video verilerini analiz edebiliriz. Bu süreç, analog dünyayı dijital yansımaya dönüştürerek doğru, güvenilir ve kesin olarak sayılmış veya ölçülmüş veriler sağlar.",
-      "Hedefimiz, Holocrow B2X video analiz platformumuz aracılığıyla sürekli olarak dijitalleştirilmiş veriler sunmak, böylece insanlığın ilerlemesini mümkün olduğunca desteklemek ve hızlandırmaktır."
+      "Kameralar varlıklarımızı izlememize yardımcı olan güçlü sensörlerdir. İnsanlığın temiz ve verimli bir geleceğe ilerlemesi için, dünyadaki her kullanımının giderek daha fazla dijitalleştirilmesinin zorunlu olduğuna inanıyoruz.",
+      "Yapay Zeka'yı Computer Vision ile birlikte kullanarak, kameralar tarafından yakalanan görüntü ve video verilerini analiz edebiliriz. Bu süreç, analog dünyayı dijital bir yansımaya dönüştürür ve doğru, güvenilir ve kesin sayılmış veya ölçülmüş veriler sağlar.",
+      "Amacımız, Holocrow B2X video analitik platformumuz aracılığıyla sürekli olarak dijitalleştirilmiş veriler sunmak ve bu şekilde insanlığın ilerlemesini olabildiğince desteklemek ve hızlandırmaktır."
     ]
   },
   "teamSection": {
-    "heading": "Ekiple tanış.",
-    "subHeading": "100 yılı aşkın deneyim bir araya geldi.",
+    "heading": "Takım ile tanışın",
+    "subHeading": "19 yılı aşkın tecrübe bir araya geldi.",
     "team": [
       {
-        "img": "/assets/aboutUs/team1.png",
-        "name": "Mike Cannon - Brookes",
-        "position": "KURUCU ORTAK & CEO"
+        "img": "/assets/aboutUs/team12.png",
+        "name": "Eray Hangül",
+        "position": "FOUNDER & CO-CEO"
       },
       {
         "img": "/assets/aboutUs/team11.png",
-        "name": "Scott Farquhar",
-        "position": "KURUCU ORTAK & CEO"
-      },
-      {
-        "img": "/assets/aboutUs/team3.png",
-        "name": "Anu Bharadwaj",
-        "position": "BAŞKAN"
+        "name": "Ali  Güner",
+        "position": "CO-CEO"
       }
     ]
   }

@@ -10,8 +10,9 @@ import Button from "./Button";
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { navigation } from "@/constants/navigation";
 
-function Navigation({ content, sticky, home = false }) {
+function Navigation({ sticky, home = false }) {
   const [navIsOpen, setNavIsOpen] = useState(false);
   const [displayLangs, setDisplayLangs] = useState(false);
 
@@ -33,7 +34,7 @@ function Navigation({ content, sticky, home = false }) {
       <ul
         className={`hidden ${textColor} gap-4 items-center justify-center lg:flex xl:gap-6 2xl:gap-8 xl:text-base 2xl:text-lg relative`}
       >
-        {content.links.map((nav) => (
+        {navigation[activeLanguage].links.map((nav) => (
           <Link key={nav.text} href={nav.path}>
             <li className="cursor-pointer translate-x-0 origin-left hover:text-primary hover:translate-x-1 transition-all">
               {nav.text}
@@ -41,7 +42,7 @@ function Navigation({ content, sticky, home = false }) {
           </Link>
         ))}
         <ul className=" text-primary flex flex-col items-start justify-center gap-3 relative ">
-          {content.languages.map((lang) => {
+          {navigation[activeLanguage].languages.map((lang) => {
             if (lang.attribute === activeLanguage)
               return (
                 <button
@@ -59,7 +60,7 @@ function Navigation({ content, sticky, home = false }) {
 
           {displayLangs && (
             <ul className="absolute top-10 flex flex-col gap-3">
-              {content.languages.map((lang) => {
+              {navigation[activeLanguage].languages.map((lang) => {
                 if (lang.attribute !== activeLanguage)
                   return (
                     <li
@@ -99,7 +100,7 @@ function Navigation({ content, sticky, home = false }) {
             className="text-white text-2xl flex flex-col items-center mt-44 gap-6 "
           >
             <ul className="flex gap-3 text-black-800">
-              {content.languages.map((lang) => {
+              {navigation[activeLanguage].languages.map((lang) => {
                 return (
                   <li
                     className={`${
@@ -116,7 +117,7 @@ function Navigation({ content, sticky, home = false }) {
                 );
               })}
             </ul>
-            {content.links.map((nav) => (
+            {navigation[activeLanguage].links.map((nav) => (
               <Link key={nav.text} href={nav.path}>
                 {/*  translate-x-0 origin-left hover:text-primary hover:translate-x-1 transition-all */}
                 <li className="cursor-pointer hover:text-primary hover:translate-x-1 transition-all">

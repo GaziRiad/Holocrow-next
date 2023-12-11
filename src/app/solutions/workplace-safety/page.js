@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 //
 import enWorkplace from "../../../../public/translations/en/workplace-safety.json";
-import trWorkplace from "../../../../public/translations/en/workplace-safety.json";
+import trWorkplace from "../../../../public/translations/tr/workplace-safety.json";
 import { useLanguage } from "@/contexts/LanguageContext";
 import OtherSolutions from "@/components/OtherSolutions";
 const translations = {

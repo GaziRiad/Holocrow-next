@@ -6,7 +6,7 @@
     "content": [
       {
         "img": "/assets/Solutions/img-1.jpg",
-        "title": "Instant Alerts",
+        "title": "Reduce False Alerts",
         "text": "Get instant alerts in suspicious situations and reduce false alarms by %90 with comprehensive video scene analysis."
       },
       {
@@ -17,7 +17,7 @@
       {
         "img": "/assets/Solutions/img-3.jpg",
         "title": "Data Visualization",
-        "text": "Get live reports and alerts with easy to understand visuals."
+        "text": "Get live reports and alerts with easy-to-understand visuals."
       }
     ]
   },
@@ -68,7 +68,7 @@
     "heading": "Private Data Collection",
     "content": {
       "img": "/assets/Solutions/data-collection.jpg",
-      "text": "Holocrow never collects personal identification details from the visual content we handle. Our primary goal is to enhance security while preserving people’s confidentiality."
+      "text": "Holocrow, while providing innovative solutions, never collects personal identification details from the visual content it is processing. Our overarching aim is to boost efficiency and safety across various applications, always with a keen focus on preserving confidentiality. We adhere to strict privacy standards, ensuring our technology respects individual privacy rights at every turn. This approach enables us to offer advanced solutions that enhance operational capabilities without compromising the integrity of personal data."
     }
   },
 

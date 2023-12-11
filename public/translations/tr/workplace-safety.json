@@ -1,161 +1,164 @@
 {
   "heroImg": "/assets/Solutions/WorkplaceHero.png",
-  "heroHeading": "İşyeri güvenliği",
-  "subHero": ["Her zaman", "Milyar Saat Eğitim", "Güvenlik Görevlisi"],
+  "heroHeading": "İş Güvenliği ve Sağlığı",
+  "subHero": [
+    "Her zaman çalışan",
+    "Milyarlarca saat tecrübeli",
+    "İş Güvenliği Sorumlunuz"
+  ],
   "firstSection": {
     "content": [
       {
         "img": "/assets/Solutions/img-1.jpg",
-        "title": "Anlık Uyarılar",
-        "text": "Kapsamlı video sahne analizi ile şüpheli durumlarda anında uyarı alın ve yanlış alarmları %90 azaltın."
+        "title": "Yanlış Alarmları Azaltın",
+        "text": "Şüpheli durumlarda anında uyarılar alın ve kapsamlı video analiziyle yanlış alarmları %90 oranında azaltın."
       },
       {
         "img": "/assets/Solutions/img-6.png",
         "title": "Gerçek Zamanlı Uyarılar",
-        "text": "İşyerinde güvenlik protokolleri ihlal edildiğinde ilgili çalışanlara canlı uyarı gönderin."
+        "text": "Çalışma alanında güvenlik prosedürleri ihlal edildiğinde, ilgili çalışanlara gerçek zamanlı uyarılar gönderin."
       },
       {
         "img": "/assets/Solutions/img-3.jpg",
-        "title": "Veri goruntuleme",
-        "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
+        "title": "Görselleştirilen Veriler",
+        "text": "Kolay anlaşılır görsellerle canlı raporlar ve uyarılar alın."
       }
     ]
   },
-
   "productsSection": {
     "heading": "İZLEMENİN ÖTESİNDE",
-    "subHeading": "Tüm güvenlik ürünlerimizi görün",
+    "subHeading": "Tüm İş Güvenliği ve Sağlığı ürünlerimiz",
     "content": [
       {
         "icon": "/assets/icons/1.png",
-        "title": "KKD Kontrolü",
-        "text": "İş kazalarının personel üzerindeki etkilerini en aza indirmek için personelin uygun KKD kullanımını kontrol edin."
+        "title": "PPE Kullanım Denetimi",
+        "text": "İş kazalarından kaynaklanabilecek etkileri azaltmak için personelin PPE kullanımını otomatik bir şekilde denetleyin."
       },
       {
         "icon": "/assets/icons/2.png",
-        "title": "Makine Etkileşimleri",
-        "text": "Makinenin kötü kullanımı ciddi yaralanmalara neden olabilir. Personelinizi ve işletmenizi korumak için gerçek zamanlı uyarılarla dikkat edin ve kazaları engelleyin."
+        "title": "Makine Kullanımı",
+        "text": "Yanlış makine kullanımı ciddi yaralanmalara yol açabilir. Gerçek zamanlı uyarılarla kazaları önleyerek çalışanlarınızı ve işinizi güvence altına alın."
       },
       {
         "icon": "/assets/icons/15.png",
-        "title": "Temizlik",
-        "text": "Yetersiz temizlik nedeniyle yaralanmalar tamamen önlenebilir. Hızlı tanımlama, hızlı düzeltmeye ve zararın önlenmesine yol açar."
+        "title": "Bakım ve Temizlik",
+        "text": "Yetersiz bakım ve temizlik nedeniyle oluşabilecek kazalar tamamen önlenebilir. Hızlı tanımlama, hızlı düzelte ve zararın önlenmesini sağlar."
       },
       {
         "icon": "/assets/icons/11.png",
         "title": "Ergonomi Kontrolü",
-        "text": "İşe bağlı kas-iskelet sistemi bozukluklarını önlemek ve işyeri güvenliğini artırmak için personelin ergonomik uygulamalarını izleyin."
+        "text": "İşe bağlı kas ve iskelet rahatsızlıklarını engellemek ve iş güvenliğini iyileştirmek için çalışanların ergonomi uygulamalarını gözlemleyin."
       },
       {
         "icon": "/assets/icons/13.png",
-        "title": "Küpeşte Kullanımı",
-        "text": "Düşme ve yaralanmaları önlemek için kritik alanlardaki korkulukların uygun kullanımını otomatik olarak tespit edin ve teşvik edin."
+        "title": "El Korkuluğu Kullanımı",
+        "text": "Kritik bölgelerde korkuluk kullanımını otomatik olarak algılayın ve düşme ve yaralanmaları önlemek için uygun kullanımı teşvik edin."
       },
       {
         "icon": "/assets/icons/22.png",
-        "title": "Alan Kontrolleri",
+        "title": "Bölge Yönetimi",
         "text": "Görsel tanımlama ve kontrol sistemleri aracılığıyla kısıtlı veya tehlikeli alanlara erişimi yönetin."
       },
       {
         "icon": "/assets/icons/23.png",
-        "title": "Araç kontrol",
-        "text": "Kazaları önlemek ve güvenlik uyumluluğunu sağlamak için tesis içindeki araç hareketini denetleyin ve düzenleyin."
+        "title": "Taşıt Denetimi",
+        "text": "Tesisler içindeki araç hareketlerini denetleyerek kazaları engelleyin ve güvenlik kurallarına uyumu sağlayın."
       },
       {
         "icon": "/assets/icons/24.png",
-        "title": "Adam Düşmesi Tespiti",
-        "text": "Hızlı yardım için personelin yetersiz kaldığı veya tehlikede olduğu olayları anında tespit edin ve müdahale edin."
+        "title": "Yere Düşen Kişi Algılama",
+        "text": "Çalışanın tehlikede olduğu veya acil yardıma ihtiyaç duyduğu durumları anında tespit edin, otomatik olarak ilgili birimleri yönlendirin."
       }
     ]
   },
 
   "thirdSection": {
-    "heading": "Özel Veri Toplama",
+    "heading": "Private Data Collection",
     "content": {
-      "img": "assets/Solutions/data-collection.jpg",
-      "text": "Holocrow, işlediğimiz görsel içeriklerden hiçbir zaman kişisel kimlik bilgilerini toplamaz. Öncelikli hedefimiz insanların gizliliğini korurken güvenliği artırmaktır."
+      "img": "/assets/Solutions/data-collection.jpg",
+      "text": "Holocrow, yenilikçi çözümler sunarken, işlediği görsel içeriklerden kişisel tanımlama detayları toplamaz. Genel amacımız, gizliliği her zaman ön planda tutarak çeşitli uygulamalarda verimliliği ve güvenliği artırmaktır. Katı gizlilik standartlarına bağlı kalarak, teknolojimizin her adımda bireylerin kişisel haklarına saygı göstermesini sağlıyoruz. Bu yaklaşım, bize kişisel verilerin bütünlüğünü koruyarak operasyonel yetenekleri artıran ileri düzey çözümler sunmamıza imkan sağlamaktadır."
     }
   },
 
   "sliderSection": {
-    "heading": "endüstriler",
+    "heading": "industries",
     "slides": [
       {
         "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
-        "title": "Manufacturing",
-        "subTitle": "Equipment Monitoring and Worker Safety",
-        "text": "Computer Vision systems in manufacturing plants monitor machinery for signs of malfunction, helping to prevent accidents. They also ensure that workers comply with safety protocols, such as using protective gear correctly."
+        "title": "İmalat",
+        "subTitle": "Ekipman İzleme ve İşçi Güvenliği",
+        "text": "Holocrow, imalat ekipmanlarını arıza belirtileri için izleyerek kazaları önleyebilir. Ayrıca işçilerin zorunlu koruyucu ekipmanları doğru kullanma gibi güvenlik protokollerine uymasını da sağlar."
       },
       {
         "img": "/assets/Solutions/industriesSlider/construction.jpg",
-        "title": "Construction",
-        "subTitle": "PPE Compliance and Hazard Detection",
-        "text": "In construction sites, Computer Vision technology is used to ensure workers are wearing necessary safety equipment like helmets and vests. It can also identify potential hazards on-site, such as unsafe scaffolding or open pits."
+        "title": "İnşaat",
+        "subTitle": "Kişisel Koruyucu Ekipman Uyumu ve Tehlike Tespiti",
+        "text": "İnşaat alanlarında Bilgisayar Görüşü teknolojisi, işçilerin kask ve yelek gibi gerekli güvenlik ekipmanlarını giydiklerinden emin olmak için kullanılır. Ayrıca, güvensiz iskeleler veya açık çukurlar gibi potansiyel tehlikeleri tespit edebilir."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Healthcare-min.JPG",
-        "title": "Healthcare",
-        "subTitle": "Patient Handling and Hospital Safety",
-        "text": " Computer Vision aids in monitoring patient handling procedures to prevent injuries and ensure patient safety. It can also detect irregular activities in sensitive areas, enhancing overall hospital security."
+        "title": "Sağlık",
+        "subTitle": "Hasta Taşıma ve Hastane Güvenliği",
+        "text": "Holocrow, yaralanmaları önlemek ve hasta güvenliğini sağlamak için hasta taşıma prosedürlerini izlemeye yardımcı olur. Ayrıca, hastanelerde hassas alanlardaki düzensiz aktiviteleri tespit ederek genel hastane güvenliğini artırır."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Retail-min.jpg",
-        "title": "Retail:",
-        "subTitle": "Slip and Fall Prevention",
-        "text": "In retail environments, Computer Vision can detect spillages and other hazards that might lead to slips and falls, alerting staff to take immediate action."
+        "title": "Perakende",
+        "subTitle": "Kayma ve Düşme Önleme",
+        "text": "Perakende ortamlarında, kayma ve düşmelere neden olabilecek dökülmeler ve diğer tehlikeleri tespit edebilir, personeli hemen harekete geçmeleri için uyarır."
       },
       {
         "img": "/assets/Solutions/industriesSlider/warehoouse-min.jpg",
-        "title": "Warehousing and Logistics",
-        "subTitle": "Forklift Operation and Pedestrian Safety",
-        "text": "Computer Vision is employed to monitor forklift operations, ensuring they are conducted safely, especially when pedestrians are nearby, to prevent collisions."
+        "title": "Depolama ve Lojistik",
+        "subTitle": "Forklift Operasyonu ve Yaya Güvenliği",
+        "text": "Forklift operasyonlarını izleyerek, özellikle yayaların yakınında olduğunda güvenli bir şekilde gerçekleştirildiklerinden emin olmak için kullanılır, böylece çarpışmaları önler."
       },
       {
         "img": "/assets/Solutions/industriesSlider/office-min.jpg",
-        "title": "Office Environments",
-        "subTitle": "Ergonomic Assessments",
-        "text": "Computer Vision technology can analyze an employee's posture and workstation setup, offering suggestions for ergonomic improvements to prevent strain injuries."
+        "title": "Ofis Ortamları",
+        "subTitle": "Ergonomik Değerlendirmeler",
+        "text": "Holocrow, bir çalışanın duruşunu ve çalışma istasyonu düzenini analiz ederek, zorlanma yaralanmalarını önlemek için ergonomik iyileştirmeler önerir."
       },
       {
         "img": "/assets/Solutions/industriesSlider/mining-min.jpg",
-        "title": "Mining",
-        "subTitle": "Equipment Safety and Hazardous Condition Monitoring",
-        "text": "In mining operations, Computer Vision helps in monitoring equipment and environmental conditions to prevent accidents, such as detecting gas leaks or structural weaknesses."
+        "title": "Madencilik",
+        "subTitle": "Ekipman Güvenliği ve Tehlikeli Durum İzleme",
+        "text": "Madencilik operasyonlarında, ekipmanları ve çevresel koşulları izleyerek, gaz kaçağı veya yapısal zayıflıklar gibi kazaları önlemeye yardımcı olur."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Agriculture-min.jpg",
-        "title": "Agriculture:",
-        "subTitle": "Machinery Operation and Field Safety",
-        "text": "Computer Vision aids in ensuring the safe operation of agricultural machinery and can detect workers or animals in the vicinity to prevent accidents."
+        "title": "Tarım",
+        "subTitle": "Makine Operasyonu ve Tarla Güvenliği",
+        "text": "Tarımsal makinalarının operasyonlarını güvenle yapılmasını sağlar ve çevredeki işçileri veya hayvanları tespit ederek kazaları önler."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Food processing-min.jpg",
-        "title": "Food Processing",
-        "subTitle": "Compliance with Hygiene Standards",
-        "text": "In food processing facilities, Computer Vision ensures that safety and hygiene standards are upheld, monitoring for contamination risks and ensuring workers follow proper safety protocols."
+        "title": "Gıda İşleme",
+        "subTitle": "Hijyen Standartlarına Uyum",
+        "text": "Gıda işleme tesislerinde, güvenlik ve hijyen standartlarının korunmasını sağlar, kontaminasyon risklerini izler ve çalışanların uygun güvenlik protokollerini takip etmelerini sağlar."
       },
       {
         "img": "/assets/Solutions/industriesSlider/energy.jpg",
-        "title": "Energy and Utilities",
-        "subTitle": "Monitoring of Infrastructure and Safety Compliance",
-        "text": "For energy and utility companies, Computer Vision is crucial in monitoring the condition of infrastructure and ensuring that safety procedures are followed, especially in high-risk environments like power plants."
+        "title": "Enerji ve Kamu Hizmetleri",
+        "subTitle": "Altyapı İzleme ve Güvenlik Uyumu",
+        "text": "Enerji ve kamu hizmeti şirketleri için Holocrow, özellikle enerji santralleri gibi yüksek riskli ortamlarda altyapının durumunu izlemek ve güvenlik prosedürlerinin takip edilmesini sağlamakta kritik öneme sahiptir."
       }
     ]
   },
   "features": [
     {
       "icon": "../assets/features/sales-marketing.png",
-      "name": "RETAIL & FMCG",
+      "name": "PERAKENDE & FMCG",
       "link": "retail"
     },
     {
       "icon": "../assets/features/security.png",
-      "name": "Security",
+      "name": "İŞ EMNİYETİ",
       "link": "security"
     },
     {
       "icon": "../assets/features/efficiency.png",
-      "name": "OPERATIONAL EXCELLENCE",
+      "name": "OPERASYONEL MÜKEMMELLİK",
       "link": "operational-excellence"
     }
   ]

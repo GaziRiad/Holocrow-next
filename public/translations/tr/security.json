@@ -1,150 +1,154 @@
 {
-  "heroImg": "../assets/Solutions/SecurityHero.png",
-  "heroHeading": "Güvenlik",
-  "subHero": ["Her zaman", "Milyar Saat Eğitim", "Güvenlik görevlisi"],
+  "heroImg": "/assets/Solutions/SecurityHero.png",
+  "heroHeading": "İş Emniyeti",
+  "subHero": [
+    "Her zaman çalışan",
+    "Milyarlarca saat tecrübeli",
+    "Güvenlik Görevliniz"
+  ],
   "firstSection": {
     "content": [
       {
         "img": "/assets/Solutions/img-1.jpg",
-        "title": "Anlık Uyarılar",
-        "text": "Kapsamlı video sahne analizi ile şüpheli durumlarda anında uyarı alın ve yanlış alarmları %90 azaltın."
+        "title": "Yanlış Alarmları Azaltın",
+        "text": "Şüpheli durumlarda anında uyarılar alın ve kapsamlı video analiziyle yanlış alarmları %90 oranında azaltın."
       },
       {
         "img": "/assets/Solutions/img-2.jpg",
-        "title": "Hızlı Soruşturmalar",
-        "text": "Öğenin göründüğü her video örneğini etkili bir şekilde bulmak için öğelerin görsel özelliklerinden yararlanın."
+        "title": "Hızlı İncelemeler",
+        "text": "Eşyaların görsel karakteristiklerini kullanarak, söz konusu eşyanın görüldüğü her video kaydını etkin bir şekilde saptayın."
       },
       {
         "img": "/assets/Solutions/img-3.jpg",
-        "title": "Veri goruntuleme",
-        "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
+        "title": "Görselleştirilen Veriler",
+        "text": "Kolay anlaşılır görsellerle canlı raporlar ve uyarılar alın."
       }
     ]
   },
 
   "productsSection": {
     "heading": "İZLEMENİN ÖTESİNDE",
-    "subHeading": "Tüm güvenlik ürünlerimizi görün",
+    "subHeading": "Tüm İş Emniyeti ürünlerimiz",
     "content": [
       {
         "icon": "/assets/icons/9.png",
-        "title": "Kısıtlı Alan Kontrolü",
-        "text": "Varlıklarınızı güvenlik kuralınıza göre yalnızca gerçek alarmlarla izleyin."
+        "title": "Sınırlandırılmış Alan Denetimi",
+        "text": "Güvenlik kurallarınıza uygun şekilde ve yalnız doğru alarmlarla varlıklarınızı gözetleyin."
       },
       {
         "icon": "/assets/icons/8.png",
-        "title": "Ruhsat",
-        "text": "Araçların plakası ve diğer özellikleriyle ihlal ve dolandırıcılığın önlenmesi amacıyla erişim kontrolü."
+        "title": "Araç Tanımlama",
+        "text": "Araçların plaka ve diğer nitelikleriyle erişimlerini denetleyerek ihlallerin önüne geçin."
       },
       {
         "icon": "/assets/icons/17.png",
-        "title": "Şüpheli Öğe Tespiti",
-        "text": "Bölgenizi güvence altına almak için şüpheli tutumları ve potansiyel zararlı nesneleri, çantaları, kutuları vb. tespit edin."
+        "title": "Şüpheli Nesne Tespiti",
+        "text": "Alanın güvenliğini sağlamak için şüpheli tavırları ve potansiyel zararlı nesneleri, çantaları, kutuları vb. tespit edin."
       },
       {
         "icon": "/assets/icons/5.png",
         "title": "Kalabalık Analizi",
-        "text": "Büyük toplantıları etkili bir şekilde yönetmek için kalabalık dinamiklerini analiz edin. Güvenliği sağlamak ve alan kullanımını optimize etmek için kalabalık yoğunluğunu, akışını ve davranışını izleyin."
+        "text": "Güvenliği sağlamak ve alan kullanımını optimize etmek için kalabalık yoğunluğunu, akışını ve davranışını izleyerek kalabalık dinamiklerini analiz edin."
       },
       {
         "icon": "/assets/icons/12.png",
-        "title": "Yüz tanıma",
-        "text": "Kimlik doğrulama için doğru yüz tanıma özelliğiyle güvenliği artırın."
+        "title": "Yüz Tanımlama",
+        "text": "Kimlik teyidi için kesin yüz tanıma özelliğiyle güvenliği güçlendirin."
       },
       {
         "icon": "/assets/icons/6.png",
         "title": "Davranış Analizi",
-        "text": "Gelişmiş hareket ve etkinlik analizi yoluyla şüpheli davranışları belirleyin."
+        "text": "Gelişmiş hareket ve aktivite analiziyle şüpheni davranışları belirleyin ve anlık bildirim alın."
       },
       {
         "icon": "/assets/icons/25.png",
-        "title": "Surveillance and Real-time Analysis",
-        "text": "Implement real-time video surveillance for immediate incident response and security."
+        "title": "Gözetleme ve Gerçek Zamanlı Analiz",
+        "text": "Anında olay müdahalesi ve gelişmiş güvenlik için gerçek zamanlı video gözetimi uygulayın."
       }
     ]
   },
 
   "thirdSection": {
-    "heading": "Özel Veri Toplama",
+    "heading": "Private Data Collection",
     "content": {
       "img": "/assets/Solutions/data-collection.jpg",
-      "text": "Holocrow, işlediğimiz görsel içeriklerden hiçbir zaman kişisel kimlik bilgilerini toplamaz. Öncelikli hedefimiz insanların gizliliğini korurken güvenliği artırmaktır."
+      "text": "Holocrow, yenilikçi çözümler sunarken, işlediği görsel içeriklerden kişisel tanımlama detayları toplamaz. Genel amacımız, gizliliği her zaman ön planda tutarak çeşitli uygulamalarda verimliliği ve güvenliği artırmaktır. Katı gizlilik standartlarına bağlı kalarak, teknolojimizin her adımda bireylerin kişisel haklarına saygı göstermesini sağlıyoruz. Bu yaklaşım, bize kişisel verilerin bütünlüğünü koruyarak operasyonel yetenekleri artıran ileri düzey çözümler sunmamıza imkan sağlamaktadır."
     }
   },
 
   "sliderSection": {
-    "heading": "endüstriler",
+    "heading": "industries",
     "slides": [
       {
         "img": "/assets/Solutions/industriesSlider/Retail-min.jpg",
-        "title": "Retail",
-        "subTitle": "Loss Prevention and Theft Detection",
-        "text": "Computer Vision systems in retail stores can detect suspicious activities, such as shoplifting or unauthorized access to restricted areas. These systems can also track customer movement patterns to identify potential security risks."
+        "title": "Perakende",
+        "subTitle": "Kayıp Önleme ve Hırsızlık Tespiti",
+        "text": "Perakende mağazalarında, hırsızlık veya yetkisiz erişim gibi şüpheli aktiviteleri tespit eder. Bu sistemler, müşteri hareket desenlerini takip ederek potansiyel güvenlik risklerini belirler."
       },
       {
         "img": "/assets/Solutions/industriesSlider/banking.jpg",
-        "title": "Banking and Finance",
-        "subTitle": "ATM Security and Fraud Prevention",
-        "text": "Computer Vision is used in ATMs for facial recognition and to detect suspicious behavior around ATMs. It helps in preventing fraud, such as card skimming and identity theft."
+        "title": "Bankacılık ve Finans",
+        "subTitle": "ATM Güvenliği ve Dolandırıcılık Önleme",
+        "text": "ATM'lerde yüz tanıma ve ATM çevresinde şüpheli davranışları tespit etmek için Holocrow kullanılabilir. Kart kopyalama ve kimlik hırsızlığı gibi dolandırıcılıkları önlemeye yardımcı olur."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Transportation - Logistics-min.jpg",
-        "title": "Transportation and Logistics",
-        "subTitle": "Cargo Monitoring and Transit Security",
-        "text": "In transportation, Computer Vision assists in monitoring cargo and ensuring the safety of goods during transit. It can also be used in detecting unauthorized access to restricted areas in ports and logistics centers"
+        "title": "Ulaşım ve Lojistik",
+        "subTitle": "Kargo İzleme ve Transit Güvenliği",
+        "text": "Holocrow, kargoyu izlemeye ve taşıma sırasında malların güvenliğini sağlamaya yardımcı olur. Limanlarda ve lojistik merkezlerinde yetkisiz erişimi tespit etmede de kullanılabilir."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Healthcare-min.JPG",
-        "title": "Healthcare",
-        "subTitle": "Patient Safety and Access Control",
-        "text": "In hospitals and clinics, Computer Vision helps monitor patient safety, ensuring they receive the right care and preventing infant abductions. It also secures sensitive areas like pharmacies and data centers."
+        "title": "Sağlık",
+        "subTitle": "Hasta Güvenliği ve Erişim Kontrolü",
+        "text": "Hastaneler ve kliniklerde Computer Vision, hastaların güvenliğini takip etmeye yardımcı olur, doğru bakım almasını sağlar ve bebek kaçırma olaylarını önler. Eczaneler ve veri merkezleri gibi hassas alanları da korur."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
-        "title": "Manufacturing",
-        "subTitle": "Equipment Monitoring and Worker Safety",
-        "text": "Computer Vision systems can monitor manufacturing equipment for signs of malfunction, preventing accidents. They also ensure that workers adhere to safety protocols, such as wearing protective gear"
+        "title": "İmalat",
+        "subTitle": "Ekipman İzleme ve İşçi Güvenliği",
+        "text": "Holocrow, imalat ekipmanlarını arıza belirtileri için izleyerek kazaları önleyebilir. Ayrıca işçilerin zorunlu koruyucu ekipmanlar doğru kullanma gibi güvenlik protokollerine uymasını da sağlar."
       },
       {
         "img": "/assets/Solutions/industriesSlider/public-security.jpg",
-        "title": "Public Security",
-        "subTitle": "Crowd Monitoring and Crime Prevention",
-        "text": "Computer Vision is used in public spaces for crowd monitoring, identifying potential threats in large gatherings, and helping law enforcement in crime prevention and investigation."
+        "title": "Kamu Güvenliği",
+        "subTitle": "Kalabalık İzleme ve Suç Önleme",
+        "text": "Kamu alanlarında, kalabalık izleme, konser, miting gibi büyük toplaşmalarda potansiyel tehditleri belirleme ve kolluk kuvvetlerine suç önleme ve soruşturmada yardımcı olmak için kullanılır."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Airport-min.jpg",
-        "title": "Airports and Transportation Hubs",
-        "subTitle": "Passenger Screening and Terminal Security",
-        "text": "Airports use Computer Vision for passenger screening, baggage inspection, and to ensure overall terminal security, including detecting unattended baggage or identifying individuals on watchlists."
+        "title": "Havaalanları ve Ulaşım Merkezleri",
+        "subTitle": "Yolcu Taraması ve Terminal Güvenliği",
+        "text": "Havaalanları, yolcu taraması, bagaj kontrolü ve genel terminal güvenliğini sağlamak için Bilgisayar Görüşü kullanır, bu da terk edilmiş bagajların tespit edilmesini veya izleme listesindeki bireylerin tanımlanmasını içerir."
       },
       {
         "img": "/assets/Solutions/industriesSlider/hospitality-min.jpg",
-        "title": "Hospitality",
-        "subTitle": "Guest Safety and Facility Security",
-        "text": "In hotels and resorts, Computer Vision is used for securing facilities, monitoring guest safety, and ensuring that only authorized personnel access restricted areas."
+        "title": "Konaklama",
+        "subTitle": "Misafir Güvenliği ve Tesis Güvenliği",
+        "text": "Oteller ve tatil köylerinde, tesislerin ve misafirlerin güvenliğini sağlamak ve sadece yetkili personelin kısıtlı alanlara erişmesini sağlamak için kullanılır."
       },
       {
         "img": "/assets/Solutions/industriesSlider/smart cities-min.jpg",
-        "title": "Smart Cities",
-        "subTitle": "Urban Surveillance and Traffic Management",
-        "text": "In smart cities, Computer Vision contributes to urban surveillance, traffic flow monitoring, and incident detection, enhancing overall city safety and efficiency."
+        "title": "Akıllı Şehirler",
+        "subTitle": "Şehir Gözetimi ve Trafik Yönetimi",
+        "text": "Akıllı şehirlerde Bilgisayar Görüşü, şehir gözetimi, trafik akışı izleme ve olay tespiti konularına katkıda bulunarak genel şehir güvenliğini ve verimliliğini artırır."
       }
     ]
   },
   "features": [
     {
       "icon": "../assets/features/sales-marketing.png",
-      "name": "RETAIL & FMCG",
+      "name": "PERAKENDE & FMCG",
       "link": "retail"
     },
     {
       "icon": "../assets/features/safety.png",
-      "name": "Workplace Safety",
+      "name": "İŞ SAĞLIĞI VE GÜVENLİĞİ",
       "link": "workplace-safety"
     },
     {
       "icon": "../assets/features/efficiency.png",
-      "name": "OPERATIONAL EXCELLENCE",
+      "name": "OPERASYONEL MÜKEMMELLİK",
       "link": "operational-excellence"
     }
   ]

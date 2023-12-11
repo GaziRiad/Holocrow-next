@@ -12,19 +12,19 @@
       {
         "img": "/assets/Solutions/img-8.png",
         "title": "Prevent Out of Stock",
-        "text": "Detect and track every single buying transactions only via video streams to prevent stock out and gather precious insights."
+        "text": "Detect and track every single buying transaction only via video streams to prevent stock out and gather precious insights."
       },
       {
         "img": "/assets/Solutions/img-3.jpg",
         "title": "Data Visualization",
-        "text": "Get live reports and alerts with easy to understand visuals."
+        "text": "Get live reports and alerts with easy-to-understand visuals."
       }
     ]
   },
 
   "productsSection": {
     "heading": "BEYOND WATCHING",
-    "subHeading": "See our all security products",
+    "subHeading": "See all our Retail & FMCG products",
     "content": [
       {
         "icon": "/assets/icons/19.png",
@@ -62,20 +62,48 @@
     "heading": "Private Data Collection",
     "content": {
       "img": "/assets/Solutions/data-collection.jpg",
-      "text": "Holocrow never collects personal identification details from the visual content we handle. Our primary goal is to enhance security while preserving people’s confidentiality."
+      "text": "Holocrow, while providing innovative solutions, never collects personal identification details from the visual content it is processing. Our overarching aim is to boost efficiency and safety across various applications, always with a keen focus on preserving confidentiality. We adhere to strict privacy standards, ensuring our technology respects individual privacy rights at every turn. This approach enables us to offer advanced solutions that enhance operational capabilities without compromising the integrity of personal data."
     }
   },
 
   "sliderSection": {
-    "heading": "industries",
+    "heading": "Fields",
     "slides": [
       {
-        "title": "Inventory Management:",
-        "img": "/assets/Solutions/industriesSlider/Inventory Management-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Inventory Management",
+        "subTitle": "Stock Monitoring and Replenishment",
+        "text": "Computer Vision in retail environments helps in real-time tracking of inventory levels, facilitating timely restocking and reducing the chance of stockouts or overstocking."
       },
       {
-        "title": "Customer Experience:",
-        "img": "/assets/Solutions/industriesSlider/industry2.png **"
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Customer Experience",
+        "subTitle": "Personalized Shopping and In-store Navigation",
+        "text": "Computer Vision enhances customer experience by offering personalized shopping suggestions based on shopping habits and assisting with in-store navigation."
+      },
+      {
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Checkout and Payment Systems",
+        "subTitle": "Automated Checkouts and Theft Prevention",
+        "text": "Retailers are using Computer Vision to develop automated checkout systems, reducing wait times, and enhancing the overall customer experience. It also helps in identifying potential thefts."
+      },
+      {
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "FMCG Product Placement",
+        "subTitle": "Shelf Space Optimization and Planogram Compliance",
+        "text": "Computer Vision analyzes shelf space and customer interactions with products, helping in optimizing product placement and ensuring planogram compliance."
+      },
+      {
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Food Retail",
+        "subTitle": "Freshness Monitoring and Quality Control",
+        "text": "In food retail, Computer Vision is used to monitor the freshness of produce and ensure quality control, enhancing food safety for consumers."
+      },
+      {
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Marketing and Advertising",
+        "subTitle": "Customer Engagement Analysis",
+        "text": "Retailers use Computer Vision to analyze customer engagement with in-store advertisements and displays, gathering valuable data for marketing strategies."
       }
     ]
   },

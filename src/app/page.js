@@ -32,7 +32,10 @@ export default function Home() {
       {/* <Testimonials content={content} /> */}
       <MainFooter />
       {/* <div className="fixed bottom-0 right-0 z-50">
-        <img src="/assets/blob.svg" className="w-80" />
+        <img src="/assets/blob.svg" className="w-60" />
+        <p className="text-white text-lg absolute top-1/2 right-1/3 font-bold">
+          Holocrow.com
+        </p>
       </div> */}
     </div>
   );

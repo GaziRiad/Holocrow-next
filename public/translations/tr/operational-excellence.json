@@ -1,123 +1,126 @@
 {
   "heroImg": "/assets/Solutions/EfficiencyHero.png",
-  "heroHeading": "Operasyonel mükemmellik",
-  "subHero": ["Her zaman", "Milyar Saat Eğitim", "Operasyon Müdürü"],
+  "heroHeading": "Operasyonel Mükemmellik",
+  "subHero": [
+    "Her zaman çalışan",
+    "Milyarlarca saat tecrübeli",
+    "Operasyon Analistiniz"
+  ],
   "firstSection": {
     "content": [
       {
         "img": "/assets/Solutions/img-4.png",
-        "title": "Mükemmel Doğruluk",
-        "text": "Yapay zekanın %99,9 doğruluğuyla üretim hatlarınızdaki hataları tespit edin."
+        "title": "Kusursuz Doğruluk",
+        "text": "Yapay Zekanın %99.9 doğruluk oranıyla üretim hatlarınızdaki hataları tespit edin."
       },
       {
         "img": "/assets/Solutions/img-5.png",
         "title": "Verimliliği Artırın",
-        "text": "Tüm çalışanların verimliliğini analiz edin ve operasyonel verimliliğinizi %50'ye kadar artırın."
+        "text": "Tüm personellerinizin performansını inceleyin ve operasyonel etkinliğinizi %50’ye varan arttırın."
       },
       {
         "img": "/assets/Solutions/img-3.jpg",
-        "title": "Veri goruntuleme",
-        "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
+        "title": "Görselleştirilen Veriler",
+        "text": "Kolay anlaşılır görsellerle canlı raporlar ve uyarılar alın."
       }
     ]
   },
-
   "productsSection": {
     "heading": "İZLEMENİN ÖTESİNDE",
-    "subHeading": "Tüm güvenlik ürünlerimizi görün",
+    "subHeading": "Tüm Operasyonel Mükemmellik ürünlerimiz",
     "content": [
       {
         "icon": "/assets/icons/21.png",
-        "title": "Stok Kontrolleri",
-        "text": "Stoklarınızı CCTV ile sayın veya ölçün."
+        "title": "Stok Yönetimi",
+        "text": "Güvenlik kameralarıyla stoklarınızı sayarak veya ölçerek kontrol edin."
       },
       {
         "icon": "/assets/icons/7.png",
-        "title": "Desen ve Renk Kontrolü",
-        "text": "Kalite güvencesini onaylamak için akışlar ve resimler üzerinden üretilen ürünün görünürlüğünü analiz edin."
+        "title": "Desen ve Renk Denetimi",
+        "text": "Üretilen ürünün kalite standartlarını sağladığından emin olmak için, ürünlerin akışlardaki görüntülerini analiz edin."
       },
       {
         "icon": "/assets/icons/10.png",
-        "title": "Operasyonel mükemmellik",
-        "text": "İyileştirmeye açık süreçleri analiz etmek için operasyonlarınızın her adımını tespit edip takip edin."
+        "title": "Operasyonel Mükemmellik",
+        "text": "İyileştirmeye açık süreçleri analiz etmek için operasyonlarınızın her adımını analiz edin ve takip edin."
       },
       {
         "icon": "/assets/icons/26.png",
         "title": "Personel Verimliliği Analizi",
-        "text": "Video verilerini kullanarak personel hareketlerini ve etkinliklerini analiz ederek iş gücü verimliliğini artırın."
+        "text": "Video verilerini kullanarak personel hareketlerini ve faaliyetlerini analiz ederek iş gücü verimliliğini artırın."
       },
       {
         "icon": "/assets/icons/27.png",
-        "title": "Paketleme Kontrolü",
-        "text": "Uygunluğu görsel olarak denetleyerek ve anormallikleri tespit ederek ambalajın doğruluğunu ve kalitesini sağlayın."
+        "title": "Ambalaj Kontrolü",
+        "text": "Ambalajlamanın doğruluğunu ve kalitesini, uyumluluğu görsel olarak kontrol ederek ve sapmaları algılayarak garanti altına alın."
       }
     ]
   },
 
   "thirdSection": {
-    "heading": "Özel Veri Toplama",
+    "heading": "Private Data Collection",
     "content": {
       "img": "/assets/Solutions/data-collection.jpg",
-      "text": "Holocrow, işlediğimiz görsel içeriklerden hiçbir zaman kişisel kimlik bilgilerini toplamaz. Öncelikli hedefimiz insanların gizliliğini korurken güvenliği artırmaktır."
+      "text": "Holocrow, yenilikçi çözümler sunarken, işlediği görsel içeriklerden kişisel tanımlama detayları toplamaz. Genel amacımız, gizliliği her zaman ön planda tutarak çeşitli uygulamalarda verimliliği ve güvenliği artırmaktır. Katı gizlilik standartlarına bağlı kalarak, teknolojimizin her adımda bireylerin kişisel haklarına saygı göstermesini sağlıyoruz. Bu yaklaşım, bize kişisel verilerin bütünlüğünü koruyarak operasyonel yetenekleri artıran ileri düzey çözümler sunmamıza imkan sağlamaktadır."
     }
   },
 
   "sliderSection": {
-    "heading": "endüstriler",
+    "heading": "industries",
     "slides": [
       {
         "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
-        "title": "Manufacturing",
-        "subTitle": "Defect Detection and Production Line Monitoring",
-        "text": "Computer Vision systems in manufacturing settings are used for detecting defects in products on assembly lines, ensuring high-quality output. They also monitor the efficiency of production processes, identifying bottlenecks and areas for improvement."
+        "title": "İmalat",
+        "subTitle": "Kusur Tespiti ve Üretim Hattı İzleme",
+        "text": "Montaj hatlarındaki ürünlerdeki kusurları tespit etmek ve yüksek kaliteli çıktı sağlamak için kullanılır. Ayrıca, üretim süreçlerinin verimliliğini izleyerek darboğazları ve iyileştirme alanlarını belirler"
       },
       {
         "img": "/assets/Solutions/industriesSlider/Automotive-min.jpg",
-        "title": "Automotive Industry",
-        "subTitle": "Component Inspection and Assembly Verification",
-        "text": "In the automotive sector, Computer Vision is crucial for inspecting automotive parts for precision and correctness, as well as verifying proper assembly, thereby maintaining high standards and operational efficiency."
+        "title": "Otomotiv Endüstrisi",
+        "subTitle": "Bileşen İncelemesi ve Montaj Doğrulama",
+        "text": "Otomotiv parçalarının hassasiyetini ve doğruluğunu incelemek ve uygun montajı doğrulamak için hayati öneme sahiptir, böylece yüksek standartlar ve operasyonel verimlilik sürdürülür."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Pharmaceuticals-min.jpg",
-        "title": "Pharmaceuticals",
-        "subTitle": "Drug Quality Assurance and Packaging Inspection",
-        "text": "Computer Vision ensures the quality of pharmaceutical products by inspecting drug integrity and packaging, including label verification, to comply with health safety standards."
+        "title": "İlaç Sanayi",
+        "subTitle": "İlaç Kalite Güvencesi ve Ambalaj İncelemesi",
+        "text": "İlaç bütünlüğünü ve ambalajını, etiket doğrulaması dahil inceleyerek, sağlık güvenlik standartlarına uyum sağlamak amacıyla farmasötik ürünlerin kalitesini kontrol eder."
       },
       {
         "img": "/assets/Solutions/industriesSlider/eloctronics.jpg",
-        "title": "Electronics",
-        "subTitle": "PCB Inspection and Component Placement",
-        "text": "In electronics manufacturing, Computer Vision is used for inspecting printed circuit boards (PCBs) and ensuring accurate placement of components, crucial for device functionality."
+        "title": "Elektronik",
+        "subTitle": "PCB İncelemesi ve Bileşen Yerleştirme",
+        "text": "Baskılı devre kartlarını (PCB) incelemek ve bileşenlerin doğru yerleştirilmesini sağlamak için kullanılır, bu da cihazın işlevselliği için hayati önem taşır."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Food and Beverage Industry-min.jpg",
-        "title": "Food and Beverage Industry",
-        "subTitle": "Food Quality Control and Packaging Integrity",
-        "text": "Computer Vision systems detect imperfections in food products and ensure the integrity of packaging, including seal quality and correct labeling, essential for consumer safety."
+        "title": "Gıda ve İçecek Endüstrisi",
+        "subTitle": "Gıda Kalite Kontrolü ve Ambalaj Bütünlüğü",
+        "text": "Gıda ürünlerindeki kusurları tespit eder ve ambalajın bütünlüğünü, mühür kalitesini ve doğru etiketlemeyi sağlayarak tüketici güvenliğini korur."
       },
       {
         "img": "/assets/Solutions/industriesSlider/aerospace manufacturin-min.jpg",
-        "title": "Aerospace",
-        "subTitle": "Component Inspection and Safety Checks",
-        "text": "In aerospace manufacturing, precision is paramount. Computer Vision assists in inspecting various components for defects and ensuring that safety standards are rigorously met."
-      }
-    ],
-    "features": [
-      {
-        "icon": "../assets/features/sales-marketing.png",
-        "name": "RETAIL & FMCG",
-        "link": "retail"
-      },
-      {
-        "icon": "../assets/features/safety.png",
-        "name": "Workplace Safety",
-        "link": "workplace-safety"
-      },
-      {
-        "icon": "../assets/features/security.png",
-        "name": "Security",
-        "link": "security"
+        "title": "Havacılık",
+        "subTitle": "Bileşen İncelemesi ve Güvenlik Kontrolleri",
+        "text": "Havacılık imalatında hassasiyet çok önemlidir. Holocrow çeşitli bileşenleri kusurlar açısından incelemeye ve güvenlik standartlarının titizlikle karşılandığından emin olmaya yardımcı olur."
       }
     ]
-  }
+  },
+  "features": [
+    {
+      "icon": "../assets/features/sales-marketing.png",
+      "name": "PERAKENDE & FMCG",
+      "link": "retail"
+    },
+    {
+      "icon": "../assets/features/safety.png",
+      "name": "İŞ SAĞLIĞI VE GÜVENLİĞİ",
+      "link": "workplace-safety"
+    },
+    {
+      "icon": "../assets/features/security.png",
+      "name": "İŞ EMNİYETİ",
+      "link": "security"
+    }
+  ]
 }

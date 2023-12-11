@@ -57,7 +57,7 @@ function SuccessStories() {
                           index % 2 === 0 ? (
                             <span key={index}>{text}</span>
                           ) : (
-                            <strong className="text-primary" key={index}>
+                            <strong className="text-black-800" key={index}>
                               {text}
                             </strong>
                           )

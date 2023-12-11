@@ -1,60 +1,64 @@
 {
   "heroImg": "/assets/Solutions/MarketingHero.png",
-  "heroHeading": "PERAKENDE & FMCG",
-  "subHero": ["Her zaman", "Milyar Saat Eğitim", "Güvenlik Görevlisi"],
+  "heroHeading": "Perakende & FMCG",
+  "subHero": [
+    "Her zaman çalışan",
+    "Milyarlarca saat tecrübeli",
+    "Pazarlama Analistiniz"
+  ],
   "firstSection": {
     "content": [
       {
         "img": "/assets/Solutions/img-7.png",
-        "title": "Anlık Uyarılar",
-        "text": "Kapsamlı video sahne analizi ile şüpheli durumlarda anında uyarı alın ve yanlış alarmları %90 azaltın."
+        "title": "Kesin Analizler",
+        "text": "Ziyaretçi sayısı, ısı haritası, demografik bilgiler ve çok daha fazlasını %99.9 doğrulukla elde edin."
       },
       {
         "img": "/assets/Solutions/img-8.png",
-        "title": "Gerçek Zamanlı Uyarılar",
-        "text": "İşyerinde güvenlik protokolleri ihlal edildiğinde ilgili çalışanlara canlı uyarı gönderin."
+        "title": "Stok Tükenmesini Engelleyin",
+        "text": "Stok tükenmesini önlemek ve değerli içgörüler elde etmek için tüm satın alma işlemlerini video akışları üzerinden takip ve analiz edin."
       },
       {
         "img": "/assets/Solutions/img-3.jpg",
-        "title": "Veri goruntuleme",
-        "text": "Anlaşılması kolay görsellerle canlı raporlar ve uyarılar alın."
+        "title": "Görselleştirilen Veriler",
+        "text": "Kolay anlaşılır görsellerle canlı raporlar ve uyarılar alın."
       }
     ]
   },
 
   "productsSection": {
     "heading": "İZLEMENİN ÖTESİNDE",
-    "subHeading": "Tüm güvenlik ürünlerimizi görün",
+    "subHeading": "Tüm Perakende & FMCG ürünlerimiz",
     "content": [
       {
         "icon": "/assets/icons/19.png",
-        "title": "Ziyaretçi Sayma",
-        "text": "Mağazalarınızın potansiyelini ölçmek için personel hariç, anonim kimlikleri kullanarak benzersiz ziyaretçileri sayın."
+        "title": "Ziyaretçi Sayımı",
+        "text": "Mağazalarınızın potansiyelini ölçmek için, personeli hariç tutarak anonim kimlikler kullanarak ziyaretçileri sayın."
       },
       {
         "icon": "/assets/icons/20.png",
         "title": "Demografik Hedefleme",
-        "text": "Doğru segmentasyonu uygulamak için ziyaretçilerinizin demografik çeşitliliğini öğrenin."
+        "text": "Doğru segmentasyonu uygulamak için ziyaretçilerinizin demografik çeşitliliğini alın."
       },
       {
         "icon": "/assets/icons/3.png",
         "title": "A/B Testi",
-        "text": "Müşterilerin yeni ürünlerinize ilişkin tercihlerini hızlı bir şekilde anlayın."
+        "text": "Yeni ürünlerinizde müşterilerin tercihlerini hızlı bir şekilde anlayın."
       },
       {
         "icon": "/assets/icons/14.png",
-        "title": "Isı Haritası ve Yaya Sayısı",
-        "text": "Düzeni ve ürün yerleştirmeyi optimize etmek için müşteri hareket modellerini ve mağaza sıcak noktalarını analiz edin."
+        "title": "Isı Haritası & Footfall",
+        "text": "Mağaza düzenini ve ürün yerleşimlerini iyileştirmek için müşteri hareket modellerini ve mağaza sıcak noktalarını analiz edin."
       },
       {
         "icon": "/assets/icons/4.png",
         "title": "Ürün Etkileşim Analizi",
-        "text": "Tercihler ve katılım düzeyleri hakkında bilgi edinmek için müşterilerin ürünlerle olan etkileşimlerini izleyin."
+        "text": "Müşterilerin ürünlerle olan etkileşimlerini gözlemleyerek tercihleri ve bağlılık düzeylerine dair iç görüler edinin."
       },
       {
         "icon": "/assets/icons/16.png",
         "title": "Envanter ve Stok Kontrolü",
-        "text": "Gerçek zamanlı görsel veri analizini kullanarak envanter takibini otomatikleştirin ve optimum stok seviyelerini koruyun."
+        "text": "Gerçek zamanlı görsel veri analizi kullanarak envanter takibini otomatikleştirin ve optimal stok seviyelerini sürdürün."
       }
     ]
   },
@@ -63,37 +67,65 @@
     "heading": "Özel Veri Toplama",
     "content": {
       "img": "/assets/Solutions/data-collection.jpg",
-      "text": "Holocrow, işlediğimiz görsel içeriklerden hiçbir zaman kişisel kimlik bilgilerini toplamaz. Öncelikli hedefimiz insanların gizliliğini korurken güvenliği artırmaktır."
+      "text": "Holocrow, yenilikçi çözümler sunarken, işlediği görsel içeriklerden kişisel tanımlama detayları toplamaz. Genel amacımız, gizliliği her zaman ön planda tutarak çeşitli uygulamalarda verimliliği ve güvenliği artırmaktır. Katı gizlilik standartlarına bağlı kalarak, teknolojimizin her adımda bireylerin kişisel haklarına saygı göstermesini sağlıyoruz. Bu yaklaşım, bize kişisel verilerin bütünlüğünü koruyarak operasyonel yetenekleri artıran ileri düzey çözümler sunmamıza imkan sağlamaktadır."
     }
   },
 
   "sliderSection": {
-    "heading": "endüstriler",
+    "heading": "Alanlar",
     "slides": [
       {
-        "title": "Inventory Management:",
-        "img": "/assets/Solutions/industriesSlider/Inventory Management-min.jpg"
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Envanter Yönetimi",
+        "subTitle": "Stok Takibi ve Stoklama",
+        "text": "Envanter seviyelerinin gerçek zamanlı takibine yardımcı olur, zamanında yeniden stoklama kolaylaştırır ve stok tükenmesi veya fazla stoklama ihtimalini azaltır."
       },
       {
-        "title": "Customer Experience:",
-        "img": "/assets/Solutions/industriesSlider/industry2.png **"
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Müşteri Deneyimi",
+        "subTitle": "Kişiselleştirilmiş Alışveriş ve Mağaza İçi Navigasyon",
+        "text": "Alışveriş alışkanlıklarına dayalı kişiselleştirilmiş alışveriş önerileri sunarak ve mağaza içi navigasyonda yardımcı olarak müşteri deneyimini geliştirir."
+      },
+      {
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Ödeme ve Ödeme Sistemleri",
+        "subTitle": "Otomatik Ödeme Sistemleri ve Hırsızlık Önleme",
+        "text": "Otomatik ödeme sistemlerinde kullanılarak bekleme sürelerinin azaltılmasına, genel müşteri deneyimlerini iyileştirilmesine, potansiyel hırsızlıkların tespit edilmesine yardımcı olur."
+      },
+      {
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "FMCG Ürün Yerleşimi",
+        "subTitle": "Raf Alanı Optimizasyonu ve Planogram Uyumu",
+        "text": "Rraf alanını ve müşteri ürün etkileşimlerini analiz ederek ürün yerleşimini optimize etmeye ve planogram uyumunu sağlamaya yardımcı olur."
+      },
+      {
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Gıda Perakendesi",
+        "subTitle": "Tazeliği İzleme ve Kalite Kontrolü",
+        "text": "Ürünlerin tazeliğini izlemek ve kalite kontrolünü sağlamak için kullanılır, böylece tüketiciler için gıda güvenliğini artırır."
+      },
+      {
+        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "title": "Pazarlama ve Reklamcılık",
+        "subTitle": "Müşteri Etkileşim Analizi",
+        "text": "Mağaza içi reklam ve gösterimlerin müşteri ile etkileşimini analiz eder, pazarlama stratejileri için önemli veriler toplar."
       }
     ]
   },
   "features": [
     {
       "icon": "../assets/features/safety.png",
-      "name": "Workplace Safety",
+      "name": "İŞ SAĞLIĞI VE GÜVENLİĞİ",
       "link": "workplace-safety"
     },
     {
       "icon": "../assets/features/security.png",
-      "name": "Security",
+      "name": "İŞ EMNİYETİ",
       "link": "security"
     },
     {
       "icon": "../assets/features/efficiency.png",
-      "name": "OPERATIONAL EXCELLENCE",
+      "name": "OPERASYONEL MÜKEMMELLİK",
       "link": "operational-excellence"
     }
   ]

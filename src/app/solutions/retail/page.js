@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import enRetail from "../../../../public/translations/en/retail.json";
 import trRetail from "../../../../public/translations/tr/retail.json";
 import OtherSolutions from "@/components/OtherSolutions";
+import SwipingSlider from "@/components/SwipingSlider";
 
 const translations = {
   en: enRetail,
@@ -56,7 +57,7 @@ function Retail() {
         </div>
       </motion.section>
 
-      {/* <SwipingSlider content={content.sliderSection} /> */}
+      <SwipingSlider content={content.sliderSection} />
       <OtherSolutions content={content} />
 
       <MainFooter />
