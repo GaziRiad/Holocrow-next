@@ -11,6 +11,7 @@ export const navigation = {
       { lang: "English", attribute: "en" },
       { lang: "Turkish", attribute: "tr" },
     ],
+    button: "Login",
   },
   tr: {
     links: [
@@ -24,5 +25,6 @@ export const navigation = {
       { lang: "Turkish", attribute: "tr" },
       { lang: "English", attribute: "en" },
     ],
+    button: "İngilizce ",
   },
 };

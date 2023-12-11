@@ -1,4 +1,8 @@
 {
+  "hero": {
+    "text": ["İzlemenin", "Ötesinde"],
+    "img": "../../images/camera-vector.png"
+  },
   "featuresSection": {
     "heading": "Daha iyi",
     "text": "Tesislerdeki mevcut kameralarla sorunsuz entegrasyon",
@@ -57,7 +61,9 @@
           "desc": "Bildirimleri ve raporları anında, Holocrow’un yeni kullanıcı dostu platformundan almaya başlayın. İşte bu kadar basit!"
         }
       }
-    ]
+    ],
+    "button": "ŞİMDİ BAŞLA",
+    "link": "DAHA FAZLASINI ÖĞREN"
   },
 
   "slidersSection": {

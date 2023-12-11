@@ -1,8 +1,24 @@
 import { motion } from "framer-motion";
 import Heading from "./Heading";
 import Button from "./Button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 function HeroPattern() {
+  const { activeLanguage } = useLanguage();
+
+  const pattern = {
+    en: {
+      heading: "Beyond Watching",
+      text: "Detect Perform Protect with AI",
+      button: "Connect Now",
+    },
+    tr: {
+      heading: "Beyond Watching",
+      text: "AI ile Tespit et, Akisyon al ve Koru",
+      button: "Bağlan",
+    },
+  };
+
   return (
     <div className="hidden absolute md:-bottom-[20%] right-0 w-72 lg:block xl:-bottom-[27%] 2xl:-bottom-[20%]">
       <motion.img
@@ -19,11 +35,11 @@ function HeroPattern() {
       />
       <div className=" z-20 absolute top-[24%] px-4 pl-10 text-center">
         <Heading type="h4" style="!text-center">
-          Beyond Watching
+          {pattern[activeLanguage].heading}
         </Heading>
-        <p className="text-white mb-3 px-6">Detect Perform Protect with AI</p>
+        <p className="text-white mb-3 px-6">{pattern[activeLanguage].text}</p>
         <Button to="/signup" type="small">
-          Connect Now
+          {pattern[activeLanguage].button}
         </Button>
       </div>
     </div>

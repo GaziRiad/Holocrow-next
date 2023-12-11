@@ -84,7 +84,7 @@ function Navigation({ sticky, home = false }) {
         </ul>
 
         <Button type="navigation" to="https://app.holocrow.com/">
-          Login
+          {navigation[activeLanguage].button}
         </Button>
       </ul>
 
@@ -131,7 +131,7 @@ function Navigation({ sticky, home = false }) {
               </Link>
             ))}
             <Button type="mobile-navigation" to="https://app.holocrow.com/">
-              Login
+              {navigation[activeLanguage].button}
             </Button>
           </motion.ul>
         </div>

@@ -11,7 +11,7 @@ import HeroPattern from "../HeroPattern";
 
 import { motion } from "framer-motion";
 
-function HeroMain() {
+function HeroMain({ content }) {
   // Hero video
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -69,13 +69,13 @@ function HeroMain() {
         </header>
 
         <div className="absolute top-[25%] left-1/2 -translate-x-[50%] flex flex-col gap-8 text-white text-4xl items-center font-extrabold lg:top-[40%] xl:left-1/2 xl:gap-28 xl:text-6xl 2xl:text-8xl lg:flex-row">
-          <p>Beyond</p>
+          <p>{content.hero.text[0]}</p>
           <img
-            src="/images/camera-vector.png"
+            src={content.hero.img}
             className="w-20 lg:w-32 h-auto"
             alt="camera vector for holocrow"
           />
-          <p className=" opacity-50">Watching</p>
+          <p className=" opacity-50">{content.hero.text[1]}</p>
         </div>
 
         {/* <motion.span className="border rounded-full p-8 absolute top-[65%] left-1/2 -translate-x-[70%] cursor-pointer ">

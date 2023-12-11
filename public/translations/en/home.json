@@ -1,4 +1,8 @@
 {
+  "hero": {
+    "text": ["Beyond", "Watching"],
+    "img": "../../images/camera-vector.png"
+  },
   "featuresSection": {
     "heading": "Get better",
     "text": "by seamlessly integrating with existing cameras in facilities",
@@ -57,7 +61,9 @@
           "desc": "Start receiving notifications and reports instantly. It's that simple!"
         }
       }
-    ]
+    ],
+    "button": "GET STARTED",
+    "link": "LEARN MORE"
   },
 
   "slidersSection": {
