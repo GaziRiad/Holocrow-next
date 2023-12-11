@@ -18,7 +18,10 @@ function Navigation({ sticky, home = false }) {
 
   const { activeLanguage, setActiveLanguage } = useLanguage();
 
-  // const activeLanguage = "en";
+  function changeActiveLang(lang) {
+    setActiveLanguage(lang);
+    localStorage.setItem("lang", lang);
+  }
 
   useEffect(() => {
     if (navIsOpen) document.body.style.overflow = "hidden";
@@ -67,7 +70,8 @@ function Navigation({ sticky, home = false }) {
                       className=" cursor-pointer"
                       key={lang.attribute}
                       onClick={() => {
-                        setActiveLanguage(lang.attribute);
+                        // setActiveLanguage(lang.attribute);
+                        changeActiveLang(lang.attribute);
                         setDisplayLangs(false);
                       }}
                     >
@@ -108,7 +112,8 @@ function Navigation({ sticky, home = false }) {
                     }`}
                     key={lang.attribute}
                     onClick={() => {
-                      setActiveLanguage(lang.attribute);
+                      // setActiveLanguage(lang.attribute);
+                      changeActiveLang(lang.attribute);
                       setDisplayLangs(false);
                     }}
                   >
