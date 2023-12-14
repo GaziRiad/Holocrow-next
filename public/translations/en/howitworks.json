@@ -31,21 +31,30 @@
 
   "cardsSection": [
     {
-      "icon": "../assets/HowItWorksPage/security-icon.png",
-      "title": "Security",
+      "icon": "../assets/HowItWorksPage/marketing-icon.png",
+      "title": "Retail & FMCG",
       "options": [
-        "Restricted Area Control",
-        "Vehicle Identification",
-        "Suspicious Item Detection",
-        "Crowd Analysis",
-        "Facial Recognition",
-        "Behavioral Analysis",
-        "Surveillance & Real-time Analysis"
+        "Demographic Targeting",
+        "A/B Testing",
+        "Heatmap & Footfall",
+        "Product Engagement Analysis",
+        "Inventory & Stock Control"
+      ]
+    },
+    {
+      "icon": "../assets/HowItWorksPage/quality-control-icon.png",
+      "title": "Operational Excellence",
+      "options": [
+        "Stock Controls",
+        "Patterns & Colours Check",
+        "Staff Efficiency Analysis",
+        "Operational Excellence",
+        "Packaging Control"
       ]
     },
     {
       "icon": "../assets/HowItWorksPage/safety-icon.png",
-      "title": "Safety",
+      "title": "Workplace Safety",
       "options": [
         "PPE Control",
         "Housekeeping",
@@ -60,25 +69,16 @@
       ]
     },
     {
-      "icon": "../assets/HowItWorksPage/marketing-icon.png",
-      "title": "Marketing",
+      "icon": "../assets/HowItWorksPage/security-icon.png",
+      "title": "Security",
       "options": [
-        "Demographic Targeting",
-        "A/B Testing",
-        "Heatmap & Footfall",
-        "Product Engagement Analysis",
-        "Inventory & Stock Control"
-      ]
-    },
-    {
-      "icon": "../assets/HowItWorksPage/quality-control-icon.png",
-      "title": "Quality Control",
-      "options": [
-        "Stock Controls",
-        "Patterns & Colours Check",
-        "Staff Efficiency Analysis",
-        "Operational Excellence",
-        "Packaging Control"
+        "Restricted Area Control",
+        "Vehicle Identification",
+        "Suspicious Item Detection",
+        "Crowd Analysis",
+        "Facial Recognition",
+        "Behavioral Analysis",
+        "Surveillance & Real-time Analysis"
       ]
     }
   ],

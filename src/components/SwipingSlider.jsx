@@ -55,7 +55,9 @@ function SwipingSlider({ content }) {
                 src={slide.img}
                 className=" h-1/2 w-full block rounded-xl mb-6"
               />
-              <p className="text-left font-bold text-xl mb-2">{slide.title}</p>
+              <p className="text-left font-bold text-xl mb-2 text-primary">
+                {slide.title}
+              </p>
               <p>
                 <span className="font-medium">{slide.subTitle}</span>
                 <span> {slide.text}</span>

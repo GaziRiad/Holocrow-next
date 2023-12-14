@@ -31,35 +31,6 @@
 
   "cardsSection": [
     {
-      "icon": "../assets/HowItWorksPage/security-icon.png",
-      "title": "İş Emniyeti",
-      "options": [
-        "Sınırlandırılmış Alan Denetimi",
-        "Araç Tanımlama",
-        "Şüpheli Nesne Tespiti",
-        "Kalabalık Analizi",
-        "Yüz Tanımlama",
-        "Davranış Analizi",
-        "Gözetleme ve Gerçek Zamanlı Analiz"
-      ]
-    },
-    {
-      "icon": "../assets/HowItWorksPage/safety-icon.png",
-      "title": "İş Güvenliği ve Sağlığı",
-      "options": [
-        "PPE Kullanım Denetimi",
-        "Bakım ve Temizlik",
-        "Workplace Safety",
-        "Makine Kullanımı",
-        "Pedestrian Path",
-        "Ergonomi Kontrolü",
-        "El Korkuluğu Kullanımı",
-        "Bölge Yönetimi",
-        "Taşıt Denetimi",
-        "Yere Düşen Kişi Algılama"
-      ]
-    },
-    {
       "icon": "../assets/HowItWorksPage/marketing-icon.png",
       "title": "Perakende & FMCG",
       "options": [
@@ -80,6 +51,35 @@
         "Operasyonel Mükemmellik",
         "Personel Verimliliği Analizi",
         "Ambalaj Kontrolü"
+      ]
+    },
+    {
+      "icon": "../assets/HowItWorksPage/safety-icon.png",
+      "title": "İş Güvenliği ve Sağlığı",
+      "options": [
+        "PPE Kullanım Denetimi",
+        "Bakım ve Temizlik",
+        "Workplace Safety",
+        "Makine Kullanımı",
+        "Pedestrian Path",
+        "Ergonomi Kontrolü",
+        "El Korkuluğu Kullanımı",
+        "Bölge Yönetimi",
+        "Taşıt Denetimi",
+        "Yere Düşen Kişi Algılama"
+      ]
+    },
+    {
+      "icon": "../assets/HowItWorksPage/security-icon.png",
+      "title": "İş Emniyeti",
+      "options": [
+        "Sınırlandırılmış Alan Denetimi",
+        "Araç Tanımlama",
+        "Şüpheli Nesne Tespiti",
+        "Kalabalık Analizi",
+        "Yüz Tanımlama",
+        "Davranış Analizi",
+        "Gözetleme ve Gerçek Zamanlı Analiz"
       ]
     }
   ],

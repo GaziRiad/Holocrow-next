@@ -13,6 +13,11 @@
         "link": "retail"
       },
       {
+        "icon": "../assets/features/efficiency.png",
+        "name": "OPERASYONEL MÜKEMMELLİK",
+        "link": "operational-excellence"
+      },
+      {
         "icon": "../assets/features/safety.png",
         "name": "İŞ SAĞLIĞI VE GÜVENLİĞİ",
         "link": "workplace-safety"
@@ -21,11 +26,6 @@
         "icon": "../assets/features/security.png",
         "name": "İŞ EMNİYETİ",
         "link": "security"
-      },
-      {
-        "icon": "../assets/features/efficiency.png",
-        "name": "OPERASYONEL MÜKEMMELLİK",
-        "link": "operational-excellence"
       }
     ]
   },
@@ -70,91 +70,6 @@
     "heading": "Kameralarınızı Güçlendirin:",
     "subHeading": "Montaj Gerektirmez - Sadece Tıklayın ve Kullanın",
     "sliders": [
-      {
-        "heading": "İş Emniyeti",
-        "slides": [
-          {
-            "icon": "../assets/icons/9.png",
-            "title": "Sınırlandırılmış Alan Denetimi",
-            "text": "Güvenlik kurallarınıza uygun şekilde ve yalnız doğru alarmlarla varlıklarınızı gözetleyin."
-          },
-          {
-            "icon": "../assets/icons/8.png",
-            "title": "Araç Tanımlama",
-            "text": "Araçların plaka ve diğer nitelikleriyle erişimlerini denetleyerek ihlallerin önüne geçin."
-          },
-          {
-            "icon": "../assets/icons/17.png",
-            "title": "Şüpheli Nesne Tespiti",
-            "text": "Alanın güvenliğini sağlamak için şüpheli tavırları ve potansiyel zararlı nesneleri, çantaları, kutuları vb. tespit edin."
-          },
-          {
-            "icon": "../assets/icons/5.png",
-            "title": "Kalabalık Analizi",
-            "text": "Güvenliği sağlamak ve alan kullanımını optimize etmek için kalabalık yoğunluğunu, akışını ve davranışını izleyerek kalabalık dinamiklerini analiz edin."
-          },
-          {
-            "icon": "../assets/icons/12.png",
-            "title": "Yüz Tanımlama",
-            "text": "Kimlik teyidi için kesin yüz tanıma özelliğiyle güvenliği güçlendirin."
-          },
-          {
-            "icon": "../assets/icons/6.png",
-            "title": "Davranış Analizi",
-            "text": "Gelişmiş hareket ve aktivite analiziyle şüpheni davranışları belirleyin ve anlık bildirim alın."
-          },
-          {
-            "icon": "../assets/icons/25.png",
-            "title": "Gözetleme ve Gerçek Zamanlı Analiz",
-            "text": "Anında olay müdahalesi ve gelişmiş güvenlik için gerçek zamanlı video gözetimi uygulayın."
-          }
-        ]
-      },
-      {
-        "heading": "İş Güvenliği ve Sağlığı",
-        "slides": [
-          {
-            "icon": "../assets/icons/1.png",
-            "title": "PPE Kullanım Denetimi",
-            "text": "İş kazalarından kaynaklanabilecek etkileri azaltmak için personelin PPE kullanımını otomatik bir şekilde denetleyin."
-          },
-          {
-            "icon": "../assets/icons/2.png",
-            "title": "Makine Kullanımı",
-            "text": "Yanlış makine kullanımı ciddi yaralanmalara yol açabilir. Gerçek zamanlı uyarılarla kazaları önleyerek çalışanlarınızı ve işinizi güvence altına alın."
-          },
-          {
-            "icon": "../assets/icons/15.png",
-            "title": "Bakım ve Temizlik",
-            "text": "Yetersiz bakım ve temizlik nedeniyle oluşabilecek kazalar tamamen önlenebilir. Hızlı tanımlama, hızlı düzelte ve zararın önlenmesini sağlar."
-          },
-          {
-            "icon": "../assets/icons/11.png",
-            "title": "Ergonomi Kontrolü",
-            "text": "İşe bağlı kas ve iskelet rahatsızlıklarını engellemek ve iş güvenliğini iyileştirmek için çalışanların ergonomi uygulamalarını gözlemleyin."
-          },
-          {
-            "icon": "../assets/icons/13.png",
-            "title": "El Korkuluğu Kullanımı",
-            "text": "Kritik bölgelerde korkuluk kullanımını otomatik olarak algılayın ve düşme ve yaralanmaları önlemek için uygun kullanımı teşvik edin."
-          },
-          {
-            "icon": "../assets/icons/22.png",
-            "title": "Bölge Yönetimi",
-            "text": "Görsel tanımlama ve kontrol sistemleri aracılığıyla kısıtlı veya tehlikeli alanlara erişimi yönetin."
-          },
-          {
-            "icon": "../assets/icons/23.png",
-            "title": "Taşıt Denetimi",
-            "text": "Tesisler içindeki araç hareketlerini denetleyerek kazaları engelleyin ve güvenlik kurallarına uyumu sağlayın."
-          },
-          {
-            "icon": "../assets/icons/24.png",
-            "title": "Yere Düşen Kişi Algılama",
-            "text": "Çalışanın tehlikede olduğu veya acil yardıma ihtiyaç duyduğu durumları anında tespit edin, otomatik olarak ilgili birimleri yönlendirin."
-          }
-        ]
-      },
       {
         "heading": "Perakende & FMCG",
         "slides": [
@@ -217,6 +132,91 @@
             "icon": "../assets/icons/27.png",
             "title": "Ambalaj Kontrolü",
             "text": "Ambalajlamanın doğruluğunu ve kalitesini, uyumluluğu görsel olarak kontrol ederek ve sapmaları algılayarak garanti altına alın."
+          }
+        ]
+      },
+      {
+        "heading": "İş Güvenliği ve Sağlığı",
+        "slides": [
+          {
+            "icon": "../assets/icons/1.png",
+            "title": "PPE Kullanım Denetimi",
+            "text": "İş kazalarından kaynaklanabilecek etkileri azaltmak için personelin PPE kullanımını otomatik bir şekilde denetleyin."
+          },
+          {
+            "icon": "../assets/icons/2.png",
+            "title": "Makine Kullanımı",
+            "text": "Yanlış makine kullanımı ciddi yaralanmalara yol açabilir. Gerçek zamanlı uyarılarla kazaları önleyerek çalışanlarınızı ve işinizi güvence altına alın."
+          },
+          {
+            "icon": "../assets/icons/15.png",
+            "title": "Bakım ve Temizlik",
+            "text": "Yetersiz bakım ve temizlik nedeniyle oluşabilecek kazalar tamamen önlenebilir. Hızlı tanımlama, hızlı düzelte ve zararın önlenmesini sağlar."
+          },
+          {
+            "icon": "../assets/icons/11.png",
+            "title": "Ergonomi Kontrolü",
+            "text": "İşe bağlı kas ve iskelet rahatsızlıklarını engellemek ve iş güvenliğini iyileştirmek için çalışanların ergonomi uygulamalarını gözlemleyin."
+          },
+          {
+            "icon": "../assets/icons/13.png",
+            "title": "El Korkuluğu Kullanımı",
+            "text": "Kritik bölgelerde korkuluk kullanımını otomatik olarak algılayın ve düşme ve yaralanmaları önlemek için uygun kullanımı teşvik edin."
+          },
+          {
+            "icon": "../assets/icons/22.png",
+            "title": "Bölge Yönetimi",
+            "text": "Görsel tanımlama ve kontrol sistemleri aracılığıyla kısıtlı veya tehlikeli alanlara erişimi yönetin."
+          },
+          {
+            "icon": "../assets/icons/23.png",
+            "title": "Taşıt Denetimi",
+            "text": "Tesisler içindeki araç hareketlerini denetleyerek kazaları engelleyin ve güvenlik kurallarına uyumu sağlayın."
+          },
+          {
+            "icon": "../assets/icons/24.png",
+            "title": "Yere Düşen Kişi Algılama",
+            "text": "Çalışanın tehlikede olduğu veya acil yardıma ihtiyaç duyduğu durumları anında tespit edin, otomatik olarak ilgili birimleri yönlendirin."
+          }
+        ]
+      },
+      {
+        "heading": "İş Emniyeti",
+        "slides": [
+          {
+            "icon": "../assets/icons/9.png",
+            "title": "Sınırlandırılmış Alan Denetimi",
+            "text": "Güvenlik kurallarınıza uygun şekilde ve yalnız doğru alarmlarla varlıklarınızı gözetleyin."
+          },
+          {
+            "icon": "../assets/icons/8.png",
+            "title": "Araç Tanımlama",
+            "text": "Araçların plaka ve diğer nitelikleriyle erişimlerini denetleyerek ihlallerin önüne geçin."
+          },
+          {
+            "icon": "../assets/icons/17.png",
+            "title": "Şüpheli Nesne Tespiti",
+            "text": "Alanın güvenliğini sağlamak için şüpheli tavırları ve potansiyel zararlı nesneleri, çantaları, kutuları vb. tespit edin."
+          },
+          {
+            "icon": "../assets/icons/5.png",
+            "title": "Kalabalık Analizi",
+            "text": "Güvenliği sağlamak ve alan kullanımını optimize etmek için kalabalık yoğunluğunu, akışını ve davranışını izleyerek kalabalık dinamiklerini analiz edin."
+          },
+          {
+            "icon": "../assets/icons/12.png",
+            "title": "Yüz Tanımlama",
+            "text": "Kimlik teyidi için kesin yüz tanıma özelliğiyle güvenliği güçlendirin."
+          },
+          {
+            "icon": "../assets/icons/6.png",
+            "title": "Davranış Analizi",
+            "text": "Gelişmiş hareket ve aktivite analiziyle şüpheni davranışları belirleyin ve anlık bildirim alın."
+          },
+          {
+            "icon": "../assets/icons/25.png",
+            "title": "Gözetleme ve Gerçek Zamanlı Analiz",
+            "text": "Anında olay müdahalesi ve gelişmiş güvenlik için gerçek zamanlı video gözetimi uygulayın."
           }
         ]
       }

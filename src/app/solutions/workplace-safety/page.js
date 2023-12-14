@@ -14,6 +14,7 @@ import enWorkplace from "../../../../public/translations/en/workplace-safety.jso
 import trWorkplace from "../../../../public/translations/tr/workplace-safety.json";
 import { useLanguage } from "@/contexts/LanguageContext";
 import OtherSolutions from "@/components/OtherSolutions";
+import Footer from "@/components/Footer";
 const translations = {
   en: enWorkplace,
   tr: trWorkplace,
@@ -60,7 +61,7 @@ function WorkplaceSafety() {
       <SwipingSlider content={content.sliderSection} />
       <OtherSolutions content={content} />
 
-      <MainFooter />
+      <Footer icon="../assets/footer-img.png" />
     </>
   );
 }

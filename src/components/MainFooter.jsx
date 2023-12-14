@@ -12,7 +12,7 @@ function MainFooter() {
     },
     {
       icon: "../assets/footer/footer-icon3.png",
-      text: "7-Day Free Trial",
+      text: "14-Day Free Trial",
     },
   ];
 

@@ -13,6 +13,11 @@
         "link": "retail"
       },
       {
+        "icon": "../assets/features/efficiency.png",
+        "name": "OPERATIONAL EXCELLENCE",
+        "link": "operational-excellence"
+      },
+      {
         "icon": "../assets/features/safety.png",
         "name": "Workplace Safety",
         "link": "workplace-safety"
@@ -21,11 +26,6 @@
         "icon": "../assets/features/security.png",
         "name": "Security",
         "link": "security"
-      },
-      {
-        "icon": "../assets/features/efficiency.png",
-        "name": "OPERATIONAL EXCELLENCE",
-        "link": "operational-excellence"
       }
     ]
   },
@@ -70,91 +70,6 @@
     "heading": " Empower Your CCTV:",
     "subHeading": "No Installation - Just Click and Use",
     "sliders": [
-      {
-        "heading": "security",
-        "slides": [
-          {
-            "icon": "../assets/icons/9.png",
-            "title": "Restricted Area Control",
-            "text": "Watch your assets with only true alarms according to your security rule."
-          },
-          {
-            "icon": "../assets/icons/8.png",
-            "title": "Vehicle Identification",
-            "text": "Access control of vehicles with their plate and other features to prevent violation and fraud."
-          },
-          {
-            "icon": "../assets/icons/17.png",
-            "title": "Suspicious Item Detection",
-            "text": "Detect doubtful attitudes and potential harmful objects, bags, box etc. to secure your area."
-          },
-          {
-            "icon": "../assets/icons/5.png",
-            "title": "Crowd Analysis",
-            "text": "Analyze crowd dynamics to manage large gatherings effectively. Monitor crowd density, flow, and behavior to ensure safety and optimize space utilization."
-          },
-          {
-            "icon": "../assets/icons/12.png",
-            "title": "Facial Recognition",
-            "text": "Enhance security with accurate facial recognition for identity verification."
-          },
-          {
-            "icon": "../assets/icons/6.png",
-            "title": "Behavioral Analysis",
-            "text": "Identify suspicious behaviors through advanced motion and activity analysis."
-          },
-          {
-            "icon": "../assets/icons/25.png",
-            "title": "Surveillance and Real-time Analysis",
-            "text": "Implement real-time video surveillance for immediate incident response and security."
-          }
-        ]
-      },
-      {
-        "heading": "Workplace Safety",
-        "slides": [
-          {
-            "icon": "../assets/icons/1.png",
-            "title": "PPE Control",
-            "text": "Control proper PPE usage of staff to minimize effects on them from work accidents."
-          },
-          {
-            "icon": "../assets/icons/2.png",
-            "title": "Machine Interactions",
-            "text": "Poor machine usage can cause serious injuries. Watch out and block accidents with real-time warnings to protect your staff and business."
-          },
-          {
-            "icon": "../assets/icons/15.png",
-            "title": "Housekeeping",
-            "text": "Injuries due to inadequate housekeeping are entirely avoidable. Prompt identification leads to swift rectification and the prevention of harm."
-          },
-          {
-            "icon": "../assets/icons/11.png",
-            "title": "Ergonomy Control",
-            "text": "Monitor ergonomic practices of staff to prevent work-related musculoskeletal disorders and enhance workplace safety."
-          },
-          {
-            "icon": "../assets/icons/13.png",
-            "title": "Handrail Usage",
-            "text": "Automatically detect and encourage proper use of handrails in critical areas to prevent falls and injuries."
-          },
-          {
-            "icon": "../assets/icons/22.png",
-            "title": "Area Controls",
-            "text": "Manage access to restricted or hazardous areas through visual identification and control systems."
-          },
-          {
-            "icon": "../assets/icons/23.png",
-            "title": "Vehicle Control",
-            "text": "Oversee and regulate vehicle movement within premises to prevent accidents and ensure safety compliance."
-          },
-          {
-            "icon": "../assets/icons/24.png",
-            "title": "Man-down Detection",
-            "text": "Instantly detect and respond to incidents where staff are incapacitated or in distress for rapid assistance."
-          }
-        ]
-      },
       {
         "heading": "Retail & FMCG",
         "slides": [
@@ -217,6 +132,91 @@
             "icon": "../assets/icons/27.png",
             "title": "Packaging Control",
             "text": "Ensure accuracy and quality in packaging by visually inspecting for conformity and detecting anomalies."
+          }
+        ]
+      },
+      {
+        "heading": "Workplace Safety",
+        "slides": [
+          {
+            "icon": "../assets/icons/1.png",
+            "title": "PPE Control",
+            "text": "Control proper PPE usage of staff to minimize effects on them from work accidents."
+          },
+          {
+            "icon": "../assets/icons/2.png",
+            "title": "Machine Interactions",
+            "text": "Poor machine usage can cause serious injuries. Watch out and block accidents with real-time warnings to protect your staff and business."
+          },
+          {
+            "icon": "../assets/icons/15.png",
+            "title": "Housekeeping",
+            "text": "Injuries due to inadequate housekeeping are entirely avoidable. Prompt identification leads to swift rectification and the prevention of harm."
+          },
+          {
+            "icon": "../assets/icons/11.png",
+            "title": "Ergonomy Control",
+            "text": "Monitor ergonomic practices of staff to prevent work-related musculoskeletal disorders and enhance workplace safety."
+          },
+          {
+            "icon": "../assets/icons/13.png",
+            "title": "Handrail Usage",
+            "text": "Automatically detect and encourage proper use of handrails in critical areas to prevent falls and injuries."
+          },
+          {
+            "icon": "../assets/icons/22.png",
+            "title": "Area Controls",
+            "text": "Manage access to restricted or hazardous areas through visual identification and control systems."
+          },
+          {
+            "icon": "../assets/icons/23.png",
+            "title": "Vehicle Control",
+            "text": "Oversee and regulate vehicle movement within premises to prevent accidents and ensure safety compliance."
+          },
+          {
+            "icon": "../assets/icons/24.png",
+            "title": "Man-down Detection",
+            "text": "Instantly detect and respond to incidents where staff are incapacitated or in distress for rapid assistance."
+          }
+        ]
+      },
+      {
+        "heading": "security",
+        "slides": [
+          {
+            "icon": "../assets/icons/9.png",
+            "title": "Restricted Area Control",
+            "text": "Watch your assets with only true alarms according to your security rule."
+          },
+          {
+            "icon": "../assets/icons/8.png",
+            "title": "Vehicle Identification",
+            "text": "Access control of vehicles with their plate and other features to prevent violation and fraud."
+          },
+          {
+            "icon": "../assets/icons/17.png",
+            "title": "Suspicious Item Detection",
+            "text": "Detect doubtful attitudes and potential harmful objects, bags, box etc. to secure your area."
+          },
+          {
+            "icon": "../assets/icons/5.png",
+            "title": "Crowd Analysis",
+            "text": "Analyze crowd dynamics to manage large gatherings effectively. Monitor crowd density, flow, and behavior to ensure safety and optimize space utilization."
+          },
+          {
+            "icon": "../assets/icons/12.png",
+            "title": "Facial Recognition",
+            "text": "Enhance security with accurate facial recognition for identity verification."
+          },
+          {
+            "icon": "../assets/icons/6.png",
+            "title": "Behavioral Analysis",
+            "text": "Identify suspicious behaviors through advanced motion and activity analysis."
+          },
+          {
+            "icon": "../assets/icons/25.png",
+            "title": "Surveillance and Real-time Analysis",
+            "text": "Implement real-time video surveillance for immediate incident response and security."
           }
         ]
       }

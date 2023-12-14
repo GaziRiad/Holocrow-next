@@ -69,7 +69,8 @@ function SuccessStories() {
                       {/* <div className="h-44 w-full"></div> */}
                       <img
                         src={story.logo}
-                        className="w-32 h-36"
+                        // className="w-32 h-36"
+                        className=" scale-75"
                         alt={story.text}
                       />
                     </div>

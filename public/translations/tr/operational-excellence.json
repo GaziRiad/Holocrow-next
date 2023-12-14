@@ -69,10 +69,10 @@
     "heading": "industries",
     "slides": [
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
-        "title": "İmalat",
-        "subTitle": "Kusur Tespiti ve Üretim Hattı İzleme",
-        "text": "Montaj hatlarındaki ürünlerdeki kusurları tespit etmek ve yüksek kaliteli çıktı sağlamak için kullanılır. Ayrıca, üretim süreçlerinin verimliliğini izleyerek darboğazları ve iyileştirme alanlarını belirler"
+        "img": "/assets/Solutions/industriesSlider/warehoouse-min.jpg",
+        "title": "Depolar",
+        "subTitle": "Gelişmiş Envanter Yönetimi",
+        "text": "Holocrow, perakende alanında envanter yönetimini kolaylaştırır, stok seviyelerini doğru bir şekilde izler ve zamanında yeniden stoklama konusunda yardımcı olur, böylece envanter verimliliğini optimize eder."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Automotive-min.jpg",

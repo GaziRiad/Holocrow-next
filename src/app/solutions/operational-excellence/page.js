@@ -14,6 +14,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import enOperational from "../../../../public/translations/en/operational-excellence.json";
 import trOperational from "../../../../public/translations/tr/operational-excellence.json";
 import OtherSolutions from "@/components/OtherSolutions";
+import Footer from "@/components/Footer";
 const translations = {
   en: enOperational,
   tr: trOperational,
@@ -60,7 +61,7 @@ function OperationalExcellence() {
       <SwipingSlider content={content.sliderSection} />
       <OtherSolutions content={content} />
 
-      <MainFooter />
+      <Footer icon="../assets/footer-img.png" />
     </>
   );
 }

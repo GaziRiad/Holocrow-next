@@ -14,6 +14,7 @@ import enRetail from "../../../../public/translations/en/retail.json";
 import trRetail from "../../../../public/translations/tr/retail.json";
 import OtherSolutions from "@/components/OtherSolutions";
 import SwipingSlider from "@/components/SwipingSlider";
+import Footer from "@/components/Footer";
 
 const translations = {
   en: enRetail,
@@ -60,7 +61,7 @@ function Retail() {
       <SwipingSlider content={content.sliderSection} />
       <OtherSolutions content={content} />
 
-      <MainFooter />
+      <Footer icon="../assets/footer-img.png" />
     </>
   );
 }

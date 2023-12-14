@@ -5,12 +5,9 @@ const LanguageContext = createContext();
 
 function LanguageProvider({ children }) {
   // set lang in localStorage
-
-  // const [activeLanguage, setActiveLanguage] = useState("en");
   const [activeLanguage, setActiveLanguage] = useState(
-    localStorage.getItem("lang") || "en"
+    localStorage?.getItem("lang") || "en"
   );
-  console.log(activeLanguage);
 
   return (
     <LanguageContext.Provider value={{ activeLanguage, setActiveLanguage }}>

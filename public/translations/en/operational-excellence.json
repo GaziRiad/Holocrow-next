@@ -65,10 +65,10 @@
     "heading": "industries",
     "slides": [
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
-        "title": "Manufacturing",
-        "subTitle": "Defect Detection and Production Line Monitoring",
-        "text": "Computer Vision systems in manufacturing settings are used for detecting defects in products on assembly lines, ensuring high-quality output. They also monitor the efficiency of production processes, identifying bottlenecks and areas for improvement."
+        "img": "/assets/Solutions/industriesSlider/warehoouse-min.jpg",
+        "title": "Warehouses",
+        "subTitle": "Enhanced Inventory Management",
+        "text": "Holocrow streamlines inventory management in retail, accurately monitoring stock levels and aiding in timely replenishment, thereby optimizing inventory efficiency."
       },
       {
         "img": "/assets/Solutions/industriesSlider/Automotive-min.jpg",

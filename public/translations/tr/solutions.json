@@ -8,6 +8,11 @@
       "link": "retail"
     },
     {
+      "icon": "../assets/features/efficiency.png",
+      "name": "operasyonel mükemmellik",
+      "link": "operational-excellence"
+    },
+    {
       "icon": "../assets/features/safety.png",
       "name": "işyeri güvenliği",
       "link": "workplace-safety"
@@ -16,12 +21,6 @@
       "icon": "../assets/features/security.png",
       "name": "Güvenlik",
       "link": "security"
-    },
-
-    {
-      "icon": "../assets/features/efficiency.png",
-      "name": "operasyonel mükemmellik",
-      "link": "operational-excellence"
     }
   ]
 }

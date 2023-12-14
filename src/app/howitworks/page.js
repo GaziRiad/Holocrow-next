@@ -59,9 +59,9 @@ function HowItWorks() {
             <SwiperSlide key={step.title}>
               <div className="flex flex-col items-center justify-center gap-12 lg:flex-row lg:gap-44">
                 <div className="w-full lg:w-1/4 text-center px-4 lg:px-0 lg:text-left ">
-                  <p className=" text-primary  font-semibold uppercase">{`${
+                  <p className=" text-primary  font-semibold uppercase">{`Step ${
                     index + 1
-                  }.Step`}</p>
+                  }`}</p>
                   <p className="font-bold text-xl text-black-800 capitalize mb-3">
                     {step.title}
                   </p>
