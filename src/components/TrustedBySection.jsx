@@ -12,12 +12,13 @@ function TrustedBySection({ content }) {
       className={` container mx-auto mb-44 px-4 pt-14 md:px-0`}
     >
       <Heading>{content.trustedBySection.heading}</Heading>
-      <div className="flex flex-wrap justify-center items-center gap-16">
+      <div className="flex flex-wrap justify-center items-center gap-12">
         {content.trustedBySection.companies.map((company) => (
           <img
             key={company}
             src={company}
-            className=" w-20 h-20 lg:w-28 lg:h-28"
+            // className=" w-20 h-20 lg:w-28 lg:h-28"
+            className=" scale-75 justify-self-center"
           />
         ))}
       </div>
