@@ -5,6 +5,7 @@ export const navigation = {
       { text: "Solutions", path: "/solutions" },
       { text: "Success Stories", path: "/success-stories" },
       { text: "About Us", path: "/about" },
+      { text: "Contact", path: "/contact" },
       { text: "News", path: "/blog" },
     ],
     languages: [
@@ -19,6 +20,7 @@ export const navigation = {
       { text: "Çözümler", path: "/solutions" },
       { text: "Başarı Hikayeleri", path: "/success-stories" },
       { text: "Hakkımızda", path: "/about" },
+      { text: "Temas etmek", path: "/contact" },
       { text: "Haberler", path: "/blog" },
     ],
     languages: [
