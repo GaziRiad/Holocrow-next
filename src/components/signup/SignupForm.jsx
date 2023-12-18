@@ -8,99 +8,167 @@ function SignupForm({ step, setStep }) {
     register,
     handleSubmit,
     reset,
+    getValues,
     formState: { errors },
   } = useForm();
 
-  let newAccount = {};
-  let newDevice = {};
+  let newAccount;
+  let newDevice;
 
-  function handleFormSubmit(data, e) {
+  function handleAccount(data, e) {
     e.preventDefault();
-    console.log(data);
-    if (step === 1) {
-      newAccount = data;
-      reset();
-      setStep(2);
-    }
-    if (step === 2) {
-      newDevice = data;
-    }
+    newAccount = data;
+    console.log(newAccount);
+    reset();
+    setStep(2);
+  }
+  function handleDevice(data, e) {
+    e.preventDefault();
+    newDevice = data;
+    console.log(newDevice);
   }
 
-  return (
-    <form className="flex flex-col" onSubmit={handleSubmit(handleFormSubmit)}>
-      {step === 1 && (
-        <>
-          <p className="text-left text-primary text-3xl font-semibold mb-8 2xl:text-4xl">
-            Sign Up
-          </p>
-          <FormRow type="horizontal">
-            <FormRow id="firstName" label="First Name:">
-              <Input id="firstName" register={register} />
+  if (step === 1)
+    return (
+      <form className="flex flex-col" onSubmit={handleSubmit(handleAccount)}>
+        {step === 1 && (
+          <>
+            <p className="text-left text-primary text-3xl font-semibold mb-8 2xl:text-4xl">
+              Sign Up
+            </p>
+            <FormRow type="horizontal">
+              <FormRow
+                id="firstName"
+                label="First Name:"
+                error={errors?.firstName?.message}
+              >
+                <Input
+                  id="firstName"
+                  register={register}
+                  validation={{ required: "This field is required" }}
+                />
+              </FormRow>
+              <FormRow
+                id="lastName"
+                label="Last Name:"
+                error={errors?.lastName?.message}
+              >
+                <Input
+                  id="lastName"
+                  register={register}
+                  validation={{ required: "This field is required" }}
+                />
+              </FormRow>
             </FormRow>
-            <FormRow id="lastName" label="Last Name:">
-              <Input id="lastName" register={register} />
+            <FormRow id="email" label="Email:" error={errors?.email?.message}>
+              <Input
+                type="email"
+                id="email"
+                register={register}
+                validation={{ required: "This field is required" }}
+              />
             </FormRow>
-          </FormRow>
-          <FormRow id="email" label="Email:">
-            <Input type="email" id="email" register={register} />
-          </FormRow>
-          <FormRow type="horizontal">
-            <FormRow label="Password:">
-              <Input type="password" id="password" register={register} />
+            <FormRow type="horizontal">
+              <FormRow label="Password:" error={errors?.password?.message}>
+                <Input
+                  type="password"
+                  id="password"
+                  register={register}
+                  validation={{
+                    required: "This field is required",
+                    minLength: {
+                      value: 8,
+                      message: "Password needs a minimum of 8 characters",
+                    },
+                  }}
+                />
+              </FormRow>
+              <FormRow
+                label="Confirm:"
+                error={errors?.passwordConfirmation?.message}
+              >
+                <Input
+                  type="password"
+                  id="passwordConfirmation"
+                  validation={{
+                    required: "This field is required",
+                    validate: (value) =>
+                      value === getValues().password ||
+                      "Passwords need to match",
+                  }}
+                  register={register}
+                />
+              </FormRow>
             </FormRow>
-            <FormRow label="Confirm:">
-              <Input type="password" />
-            </FormRow>
-          </FormRow>
-          <span className=" text-xs max-w-xs text-slate-400 -mt-5 mb-4">
-            Use 8 or more characters with a mix letters, numbers & symbols
-          </span>
-          <div className="flex items-center gap-2 mb-12">
-            <input
-              className=" bg-stone-100 h-4 w-4 accent-primary"
-              type="checkbox"
-            />
-            <p className="text-black-800 text-sm font-normal">Show password</p>
-          </div>{" "}
-        </>
-      )}
-      {/*  */}
-      {/*  */}
-      {step === 2 && (
-        <>
+            <span className=" text-xs max-w-xs text-slate-400 -mt-5 mb-4">
+              Use 8 or more characters with a mix letters, numbers & symbols
+            </span>
+            <div className="flex items-center gap-2 mb-12">
+              <input
+                className=" bg-stone-100 h-4 w-4 accent-primary"
+                type="checkbox"
+              />
+              <p className="text-black-800 text-sm font-normal">
+                Show password
+              </p>
+            </div>{" "}
+          </>
+        )}
+
+        <div className="flex items-center justify-between">
+          <Button type="signup">Next</Button>
+        </div>
+      </form>
+    );
+
+  if (step === 2)
+    return (
+      <>
+        <form className="flex flex-col" onSubmit={handleSubmit(handleDevice)}>
           <p className="text-left text-primary text-3xl font-semibold mb-8 2xl:text-4xl">
             Device Type:
           </p>
           <FormRow type="horizontal">
-            <FormRow id="recordingDevice" label="recordingDevice">
-              <Input id="text" register={register} />
+            <FormRow id="recordingDevice" label="Recording Device">
+              <select
+                {...register("recordingDevice")}
+                className="bg-stone-100 px-2 py-2 rounded-md w-full text-black-800 outline-none focus:ring-2 ring-primary"
+              >
+                <option value="Camera">Camera</option>
+                <option value="audio device">Audio device</option>
+              </select>
             </FormRow>
-            <FormRow id="camera" label="Camera:">
-              <Input id="text" register={register} />
-            </FormRow>
           </FormRow>
-          <FormRow id="dataChannel" label="Data Channel:">
-            <Input type="text" id="dataChannel" register={register} />
+          <FormRow
+            id="dataChannel"
+            label="Data Channel:"
+            error={errors?.dataChannel?.message}
+          >
+            <Input
+              type="text"
+              id="dataChannel"
+              register={register}
+              validation={{ required: "This field is required" }}
+            />
           </FormRow>
-          <FormRow id="devicesQuantity" label="Quantitiy of devices:">
-            <Input type="number" id="devicesQuantity" register={register} />
+          <FormRow
+            id="devicesQuantity"
+            label="Quantitiy of devices:"
+            error={errors?.devicesQuantity?.message}
+          >
+            <Input
+              type="number"
+              id="devicesQuantity"
+              register={register}
+              validation={{ required: "This field is required" }}
+            />
           </FormRow>
-        </>
-      )}
-
-      <div className="flex items-center justify-between">
-        <Button
-          type="signup"
-          onClick={() => {
-            step === 1 ? setStep(2) : setStep(1);
-          }}
-        >
-          {step === 1 ? "Next" : "sign up"}
-        </Button>
-      </div>
-    </form>
-  );
+          <div className="flex items-center justify-between">
+            <Button type="signup">sign up</Button>
+          </div>
+        </form>
+      </>
+    );
 }
 
 export default SignupForm;
