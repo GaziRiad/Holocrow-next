@@ -59,7 +59,7 @@ function SwipingSlider({ content }) {
                 {slide.title}
               </p>
               <p>
-                <span className="font-medium">{slide.subTitle}</span>
+                <span className="font-medium block">{slide.subTitle}</span>
                 <span> {slide.text}</span>
               </p>
             </div>

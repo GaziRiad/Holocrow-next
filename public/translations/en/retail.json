@@ -70,37 +70,37 @@
     "heading": "Fields",
     "slides": [
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/Inventory Management-min.jpg",
         "title": "Inventory Management",
         "subTitle": "Stock Monitoring and Replenishment",
         "text": "Computer Vision in retail environments helps in real-time tracking of inventory levels, facilitating timely restocking and reducing the chance of stockouts or overstocking."
       },
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/customer-experience.jpg",
         "title": "Customer Experience",
         "subTitle": "Personalized Shopping and In-store Navigation",
         "text": "Computer Vision enhances customer experience by offering personalized shopping suggestions based on shopping habits and assisting with in-store navigation."
       },
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/Checkouts.jpg",
         "title": "Checkout and Payment Systems",
         "subTitle": "Automated Checkouts and Theft Prevention",
         "text": "Retailers are using Computer Vision to develop automated checkout systems, reducing wait times, and enhancing the overall customer experience. It also helps in identifying potential thefts."
       },
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/FMCG-product.jpg",
         "title": "FMCG Product Placement",
         "subTitle": "Shelf Space Optimization and Planogram Compliance",
         "text": "Computer Vision analyzes shelf space and customer interactions with products, helping in optimizing product placement and ensuring planogram compliance."
       },
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/Food Retail-min.jpg",
         "title": "Food Retail",
         "subTitle": "Freshness Monitoring and Quality Control",
         "text": "In food retail, Computer Vision is used to monitor the freshness of produce and ensure quality control, enhancing food safety for consumers."
       },
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/Marketing.jpg",
         "title": "Marketing and Advertising",
         "subTitle": "Customer Engagement Analysis",
         "text": "Retailers use Computer Vision to analyze customer engagement with in-store advertisements and displays, gathering valuable data for marketing strategies."

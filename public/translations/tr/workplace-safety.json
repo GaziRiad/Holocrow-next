@@ -1,6 +1,6 @@
 {
   "heroImg": "/assets/Solutions/WorkplaceHero.png",
-  "heroHeading": "İş Güvenliği ve Sağlığı",
+  "heroHeading": "İş Sağlığı ve Güvenliği",
   "subHero": [
     "Her zaman çalışan",
     "Milyarlarca saat tecrübeli",
@@ -81,7 +81,7 @@
   },
 
   "sliderSection": {
-    "heading": "industries",
+    "heading": "Endüstriler",
     "slides": [
       {
         "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",

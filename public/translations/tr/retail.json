@@ -72,40 +72,40 @@
   },
 
   "sliderSection": {
-    "heading": "Alanlar",
+    "heading": "Endüstriler",
     "slides": [
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/Inventory Management-min.jpg",
         "title": "Envanter Yönetimi",
         "subTitle": "Stok Takibi ve Stoklama",
         "text": "Envanter seviyelerinin gerçek zamanlı takibine yardımcı olur, zamanında yeniden stoklama kolaylaştırır ve stok tükenmesi veya fazla stoklama ihtimalini azaltır."
       },
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/customer-experience.jpg",
         "title": "Müşteri Deneyimi",
         "subTitle": "Kişiselleştirilmiş Alışveriş ve Mağaza İçi Navigasyon",
         "text": "Alışveriş alışkanlıklarına dayalı kişiselleştirilmiş alışveriş önerileri sunarak ve mağaza içi navigasyonda yardımcı olarak müşteri deneyimini geliştirir."
       },
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/Checkouts.jpg",
         "title": "Ödeme ve Ödeme Sistemleri",
         "subTitle": "Otomatik Ödeme Sistemleri ve Hırsızlık Önleme",
         "text": "Otomatik ödeme sistemlerinde kullanılarak bekleme sürelerinin azaltılmasına, genel müşteri deneyimlerini iyileştirilmesine, potansiyel hırsızlıkların tespit edilmesine yardımcı olur."
       },
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/FMCG-product.jpg",
         "title": "FMCG Ürün Yerleşimi",
         "subTitle": "Raf Alanı Optimizasyonu ve Planogram Uyumu",
         "text": "Rraf alanını ve müşteri ürün etkileşimlerini analiz ederek ürün yerleşimini optimize etmeye ve planogram uyumunu sağlamaya yardımcı olur."
       },
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/Food Retail-min.jpg",
         "title": "Gıda Perakendesi",
         "subTitle": "Tazeliği İzleme ve Kalite Kontrolü",
         "text": "Ürünlerin tazeliğini izlemek ve kalite kontrolünü sağlamak için kullanılır, böylece tüketiciler için gıda güvenliğini artırır."
       },
       {
-        "img": "/assets/Solutions/industriesSlider/Manufacturing-min.jpg",
+        "img": "/assets/Solutions/industriesSlider/Marketing.jpg",
         "title": "Pazarlama ve Reklamcılık",
         "subTitle": "Müşteri Etkileşim Analizi",
         "text": "Mağaza içi reklam ve gösterimlerin müşteri ile etkileşimini analiz eder, pazarlama stratejileri için önemli veriler toplar."
