@@ -53,7 +53,7 @@ function HeroMain({ content }) {
           autoPlay
           playsInline
           loading="lazy"
-          src="/videos/hero-preview-3.mp4"
+          src="/videos/hero-preview.mp4"
           type="video/mp4"
         ></video>
 
@@ -93,7 +93,7 @@ function HeroMain({ content }) {
             className="w-full h-full object-cover object-center"
             autoPlay
             loading="lazy"
-            src="/videos/SaveInsta.App - 3148340294977169289.mp4"
+            src="/videos/hero-video-main.mp4"
             type="video/mp4"
           ></video>
           <button>
