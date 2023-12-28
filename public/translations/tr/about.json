@@ -1,5 +1,5 @@
 {
-  "heroImg": "/assets/hero-about.png",
+  "heroImg": "/assets/hero-about-tr.png",
   "heroText": "Her şeyin daha kolay tespit edilmesini en pürüzsüz şekilde sağlıyoruz.",
   "firstSection": {
     "text": "Problemlere en temel mühendislik prensibiyle çözümler üretiyoruz:",
@@ -10,7 +10,7 @@
     "text": "Holocrow, temel mühendislik prensiplerini uygulayarak gerçek dünya sorunlarını çözmeye adanmış insanlardan oluşan bir gruptur. 2014 yılından bu yana, tutkulu takım üyelerimiz, Perakende & FMCG, Alan Güvenliği & Gözetimi, Operasyonel Mükemmellik ve İş & Sağlık Güvenliği (WHS & OHS) gibi çeşitli sektörlerde farklı kullanım durumları için derin neural ağları ve Computer Vision teknolojisi kullanarak çeşitli çözümler geliştirmiştir. Bu çözümler, 2022'de Holocrow ekosistemini oluşturan bileşenlere entegre edilmiştir."
   },
   "thirdSection": {
-    "heading": "Misyonumuz",
+    "heading": "Misyonumuz.",
     "img": "/assets/aboutUs/mission-img.png",
     "text": [
       "Kameralar varlıklarımızı izlememize yardımcı olan güçlü sensörlerdir. İnsanlığın temiz ve verimli bir geleceğe ilerlemesi için, dünyadaki her kullanımının giderek daha fazla dijitalleştirilmesinin zorunlu olduğuna inanıyoruz.",

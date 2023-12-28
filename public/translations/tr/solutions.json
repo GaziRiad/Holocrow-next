@@ -4,7 +4,7 @@
   "features": [
     {
       "icon": "../assets/features/sales-marketing.png",
-      "name": "Satış ve Pazarlama",
+      "name": "Perakende & FMCG",
       "link": "retail"
     },
     {
@@ -14,12 +14,12 @@
     },
     {
       "icon": "../assets/features/safety.png",
-      "name": "işyeri güvenliği",
+      "name": "İŞ SAĞLIĞI VE GÜVENLİĞİ",
       "link": "workplace-safety"
     },
     {
       "icon": "../assets/features/security.png",
-      "name": "Güvenlik",
+      "name": "İŞ EMNİYETİ",
       "link": "security"
     }
   ]

@@ -106,21 +106,24 @@
       }
     ]
   },
-  "features": [
-    {
-      "icon": "../assets/features/sales-marketing.png",
-      "name": "PERAKENDE & FMCG",
-      "link": "retail"
-    },
-    {
-      "icon": "../assets/features/safety.png",
-      "name": "İŞ SAĞLIĞI VE GÜVENLİĞİ",
-      "link": "workplace-safety"
-    },
-    {
-      "icon": "../assets/features/security.png",
-      "name": "İŞ EMNİYETİ",
-      "link": "security"
-    }
-  ]
+  "otherSolutions": {
+    "headline": "Diğer Çözümlere Göz Atın:",
+    "features": [
+      {
+        "icon": "../assets/features/sales-marketing.png",
+        "name": "PERAKENDE & FMCG",
+        "link": "retail"
+      },
+      {
+        "icon": "../assets/features/safety.png",
+        "name": "İŞ SAĞLIĞI VE GÜVENLİĞİ",
+        "link": "workplace-safety"
+      },
+      {
+        "icon": "../assets/features/security.png",
+        "name": "İŞ EMNİYETİ",
+        "link": "security"
+      }
+    ]
+  }
 }

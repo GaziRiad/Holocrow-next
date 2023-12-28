@@ -141,21 +141,24 @@
       }
     ]
   },
-  "features": [
-    {
-      "icon": "../assets/features/sales-marketing.png",
-      "name": "RETAIL & FMCG",
-      "link": "retail"
-    },
-    {
-      "icon": "../assets/features/security.png",
-      "name": "Security",
-      "link": "security"
-    },
-    {
-      "icon": "../assets/features/efficiency.png",
-      "name": "OPERATIONAL EXCELLENCE",
-      "link": "operational-excellence"
-    }
-  ]
+  "otherSolutions": {
+    "headline": "Check other solutions:",
+    "features": [
+      {
+        "icon": "../assets/features/sales-marketing.png",
+        "name": "RETAIL & FMCG",
+        "link": "retail"
+      },
+      {
+        "icon": "../assets/features/security.png",
+        "name": "Security",
+        "link": "security"
+      },
+      {
+        "icon": "../assets/features/efficiency.png",
+        "name": "OPERATIONAL EXCELLENCE",
+        "link": "operational-excellence"
+      }
+    ]
+  }
 }

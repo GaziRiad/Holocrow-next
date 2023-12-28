@@ -13,8 +13,8 @@ function HeroPattern() {
       button: "Connect Now",
     },
     tr: {
-      heading: "Beyond Watching",
-      text: "AI ile Tespit et, Akisyon al ve Koru",
+      heading: "İzlemenin Ötesinde",
+      text: "AI ile Tespit Et Aksiyon Al ve Koru",
       button: "Bağlan",
     },
   };

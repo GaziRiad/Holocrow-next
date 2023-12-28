@@ -102,21 +102,24 @@
       }
     ]
   },
-  "features": [
-    {
-      "icon": "../assets/features/sales-marketing.png",
-      "name": "RETAIL & FMCG",
-      "link": "retail"
-    },
-    {
-      "icon": "../assets/features/safety.png",
-      "name": "Workplace Safety",
-      "link": "workplace-safety"
-    },
-    {
-      "icon": "../assets/features/security.png",
-      "name": "Security",
-      "link": "security"
-    }
-  ]
+  "otherSolutions": {
+    "headline": "Check other solutions:",
+    "features": [
+      {
+        "icon": "../assets/features/sales-marketing.png",
+        "name": "RETAIL & FMCG",
+        "link": "retail"
+      },
+      {
+        "icon": "../assets/features/safety.png",
+        "name": "Workplace Safety",
+        "link": "workplace-safety"
+      },
+      {
+        "icon": "../assets/features/security.png",
+        "name": "Security",
+        "link": "security"
+      }
+    ]
+  }
 }

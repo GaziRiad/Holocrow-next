@@ -1,25 +1,47 @@
+import { useLanguage } from "@/contexts/LanguageContext";
 import Footer from "./Footer";
 
 function MainFooter() {
-  const footer = [
-    {
-      icon: "../assets/footer/footer-icon1.png",
-      text: "EASY CONNECT",
+  const { activeLanguage } = useLanguage();
+  const footer = {
+    en: {
+      array: [
+        {
+          icon: "../assets/footer/footer-icon1.png",
+          text: "EASY CONNECT",
+        },
+        {
+          icon: "../assets/footer/footer-icon2.png",
+          text: "Cancel Anytime",
+        },
+        {
+          icon: "../assets/footer/footer-icon3.png",
+          text: "14-Day Free Trial",
+        },
+      ],
     },
-    {
-      icon: "../assets/footer/footer-icon2.png",
-      text: "Cancel Anytime",
+    tr: {
+      array: [
+        {
+          icon: "../assets/footer/footer-icon1.png",
+          text: "KOLAY BAĞLANTI",
+        },
+        {
+          icon: "../assets/footer/footer-icon2.png",
+          text: "İSTEDİĞİNİZ AN İPTAL",
+        },
+        {
+          icon: "../assets/footer/footer-icon3.png",
+          text: "14 GÜNLÜK ÜCRETSİZ DENEME",
+        },
+      ],
     },
-    {
-      icon: "../assets/footer/footer-icon3.png",
-      text: "14-Day Free Trial",
-    },
-  ];
+  };
 
   return (
     <Footer icon="/assets/footer/footerHomeIcon.png" type="home">
       <div className="flex flex-wrap items-center justify-center gap-4 mb-6 md:mb-20 md:gap-10">
-        {footer.map((el) => (
+        {footer[activeLanguage].array.map((el) => (
           <div
             key={el.text}
             className="flex flex-col items-center justify-center gap-2 md:gap-6"

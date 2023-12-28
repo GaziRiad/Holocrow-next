@@ -4,8 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import Button from "./Button";
 
 import { motion, useInView, useScroll } from "framer-motion";
+import { footerText } from "@/constants/footer";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-function Footer({ children, icon, btn = "sign up", type = "normal" }) {
+function Footer({ children, icon, type = "normal" }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -22,6 +24,7 @@ function Footer({ children, icon, btn = "sign up", type = "normal" }) {
     else setBgColor(true);
   }, [isInView]);
 
+  const { activeLanguage } = useLanguage();
   return (
     <motion.div
       ref={footerRef}
@@ -48,13 +51,13 @@ function Footer({ children, icon, btn = "sign up", type = "normal" }) {
                 type === "home" ? "top-[40%]" : "top-[55%]"
               } left-1/2 translate-x-[-50%] z-10 lg:text-2xl font-bold`}
             >
-              #BeyondWatching
+              {footerText[activeLanguage].hashtag}
             </p>
           </div>
           <p className="text-white font-bold text-4xl tracking-wider absolute top-[66%] lg:top-[60%] xl:tracking-[1.25rem] lg:text-8xl  ">
-            Let’s Get Started
+            {footerText[activeLanguage].cta}
           </p>
-          <Button to="/signup">{btn}</Button>
+          <Button to="/signup">{footerText[activeLanguage].btn}</Button>
         </footer>
       </motion.section>
       <div className="bg-white flex items-center justify-center py-1 lg:py-2">

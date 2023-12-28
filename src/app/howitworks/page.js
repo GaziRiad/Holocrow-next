@@ -27,6 +27,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
+import SubHero from "@/components/SubHero";
 function HowItWorks() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];
@@ -34,11 +35,9 @@ function HowItWorks() {
   return (
     <>
       <Hero img={content.heroImg} />
-      <div className=" text-center text-lg md:text-xl lg:text-2xl flex flex-col gap-4 mb-12 lg:mb-32">
-        {content.subHero.map((text) => (
-          <p key={text}>{text}</p>
-        ))}
-      </div>
+
+      <SubHero content={content.subHero} />
+
       <HowDoesItWork content={content} />
       <Heading type="tag">#BeyondWatching</Heading>
       <CardsSection content={content} />
@@ -55,13 +54,13 @@ function HowItWorks() {
           modules={[Pagination, Navigation]}
           className="howItWorksSlider m-24"
         >
-          {content.stepsSection.map((step, index) => (
+          {content.stepsSection.steps.map((step, index) => (
             <SwiperSlide key={step.title}>
               <div className="flex flex-col items-center justify-center gap-12 lg:flex-row lg:gap-44">
                 <div className="w-full lg:w-1/4 text-center px-4 lg:px-0 lg:text-left ">
-                  <p className=" text-primary  font-semibold uppercase">{`Step ${
-                    index + 1
-                  }`}</p>
+                  <p className=" text-primary  font-semibold uppercase">{`${
+                    content.stepsSection.step
+                  } ${index + 1}`}</p>
                   <p className="font-bold text-xl text-black-800 capitalize mb-3">
                     {step.title}
                   </p>

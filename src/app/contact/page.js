@@ -1,8 +1,21 @@
+"use client";
+
 import Logo from "@/components/Logo";
 import Navigation from "@/components/Navigation";
 import { navigation } from "@/constants/navigation";
+import { useLanguage } from "@/contexts/LanguageContext";
 
+//
+import enContact from "../../../public/translations/en/contact.json";
+import trContact from "../../../public/translations/tr/contact.json";
+const translations = {
+  en: enContact,
+  tr: trContact,
+};
 function Contact() {
+  const { activeLanguage } = useLanguage();
+  const content = translations[activeLanguage];
+
   return (
     <section className="pt-14 pb-14 gradient min-h-screen">
       <header className="container mx-auto flex items-center justify-between mb-24 px-8 lg:px-0 lg:mb-12">
@@ -21,38 +34,50 @@ function Contact() {
         </div>
         {/*  */}
         <div className="text-center lg:text-left mb-8 ">
-          <p className="text-5xl text-white font-bold mb-4">Support</p>
+          <p className="text-5xl text-white font-bold mb-4">
+            {content.support.title}
+          </p>
           <p className=" flex gap-2 font-medium justify-center lg:justify-start">
-            <span className="text-white">Whatsapp Business Account (WBA):</span>
-            <span>+90 850 309 1458</span>
+            <span className="text-white">{content.support.wba}</span>
+            <span>{content.support.number}</span>
           </p>
         </div>
         {/*  */}
         <div className="text-center lg:text-left mb-8 ">
-          <p className="text-5xl text-white font-bold mb-4 ">Contact</p>
+          <p className="text-5xl text-white font-bold mb-4 ">
+            {content.contact.title}
+          </p>
           <p className=" flex gap-2 font-medium justify-center lg:justify-start">
-            <span className="text-white">E-mail:</span>
-            <span>info@holocrow.com</span>
+            <span className="text-white">{content.contact.email}</span>
+            <span>{content.contact.data}</span>
           </p>
         </div>
         {/*  */}
         <div className="flex flex-col gap-4 text-center lg:text-left lg:flex-row lg:justify-between">
           <div>
-            <p className="text-white text-lg font-medium">Baltic Branch:</p>
+            <p className="text-white text-lg font-medium">
+              {content.baltic.title}:
+            </p>
             <p>
-              Science Park Tehnopol <br />
-              Mäealuse 2/4Floor: 312618, Tallinn / ESTONIA <br />
-              +372 5353 6447
+              {content.baltic.add1}
+              <br />
+              {content.baltic.add2} <br />
+              {content.baltic.add3} <br />
+              {content.baltic.add1}
+              <br />
+              {content.baltic.number}
             </p>
           </div>
           <div>
-            <p className="text-white text-lg font-medium">R&D Center:</p>
+            <p className="text-white text-lg font-medium">
+              {content.center.title}:
+            </p>
             <p>
-              YTU Davutpasa Teknopark <br />
-              151/1E C1 Blok No:106-3
+              {content.center.add1} <br />
+              {content.center.add2}
               <br />
-              34220, Esenler - Istanbul / TURKEY <br />
-              +90 212 803 01 19
+              {content.center.add3} <br />
+              {content.center.number}
             </p>
           </div>
         </div>

@@ -1,0 +1,27 @@
+{
+  "support": {
+    "title": "Support",
+    "wba": "Whatsapp Business Account (WBA) :",
+    "number": "+90 850 309 1458"
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "E-mail: ",
+    "data": "info@holocrow.com"
+  },
+  "baltic": {
+    "title": "Baltic Branch",
+    "add1": "Science Park Technopol",
+    "add2": "Mäealuse 2/4",
+    "add3": "Floor: 3 ",
+    "add4": "12618, Tallinn / ESTONIA",
+    "number": "+372 5353 6447"
+  },
+  "center": {
+    "title": "R&D Center",
+    "add1": "YTU Davutpasa Teknopark",
+    "add2": "151/1E C1 Blok No:106-3",
+    "add3": "34220, Esenler - Istanbul / TURKEY",
+    "number": "+90 212 803 01 19"
+  }
+}

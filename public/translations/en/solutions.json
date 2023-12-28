@@ -4,12 +4,12 @@
   "features": [
     {
       "icon": "../assets/features/sales-marketing.png",
-      "name": "RETAIL & FMCG",
+      "name": "Retail & FMCG",
       "link": "retail"
     },
     {
       "icon": "../assets/features/efficiency.png",
-      "name": "OPERATIONAL EXCELLENCE",
+      "name": "Operational Excellence",
       "link": "operational-excellence"
     },
     {

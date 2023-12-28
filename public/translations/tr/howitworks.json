@@ -9,7 +9,7 @@
 
   "howDoesItWorkSection": {
     "heading": "Peki Holocrow Nasıl Çalışır?",
-    "img": "../assets/HowItWorksPage/mac-intro.png",
+    "img": "../assets/HowItWorksPage/mac-intro-tr.png",
     "features": [
       {
         "icon": "../assets/icons/8.png",
@@ -84,28 +84,31 @@
     }
   ],
 
-  "stepsSection": [
-    {
-      "title": "Holocrow’a Kaydolun",
-      "text": "Kaydol butonuna tıklayın ve bilgilerinizi girin.",
-      "img": "/assets/HowItWorksPage/slider/step-1.png"
-    },
-    {
-      "title": "Kameralarınzı Bağlayın",
-      "text": "Holocrow, tüm CCTV marka ve modelleriyle uyumlu çalışır. İstediğiniz zaman bir kamerayı ekleyebilir veya çıkarabilirsiniz.",
-      "img": "/assets/HowItWorksPage/slider/step-2.png"
-    },
-    {
-      "title": "Ürünlerinizi Seçin",
-      "text": "Takip ve analiz etmek istediğiniz şeylere göre istediğiniz ürünleri seçin. Ödeme planınız seçimlerinize göre otomatik olarak oluşturulacaktır. Daha sonrasında kullandığınız ürünlerde istediğiniz zaman değişiklik yapabilirsiniz.",
-      "img": "/assets/HowItWorksPage/slider/step-3.png"
-    },
-    {
-      "title": "Ötesini Görün",
-      "text": "İstediğiniz zaman app.holocrow üzerinden otomatik raporlara ve bildirimlere erişin ve daha fazlasını görmenin keyfini çıkartın.",
-      "img": "/assets/HowItWorksPage/slider/step-4.png"
-    }
-  ],
+  "stepsSection": {
+    "step": "Adım",
+    "steps": [
+      {
+        "title": "Holocrow’a Kaydolun",
+        "text": "Kaydol butonuna tıklayın ve bilgilerinizi girin.",
+        "img": "/assets/HowItWorksPage/slider/step-1.png"
+      },
+      {
+        "title": "Kameralarınzı Bağlayın",
+        "text": "Holocrow, tüm CCTV marka ve modelleriyle uyumlu çalışır. İstediğiniz zaman bir kamerayı ekleyebilir veya çıkarabilirsiniz.",
+        "img": "/assets/HowItWorksPage/slider/step-2.png"
+      },
+      {
+        "title": "Ürünlerinizi Seçin",
+        "text": "Takip ve analiz etmek istediğiniz şeylere göre istediğiniz ürünleri seçin. Ödeme planınız seçimlerinize göre otomatik olarak oluşturulacaktır. Daha sonrasında kullandığınız ürünlerde istediğiniz zaman değişiklik yapabilirsiniz.",
+        "img": "/assets/HowItWorksPage/slider/step-3.png"
+      },
+      {
+        "title": "Ötesini Görün",
+        "text": "İstediğiniz zaman app.holocrow üzerinden otomatik raporlara ve bildirimlere erişin ve daha fazlasını görmenin keyfini çıkartın.",
+        "img": "/assets/HowItWorksPage/slider/step-4.png"
+      }
+    ]
+  },
 
   "trustedBySection": {
     "heading": "Onlara da ötesini görmeleri sağlıyoruz.",

@@ -62,7 +62,7 @@ function About() {
               duration: 2,
             }}
           />
-          <p className="text-primary font-bold text-5xl md:text-6xl absolute z-10 -mt-28 pl-8 xl:-mt-32 xl:pl-16">
+          <p className="text-primary font-bold text-5xl md:text-6xl absolute z-10 -mt-28 pl-8 xl:-mt-32 xl:pl-[74px]">
             <span className="text-white">
               {content.thirdSection.heading.slice(0, 3)}
             </span>

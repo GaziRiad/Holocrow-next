@@ -145,21 +145,24 @@
       }
     ]
   },
-  "features": [
-    {
-      "icon": "../assets/features/sales-marketing.png",
-      "name": "PERAKENDE & FMCG",
-      "link": "retail"
-    },
-    {
-      "icon": "../assets/features/security.png",
-      "name": "İŞ EMNİYETİ",
-      "link": "security"
-    },
-    {
-      "icon": "../assets/features/efficiency.png",
-      "name": "OPERASYONEL MÜKEMMELLİK",
-      "link": "operational-excellence"
-    }
-  ]
+  "otherSolutions": {
+    "headline": "Diğer Çözümlere Göz Atın:",
+    "features": [
+      {
+        "icon": "../assets/features/sales-marketing.png",
+        "name": "PERAKENDE & FMCG",
+        "link": "retail"
+      },
+      {
+        "icon": "../assets/features/security.png",
+        "name": "İŞ EMNİYETİ",
+        "link": "security"
+      },
+      {
+        "icon": "../assets/features/efficiency.png",
+        "name": "OPERASYONEL MÜKEMMELLİK",
+        "link": "operational-excellence"
+      }
+    ]
+  }
 }

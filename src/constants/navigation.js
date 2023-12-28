@@ -20,13 +20,13 @@ export const navigation = {
       { text: "Çözümler", path: "/solutions" },
       { text: "Başarı Hikayeleri", path: "/success-stories" },
       { text: "Hakkımızda", path: "/about" },
-      { text: "Temas etmek", path: "/contact" },
+      { text: "İletişim", path: "/contact" },
       { text: "Haberler", path: "/blog" },
     ],
     languages: [
       { lang: "Turkish", attribute: "tr" },
       { lang: "English", attribute: "en" },
     ],
-    button: "İngilizce ",
+    button: "GİRİŞ",
   },
 };
