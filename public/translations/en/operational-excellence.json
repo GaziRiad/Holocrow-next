@@ -28,27 +28,32 @@
       {
         "icon": "/assets/icons/21.png",
         "title": "Stock Controls",
-        "text": "Count or measure your stocks by CCTV."
+        "text": "Count or measure your stocks by CCTV.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/7.png",
         "title": "Patterns & Colours Check",
-        "text": "Analyze visibility of product has been produced over streams and images to approve quality assurance."
+        "text": "Analyze visibility of product has been produced over streams and images to approve quality assurance.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/10.png",
         "title": "Operational Excellence",
-        "text": "Detect and track every single step of your operations to analyze processes open to improvement."
+        "text": "Detect and track every single step of your operations to analyze processes open to improvement.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/26.png",
         "title": "Staff Efficiency Analysis",
-        "text": "Enhance workforce productivity by analyzing staff movements and activities using video data."
+        "text": "Enhance workforce productivity by analyzing staff movements and activities using video data.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/27.png",
         "title": "Packaging Control",
-        "text": "Ensure accuracy and quality in packaging by visually inspecting for conformity and detecting anomalies."
+        "text": "Ensure accuracy and quality in packaging by visually inspecting for conformity and detecting anomalies.",
+        "gif": "gif2.gif"
       }
     ]
   },

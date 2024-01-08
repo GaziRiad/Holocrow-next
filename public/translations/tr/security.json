@@ -33,37 +33,44 @@
       {
         "icon": "/assets/icons/9.png",
         "title": "Sınırlandırılmış Alan Denetimi",
-        "text": "Güvenlik kurallarınıza uygun şekilde ve yalnız doğru alarmlarla varlıklarınızı gözetleyin."
+        "text": "Güvenlik kurallarınıza uygun şekilde ve yalnız doğru alarmlarla varlıklarınızı gözetleyin.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/8.png",
         "title": "Araç Tanımlama",
-        "text": "Araçların plaka ve diğer nitelikleriyle erişimlerini denetleyerek ihlallerin önüne geçin."
+        "text": "Araçların plaka ve diğer nitelikleriyle erişimlerini denetleyerek ihlallerin önüne geçin.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/17.png",
         "title": "Şüpheli Nesne Tespiti",
-        "text": "Alanın güvenliğini sağlamak için şüpheli tavırları ve potansiyel zararlı nesneleri, çantaları, kutuları vb. tespit edin."
+        "text": "Alanın güvenliğini sağlamak için şüpheli tavırları ve potansiyel zararlı nesneleri, çantaları, kutuları vb. tespit edin.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/5.png",
         "title": "Kalabalık Analizi",
-        "text": "Güvenliği sağlamak ve alan kullanımını optimize etmek için kalabalık yoğunluğunu, akışını ve davranışını izleyerek kalabalık dinamiklerini analiz edin."
+        "text": "Güvenliği sağlamak ve alan kullanımını optimize etmek için kalabalık yoğunluğunu, akışını ve davranışını izleyerek kalabalık dinamiklerini analiz edin.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/12.png",
         "title": "Yüz Tanımlama",
-        "text": "Kimlik teyidi için kesin yüz tanıma özelliğiyle güvenliği güçlendirin."
+        "text": "Kimlik teyidi için kesin yüz tanıma özelliğiyle güvenliği güçlendirin.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/6.png",
         "title": "Davranış Analizi",
-        "text": "Gelişmiş hareket ve aktivite analiziyle şüpheni davranışları belirleyin ve anlık bildirim alın."
+        "text": "Gelişmiş hareket ve aktivite analiziyle şüpheni davranışları belirleyin ve anlık bildirim alın.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/25.png",
         "title": "Gözetleme ve Gerçek Zamanlı Analiz",
-        "text": "Anında olay müdahalesi ve gelişmiş güvenlik için gerçek zamanlı video gözetimi uygulayın."
+        "text": "Anında olay müdahalesi ve gelişmiş güvenlik için gerçek zamanlı video gözetimi uygulayın.",
+        "gif": "gif1.gif"
       }
     ]
   },

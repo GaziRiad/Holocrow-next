@@ -32,42 +32,50 @@
       {
         "icon": "/assets/icons/1.png",
         "title": "PPE Kullanım Denetimi",
-        "text": "İş kazalarından kaynaklanabilecek etkileri azaltmak için personelin PPE kullanımını otomatik bir şekilde denetleyin."
+        "text": "İş kazalarından kaynaklanabilecek etkileri azaltmak için personelin PPE kullanımını otomatik bir şekilde denetleyin.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/2.png",
         "title": "Makine Kullanımı",
-        "text": "Yanlış makine kullanımı ciddi yaralanmalara yol açabilir. Gerçek zamanlı uyarılarla kazaları önleyerek çalışanlarınızı ve işinizi güvence altına alın."
+        "text": "Yanlış makine kullanımı ciddi yaralanmalara yol açabilir. Gerçek zamanlı uyarılarla kazaları önleyerek çalışanlarınızı ve işinizi güvence altına alın.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/15.png",
         "title": "Bakım ve Temizlik",
-        "text": "Yetersiz bakım ve temizlik nedeniyle oluşabilecek kazalar tamamen önlenebilir. Hızlı tanımlama, hızlı düzelte ve zararın önlenmesini sağlar."
+        "text": "Yetersiz bakım ve temizlik nedeniyle oluşabilecek kazalar tamamen önlenebilir. Hızlı tanımlama, hızlı düzelte ve zararın önlenmesini sağlar.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/11.png",
         "title": "Ergonomi Kontrolü",
-        "text": "İşe bağlı kas ve iskelet rahatsızlıklarını engellemek ve iş güvenliğini iyileştirmek için çalışanların ergonomi uygulamalarını gözlemleyin."
+        "text": "İşe bağlı kas ve iskelet rahatsızlıklarını engellemek ve iş güvenliğini iyileştirmek için çalışanların ergonomi uygulamalarını gözlemleyin.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/13.png",
         "title": "El Korkuluğu Kullanımı",
-        "text": "Kritik bölgelerde korkuluk kullanımını otomatik olarak algılayın ve düşme ve yaralanmaları önlemek için uygun kullanımı teşvik edin."
+        "text": "Kritik bölgelerde korkuluk kullanımını otomatik olarak algılayın ve düşme ve yaralanmaları önlemek için uygun kullanımı teşvik edin.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/22.png",
         "title": "Bölge Yönetimi",
-        "text": "Görsel tanımlama ve kontrol sistemleri aracılığıyla kısıtlı veya tehlikeli alanlara erişimi yönetin."
+        "text": "Görsel tanımlama ve kontrol sistemleri aracılığıyla kısıtlı veya tehlikeli alanlara erişimi yönetin.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/23.png",
         "title": "Taşıt Denetimi",
-        "text": "Tesisler içindeki araç hareketlerini denetleyerek kazaları engelleyin ve güvenlik kurallarına uyumu sağlayın."
+        "text": "Tesisler içindeki araç hareketlerini denetleyerek kazaları engelleyin ve güvenlik kurallarına uyumu sağlayın.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/24.png",
         "title": "Yere Düşen Kişi Algılama",
-        "text": "Çalışanın tehlikede olduğu veya acil yardıma ihtiyaç duyduğu durumları anında tespit edin, otomatik olarak ilgili birimleri yönlendirin."
+        "text": "Çalışanın tehlikede olduğu veya acil yardıma ihtiyaç duyduğu durumları anında tespit edin, otomatik olarak ilgili birimleri yönlendirin.",
+        "gif": "gif2.gif"
       }
     ]
   },

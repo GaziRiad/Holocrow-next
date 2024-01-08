@@ -28,42 +28,50 @@
       {
         "icon": "/assets/icons/1.png",
         "title": "PPE Control",
-        "text": "Control proper PPE usage of staff to minimize effects on them from work accidents."
+        "text": "Control proper PPE usage of staff to minimize effects on them from work accidents.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/2.png",
         "title": "Machine Interactions",
-        "text": "Poor machine usage can cause serious injuries. Watch out and block accidents with real-time warnings to protect your staff and business."
+        "text": "Poor machine usage can cause serious injuries. Watch out and block accidents with real-time warnings to protect your staff and business.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/15.png",
         "title": "Housekeeping",
-        "text": "Injuries due to inadequate housekeeping are entirely avoidable. Prompt identification leads to swift rectification and the prevention of harm."
+        "text": "Injuries due to inadequate housekeeping are entirely avoidable. Prompt identification leads to swift rectification and the prevention of harm.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/11.png",
         "title": "Ergonomy Control",
-        "text": "Monitor ergonomic practices of staff to prevent work-related musculoskeletal disorders and enhance workplace safety."
+        "text": "Monitor ergonomic practices of staff to prevent work-related musculoskeletal disorders and enhance workplace safety.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/13.png",
         "title": "Handrail Usage",
-        "text": "Automatically detect and encourage proper use of handrails in critical areas to prevent falls and injuries."
+        "text": "Automatically detect and encourage proper use of handrails in critical areas to prevent falls and injuries.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/22.png",
         "title": "Area Controls",
-        "text": "Manage access to restricted or hazardous areas through visual identification and control systems."
+        "text": "Manage access to restricted or hazardous areas through visual identification and control systems.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/23.png",
         "title": "Vehicle Control",
-        "text": "Oversee and regulate vehicle movement within premises to prevent accidents and ensure safety compliance."
+        "text": "Oversee and regulate vehicle movement within premises to prevent accidents and ensure safety compliance.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/24.png",
         "title": "Man-down Detection",
-        "text": "Instantly detect and respond to incidents where staff are incapacitated or in distress for rapid assistance."
+        "text": "Instantly detect and respond to incidents where staff are incapacitated or in distress for rapid assistance.",
+        "gif": "gif2.gif"
       }
     ]
   },

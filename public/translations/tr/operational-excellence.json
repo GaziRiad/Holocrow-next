@@ -32,27 +32,32 @@
       {
         "icon": "/assets/icons/21.png",
         "title": "Stok Yönetimi",
-        "text": "Güvenlik kameralarıyla stoklarınızı sayarak veya ölçerek kontrol edin."
+        "text": "Güvenlik kameralarıyla stoklarınızı sayarak veya ölçerek kontrol edin.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/7.png",
         "title": "Desen ve Renk Denetimi",
-        "text": "Üretilen ürünün kalite standartlarını sağladığından emin olmak için, ürünlerin akışlardaki görüntülerini analiz edin."
+        "text": "Üretilen ürünün kalite standartlarını sağladığından emin olmak için, ürünlerin akışlardaki görüntülerini analiz edin.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/10.png",
         "title": "Operasyonel Mükemmellik",
-        "text": "İyileştirmeye açık süreçleri analiz etmek için operasyonlarınızın her adımını analiz edin ve takip edin."
+        "text": "İyileştirmeye açık süreçleri analiz etmek için operasyonlarınızın her adımını analiz edin ve takip edin.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/26.png",
         "title": "Personel Verimliliği Analizi",
-        "text": "Video verilerini kullanarak personel hareketlerini ve faaliyetlerini analiz ederek iş gücü verimliliğini artırın."
+        "text": "Video verilerini kullanarak personel hareketlerini ve faaliyetlerini analiz ederek iş gücü verimliliğini artırın.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/27.png",
         "title": "Ambalaj Kontrolü",
-        "text": "Ambalajlamanın doğruluğunu ve kalitesini, uyumluluğu görsel olarak kontrol ederek ve sapmaları algılayarak garanti altına alın."
+        "text": "Ambalajlamanın doğruluğunu ve kalitesini, uyumluluğu görsel olarak kontrol ederek ve sapmaları algılayarak garanti altına alın.",
+        "gif": "gif1.gif"
       }
     ]
   },

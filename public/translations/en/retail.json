@@ -29,32 +29,38 @@
       {
         "icon": "/assets/icons/19.png",
         "title": "Visitor Counting",
-        "text": "Count unique visitors using anonymous IDs, excluding staff, to gauge the potential of your stores."
+        "text": "Count unique visitors using anonymous IDs, excluding staff, to gauge the potential of your stores.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/20.png",
         "title": "Demographic Targeting",
-        "text": "Get the demographic diversity of your visitors to implement the correct segmentation."
+        "text": "Get the demographic diversity of your visitors to implement the correct segmentation.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/3.png",
         "title": "A/B Testing",
-        "text": "Understand customers' choices on your new products in a quick way."
+        "text": "Understand customers' choices on your new products in a quick way.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/14.png",
         "title": "Heatmap & Footfall",
-        "text": "Analyze customer movement patterns and store hotspots to optimize layout and product placement."
+        "text": "Analyze customer movement patterns and store hotspots to optimize layout and product placement.",
+        "gif": "gif2.gif"
       },
       {
         "icon": "/assets/icons/4.png",
         "title": "Product Engagement Analysis",
-        "text": "Monitor customer interactions with products to gain insights into preferences and engagement levels."
+        "text": "Monitor customer interactions with products to gain insights into preferences and engagement levels.",
+        "gif": "gif1.gif"
       },
       {
         "icon": "/assets/icons/16.png",
         "title": "Inventory & Stock Control",
-        "text": "Automate inventory tracking and maintain optimal stock levels using real-time visual data analysis."
+        "text": "Automate inventory tracking and maintain optimal stock levels using real-time visual data analysis.",
+        "gif": "gif2.gif"
       }
     ]
   },
