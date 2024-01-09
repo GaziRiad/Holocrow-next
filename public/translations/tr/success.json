@@ -5,7 +5,7 @@
       "location": "Türkiye",
       "date": "2017",
       "text": "2017 yılında, Türkiye Orman Genel Müdürlüğü, ormanları yasadışı faaliyetler ve hırsızlıktan korumak için ülke genelinde fotoğraf çekim cihazları kullandı. Başlangıçta bu cihazlar, verimsiz kalan, merkezi olarak yönetilmiyor ve veri gönderimi için çeşitli e-posta türleri kullanılıyordu, bu  yöntem de oldukça verimsiz kalıyordu. Holocrow Enterprise'ın uygulanmasının ardından, standart bir gönderici adres yapısı ile merkezi bir sistem kuruldu. Bu sistem ile, **4.000 cihazı yöneten bir IoT platformuna** dönüştü ve her birini ayrı bir 'şey' olarak ele alındı. Asenkron mimarisi ile veri yakalama ve işlemeyi AI kullanarak verimli bir şekilde yönetildi ve yönetilmeye devam ediliyor. Gerçek bir nesne (insanlar, hayvanlar veya araçlar; eğer araç ise türü, plaka numarası, marka-model ve rengi) tespit edildiğinde, sistem ilgili personele e-posta ile kanıt fotoğrafları içeren bir uyarı gönderiliyor.",
-      "img": "/assets/successStories/img1.png",
+      "img": "assets/successStories/imgs/img2.jpeg",
       "logo": "/assets/successStories/logos/logo1.png"
     },
     {
@@ -13,7 +13,7 @@
       "location": "İstanbul",
       "date": "2019",
       "text": "İstanbul geniş bir metropoldür ve şehrin %40'ından fazlasını oluşturan Büyükşehir Belediyesi, varlıklarını izlemek ve operasyonları yönetmek için **100.000'den fazla kamera** kullanmaktadır. Holocrow Enterprise, ziyaretçi analizleri, kalabalık analizi, yolcu sayımı, park alanı kullanılabilirliği ve ihlal takibi, çöp tespiti, yangın, duman ve su seviyelerinin belirlenmesi de dahil olmak üzere çeşitli amaçlar için dijitalleştirilmiş veriler sağlamak üzere faaliyet göstermektedir. Bu, değerli verileri akıllı şehir platformlarına besleyerek gerçekleştirilmektedir.",
-      "img": "/assets/successStories/img1.png",
+      "img": "assets/successStories/imgs/img1.jpeg",
       "logo": "/assets/successStories/logos/logo2.png"
     },
     {
@@ -21,7 +21,7 @@
       "location": "Global",
       "date": "2020",
       "text": "Türkiye genelinde **1100 IP** kamera, **Algida** yatay dondurucu dolaplarını izlemek üzere Holocrow Cloud platformu ile entegre edilmiştir. Sistem, dolaptan alınan veya bırakılan dondurma ürünlerini tespit etmektedir. Satılan miktar kutunun eşik değerinin yarısına ulaştığında, ilgili SKU türü için **otomatik bir sipariş** oluşturulur ve bu, **Unilever'in ERP sistemini tetikler**. Ayrıca, el hareketlerini analiz ederek **her dolap için bir ısı haritası** oluşturulur. Daha sonra bu satış verileri ısı haritası verileri ile birleştirilir ve satış noktasında tüketici davranışları hakkında değerli içgörüler sağlar.",
-      "img": "/assets/successStories/img1.png",
+      "img": "assets/successStories/imgs/img3.png",
       "logo": "/assets/successStories/logos/logo3.png"
     },
     {
@@ -29,7 +29,7 @@
       "location": "Global",
       "date": "2023",
       "text": "Ambalaj operasyonlarını izlemek için **16 IP kamera**, Holocrow Enterprise sistemine bağlanmıştır. Bu kameralar **ham kutuları tespit eder** ve hareketlerini otomasyon kayışına kadar takip eder. Sistem, **operasyon ilerleme eğilimlerini analiz** eder ve **bu veriler gelecekteki ambalaj operasyonlarını planlamak için kullanılır**.",
-      "img": "/assets/successStories/img1.png",
+      "img": "assets/successStories/imgs/img4.png",
       "logo": "/assets/successStories/logos/logo4.png"
     },
     {
@@ -37,7 +37,7 @@
       "location": "Mersin / Türkiye",
       "date": "2023",
       "text": "Mersin Uluslararası Limanı'nda **600'den fazla IP kamera** bulunmakta ve başlangıçta bunların 20 tanesi, özellikle makine ile makine veya insan ile makine etkileşimlerini içeren **WHS & OHS ile ilgili ihlalleri tespit** etmek üzere Holocrow Enterprise ile entegre edilecektir. Her sahnede, sanal bölgeler tanımlayarak yasak alanlar oluşturulacak. Her bölge için istenen analitikleri seçerek, Holocrow Enterprise, kanıt fotoğrafları ile ihlalleri raporlayabilecek ve operasyon ekipleri için uyarılar oluşturabilecektir.",
-      "img": "/assets/successStories/img1.png",
+      "img": "assets/successStories/imgs/img5.png",
       "logo": "/assets/successStories/logos/logo5.svg"
     },
     {
@@ -45,7 +45,7 @@
       "location": "Bursa / Türkiye",
       "date": "2023",
       "text": "KMO, birçok tünel ve köprü ile birlikte 450 km'yi aşan yüksek kaliteli otoyol hizmeti sağlamaktadır. Şu anda tüm yolları işletmek için **206 IP kamera** kullanılmaktadır. İlk aşamada, bu kameraların 70 tanesi, **duran araçları, ters yönde hareket edenleri ve yabancı cisimleri tespit** etmek üzere Holocrow Enterprise ile entegre edilecektir. Bu, **kaza risklerini en aza indirecek**, sürücülerin ve yolcuların daha hızlı bir şekilde daha yüksek kalitede hizmet almasını sağlayacaktır.",
-      "img": "/assets/successStories/img1.png",
+      "img": "assets/successStories/imgs/img6.png",
       "logo": "/assets/successStories/logos/logo6.png"
     },
     {
@@ -53,7 +53,7 @@
       "location": "Global",
       "date": "2023",
       "text": "2024'ün ilk çeyreğinde, Türkiye genelindeki Vodafone mağazalarında **ziyaretçi analizleri** için **855 IP kamera** Holocrow Cloud platformuna bağlanacak. Ayrıca, vitrin ve planogram doğrulaması için **4.275 IP kamera kurulacak**. Bu uygulamalar ile Vodafone, ziyaretçi demografileri hakkında içgörüler elde edebilecek, bu iç görüler ile kampanyalar oluşturabilecek ve dijitalleştirilmiş veriler ile bu kampanyaların etkilerini takip edebilecek.",
-      "img": "/assets/successStories/img1.png",
+      "img": "assets/successStories/imgs/img7.png",
       "logo": "/assets/successStories/logos/logo7.png"
     }
   ]

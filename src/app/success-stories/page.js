@@ -52,6 +52,14 @@ function SuccessStories() {
                 >
                   <div className="bg-white/50 h-full flex flex-col items-center justify-center gap-2 px-6 py-6 xl:flex-row xl:p-10 2xl:p-20 2xl:gap-20">
                     <div className="xl:w-1/2">
+                      <img src={story.img} className="rounded-2xl" />
+                    </div>
+                    <div className=" flex flex-col justify-center gap-6 h-full xl:w-1/2">
+                      <img
+                        src={story.logo}
+                        className="w-1/4"
+                        alt={story.text}
+                      />
                       <p>
                         {story.text.split("**").map((text, index) =>
                           index % 2 === 0 ? (
@@ -63,16 +71,6 @@ function SuccessStories() {
                           )
                         )}
                       </p>
-                    </div>
-                    <div className=" flex flex-col items-center justify-center gap-6 h-full xl:w-1/2">
-                      {/* <img src={story.img} /> */}
-                      {/* <div className="h-44 w-full"></div> */}
-                      <img
-                        src={story.logo}
-                        // className="w-32 h-36"
-                        className=" scale-75"
-                        alt={story.text}
-                      />
                     </div>
                   </div>
                 </SwiperSlide>

@@ -92,10 +92,18 @@ function HeroMain({ content }) {
           <video
             className="w-full h-full object-cover object-center"
             autoPlay
-            loading="lazy"
             src="/videos/hero-video-main.mp4"
             type="video/mp4"
           ></video>
+
+          {/* <iframe
+            className="w-full h-full object-cover object-center"
+            width="1236"
+            height="695"
+            src="https://www.youtube.com/embed/9h8UcYJZz-Q?&modestbranding=1&controls=0&autoplay=1&rel=0"
+            allowfullscreen
+          ></iframe> */}
+
           <button>
             <motion.img
               whileTap={{ scale: 0.9 }}
