@@ -51,13 +51,16 @@ function SuccessStories() {
                   key={index}
                 >
                   <div className="bg-white/50 h-full flex flex-col items-center justify-center gap-2 px-6 py-6 xl:flex-row xl:p-10 2xl:p-20 2xl:gap-20">
-                    <div className="xl:w-1/2">
-                      <img src={story.img} className="rounded-2xl" />
+                    <div className="xl:w-1/2 flex items-center justify-center">
+                      <img
+                        src={story.img}
+                        className="w-50 h-40 xl:h-auto xl:w-full rounded-2xl"
+                      />
                     </div>
-                    <div className=" flex flex-col justify-center gap-6 h-full xl:w-1/2">
+                    <div className=" flex flex-col items-center xl:items-start justify-center gap-6 h-full xl:w-1/2">
                       <img
                         src={story.logo}
-                        className="w-1/4"
+                        className=" w-1/6 xl:w-1/4"
                         alt={story.text}
                       />
                       <p>
