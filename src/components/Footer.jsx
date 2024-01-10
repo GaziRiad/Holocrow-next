@@ -6,6 +6,7 @@ import Button from "./Button";
 import { motion, useInView, useScroll } from "framer-motion";
 import { footerText } from "@/constants/footer";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useFooter } from "@/contexts/FooterContext";
 
 function Footer({ children, icon, type = "normal" }) {
   const ref = useRef(null);
@@ -14,15 +15,22 @@ function Footer({ children, icon, type = "normal" }) {
     offset: ["0 1.3", "1 1"],
   });
 
+  const { setIsFooterInView } = useFooter();
+
   // Make background yellow when footer isInView
   const [bgColor, setBgColor] = useState(false);
   const footerRef = useRef();
   const isInView = useInView(footerRef, { once: false, amount: 0.55 });
 
   useEffect(() => {
-    if (isInView) setBgColor(false);
-    else setBgColor(true);
-  }, [isInView]);
+    if (isInView) {
+      setBgColor(false);
+      setIsFooterInView(true);
+    } else {
+      setBgColor(true);
+      setIsFooterInView(false);
+    }
+  }, [isInView, setIsFooterInView]);
 
   const { activeLanguage } = useLanguage();
   return (

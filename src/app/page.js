@@ -12,6 +12,7 @@ import Testimonials from "@/components/home/Testimonials";
 import enHome from "../../public/translations/en/home.json";
 import trHome from "../../public//translations/tr/home.json";
 import { useLanguage } from "@/contexts/LanguageContext";
+import FixedPattern from "@/components/FixedPattern";
 
 const translations = {
   en: enHome,
@@ -31,12 +32,6 @@ export default function Home() {
       <PlatformOverview content={content} />
       {/* <Testimonials content={content} /> */}
       <MainFooter />
-      {/* <div className="fixed bottom-0 right-0 z-50">
-        <img src="/assets/blob.svg" className="w-60" />
-        <p className="text-white text-lg absolute top-1/2 right-1/3 font-bold">
-          Holocrow.com
-        </p>
-      </div> */}
     </div>
   );
 }
