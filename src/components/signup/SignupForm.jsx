@@ -1,9 +1,12 @@
+import { useState } from "react";
 import Button from "../Button";
 import FormRow from "../FormRow";
 import Input from "../Input";
 import { useForm } from "react-hook-form";
 
 function SignupForm({ step, setStep }) {
+  const [emailErr, setEmailErr] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -15,12 +18,23 @@ function SignupForm({ step, setStep }) {
   let newAccount;
   let newDevice;
 
-  function handleAccount(data, e) {
+  async function checkEmailExist(email) {
+    const res = await fetch(
+      `https://api.holocrow.com/api/accounts/customer-register/check-email/?email=${email}`
+    );
+    if (!res.ok) throw new Error("Error with email");
+    const data = await res.json();
+    return data;
+  }
+
+  async function handleAccount(data, e) {
     e.preventDefault();
     newAccount = data;
     console.log(newAccount);
-    reset();
-    setStep(2);
+    // reset();
+    const emailExist = await checkEmailExist(data.email);
+    if (!emailExist) setEmailErr(true);
+    if (emailExist) setStep(2);
   }
   function handleDevice(data, e) {
     e.preventDefault();
@@ -36,6 +50,11 @@ function SignupForm({ step, setStep }) {
             <p className="text-left text-primary text-3xl font-semibold mb-8 2xl:text-4xl">
               Sign Up
             </p>
+            {/* {emailErr && (
+              <p className="text-red-400 mb-6">
+                This email seems to already exist.
+              </p>
+            )} */}
             <FormRow type="horizontal">
               <FormRow
                 id="firstName"

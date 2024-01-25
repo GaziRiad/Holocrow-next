@@ -8,11 +8,11 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 
 import { useLanguage } from "@/contexts/LanguageContext";
-
 //
 import enSuccess from "../../../public/translations/en/success.json";
 import trSuccess from "../../../public/translations/tr/success.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { client } from "../../../sanity/lib/client";
 const translations = {
   en: enSuccess,
   tr: trSuccess,
@@ -23,8 +23,19 @@ function SuccessStories() {
   const content = translations[activeLanguage];
   const [currStory, setCurrStory] = useState(1);
 
-  console.log(content.stories[0].text.split("**"));
+  // const [stories, setStories] = useState([]);
 
+  // useEffect(() => {
+  //   async function getStories() {
+  //     const data = await client.fetch(
+  //       `*[_type == "story"] {body, mainImage {asset -> {_id, url}, alt,}} | order(publishedAt desc)`
+  //     );
+
+  //     setStories(data);
+  //   }
+  //   getStories();
+  // }, []);
+  // console.log(stories);
   return (
     <div className="mb-24 text-black-800">
       <section className="relative h-screen mb-12 sm:mb-24 md:-mb-32 xl:-mb-20">

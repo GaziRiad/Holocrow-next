@@ -1,15 +1,16 @@
 import { format } from "date-fns";
 import Button from "../Button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import SanityBlockContent from "@sanity/block-content-to-react";
 
 function MainPost({ post }) {
   const { activeLanguage } = useLanguage();
 
   function printText(body) {
     let fullBodyText = "";
-    body.map(
-      (el) => (fullBodyText = fullBodyText + `${el.children[0].text}@@`)
-    );
+    body
+      .filter((el) => el._type !== "image")
+      .map((el) => (fullBodyText = fullBodyText + `${el.children[0].text}@@`));
     fullBodyText = fullBodyText.split(" ").slice(0, 180).join(" ").split("@@");
     return fullBodyText;
   }
@@ -38,7 +39,6 @@ function MainPost({ post }) {
           </em>
         </p>
         <div className=" text-black-800">
-          {/* <SanityBlockContent blocks={post?.body} serializers={serializers} /> */}
           {printText(post?.body).map((el, i) => (
             <p key={el} className={`mb-3`}>
               {`${el} ${i === printText(post?.body).length - 1 ? " ..." : ""}`}

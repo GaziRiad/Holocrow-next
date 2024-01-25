@@ -4,10 +4,9 @@ import BlogSlider from "@/components/BlogSlider";
 import Hero from "@/components/Hero";
 import MainFooter from "@/components/MainFooter";
 import { useEffect, useState } from "react";
-import { client } from "../../../sanity/lib/client";
+import { client, urlFor } from "../../../sanity/lib/client";
 import { format } from "date-fns";
 import MainPost from "@/components/blog/MainPost";
-import Link from "next/link";
 import SecondaryPosts from "@/components/blog/SecondaryPosts";
 
 export const serializers = {
@@ -39,11 +38,15 @@ export const serializers = {
               {children}
             </blockquote>
           );
+
         default:
           return <p className="text-gray-800 mb-4">{children}</p>;
       }
     },
-    image: ({ node }) => <img src={node.asset.url} alt={node.alt} />,
+
+    image: ({ node }) => {
+      return <img src={urlFor(node.asset)} className=" mb-4" alt={node.alt} />;
+    },
     // Add serializers for other custom types as needed
   },
   marks: {
@@ -70,13 +73,15 @@ function About() {
   useEffect(() => {
     async function getPosts() {
       const data = await client.fetch(
-        `*[_type == "post"] {title, slug, body, publishedAt, mainImage {asset -> {_id, url}, alt,}, "name": author -> name, } | order(publishedAt desc)`
+        `*[_type == "post"] {title, slug, body, publishedAt, mainImage {asset -> {_id, url}, alt,}, "name": author -> name, } | order(publishedAt asc)`
       );
 
       setPosts(data);
     }
     getPosts();
   }, []);
+
+  console.log(posts);
 
   return (
     <>

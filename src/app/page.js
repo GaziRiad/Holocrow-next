@@ -25,6 +25,7 @@ export default function Home() {
   return (
     <div>
       <HeroMain content={content} />
+
       <Features content={content} />
       <Statics content={content} />
       <HowItWorks content={content} />
