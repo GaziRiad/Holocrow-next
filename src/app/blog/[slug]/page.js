@@ -21,7 +21,15 @@ function PostPage() {
       const data = await client.fetch(
         `*[slug.current == "${slug}"] {
           title,
-          body,
+          body[]{
+            ...,
+            _type == "image" => {
+              "_key": _key,
+              "_type": _type,
+              "imageUrl": asset -> url, // Directly fetch the URL
+              "alt": alt
+            },
+          },
           publishedAt,
           "name": author -> name,
           mainImage {
