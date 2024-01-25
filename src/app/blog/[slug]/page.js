@@ -23,10 +23,15 @@ function PostPage() {
           title,
           body[]{
             ...,
+            // Adjust the serializers for different block types
             _type == "image" => {
+              // Include the URL directly in the "asset" field
               "_key": _key,
               "_type": _type,
-              "imageUrl": asset -> url, // Directly fetch the URL
+              "asset": {
+                "_id": asset._ref,
+                "url": asset->url
+              },
               "alt": alt
             },
           },
