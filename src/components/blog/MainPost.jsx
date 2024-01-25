@@ -35,7 +35,7 @@ function MainPost({ post }) {
         width={500}
         src={post.mainImage.asset?.url}
         alt={post.mainImage.alt}
-        className="rounded-xl w-3/4 h-96 lg:w-[35%] xl:w-[45%]"
+        className="rounded-xl w-full h-96 lg:w-[35%] xl:w-[45%]"
       />
       <div className="flex flex-col text-black-800 lg:w-1/2">
         <p className=" font-bold text-3xl mb-2 capitalize">
