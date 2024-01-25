@@ -8,6 +8,7 @@ import { client, urlFor } from "../../../sanity/lib/client";
 import { format } from "date-fns";
 import MainPost from "@/components/blog/MainPost";
 import SecondaryPosts from "@/components/blog/SecondaryPosts";
+import Image from "next/image";
 
 export const serializers = {
   types: {
@@ -45,7 +46,15 @@ export const serializers = {
     },
 
     image: ({ node }) => {
-      return <img src={node.asset.url} className=" mb-4" alt={node.alt} />;
+      return (
+        <Image
+          height={500}
+          width={1000}
+          src={node.asset.url}
+          className=" mb-4"
+          alt={node.alt}
+        />
+      );
     },
     // Add serializers for other custom types as needed
   },

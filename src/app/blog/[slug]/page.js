@@ -59,7 +59,7 @@ function PostPage() {
       </div>
       <section className=" max-w-4xl mx-auto px-4 py-24">
         <article className=" text-black mb-12">
-          <p className=" font-bold text-center text-5xl mb-8">
+          <p className="text-2xl md:text-3xl font-bold text-center lg:text-5xl mb-8">
             {singlePost.title}
           </p>
           <img src={singlePost.mainImage?.asset.url} className="w-full mb-4" />

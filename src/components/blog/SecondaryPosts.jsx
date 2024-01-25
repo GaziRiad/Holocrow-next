@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FiLink } from "react-icons/fi";
 
@@ -17,7 +18,9 @@ function SecondaryPosts({ posts }) {
             color="#fff"
           />
           <div className="relative rounded-2xl overflow-hidden">
-            <img
+            <Image
+              height={500}
+              width={500}
               className="w-full h-[280px] lg:h-[360px] object-fill"
               src={post.mainImage.asset?.url}
               alt={post.mainImage.alt}
@@ -38,7 +41,7 @@ function SecondaryPosts({ posts }) {
               <p className="text-sm text-primary font-semibold uppercase -mb-0.5">
                 Blog Post
               </p>
-              <p className="w-full font-bold text-xl text-black-800 capitalize mb-3 text-left capitalize">
+              <p className="w-full font-bold text-xl text-black-800 mb-3 text-left capitalize">
                 {post.title}
               </p>
               <p className="text-base text-black-800 text-left">

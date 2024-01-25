@@ -2,6 +2,7 @@ import { format } from "date-fns";
 import Button from "../Button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import SanityBlockContent from "@sanity/block-content-to-react";
+import Image from "next/image";
 
 function MainPost({ post }) {
   const { activeLanguage } = useLanguage();
@@ -17,13 +18,21 @@ function MainPost({ post }) {
   return (
     <section className="mt-72 container mx-auto mb-12 px-4 flex flex-col items-center justify-between gap-6 lg:flex-row lg:gap-24 lg:px-16 2xl:px-56 lg:mb-40 relative">
       <div className="relative w-full lg:absolute lg:-top-0 xl:right-[10%] lg:w-1/2">
-        <img src="/assets/Vector-wave.png" className="top-0 w-[132px] -z-50" />
+        <Image
+          height={500}
+          width={500}
+          alt="wave vector"
+          src="/assets/Vector-wave.png"
+          className="top-0 w-[132px] -z-50"
+        />
         <p className="text-primary font-bold text-5xl md:text-5xl absolute z-10 -mt-20 pl-8 xl:-mt-24 xl:pl-[26px]">
           <span className="text-white text-6xl">{`Blog`.slice(0, 3)}</span>
           <span className="text-6xl xl:pl-1">{`Blog`.slice(-1)}</span>
         </p>
       </div>
-      <img
+      <Image
+        height={500}
+        width={500}
         src={post.mainImage.asset?.url}
         alt={post.mainImage.alt}
         className="rounded-xl w-3/4 h-96 lg:w-[35%] xl:w-[45%]"
