@@ -76,7 +76,7 @@ function SuccessStories() {
                       <Image
                         height={500}
                         width={500}
-                        src={story.logo.assetss.url}
+                        src={story.logo.asset.url}
                         className=" w-1/6 xl:w-1/4"
                         alt={story?.logo?.alt}
                       />
