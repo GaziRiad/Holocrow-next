@@ -51,6 +51,21 @@ export const story = {
       title: "Body",
       type: "blockContent",
     },
+    {
+      name: "client",
+      title: "Client Name",
+      type: "string",
+    },
+    {
+      name: "location",
+      title: "Location",
+      type: "string",
+    },
+    {
+      name: "year",
+      title: "Year",
+      type: "string",
+    },
   ],
 
   preview: {

@@ -9,17 +9,11 @@ import { Pagination, Navigation } from "swiper/modules";
 
 import { useLanguage } from "@/contexts/LanguageContext";
 //
-import enSuccess from "../../../public/translations/en/success.json";
-import trSuccess from "../../../public/translations/tr/success.json";
 import { useEffect, useState } from "react";
 import { client } from "../../../sanity/lib/client";
 import Image from "next/image";
 import SanityBlockContent from "@sanity/block-content-to-react";
 import { serializers } from "../blog/page";
-const translations = {
-  en: enSuccess,
-  tr: trSuccess,
-};
 
 function SuccessStories() {
   const { activeLanguage } = useLanguage();
@@ -30,14 +24,13 @@ function SuccessStories() {
   useEffect(() => {
     async function getStories() {
       const data = await client.fetch(
-        `*[_type == "story"] {body, language, mainImage {asset -> {_id, url}, alt,}, logo {asset -> {_id, url}, alt,}} | order(publishedAt desc)`
+        `*[_type == "story"] {body, language, client, location, year, mainImage {asset -> {_id, url}, alt,}, logo {asset -> {_id, url}, alt,}} | order(publishedAt desc)`
       );
 
       setStories(data.filter((story) => story.language === activeLanguage));
     }
     getStories();
   }, [activeLanguage]);
-  console.log(stories);
   return (
     <div className="mb-24 text-black-800">
       <section className="relative h-screen mb-12 sm:mb-24 md:-mb-32 xl:-mb-20">
@@ -94,20 +87,20 @@ function SuccessStories() {
           </Swiper>
         </div>
       </section>
-      {/* <section className=" flex flex-col items-center justify-center">
+      <section className=" flex flex-col items-center justify-center">
         <p className=" text-primary text-3xl font-semibold mb-4">
-          {content.stories[currStory].clientName}
+          {stories[currStory]?.client}
         </p>
         <p className=" flex items-center justify-center">
           <span className="text-3xl">{"{"}</span>
           <span className="px-2 text-lg lg:text-xl">
-            {content.stories[currStory].date}
+            {stories[currStory]?.year}
             {" / "}
-            {content.stories[currStory].location}
+            {stories[currStory]?.location}
           </span>
           <span className="text-3xl">{"}"}</span>
         </p>
-      </section> */}
+      </section>
     </div>
   );
 }
