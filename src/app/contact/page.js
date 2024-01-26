@@ -53,7 +53,7 @@ function Contact() {
           </p>
         </div>
         {/*  */}
-        <div className="flex flex-col gap-4 text-center lg:text-left lg:flex-row lg:justify-between">
+        <div className="flex flex-col gap-4 text-center lg:text-left lg:flex-row lg:w-2/4 lg:justify-between">
           <div>
             <p className="text-white text-lg font-medium">
               {content.baltic.title}:
@@ -63,7 +63,7 @@ function Contact() {
               <br />
               {content.baltic.add2} <br />
               {content.baltic.add3} <br />
-              {content.baltic.add1}
+              {content.baltic.add4}
               <br />
               {content.baltic.number}
             </p>
