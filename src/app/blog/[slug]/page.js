@@ -9,6 +9,7 @@ import { format } from "date-fns";
 import { serializers } from "../page";
 import { useRouter } from "next/navigation";
 import Hero from "@/components/Hero";
+import Image from "next/image";
 
 function PostPage() {
   const [singlePost, setSinglePost] = useState([]);
@@ -62,7 +63,13 @@ function PostPage() {
           <p className="text-2xl md:text-3xl font-bold text-center lg:text-5xl mb-8">
             {singlePost.title}
           </p>
-          <img src={singlePost.mainImage?.asset.url} className="w-full mb-4" />
+          <Image
+            height={500}
+            width={500}
+            src={singlePost.mainImage?.asset.url}
+            alt={singlePost.mainImage.alt}
+            className="w-full mb-4"
+          />
           <p className=" mb-10">
             <span>Published by</span>
             <em className="font-semibold text-stone-800">

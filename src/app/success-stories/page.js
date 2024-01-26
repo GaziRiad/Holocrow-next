@@ -13,6 +13,9 @@ import enSuccess from "../../../public/translations/en/success.json";
 import trSuccess from "../../../public/translations/tr/success.json";
 import { useEffect, useState } from "react";
 import { client } from "../../../sanity/lib/client";
+import Image from "next/image";
+import SanityBlockContent from "@sanity/block-content-to-react";
+import { serializers } from "../blog/page";
 const translations = {
   en: enSuccess,
   tr: trSuccess,
@@ -20,22 +23,21 @@ const translations = {
 
 function SuccessStories() {
   const { activeLanguage } = useLanguage();
-  const content = translations[activeLanguage];
   const [currStory, setCurrStory] = useState(1);
 
-  // const [stories, setStories] = useState([]);
+  const [stories, setStories] = useState([]);
 
-  // useEffect(() => {
-  //   async function getStories() {
-  //     const data = await client.fetch(
-  //       `*[_type == "story"] {body, mainImage {asset -> {_id, url}, alt,}} | order(publishedAt desc)`
-  //     );
+  useEffect(() => {
+    async function getStories() {
+      const data = await client.fetch(
+        `*[_type == "story"] {body, language, mainImage {asset -> {_id, url}, alt,}, logo {asset -> {_id, url}, alt,}} | order(publishedAt desc)`
+      );
 
-  //     setStories(data);
-  //   }
-  //   getStories();
-  // }, []);
-  // console.log(stories);
+      setStories(data.filter((story) => story.language === activeLanguage));
+    }
+    getStories();
+  }, [activeLanguage]);
+  console.log(stories);
   return (
     <div className="mb-24 text-black-800">
       <section className="relative h-screen mb-12 sm:mb-24 md:-mb-32 xl:-mb-20">
@@ -46,16 +48,15 @@ function SuccessStories() {
             spaceBetween={40}
             slidesPerView={1}
             navigation
-            // pagination={{ clickable: true }}
             effect="coverflow"
             centeredSlides
             initialSlide={1}
             onSlideChange={(swiper) => {
               setCurrStory(swiper.activeIndex);
             }}
-            className="storiesSlider w-[95%] absolute top-[40%] -translate-y-1/3 sm:top-[40%] md:top-[35%] lg:w-[80%] xl:top-[45%] xl:w-[65%] shadow-2xl rounded-2xl h-[80%] md:h-[60%]"
+            className="storiesSlider w-[95%] absolute top-[40%] -translate-y-1/3 sm:top-[40%] md:top-[35%] lg:w-[80%] xl:top-[45%] xl:w-[65%] shadow-2xl rounded-2xl h-[90%] md:h-[60%]"
           >
-            {content.stories.map((story, index) => {
+            {stories.map((story, index) => {
               return (
                 <SwiperSlide
                   className={`transition-transform duration-300 transform`}
@@ -63,27 +64,27 @@ function SuccessStories() {
                 >
                   <div className="bg-white/50 h-full flex flex-col items-center justify-center gap-2 px-6 py-6 xl:flex-row xl:p-10 2xl:p-20 2xl:gap-20">
                     <div className="xl:w-1/2 flex items-center justify-center">
-                      <img
-                        src={story.img}
+                      <Image
+                        height={500}
+                        width={500}
+                        src={story.mainImage.asset.url}
+                        alt={story.mainImage?.alt}
                         className="w-50 h-40 xl:h-auto xl:w-full rounded-2xl"
                       />
                     </div>
                     <div className=" flex flex-col items-center xl:items-start justify-center gap-6 h-full xl:w-1/2">
-                      <img
-                        src={story.logo}
+                      <Image
+                        height={500}
+                        width={500}
+                        src={story.logo.assetss.url}
                         className=" w-1/6 xl:w-1/4"
-                        alt={story.text}
+                        alt={story?.logo?.alt}
                       />
                       <p>
-                        {story.text.split("**").map((text, index) =>
-                          index % 2 === 0 ? (
-                            <span key={index}>{text}</span>
-                          ) : (
-                            <strong className="text-black-800" key={index}>
-                              {text}
-                            </strong>
-                          )
-                        )}
+                        <SanityBlockContent
+                          blocks={story?.body}
+                          serializers={serializers}
+                        />
                       </p>
                     </div>
                   </div>
@@ -93,7 +94,7 @@ function SuccessStories() {
           </Swiper>
         </div>
       </section>
-      <section className=" flex flex-col items-center justify-center">
+      {/* <section className=" flex flex-col items-center justify-center">
         <p className=" text-primary text-3xl font-semibold mb-4">
           {content.stories[currStory].clientName}
         </p>
@@ -106,7 +107,7 @@ function SuccessStories() {
           </span>
           <span className="text-3xl">{"}"}</span>
         </p>
-      </section>
+      </section> */}
     </div>
   );
 }
