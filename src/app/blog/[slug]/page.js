@@ -67,7 +67,7 @@ function PostPage() {
             height={500}
             width={500}
             src={singlePost.mainImage?.asset.url}
-            alt={singlePost.mainImage.alt}
+            alt={singlePost.mainImage?.alt}
             className="w-full mb-4"
           />
           <p className=" mb-10">

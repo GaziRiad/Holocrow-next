@@ -1,46 +1,46 @@
 export const author = {
-  name: 'author',
-  title: 'Author',
-  type: 'document',
+  name: "author",
+  title: "Author",
+  type: "document",
   fields: [
     {
-      name: 'name',
-      title: 'Name',
-      type: 'string',
+      name: "name",
+      title: "Name",
+      type: "string",
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
+      name: "slug",
+      title: "Slug",
+      type: "slug",
       options: {
-        source: 'name',
+        source: "name",
         maxLength: 96,
       },
     },
     {
-      name: 'image',
-      title: 'Image',
-      type: 'image',
+      name: "image",
+      title: "Image",
+      type: "image",
       options: {
         hotspot: true,
       },
       fields: [
         {
-          name: 'alt',
-          type: 'string',
-          title: 'Alternative Text',
-        }
-      ]
+          name: "alt",
+          type: "string",
+          title: "Alternative Text",
+        },
+      ],
     },
     {
-      name: 'bio',
-      title: 'Bio',
-      type: 'array',
+      name: "bio",
+      title: "Bio",
+      type: "array",
       of: [
         {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
+          title: "Block",
+          type: "block",
+          styles: [{ title: "Normal", value: "normal" }],
           lists: [],
         },
       ],
@@ -48,8 +48,8 @@ export const author = {
   ],
   preview: {
     select: {
-      title: 'name',
-      media: 'image',
+      title: "name",
+      media: "image",
     },
   },
-}
+};
