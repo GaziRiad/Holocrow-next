@@ -1,6 +1,13 @@
 import Link from "next/link";
 
-function Button({ children, type = "medium", to = "", style, onClick }) {
+function Button({
+  children,
+  type = "medium",
+  to = "",
+  style,
+  onClick,
+  disabled,
+}) {
   if (type === "mobile-navigation")
     return (
       <Link
@@ -46,6 +53,7 @@ function Button({ children, type = "medium", to = "", style, onClick }) {
       <button
         onClick={onClick}
         className={`rounded-full shadow-sm uppercase tracking-wider bg-primary text-white text-center font-secondary font-semibold px-8 py-2`}
+        disabled={disabled}
       >
         {children}
       </button>

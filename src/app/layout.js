@@ -1,6 +1,7 @@
 import "./globals.css";
 import LanguageContext from "../contexts/LanguageContext";
 import FooterProvider from "@/contexts/FooterContext";
+import { AuthProvider } from "@/contexts/AuthContext";
 
 export const metadata = {
   title: "Holocrow",
@@ -13,7 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <LanguageContext>
-          <FooterProvider>{children}</FooterProvider>
+          <AuthProvider>
+            <FooterProvider>{children}</FooterProvider>
+          </AuthProvider>
         </LanguageContext>
       </body>
     </html>
