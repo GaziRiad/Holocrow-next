@@ -65,7 +65,7 @@ function Footer({ children, icon, type = "normal" }) {
           <p className="text-white font-bold text-4xl tracking-wider absolute top-[66%] lg:top-[60%] xl:tracking-[1.25rem] lg:text-8xl  ">
             {footerText[activeLanguage].cta}
           </p>
-          <Button to="/signup">{footerText[activeLanguage].btn}</Button>
+          <Button to="/process/signup">{footerText[activeLanguage].btn}</Button>
         </footer>
       </motion.section>
       <div className="bg-white flex items-center justify-center py-1 lg:py-2">

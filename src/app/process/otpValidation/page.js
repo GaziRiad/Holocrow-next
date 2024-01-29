@@ -2,11 +2,23 @@
 
 import Logo from "@/components/Logo";
 import Navigation from "@/components/Navigation";
-import SignupForm from "@/components/signup/SignupForm";
+import OtpForm from "@/components/Forms/OtpForm";
 import { navigation } from "@/constants/navigation";
+import { useAuth } from "@/contexts/AuthContext";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
-function SignUp() {
+function OtpValidation() {
+  const router = useRouter();
+
+  const { isAuthenticated, isVerified } = useAuth().state;
+
+  useEffect(() => {
+    if (!isAuthenticated) router.push("/process/signup");
+    if (isVerified) router.push("/");
+  }, [isAuthenticated, isVerified, router]);
+
   return (
     <section className="pt-14 pb-14 gradient min-h-screen">
       <header className="container mx-auto flex items-center justify-between mb-24 px-8 lg:px-0 lg:mb-12">
@@ -16,7 +28,7 @@ function SignUp() {
       <div className="container mx-auto flex justify-center items-center">
         <div className="relative flex  justify-between bg-white px-8 py-8 rounded-xl shadow-2xl w-[95%] lg:py-12 lg:px-16 lg:w-[75%] xl:w-[60%]">
           <div className="w-full lg:w-[65%] xl:w-[55%]">
-            <SignupForm />
+            <OtpForm />
           </div>
           <div className="">
             <Image
@@ -36,4 +48,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default OtpValidation;

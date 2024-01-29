@@ -38,7 +38,7 @@ function HeroPattern() {
           {pattern[activeLanguage].heading}
         </Heading>
         <p className="text-white mb-3 px-6">{pattern[activeLanguage].text}</p>
-        <Button to="/signup" type="small">
+        <Button to="/process/signup" type="small">
           {pattern[activeLanguage].button}
         </Button>
       </div>

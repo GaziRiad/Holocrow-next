@@ -1,7 +1,7 @@
 import "./globals.css";
 import LanguageContext from "../contexts/LanguageContext";
-import FooterProvider from "@/contexts/FooterContext";
 import { AuthProvider } from "@/contexts/AuthContext";
+import FooterProvider from "@/contexts/FooterContext";
 
 export const metadata = {
   title: "Holocrow",

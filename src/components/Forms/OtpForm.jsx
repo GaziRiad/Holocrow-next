@@ -1,26 +1,28 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import Button from "../Button";
 import FormRow from "../FormRow";
 import Input from "../Input";
 import { useForm } from "react-hook-form";
 import { formatTime } from "../../../utils/funcs";
+import { useAuth } from "@/contexts/AuthContext";
+import { useRouter } from "next/navigation";
 
 function OtpForm() {
+  const router = useRouter();
+  const {
+    dispatch,
+    state: { accessToken },
+  } = useAuth();
+
   const [otpError, setOtpError] = useState("");
 
   const [otpCount, setOtpCount] = useState(0);
   const [timer, setTimer] = useState(null); // 180 seconds = 3 minutes
   const [isTimerExpired, setIsTimerExpired] = useState(false);
 
-  const [accessToken, setAccessToken] = useState(null);
-
-  const {
-    register,
-    handleSubmit,
-    reset,
-    getValues,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   useEffect(() => {
     let interval;
@@ -52,15 +54,23 @@ function OtpForm() {
     );
     setOtpCount((otpCount) => otpCount + 1);
     if (!res.ok && otpCount === 3) {
-      setOtpStep(false);
       setOtpCount(0);
-      setAccessToken(null);
+      dispatch({
+        type: "UNAUTH/USER",
+      });
+      // router.push();
       return;
     }
     if (!res.ok) return setOtpError(true);
     const otpData = await res.json();
-    console.log(otpData);
+    dispatch({
+      type: "VALIDATE/USER",
+      payload: {
+        isVerified: otpData.is_verified,
+      },
+    });
     setOtpCount(0);
+    router.push("/process/submitLocation");
     reset();
   }
 
@@ -129,8 +139,6 @@ function OtpForm() {
             <span className="font-semibold">{formatTime(timer)}</span>
           </p>
         )}
-
-        {/* Your OTP form here */}
       </div>
     </>
   );

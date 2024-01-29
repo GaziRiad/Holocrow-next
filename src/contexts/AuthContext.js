@@ -1,3 +1,5 @@
+"use client";
+
 // AuthContext.js
 import React, { createContext, useContext, useReducer } from "react";
 
@@ -5,11 +7,23 @@ const AuthContext = createContext();
 
 const authReducer = (state, action) => {
   switch (action.type) {
-    case "SET_AUTHENTICATION":
+    case "AUTHENTICATE/USER":
       return {
         ...state,
         isAuthenticated: action.payload.isAuthenticated,
         accessToken: action.payload.accessToken,
+      };
+    case "VALIDATE/USER":
+      return {
+        ...state,
+        isVerified: action.payload.isVerified,
+      };
+    case "UNAUTH/USER":
+      return {
+        ...state,
+        isAuthenticated: false,
+        accessToken: null,
+        isVerified: false,
       };
     // Add other cases as needed
     default:
@@ -21,7 +35,7 @@ export const AuthProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, {
     isAuthenticated: false,
     accessToken: null,
-    // Add other initial state properties
+    isVerified: false,
   });
 
   return (
