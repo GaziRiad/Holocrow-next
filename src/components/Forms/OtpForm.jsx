@@ -5,21 +5,19 @@ import Button from "../Button";
 import FormRow from "../FormRow";
 import Input from "../Input";
 import { useForm } from "react-hook-form";
-import { formatTime } from "../../../utils/funcs";
+import { formatTime, makeAuthenticatedRequest } from "../../../utils/funcs";
 import { useAuth } from "@/contexts/AuthContext";
 import { useRouter } from "next/navigation";
 
 function OtpForm() {
   const router = useRouter();
-  const {
-    dispatch,
-    state: { accessToken },
-  } = useAuth();
+  const { dispatch } = useAuth();
+  // const accessToken = localStorage.getItem("accessToken");
 
   const [otpError, setOtpError] = useState("");
 
   const [otpCount, setOtpCount] = useState(0);
-  const [timer, setTimer] = useState(null); // 180 seconds = 3 minutes
+  const [timer, setTimer] = useState(180);
   const [isTimerExpired, setIsTimerExpired] = useState(false);
 
   const { register, handleSubmit, reset } = useForm();
@@ -41,32 +39,29 @@ function OtpForm() {
   async function handleOtp(data, e) {
     e.preventDefault();
     setOtpError(false);
-    const res = await fetch(
-      `https://api.holocrow.com/api/accounts/customer-register/check-verify-token/`,
+
+    const res = await makeAuthenticatedRequest(
+      "https://api.holocrow.com/api/accounts/customer-register/check-verify-token/",
       {
         method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${accessToken}`,
-        },
         body: JSON.stringify({ code: data.otpCode }),
       }
     );
+
     setOtpCount((otpCount) => otpCount + 1);
     if (!res.ok && otpCount === 3) {
       setOtpCount(0);
       dispatch({
         type: "UNAUTH/USER",
       });
-      // router.push();
       return;
     }
     if (!res.ok) return setOtpError(true);
-    const otpData = await res.json();
+    await res.json();
     dispatch({
       type: "VALIDATE/USER",
       payload: {
-        isVerified: otpData.is_verified,
+        isVerified: true,
       },
     });
     setOtpCount(0);
@@ -75,17 +70,15 @@ function OtpForm() {
   }
 
   async function handleResendOtp() {
-    const res = await fetch(
-      `https://api.holocrow.com/api/accounts/customer-register/send-verify-token/`,
+    const res = await makeAuthenticatedRequest(
+      "https://api.holocrow.com/api/accounts/customer-register/send-verify-token/",
       {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${accessToken}`,
-        },
       }
     );
-    if (!res.ok) return console.log("Error resending OTP code.");
+    if (!res.ok)
+      console.error("Failed to verify OTP:", res.status, res.statusText);
+
     setTimer(60);
     setIsTimerExpired(false);
     return res.json();

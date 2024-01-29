@@ -41,6 +41,7 @@ function SignupForm() {
     };
     await checkEmailExist(data.email);
     if (emailErr) return;
+
     const res = await fetch(
       `https://api.holocrow.com/api/accounts/customer-register/`,
       {
@@ -51,20 +52,25 @@ function SignupForm() {
         body: JSON.stringify(newAccount),
       }
     );
+
     if (!res.ok) return console.log("Error trying to register");
     const registerData = await res.json();
-    console.log(registerData);
 
     dispatch({
       type: "AUTHENTICATE/USER",
-      payload: { isAuthenticated: true, accessToken: registerData.access },
+      payload: {
+        isAuthenticated: true,
+      },
     });
+    localStorage.setItem("accessToken", registerData.access);
+    localStorage.setItem("refreshToken", registerData.refresh);
+
+    console.log(registerData);
     router.push("/process/otpValidation");
     reset();
   }
 
-  //
-
+  // SIGNUP only sotres access and refresh tokens on LOCALSTORAGE & set isAuthenticated GLOBAL state to TRUE.
   return (
     <form className="flex flex-col" onSubmit={handleSubmit(handleRegister)}>
       <>

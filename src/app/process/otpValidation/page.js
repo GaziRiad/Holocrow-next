@@ -12,12 +12,10 @@ import { useEffect } from "react";
 function OtpValidation() {
   const router = useRouter();
 
-  const { isAuthenticated, isVerified } = useAuth().state;
-
   useEffect(() => {
-    if (!isAuthenticated) router.push("/process/signup");
-    if (isVerified) router.push("/");
-  }, [isAuthenticated, isVerified, router]);
+    const storedAccessToken = localStorage.getItem("accessToken");
+    if (!storedAccessToken) router.push("/process/signup");
+  }, [router]);
 
   return (
     <section className="pt-14 pb-14 gradient min-h-screen">

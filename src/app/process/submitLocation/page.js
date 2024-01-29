@@ -13,12 +13,12 @@ function SignUp() {
   const router = useRouter();
   const { isAuthenticated, isVerified } = useAuth().state;
 
-  useEffect(() => {
-    if (!isAuthenticated) return router.push("/process/signup");
-    if (!isVerified) return router.push("/process/otpValidation");
-  }, [isAuthenticated, isVerified, router]);
+  // useEffect(() => {
+  //   if (!isAuthenticated) return router.push("/process/signup");
+  //   // if (!isVerified) return router.push("/process/otpValidation");
+  // }, [isAuthenticated, router]);
 
-  console.log("IsAuth:", isAuthenticated, "- isVerified:", isVerified);
+  // console.log("IsAuth:", isAuthenticated, "- isVerified:", isVerified);
 
   return (
     <section className="pt-14 pb-14 gradient min-h-screen">

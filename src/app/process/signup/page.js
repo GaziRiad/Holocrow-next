@@ -7,8 +7,6 @@ import { navigation } from "@/constants/navigation";
 import Image from "next/image";
 
 function SignUp() {
-  // const { isAuthenticated, accessToken, isVerified } = useAuth().state;
-
   return (
     <section className="pt-14 pb-14 gradient min-h-screen">
       <header className="container mx-auto flex items-center justify-between mb-24 px-8 lg:px-0 lg:mb-12">

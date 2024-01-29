@@ -4,15 +4,17 @@ import FormRow from "../FormRow";
 import { useForm } from "react-hook-form";
 import { useAuth } from "@/contexts/AuthContext";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { makeAuthenticatedRequest } from "../../../utils/funcs";
 
 function LocationForm() {
   const { activeLanguage } = useLanguage();
-  const { accessToken } = useAuth().state;
 
-  const [curCountry, setCurCountry] = useState(null);
   const [countries, setCountries] = useState([]);
   const [cities, setCities] = useState([]);
   const [districts, setDistricts] = useState([]);
+
+  const [selectedCountry, setSelectedCountry] = useState(null);
+  const [selectedCity, setSelectedCity] = useState(null);
 
   const {
     register,
@@ -21,67 +23,96 @@ function LocationForm() {
   } = useForm();
 
   useEffect(() => {
-    async function getCountries() {
-      const res = await fetch(
-        `https://api.holocrow.com/api/regions/countries-authenticated/`,
+    async function getUserData() {
+      const res = await makeAuthenticatedRequest(
+        "https://api.holocrow.com/api/accounts/get-data/",
         {
           method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${accessToken}`,
-          },
         }
       );
-      console.log(res);
+      if (!res.ok) throw new Error("Error getting users data...");
+      const data = await res.json();
+      return data;
+    }
+    getUserData();
+  }, []);
+
+  useEffect(() => {
+    async function getCountries() {
+      const res = await makeAuthenticatedRequest(
+        "https://api.holocrow.com/api/regions/countries-authenticated/",
+        {
+          method: "GET",
+        }
+      );
       if (!res.ok) throw new Error("Error fetching countries...");
       const data = await res.json();
       setCountries(data.results);
+      setSelectedCountry(data.results[0].id);
     }
     getCountries();
-  }, [accessToken]);
+  }, []);
 
-  console.log(accessToken);
-  console.log(countries);
+  useEffect(() => {
+    // Fetch cities for the selected country
+    const fetchCities = async () => {
+      if (selectedCountry) {
+        const res = await makeAuthenticatedRequest(
+          `https://api.holocrow.com/api/regions/cities-authenticated?country=${selectedCountry}`,
+          {
+            method: "GET",
+          }
+        );
+        const data = await res.json();
+        setCities(data.results);
+
+        // Set the selected city to the first city in the list
+        setSelectedCity(data.results[0]?.id);
+      }
+    };
+
+    fetchCities();
+  }, [selectedCountry]);
+
+  useEffect(() => {
+    const fetchDistricts = async () => {
+      if (selectedCountry && selectedCity) {
+        const res = await makeAuthenticatedRequest(
+          `https://api.holocrow.com/api/regions/districts-authenticated/?city=${selectedCity}&country=${selectedCountry}`,
+          {
+            method: "GET",
+          }
+        );
+        const data = await res.json();
+        setDistricts(data.results);
+      }
+    };
+
+    fetchDistricts();
+  }, [selectedCountry, selectedCity]);
 
   // handlers
-  async function handleCountryChange(e) {
-    setCurCountry(e.target.value);
-    const res = await fetch(
-      `https://api.holocrow.com/api/regions/cities-authenticated?country=${curCountry}
-      `,
+  const handleCountryChange = async (event) => {
+    const newCountry = event.target.value;
+    setSelectedCountry(newCountry);
+
+    // Fetch cities for the selected country
+    const res = await makeAuthenticatedRequest(
+      `https://api.holocrow.com/api/regions/cities-authenticated?country=${newCountry}`,
       {
         method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${accessToken}`,
-        },
       }
     );
-    console.log(res);
-    if (!res.ok) throw new Error("Error fetching cities...");
     const data = await res.json();
     setCities(data.results);
-  }
 
-  async function handleCityChange(e) {
-    const city = e.target.value;
-    const res = await fetch(
-      `https://api.holocrow.com/api/regions/districts-authenticated/?city=${city}&country=${curCountry}
+    setSelectedCity(data.results[0]?.id);
+  };
 
-      `,
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${accessToken}`,
-        },
-      }
-    );
-    console.log(res);
-    if (!res.ok) throw new Error("Error fetching districs...");
-    const data = await res.json();
-    setDistricts(data.results);
-  }
+  const handleCityChange = (event) => {
+    const newCity = event.target.value;
+    setSelectedCity(newCity);
+  };
 
   async function handleLocation() {
     console.log("Location submitted successfuly.");
@@ -93,11 +124,7 @@ function LocationForm() {
         <p className="text-left text-primary text-3xl font-semibold mb-8 2xl:text-4xl">
           Add Location
         </p>
-        <FormRow
-          id="country"
-          label="Country:"
-          // error={errors?.username?.message}
-        >
+        <FormRow id="country" label="Country:">
           <select
             id="country"
             className="bg-stone-100 px-2 py-2 rounded-md w-full text-black-800 outline-none focus:ring-2 ring-primary"
