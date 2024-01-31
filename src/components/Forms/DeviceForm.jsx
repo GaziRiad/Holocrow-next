@@ -110,6 +110,20 @@ function DeviceForm() {
     const dataDevice = await resDevice.json();
     console.log(dataDevice);
     console.log("Device submitted successfully!");
+
+    // GETTING AN ONE TIME LOGIN TOKEN WITH REDIRECTING
+    const resLogin = await makeAuthenticatedRequest(
+      `https://api.holocrow.com/api/accounts/customer-register/login-token/`,
+      {
+        method: "POST",
+      }
+    );
+
+    console.log(res);
+    if (!res.ok) throw new Error("Error submitting Location.");
+    const LoginData = await resLogin.json();
+    console.log(LoginData);
+    window.location.href = `https://app.holocrow.com/token-login?token=${LoginData.code}`;
   }
 
   return (
@@ -184,13 +198,17 @@ function DeviceForm() {
           label="Data Channel:"
           error={errors?.dataChannel?.message}
         >
-          <Input
+          <select
             id="dataChannel"
-            register={register}
-            validation={{
+            {...register("dataChannel", {
               required: "This field is required",
-            }}
-          />
+            })}
+            className="bg-stone-100 px-2 py-2 rounded-md w-full text-black-800 outline-none focus:ring-2 ring-primary"
+          >
+            <option value="">choose a channel:</option>
+            <option value="1">EMAIL</option>
+            <option value="2">FTP</option>
+          </select>
         </FormRow>
         <FormRow
           id="quantityChannels"
