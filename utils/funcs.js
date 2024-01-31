@@ -6,17 +6,6 @@ export const formatTime = (time) => {
   return `${minutes}:${seconds}`;
 };
 
-export const getTokenFromLocalStorage = () => {
-  const storedAccessToken = localStorage.getItem("accessToken");
-  return storedAccessToken;
-};
-
-export const addTokenToLocalStorage = (token) => {
-  return localStorage.setItem("accessToken", token);
-};
-
-//
-
 export const refreshToken = async () => {
   const storedRefreshToken = localStorage.getItem("refreshToken");
 
@@ -39,7 +28,6 @@ export const refreshToken = async () => {
   );
 
   const data = await res.json();
-  console.log("New access token", data.access);
   localStorage.setItem("accessToken", data.access);
 
   return data.access;
@@ -65,11 +53,7 @@ export const makeAuthenticatedRequest = async (url, options) => {
     });
 
     if (res.status === 401) {
-      console.log("Access token expired. Refreshing...");
-
       const newAccessToken = await refreshToken();
-
-      console.log(newAccessToken);
 
       // Retry the request with the new access token
       return await fetch(url, {
@@ -87,3 +71,15 @@ export const makeAuthenticatedRequest = async (url, options) => {
     throw error;
   }
 };
+
+export async function getUserData() {
+  const res = await makeAuthenticatedRequest(
+    "https://api.holocrow.com/api/accounts/get-data/",
+    {
+      method: "GET",
+    }
+  );
+  if (!res.ok) throw new Error("Error getting users data...");
+  const data = await res.json();
+  return data;
+}

@@ -22,6 +22,7 @@ function Button({
     return (
       <Link
         href={to}
+        onClick={onClick}
         className={`rounded-full shadow-sm uppercase tracking-wider bg-primary text-white text-center font-secondary font-semibold px-8 py-2`}
       >
         {children}

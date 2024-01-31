@@ -1,7 +1,8 @@
-function Input({ type = "text", id, register, validation = {} }) {
+function Input({ type = "text", id, register, validation = {}, placeHolder }) {
   if (register)
     return (
       <input
+        placeholder={placeHolder}
         name={id}
         {...register(id, validation)}
         type={type}
@@ -12,6 +13,7 @@ function Input({ type = "text", id, register, validation = {} }) {
 
   return (
     <input
+      placeholder={placeHolder}
       name={id}
       type={type}
       id={id}

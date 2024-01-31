@@ -5,9 +5,11 @@ import { useForm } from "react-hook-form";
 import { useAuth } from "@/contexts/AuthContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { makeAuthenticatedRequest } from "../../../utils/funcs";
+import Input from "../Input";
 
 function LocationForm() {
   const { activeLanguage } = useLanguage();
+  const { dispatch } = useAuth();
 
   const [countries, setCountries] = useState([]);
   const [cities, setCities] = useState([]);
@@ -23,21 +25,6 @@ function LocationForm() {
   } = useForm();
 
   useEffect(() => {
-    async function getUserData() {
-      const res = await makeAuthenticatedRequest(
-        "https://api.holocrow.com/api/accounts/get-data/",
-        {
-          method: "GET",
-        }
-      );
-      if (!res.ok) throw new Error("Error getting users data...");
-      const data = await res.json();
-      return data;
-    }
-    getUserData();
-  }, []);
-
-  useEffect(() => {
     async function getCountries() {
       const res = await makeAuthenticatedRequest(
         "https://api.holocrow.com/api/regions/countries-authenticated/",
@@ -48,7 +35,6 @@ function LocationForm() {
       if (!res.ok) throw new Error("Error fetching countries...");
       const data = await res.json();
       setCountries(data.results);
-      setSelectedCountry(data.results[0].id);
     }
     getCountries();
   }, []);
@@ -65,9 +51,6 @@ function LocationForm() {
         );
         const data = await res.json();
         setCities(data.results);
-
-        // Set the selected city to the first city in the list
-        setSelectedCity(data.results[0]?.id);
       }
     };
 
@@ -95,18 +78,6 @@ function LocationForm() {
   const handleCountryChange = async (event) => {
     const newCountry = event.target.value;
     setSelectedCountry(newCountry);
-
-    // Fetch cities for the selected country
-    const res = await makeAuthenticatedRequest(
-      `https://api.holocrow.com/api/regions/cities-authenticated?country=${newCountry}`,
-      {
-        method: "GET",
-      }
-    );
-    const data = await res.json();
-    setCities(data.results);
-
-    setSelectedCity(data.results[0]?.id);
   };
 
   const handleCityChange = (event) => {
@@ -114,8 +85,32 @@ function LocationForm() {
     setSelectedCity(newCity);
   };
 
-  async function handleLocation() {
-    console.log("Location submitted successfuly.");
+  ////////////////////////////////////////
+  ////////////////////////////////////////
+  async function handleLocation(data, e) {
+    e.preventDefault();
+    // const res = await makeAuthenticatedRequest(
+    //   `https://api.holocrow.com/api/devices/location-customer/`,
+    //   {
+    //     method: "POST",
+    //     body: JSON.stringify({
+    //       ...data,
+    //       parent: null,
+    //       is_active: true,
+    //     }),
+    //   }
+    // );
+    // console.log("location submitted successfully!");
+    // const locData = await res.json();
+    // console.log(locData);
+    dispatch({
+      type: "SUBMIT/LOCATION",
+      payload: {
+        ...data,
+        parent: null,
+        is_active: true,
+      },
+    });
   }
 
   return (
@@ -124,12 +119,26 @@ function LocationForm() {
         <p className="text-left text-primary text-3xl font-semibold mb-8 2xl:text-4xl">
           Add Location
         </p>
-        <FormRow id="country" label="Country:">
+        <FormRow id="name" label="Location Name:" error={errors?.name?.message}>
+          <Input
+            placeHolder="Eg: Home"
+            id="name"
+            register={register}
+            validation={{
+              required: "This field is required",
+            }}
+          />
+        </FormRow>
+        <FormRow id="country" label="Country:" error={errors?.country?.message}>
           <select
             id="country"
+            {...register("country", {
+              required: "This field is required",
+            })}
             className="bg-stone-100 px-2 py-2 rounded-md w-full text-black-800 outline-none focus:ring-2 ring-primary"
             onChange={handleCountryChange}
           >
+            <option value="">choose a country:</option>
             {countries.map((country) => (
               <option key={country.id} value={country.id}>
                 {country.name[activeLanguage]}
@@ -137,12 +146,17 @@ function LocationForm() {
             ))}
           </select>
         </FormRow>
-        <FormRow id="city" label="City:">
+        <FormRow id="city" label="City:" error={errors?.city?.message}>
           <select
-            id="country"
+            disabled={!selectedCountry}
+            id="city"
+            {...register("city", {
+              required: "This field is required",
+            })}
             className="bg-stone-100 px-2 py-2 rounded-md w-full text-black-800 outline-none focus:ring-2 ring-primary"
             onChange={handleCityChange}
           >
+            <option value="">choose a city:</option>
             {cities.map((city) => (
               <option key={city.id} value={city.id}>
                 {city.name}
@@ -150,11 +164,20 @@ function LocationForm() {
             ))}
           </select>
         </FormRow>
-        <FormRow id="district" label="District:">
+        <FormRow
+          id="district"
+          label="District:"
+          error={errors?.district?.message}
+        >
           <select
-            id="country"
+            id="district"
+            disabled={!selectedCity}
+            {...register("district", {
+              required: "This field is required",
+            })}
             className="bg-stone-100 px-2 py-2 rounded-md w-full text-black-800 outline-none focus:ring-2 ring-primary"
           >
+            <option value="">choose a district:</option>
             {districts.map((district) => (
               <option key={district.id} value={district.id}>
                 {district.name}

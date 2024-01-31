@@ -32,6 +32,7 @@ function Navigation({ sticky, home = false }) {
     : !sticky && home
     ? "text-white"
     : "text-black-800";
+
   return (
     <nav>
       <ul

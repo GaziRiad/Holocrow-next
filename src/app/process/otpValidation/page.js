@@ -7,14 +7,21 @@ import { navigation } from "@/constants/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { use, useEffect } from "react";
+import { getUserData } from "../../../../utils/funcs";
 
 function OtpValidation() {
   const router = useRouter();
 
   useEffect(() => {
-    const storedAccessToken = localStorage.getItem("accessToken");
-    if (!storedAccessToken) router.push("/process/signup");
+    async function checkUrl() {
+      const storedAccessToken = localStorage.getItem("accessToken");
+      if (!storedAccessToken) return router.push("/");
+      const user = await getUserData();
+
+      if (user.register_step >= 2) return router.push("/");
+    }
+    checkUrl();
   }, [router]);
 
   return (

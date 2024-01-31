@@ -12,7 +12,6 @@ import { useRouter } from "next/navigation";
 function OtpForm() {
   const router = useRouter();
   const { dispatch } = useAuth();
-  // const accessToken = localStorage.getItem("accessToken");
 
   const [otpError, setOtpError] = useState("");
 
@@ -65,7 +64,7 @@ function OtpForm() {
       },
     });
     setOtpCount(0);
-    router.push("/process/submitLocation");
+    router.push("/process/submitLocation&Device");
     reset();
   }
 
@@ -79,7 +78,7 @@ function OtpForm() {
     if (!res.ok)
       console.error("Failed to verify OTP:", res.status, res.statusText);
 
-    setTimer(60);
+    setTimer(180);
     setIsTimerExpired(false);
     return res.json();
   }

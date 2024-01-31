@@ -8,8 +8,7 @@ import { useRouter } from "next/navigation";
 
 function SignupForm() {
   const router = useRouter();
-  const { dispatch } = useAuth();
-  const [emailErr, setEmailErr] = useState("");
+  const [err, setErr] = useState("");
 
   const {
     register,
@@ -23,7 +22,7 @@ function SignupForm() {
     const res = await fetch(
       `https://api.holocrow.com/api/accounts/customer-register/check-email/?email=${email}`
     );
-    if (!res.ok) return setEmailErr(true);
+    if (!res.ok) return setErr("This email seems to already exist.");
     const data = await res.json();
     return data;
   }
@@ -31,7 +30,7 @@ function SignupForm() {
   async function handleRegister(data, e) {
     e.preventDefault();
     reset();
-    setEmailErr(false);
+    setErr("");
     const newAccount = {
       ...data,
       try_count: 0,
@@ -39,8 +38,8 @@ function SignupForm() {
       city: 2,
       district: 2,
     };
-    await checkEmailExist(data.email);
-    if (emailErr) return;
+    const emailExist = await checkEmailExist(data.email);
+    if (!emailExist) return;
 
     const res = await fetch(
       `https://api.holocrow.com/api/accounts/customer-register/`,
@@ -52,16 +51,15 @@ function SignupForm() {
         body: JSON.stringify(newAccount),
       }
     );
-
-    if (!res.ok) return console.log("Error trying to register");
+    console.log(res.error);
+    if (!res.ok && res.status !== 400)
+      return setErr(
+        "Error trying to register, please check your internet connexion."
+      );
+    if (!res.ok && res.status === 400)
+      return setErr("Error trying to register, please try another username.");
     const registerData = await res.json();
 
-    dispatch({
-      type: "AUTHENTICATE/USER",
-      payload: {
-        isAuthenticated: true,
-      },
-    });
     localStorage.setItem("accessToken", registerData.access);
     localStorage.setItem("refreshToken", registerData.refresh);
 
@@ -77,11 +75,7 @@ function SignupForm() {
         <p className="text-left text-primary text-3xl font-semibold mb-8 2xl:text-4xl">
           Sign Up
         </p>
-        {emailErr && (
-          <p className="text-red-400 mb-6">
-            This email seems to already exist.
-          </p>
-        )}
+        {err && <p className="text-red-400 mb-6">{err}</p>}
         <FormRow type="horizontal">
           <FormRow
             id="first_name"
@@ -128,7 +122,7 @@ function SignupForm() {
               required: "This field is required",
               minLength: {
                 value: 4,
-                message: "Username needs a minimum of 8 characters",
+                message: "Username needs a minimum of 4 characters",
               },
             }}
           />

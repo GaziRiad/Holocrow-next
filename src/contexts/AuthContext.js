@@ -6,24 +6,15 @@ const AuthContext = createContext();
 
 const authReducer = (state, action) => {
   switch (action.type) {
-    case "AUTHENTICATE/USER":
-      const newState = {
-        ...state,
-        isAuthenticated: action.payload.isAuthenticated,
-      };
-
-      return newState;
-    case "VALIDATE/USER":
+    case "SUBMIT/LOCATION":
       return {
         ...state,
-        isVerified: action.payload.isVerified,
+        location: action.payload,
       };
     case "UNAUTH/USER":
-      return {
-        ...state,
-        isAuthenticated: false,
-        isVerified: false,
-      };
+      localStorage.removeItem("accessToken");
+      localStorage.removeItem("refreshToken");
+      return;
     default:
       return state;
   }
@@ -32,7 +23,7 @@ const authReducer = (state, action) => {
 export const AuthProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, {
     isAuthenticated: false,
-    isVerified: false,
+    location: false,
   });
 
   useEffect(() => {
