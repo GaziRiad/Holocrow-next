@@ -12,7 +12,7 @@ function Button({
     return (
       <Link
         href={to}
-        className={`rounded-full shadow-sm uppercase text-lg tracking-wide bg-white text-black-800 text-center font-secondary font-semibold px-6 py-1.5`}
+        className={`rounded-full shadow-sm uppercase text-lg tracking-wide bg-white text-black-800 text-center font-secondary font-semibold px-6 py-1.5 transition-all`}
       >
         {children}
       </Link>
@@ -23,7 +23,7 @@ function Button({
       <Link
         href={to}
         onClick={onClick}
-        className={`rounded-full shadow-sm uppercase tracking-wider bg-primary text-white text-center font-secondary font-semibold px-8 py-2`}
+        className={`rounded-full shadow-sm uppercase tracking-wider bg-primary text-white text-center font-secondary font-semibold px-8 py-2 transition-all hover:bg-primary-darker`}
       >
         {children}
       </Link>
@@ -33,7 +33,7 @@ function Button({
     return (
       <Link
         href={to}
-        className={`rounded-full shadow-sm uppercase text-xs tracking-wide bg-white text-primary text-center font-secondary font-bold px-3 py-3 ${style}`}
+        className={`rounded-full shadow-sm uppercase text-xs tracking-wide bg-white text-primary text-center font-secondary font-bold px-3 py-3 transition-all ${style}`}
       >
         {children}
       </Link>
@@ -53,7 +53,7 @@ function Button({
     return (
       <button
         onClick={onClick}
-        className={`rounded-full shadow-sm uppercase tracking-wider bg-primary text-white text-center font-secondary font-semibold px-8 py-2`}
+        className={`rounded-full shadow-sm uppercase tracking-wider bg-primary text-white text-center font-secondary font-semibold px-8 py-2 disabled:cursor-not-allowed disabled:opacity-75 transition-all`}
         disabled={disabled}
       >
         {children}

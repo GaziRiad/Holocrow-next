@@ -6,9 +6,10 @@ import { useForm } from "react-hook-form";
 import { useAuth } from "@/contexts/AuthContext";
 import { useRouter } from "next/navigation";
 
-function SignupForm() {
-  const router = useRouter();
+function SignupForm({ setCurrStep }) {
   const [err, setErr] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const {
     register,
@@ -30,6 +31,7 @@ function SignupForm() {
   async function handleRegister(data, e) {
     e.preventDefault();
     reset();
+    setIsLoading(true);
     setErr("");
     const newAccount = {
       ...data,
@@ -39,7 +41,7 @@ function SignupForm() {
       district: 2,
     };
     const emailExist = await checkEmailExist(data.email);
-    if (!emailExist) return;
+    if (!emailExist) return setIsLoading(false);
 
     const res = await fetch(
       `https://api.holocrow.com/api/accounts/customer-register/`,
@@ -51,30 +53,29 @@ function SignupForm() {
         body: JSON.stringify(newAccount),
       }
     );
-    console.log(res.error);
-    if (!res.ok && res.status !== 400)
-      return setErr(
-        "Error trying to register, please check your internet connexion."
-      );
-    if (!res.ok && res.status === 400)
-      return setErr("Error trying to register, please try another username.");
+    if (!res.ok && res.status !== 400) {
+      setErr("Error trying to register, please check your internet connexion.");
+      setIsLoading(false);
+    }
+    if (!res.ok && res.status === 400) {
+      setErr("Error trying to register, please try another username.");
+      setIsLoading(false);
+      return;
+    }
     const registerData = await res.json();
 
     localStorage.setItem("accessToken", registerData.access);
     localStorage.setItem("refreshToken", registerData.refresh);
 
-    console.log(registerData);
-    router.push("/process/otpValidation");
+    setCurrStep(2);
     reset();
+    setIsLoading(false);
   }
 
   // SIGNUP only sotres access and refresh tokens on LOCALSTORAGE & set isAuthenticated GLOBAL state to TRUE.
   return (
     <form className="flex flex-col" onSubmit={handleSubmit(handleRegister)}>
       <>
-        <p className="text-left text-primary text-3xl font-semibold mb-8 2xl:text-4xl">
-          Sign Up
-        </p>
         {err && <p className="text-red-400 mb-6">{err}</p>}
         <FormRow type="horizontal">
           <FormRow
@@ -138,7 +139,7 @@ function SignupForm() {
         <FormRow type="horizontal">
           <FormRow label="Password:" error={errors?.password?.message}>
             <Input
-              type="password"
+              type={`${showPassword ? "text" : "password"}`}
               id="password"
               register={register}
               validation={{
@@ -155,7 +156,7 @@ function SignupForm() {
             error={errors?.passwordConfirmation?.message}
           >
             <Input
-              type="password"
+              type={`${showPassword ? "text" : "password"}`}
               id="passwordConfirmation"
               validation={{
                 required: "This field is required",
@@ -173,13 +174,16 @@ function SignupForm() {
           <input
             className=" bg-stone-100 h-4 w-4 accent-primary"
             type="checkbox"
+            onChange={() => setShowPassword((state) => !state)}
           />
           <p className="text-black-800 text-sm font-normal">Show password</p>
         </div>{" "}
       </>
 
       <div className="flex items-center justify-between">
-        <Button type="signup">sign up</Button>
+        <Button type="signup" disabled={isLoading}>
+          sign up
+        </Button>
       </div>
     </form>
   );

@@ -7,11 +7,10 @@ import Input from "../Input";
 import { useForm } from "react-hook-form";
 import { formatTime, makeAuthenticatedRequest } from "../../../utils/funcs";
 import { useAuth } from "@/contexts/AuthContext";
-import { useRouter } from "next/navigation";
 
-function OtpForm() {
-  const router = useRouter();
+function OtpForm({ setCurrStep }) {
   const { dispatch } = useAuth();
+  const [isLoading, setIsLoading] = useState(false);
 
   const [otpError, setOtpError] = useState("");
 
@@ -37,6 +36,7 @@ function OtpForm() {
 
   async function handleOtp(data, e) {
     e.preventDefault();
+    setIsLoading(true);
     setOtpError(false);
 
     const res = await makeAuthenticatedRequest(
@@ -53,9 +53,14 @@ function OtpForm() {
       dispatch({
         type: "UNAUTH/USER",
       });
+      setIsLoading(false);
       return;
     }
-    if (!res.ok) return setOtpError(true);
+    if (!res.ok) {
+      setOtpError(true);
+      setIsLoading(false);
+      return;
+    }
     await res.json();
     dispatch({
       type: "VALIDATE/USER",
@@ -64,11 +69,13 @@ function OtpForm() {
       },
     });
     setOtpCount(0);
-    router.push("/process/submitLocation&Device");
+    setCurrStep(3);
+    setIsLoading(false);
     reset();
   }
 
   async function handleResendOtp() {
+    setIsLoading(true);
     const res = await makeAuthenticatedRequest(
       "https://api.holocrow.com/api/accounts/customer-register/send-verify-token/",
       {
@@ -79,6 +86,7 @@ function OtpForm() {
       console.error("Failed to verify OTP:", res.status, res.statusText);
 
     setTimer(180);
+    setIsLoading(false);
     setIsTimerExpired(false);
     return res.json();
   }
@@ -109,14 +117,17 @@ function OtpForm() {
         </>
 
         <div className="flex items-center justify-between">
-          <Button type="signup">confirm</Button>
+          <Button type="signup" disabled={isLoading}>
+            confirm
+          </Button>
         </div>
       </form>
 
       <div className="mb-4">
         <button
-          className="text-md capitalize underline text-primary hover:text-yellow-500 transition-all"
+          className="text-md capitalize underline text-primary hover:text-yellow-500 transition-all disabled:cursor-not-allowed disabled:opacity-75"
           onClick={handleResendOtp}
+          disabled={isLoading}
         >
           Resend
         </button>

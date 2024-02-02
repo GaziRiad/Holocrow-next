@@ -6,6 +6,11 @@ const AuthContext = createContext();
 
 const authReducer = (state, action) => {
   switch (action.type) {
+    case "VALIDATE/USER":
+      return {
+        ...state,
+        isVerified: action.payload.isVerified,
+      };
     case "SUBMIT/LOCATION":
       return {
         ...state,

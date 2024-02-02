@@ -8,6 +8,8 @@ import Input from "../Input";
 import { useAuth } from "@/contexts/AuthContext";
 
 function DeviceForm() {
+  const [isLoading, setIsLoading] = useState(false);
+
   const {
     state: { location },
   } = useAuth();
@@ -77,6 +79,7 @@ function DeviceForm() {
   };
 
   async function handleDevice(data, e) {
+    setIsLoading(true);
     e.preventDefault();
     const res = await makeAuthenticatedRequest(
       `https://api.holocrow.com/api/devices/location-customer/`,
@@ -85,8 +88,10 @@ function DeviceForm() {
         body: JSON.stringify({ ...location }),
       }
     );
-    if (!res.ok) throw new Error("Error submitting Location.");
-    console.log("location submitted successfully!");
+    if (!res.ok) {
+      setIsLoading(false);
+      throw new Error("Error submitting Location.");
+    }
     const locData = await res.json();
     const newDevice = {
       brand: data.brand,
@@ -98,7 +103,6 @@ function DeviceForm() {
       crawler_type: 1,
       write_count: data.quantityChannels,
     };
-    console.log(newDevice);
     const resDevice = await makeAuthenticatedRequest(
       `https://api.holocrow.com/api/devices/device-customer/onboarding/`,
       {
@@ -106,10 +110,11 @@ function DeviceForm() {
         body: JSON.stringify({ ...newDevice }),
       }
     );
-    if (!resDevice.ok) throw new Error("Error submitting Device.");
+    if (!resDevice.ok) {
+      setIsLoading(false);
+      throw new Error("Error submitting Device.");
+    }
     const dataDevice = await resDevice.json();
-    console.log(dataDevice);
-    console.log("Device submitted successfully!");
 
     // GETTING AN ONE TIME LOGIN TOKEN WITH REDIRECTING
     const resLogin = await makeAuthenticatedRequest(
@@ -119,19 +124,20 @@ function DeviceForm() {
       }
     );
 
-    console.log(res);
-    if (!res.ok) throw new Error("Error submitting Location.");
+    if (!res.ok) {
+      setIsLoading(false);
+
+      throw new Error("Error submitting Location.");
+    }
     const LoginData = await resLogin.json();
-    console.log(LoginData);
+    setIsLoading(false);
     window.location.href = `https://app.holocrow.com/token-login?token=${LoginData.code}`;
   }
 
   return (
     <form className="flex flex-col" onSubmit={handleSubmit(handleDevice)}>
       <>
-        <p className="text-left text-primary text-3xl font-semibold mb-8 2xl:text-4xl">
-          Add Device
-        </p>
+        <p className="text-left text-primary font-semibold mb-8 ">Add Device</p>
         <FormRow id="name" label="Device Name:" error={errors?.name?.message}>
           <Input
             placeHolder="Eg: Camera 101"
@@ -226,7 +232,9 @@ function DeviceForm() {
       </>
 
       <div className="flex items-center justify-between">
-        <Button type="signup">Submit device</Button>
+        <Button type="signup" disabled={isLoading}>
+          Submit device
+        </Button>
       </div>
     </form>
   );

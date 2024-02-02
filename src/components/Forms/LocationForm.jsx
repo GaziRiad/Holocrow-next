@@ -7,7 +7,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { makeAuthenticatedRequest } from "../../../utils/funcs";
 import Input from "../Input";
 
-function LocationForm() {
+function LocationForm({ setCurrStep }) {
   const { activeLanguage } = useLanguage();
   const { dispatch } = useAuth();
 
@@ -89,20 +89,6 @@ function LocationForm() {
   ////////////////////////////////////////
   async function handleLocation(data, e) {
     e.preventDefault();
-    // const res = await makeAuthenticatedRequest(
-    //   `https://api.holocrow.com/api/devices/location-customer/`,
-    //   {
-    //     method: "POST",
-    //     body: JSON.stringify({
-    //       ...data,
-    //       parent: null,
-    //       is_active: true,
-    //     }),
-    //   }
-    // );
-    // console.log("location submitted successfully!");
-    // const locData = await res.json();
-    // console.log(locData);
     dispatch({
       type: "SUBMIT/LOCATION",
       payload: {
@@ -111,12 +97,13 @@ function LocationForm() {
         is_active: true,
       },
     });
+    setCurrStep(4);
   }
 
   return (
     <form className="flex flex-col" onSubmit={handleSubmit(handleLocation)}>
       <>
-        <p className="text-left text-primary text-3xl font-semibold mb-8 2xl:text-4xl">
+        <p className="text-left text-primary font-semibold mb-8 ">
           Add Location
         </p>
         <FormRow id="name" label="Location Name:" error={errors?.name?.message}>

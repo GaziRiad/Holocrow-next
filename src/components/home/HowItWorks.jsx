@@ -44,7 +44,7 @@ function HowItWorks({ content }) {
           </div>
         ))}
         <div className=" flex flex-col justify-center items-center gap-6">
-          <Button bgcolor="white" to="/signup">
+          <Button bgcolor="white" to="/process">
             {content.howItWorksSection.button}
           </Button>
           <LinkButton to="/howitworks">
