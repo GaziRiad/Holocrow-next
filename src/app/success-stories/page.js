@@ -17,20 +17,21 @@ import { serializers } from "../blog/page";
 
 function SuccessStories() {
   const { activeLanguage } = useLanguage();
-  const [currStory, setCurrStory] = useState(1);
+  const [currStory, setCurrStory] = useState(0);
 
   const [stories, setStories] = useState([]);
 
   useEffect(() => {
     async function getStories() {
       const data = await client.fetch(
-        `*[_type == "story"] {body, language, client, location, year, mainImage {asset -> {_id, url}, alt,}, logo {asset -> {_id, url}, alt,}} | order(publishedAt desc)`
+        `*[_type == "story"] {body, language, client, location, year, publishedAt, mainImage {asset -> {_id, url}, alt,}, logo {asset -> {_id, url}, alt,}} | order(publishedAt asc)`
       );
 
       setStories(data.filter((story) => story.language === activeLanguage));
     }
     getStories();
   }, [activeLanguage]);
+  console.log(stories);
   return (
     <div className="mb-24 text-black-800">
       <section className="relative h-screen mb-12 sm:mb-24 md:-mb-32 xl:-mb-20">
@@ -43,7 +44,7 @@ function SuccessStories() {
             navigation
             effect="coverflow"
             centeredSlides
-            initialSlide={1}
+            initialSlide={0}
             onSlideChange={(swiper) => {
               setCurrStory(swiper.activeIndex);
             }}
