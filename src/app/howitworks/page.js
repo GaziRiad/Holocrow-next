@@ -28,7 +28,6 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import SubHero from "@/components/SubHero";
-import FixedPattern from "@/components/FixedPattern";
 function HowItWorks() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];

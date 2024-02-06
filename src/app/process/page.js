@@ -14,9 +14,8 @@ import SignupForm from "@/components/Forms/SignupForm";
 import OtpForm from "@/components/Forms/OtpForm";
 import { FaCheck } from "react-icons/fa6";
 
-function SignUp() {
+function Process() {
   const [userData, setUserData] = useState(null);
-
   const [currStep, setCurrStep] = useState(null);
 
   useEffect(() => {
@@ -100,4 +99,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Process;

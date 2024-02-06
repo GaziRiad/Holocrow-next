@@ -10,8 +10,11 @@ import { useEffect, useRef, useState } from "react";
 import HeroPattern from "../HeroPattern";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 function HeroMain({ content }) {
+  const { activeLanguage } = useLanguage();
+
   // Hero video
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -89,7 +92,7 @@ function HeroMain({ content }) {
           <video
             className="w-full h-full object-cover object-center"
             autoPlay
-            src="/videos/hero-video-main.mp4"
+            src={`/videos/hero-video-main-${activeLanguage}.mp4`}
             type="video/mp4"
           ></video>
 
