@@ -1,13 +1,17 @@
 "use client";
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 const LanguageContext = createContext();
 
 function LanguageProvider({ children }) {
-  // set lang in localStorage
-  const storedLang = localStorage.getItem("lang");
+  const [activeLanguage, setActiveLanguage] = useState("en");
 
-  const [activeLanguage, setActiveLanguage] = useState(storedLang || "en");
+  useEffect(() => {
+    const storedLang = localStorage.getItem("lang");
+    if (storedLang) {
+      setActiveLanguage(storedLang);
+    }
+  }, []);
 
   return (
     <LanguageContext.Provider value={{ activeLanguage, setActiveLanguage }}>
