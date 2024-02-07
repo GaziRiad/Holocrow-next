@@ -56,7 +56,7 @@ function ProductsSection({ content }) {
               width={500}
               height={500}
               ref={gifRef}
-              class={`${
+              class={` hidden md:${
                 isHovered?.dataset?.gif === el.gif ? "block" : "hidden"
               } w-80 h-80 object-cover absolute top-20 z-10 left-1/2 -translate-x-1/2 gif`}
               src={`/assets/gifs/${el.gif}`}
