@@ -99,7 +99,12 @@ function About() {
           <div className="flex flex-wrap items-end justify-center gap-8 text-black-800 md:gap-16 xl:gap-24 mb-6 lg:mb-12">
             {content.teamSection.team.map((el) => (
               <div key={el.name} className="w-80">
-                <img src={el.img} alt={el.name} className="mb-4" />
+                <motion.img
+                  whileHover={{ scale: 1.1 }}
+                  src={el.img}
+                  alt={el.name}
+                  className="mb-4"
+                />
                 <p className="font-semibold text-lg">{el.name}</p>
                 <p className="uppercase text-sm text-black-700/80">
                   {el.position}

@@ -46,7 +46,12 @@ function SuccessStories() {
       >
         <section className="relative h-screen mb-12 sm:mb-24 md:-mb-32 xl:-mb-20">
           <Hero herobg="hero-solutions" noPattern={true} />
-          <div className="absolute top-0 w-full h-full">
+          <motion.div
+            initial={{ y: -400 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="absolute top-0 w-full h-full"
+          >
             <Swiper
               modules={[Pagination, Navigation]}
               spaceBetween={40}
@@ -68,18 +73,26 @@ function SuccessStories() {
                   >
                     <div className="bg-white/50 h-full flex flex-col items-center justify-center gap-2 px-6 py-6 xl:flex-row xl:p-10 2xl:p-20 2xl:gap-20">
                       <div className="xl:w-1/2 flex items-center justify-center">
-                        <Image
-                          height={500}
-                          width={500}
+                        <motion.img
+                          whileHover={{
+                            rotate: -2,
+                            boxShadow: "10px 5px 5px #FFB800",
+                          }}
+                          // height={500}
+                          // width={500}
                           src={story.mainImage.asset.url}
                           alt={story.mainImage?.alt}
                           className="w-50 h-40 xl:h-auto xl:w-full rounded-2xl"
                         />
                       </div>
                       <div className=" flex flex-col items-center xl:items-start justify-center gap-6 h-full xl:w-1/2">
-                        <Image
-                          height={500}
-                          width={500}
+                        <motion.img
+                          initial={{ x: -1500, opacity: 0 }}
+                          animate={{ x: 0, opacity: 1 }}
+                          whileHover={{ scale: 1.2 }}
+                          transition={{ type: "spring", stiffness: 100 }}
+                          // height={500}
+                          // width={500}
                           src={story.logo.asset.url}
                           className=" w-1/6 xl:w-1/4"
                           alt={story?.logo?.alt}
@@ -96,7 +109,7 @@ function SuccessStories() {
                 );
               })}
             </Swiper>
-          </div>
+          </motion.div>
         </section>
         <section className=" flex flex-col items-center justify-center">
           <p className=" text-primary text-3xl font-semibold mb-4">
