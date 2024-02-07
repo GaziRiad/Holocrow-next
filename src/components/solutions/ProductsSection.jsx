@@ -4,31 +4,20 @@ import { motion } from "framer-motion";
 import Heading from "../Heading";
 import HeadingDescription from "../HeadingDescription";
 import { useRef, useState } from "react";
+import Image from "next/image";
 
 function ProductsSection({ content }) {
-  const [hoveredIcon, sethoveredIcon] = useState("");
+  const [isHovered, setIsHovered] = useState("");
 
   const gifRef = useRef(null);
 
   function displayVideo(e) {
     const icon = e.target;
-    sethoveredIcon(() => icon.dataset.gif);
-
-    const rect = icon.getBoundingClientRect();
-
-    const gif = gifRef.current;
-    gif.style.display = "block";
-
-    const x = rect.left + (rect.width - gif.offsetWidth);
-    const y = rect.top - icon.offsetHeight + 25;
-
-    gif.style.top = `${y}px`;
-    gif.style.left = `${x}px`;
+    setIsHovered(icon);
   }
 
   function hideVideo() {
-    const gif = document.querySelector(".gif");
-    gif.style.display = "none";
+    setIsHovered("");
   }
 
   return (
@@ -42,10 +31,15 @@ function ProductsSection({ content }) {
       <HeadingDescription>
         {content.productsSection.subHeading}
       </HeadingDescription>
-      <div className="container mx-auto text-center flex flex-col gap-8 md:flex-row md:flex-wrap relative ">
+      <div className="container mx-auto text-center flex flex-col gap-8 md:flex-row md:flex-wrap ">
         {content.productsSection.content.map((el) => (
-          <div key={el.title} className="w-full md:w-1/3 xl:w-1/4 mx-auto">
-            <img
+          <div
+            key={el.title}
+            className="w-full md:w-1/3 xl:w-1/4 mx-auto relative"
+          >
+            <Image
+              width={500}
+              height={500}
               src={el.icon}
               className="mx-auto w-24 mb-6"
               alt={el.title}
@@ -57,13 +51,18 @@ function ProductsSection({ content }) {
               {el.title}
             </p>
             <p className="text-black-800 lg:text-base 2xl:text-lg">{el.text}</p>
+            <Image
+              alt={`Gif of product ${el.icon}`}
+              width={500}
+              height={500}
+              ref={gifRef}
+              class={`${
+                isHovered?.dataset?.gif === el.gif ? "block" : "hidden"
+              } w-80 h-80 object-cover absolute top-20 z-10 left-1/2 -translate-x-1/2 gif`}
+              src={`/assets/gifs/${el.gif}`}
+            />
           </div>
         ))}
-        <img
-          ref={gifRef}
-          class="hidden w-80 h-80 object-cover absolute gif"
-          src={`/assets/gifs/${hoveredIcon}`}
-        />
       </div>
     </motion.section>
   );

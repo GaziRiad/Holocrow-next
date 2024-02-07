@@ -46,25 +46,25 @@
         "icon": "/assets/icons/3.png",
         "title": "A/B Testi",
         "text": "Yeni ürünlerinizde müşterilerin tercihlerini hızlı bir şekilde anlayın.",
-        "gif": "gif1.gif"
+        "gif": "gif3.gif"
       },
       {
         "icon": "/assets/icons/14.png",
         "title": "Isı Haritası & Footfall",
         "text": "Mağaza düzenini ve ürün yerleşimlerini iyileştirmek için müşteri hareket modellerini ve mağaza sıcak noktalarını analiz edin.",
-        "gif": "gif2.gif"
+        "gif": "gif4.gif"
       },
       {
         "icon": "/assets/icons/4.png",
         "title": "Ürün Etkileşim Analizi",
         "text": "Müşterilerin ürünlerle olan etkileşimlerini gözlemleyerek tercihleri ve bağlılık düzeylerine dair iç görüler edinin.",
-        "gif": "gif1.gif"
+        "gif": "gif5.gif"
       },
       {
         "icon": "/assets/icons/16.png",
         "title": "Envanter ve Stok Kontrolü",
         "text": "Gerçek zamanlı görsel veri analizi kullanarak envanter takibini otomatikleştirin ve optimal stok seviyelerini sürdürün.",
-        "gif": "gif2.gif"
+        "gif": "gif6.gif"
       }
     ]
   },

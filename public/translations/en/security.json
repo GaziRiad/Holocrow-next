@@ -42,31 +42,31 @@
         "icon": "/assets/icons/17.png",
         "title": "Suspicious Item Detection",
         "text": "Detect doubtful attitudes and potential harmful objects, bags, box etc. to secure your area.",
-        "gif": "gif1.gif"
+        "gif": "gif3.gif"
       },
       {
         "icon": "/assets/icons/5.png",
         "title": "Crowd Analysis",
         "text": "Analyze crowd dynamics to manage large gatherings effectively. Monitor crowd density, flow, and behavior to ensure safety and optimize space utilization.",
-        "gif": "gif2.gif"
+        "gif": "gif4.gif"
       },
       {
         "icon": "/assets/icons/12.png",
         "title": "Facial Recognition",
         "text": "Enhance security with accurate facial recognition for identity verification.",
-        "gif": "gif1.gif"
+        "gif": "gif5.gif"
       },
       {
         "icon": "/assets/icons/6.png",
         "title": "Behavioral Analysis",
         "text": "Identify suspicious behaviors through advanced motion and activity analysis.",
-        "gif": "gif2.gif"
+        "gif": "gif6.gif"
       },
       {
         "icon": "/assets/icons/25.png",
         "title": "Surveillance and Real-time Analysis",
         "text": "Implement real-time video surveillance for immediate incident response and security.",
-        "gif": "gif1.gif"
+        "gif": "gif7.gif"
       }
     ]
   },

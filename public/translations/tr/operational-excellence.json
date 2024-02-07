@@ -45,19 +45,19 @@
         "icon": "/assets/icons/10.png",
         "title": "Operasyonel Mükemmellik",
         "text": "İyileştirmeye açık süreçleri analiz etmek için operasyonlarınızın her adımını analiz edin ve takip edin.",
-        "gif": "gif1.gif"
+        "gif": "gif3.gif"
       },
       {
         "icon": "/assets/icons/26.png",
         "title": "Personel Verimliliği Analizi",
         "text": "Video verilerini kullanarak personel hareketlerini ve faaliyetlerini analiz ederek iş gücü verimliliğini artırın.",
-        "gif": "gif2.gif"
+        "gif": "gif4.gif"
       },
       {
         "icon": "/assets/icons/27.png",
         "title": "Ambalaj Kontrolü",
         "text": "Ambalajlamanın doğruluğunu ve kalitesini, uyumluluğu görsel olarak kontrol ederek ve sapmaları algılayarak garanti altına alın.",
-        "gif": "gif1.gif"
+        "gif": "gif5.gif"
       }
     ]
   },

@@ -42,25 +42,25 @@
         "icon": "/assets/icons/3.png",
         "title": "A/B Testing",
         "text": "Understand customers' choices on your new products in a quick way.",
-        "gif": "gif1.gif"
+        "gif": "gif3.gif"
       },
       {
         "icon": "/assets/icons/14.png",
         "title": "Heatmap & Footfall",
         "text": "Analyze customer movement patterns and store hotspots to optimize layout and product placement.",
-        "gif": "gif2.gif"
+        "gif": "gif4.gif"
       },
       {
         "icon": "/assets/icons/4.png",
         "title": "Product Engagement Analysis",
         "text": "Monitor customer interactions with products to gain insights into preferences and engagement levels.",
-        "gif": "gif1.gif"
+        "gif": "gif5.gif"
       },
       {
         "icon": "/assets/icons/16.png",
         "title": "Inventory & Stock Control",
         "text": "Automate inventory tracking and maintain optimal stock levels using real-time visual data analysis.",
-        "gif": "gif2.gif"
+        "gif": "gif6.gif"
       }
     ]
   },
