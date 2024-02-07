@@ -2,9 +2,16 @@ import Link from "next/link";
 import Heading from "./Heading";
 import Feature from "./Feature";
 
+import { motion } from "framer-motion";
+
 function OtherSolutions({ content }) {
   return (
-    <section className="container mx-auto">
+    <motion.section
+      initial={{ opacity: 0, translateY: 150 }}
+      whileInView={{ opacity: 1, translateY: 0 }}
+      transition={{ duration: 0.5 }}
+      className="container mx-auto"
+    >
       <Heading type="h3" style=" !text-black-800">
         {content.otherSolutions.headline}
       </Heading>
@@ -15,7 +22,7 @@ function OtherSolutions({ content }) {
           </Link>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
 

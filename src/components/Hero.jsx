@@ -7,6 +7,9 @@ import { useEffect, useRef, useState } from "react";
 import HeroPattern from "./HeroPattern";
 import Heading from "./Heading";
 import { navigation } from "../constants/navigation";
+import Image from "next/image";
+
+import { motion } from "framer-motion";
 
 function Hero({ img, heading, herobg = "hero", noPattern = false }) {
   // Make nav sticky when scrolling
@@ -32,9 +35,15 @@ function Hero({ img, heading, herobg = "hero", noPattern = false }) {
         <Navigation content={navigation} sticky={sticky} />
       </header>
       {img && (
-        <img
+        <motion.img
+          initial={{ y: -200, x: "-50%" }}
+          animate={{ y: 0, x: "-50%" }}
+          transition={{ type: "spring", stiffness: 200 }}
+          // height={500}
+          // width={500}
+          alt="hero image"
           src={img}
-          className={`absolute left-1/2 -translate-x-[50%] ${
+          className={`absolute left-1/2 -translate-x-1/2 ${
             heading
               ? " w-72 bottom-[35%] lg:bottom-[30%] xl:w-1/4"
               : " w-96 bottom-[20%] md:w-1/2 lg:w-1/4 lg:bottom-[18%] xl:bottom-[20%]"

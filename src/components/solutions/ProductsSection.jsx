@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import Heading from "../Heading";
 import HeadingDescription from "../HeadingDescription";
 import { useRef, useState } from "react";
@@ -37,9 +37,12 @@ function ProductsSection({ content }) {
             key={el.title}
             className="w-full md:w-1/3 xl:w-1/4 mx-auto relative"
           >
-            <Image
-              width={500}
-              height={500}
+            <motion.img
+              initial={{ x: -100 }}
+              viewport={{ once: true }}
+              whileInView={{ x: 0, rotate: 360 }}
+              transition={{ type: "spring", stiffness: 100 }}
+              whileHover={{ scale: 1.1 }}
               src={el.icon}
               className="mx-auto w-24 mb-6"
               alt={el.title}

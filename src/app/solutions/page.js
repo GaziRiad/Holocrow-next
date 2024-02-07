@@ -23,7 +23,7 @@ function Solutions() {
     <div className="relative">
       <Hero />
       <motion.section
-        initial={{ opacity: 0, translateY: 150 }}
+        initial={{ opacity: 0, translateY: -150 }}
         whileInView={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 0.5 }}
         className="mb-8 px-4 md:px-0 absolute top-1/3 w-full"

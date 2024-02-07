@@ -15,6 +15,7 @@ import trRetail from "../../../../public/translations/tr/retail.json";
 import OtherSolutions from "@/components/OtherSolutions";
 import SwipingSlider from "@/components/SwipingSlider";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const translations = {
   en: enRetail,
@@ -50,7 +51,9 @@ function Retail() {
           <p className="text-lg text-center leading-relaxed lg:text-left 2xl:text-xl">
             {content.thirdSection.content.text}
           </p>
-          <img
+          <Image
+            height={500}
+            width={500}
             src={content.thirdSection.content.img}
             className="w-full rounded-2xl lg:w-[40%]"
             alt={content.thirdSection.heading}
