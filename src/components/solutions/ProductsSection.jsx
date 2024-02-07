@@ -51,7 +51,7 @@ function ProductsSection({ content }) {
               {el.title}
             </p>
             <p className="text-black-800 lg:text-base 2xl:text-lg">{el.text}</p>
-            <Image
+            {/* <Image
               alt={`Gif of product ${el.icon}`}
               width={500}
               height={500}
@@ -60,7 +60,7 @@ function ProductsSection({ content }) {
                 isHovered?.dataset?.gif === el.gif ? "block" : "hidden"
               } w-80 h-80 object-cover absolute top-20 z-10 left-1/2 -translate-x-1/2 gif`}
               src={`/assets/gifs/${el.gif}`}
-            />
+            /> */}
           </div>
         ))}
       </div>
