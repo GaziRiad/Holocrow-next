@@ -234,39 +234,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
 .loader {
-  width: 65px;
-  height: 117px;
-  position: relative;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #ffa516);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
 }
-.loader:before,
-.loader:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #ff8001;
-  box-shadow: 0 0 0 50px;
-  clip-path: polygon(
-    100% 0,
-    23% 46%,
-    46% 44%,
-    15% 69%,
-    38% 67%,
-    0 100%,
-    76% 57%,
-    53% 58%,
-    88% 33%,
-    60% 37%
-  );
-}
-.loader:after {
-  animation: l8 1s infinite;
-  transform: perspective(300px) translateZ(0px);
-}
-@keyframes l8 {
-  to {
-    transform: perspective(300px) translateZ(180px);
-    opacity: 0;
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
   }
 }
 
