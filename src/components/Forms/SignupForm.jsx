@@ -23,7 +23,11 @@ function SignupForm({ setCurrStep }) {
     const res = await fetch(
       `https://api.holocrow.com/api/accounts/customer-register/check-email/?email=${email}`
     );
-    if (!res.ok) return setErr("This email seems to already exist.");
+    if (!res.ok) {
+      setErr("This email seems to already exist.");
+      setIsLoading(false);
+      return;
+    }
     const data = await res.json();
     return data;
   }
