@@ -26,55 +26,62 @@ function SignupForm({ setCurrStep }) {
     if (!res.ok) {
       setErr("This email seems to already exist.");
       setIsLoading(false);
-      return;
+      return false;
     }
     const data = await res.json();
     return data;
   }
 
   async function handleRegister(data, e) {
-    e.preventDefault();
-    reset();
-    setIsLoading(true);
-    setErr("");
-    const newAccount = {
-      ...data,
-      try_count: 0,
-      country: 6,
-      city: 2,
-      district: 2,
-    };
-    const emailExist = await checkEmailExist(data.email);
-    console.log(emailExist);
-    if (!emailExist) return setIsLoading(false);
+    try {
+      e.preventDefault();
+      reset();
+      setIsLoading(true);
+      setErr("");
+      const newAccount = {
+        ...data,
+        try_count: 0,
+        country: 6,
+        city: 2,
+        district: 2,
+      };
+      const emailExist = await checkEmailExist(data.email);
 
-    const res = await fetch(
-      `https://api.holocrow.com/api/accounts/customer-register/`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newAccount),
+      if (!emailExist) return setIsLoading(false);
+
+      const res = await fetch(
+        `https://api.holocrow.com/api/accounts/customer-register/`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newAccount),
+        }
+      );
+      if (!res.ok && res.status !== 400) {
+        setErr(
+          "Error trying to register, please check your internet connexion."
+        );
+        setIsLoading(false);
       }
-    );
-    if (!res.ok && res.status !== 400) {
-      setErr("Error trying to register, please check your internet connexion.");
+      if (!res.ok && res.status === 400) {
+        setErr("Error trying to register, please try another username.");
+        setIsLoading(false);
+        return;
+      }
+      const registerData = await res.json();
+
+      localStorage.setItem("accessToken", registerData.access);
+      localStorage.setItem("refreshToken", registerData.refresh);
+
+      setCurrStep(2);
+      reset();
+      setIsLoading(false);
+    } catch (err) {
+      console.error("An unexpected error occurred:", err);
       setIsLoading(false);
     }
-    if (!res.ok && res.status === 400) {
-      setErr("Error trying to register, please try another username.");
-      setIsLoading(false);
-      return;
-    }
-    const registerData = await res.json();
-
-    localStorage.setItem("accessToken", registerData.access);
-    localStorage.setItem("refreshToken", registerData.refresh);
-
-    setCurrStep(2);
-    reset();
-    setIsLoading(false);
   }
 
   // SIGNUP only sotres access and refresh tokens on LOCALSTORAGE & set isAuthenticated GLOBAL state to TRUE.
