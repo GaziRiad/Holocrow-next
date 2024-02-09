@@ -45,6 +45,7 @@ function SignupForm({ setCurrStep }) {
       district: 2,
     };
     const emailExist = await checkEmailExist(data.email);
+    console.log(emailExist);
     if (!emailExist) return setIsLoading(false);
 
     const res = await fetch(
