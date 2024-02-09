@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Button from "../Button";
 import FormRow from "../FormRow";
 import { useForm } from "react-hook-form";
-import { useLanguage } from "@/contexts/LanguageContext";
+
 import { makeAuthenticatedRequest } from "../../../utils/funcs";
 import Input from "../Input";
 import { useAuth } from "@/contexts/AuthContext";
@@ -79,59 +79,64 @@ function DeviceForm() {
   };
 
   async function handleDevice(data, e) {
-    setIsLoading(true);
-    e.preventDefault();
-    const res = await makeAuthenticatedRequest(
-      `https://api.holocrow.com/api/devices/location-customer/`,
-      {
-        method: "POST",
-        body: JSON.stringify({ ...location }),
+    try {
+      setIsLoading(true);
+      e.preventDefault();
+      const res = await makeAuthenticatedRequest(
+        `https://api.holocrow.com/api/devices/location-customer/`,
+        {
+          method: "POST",
+          body: JSON.stringify({ ...location }),
+        }
+      );
+      if (!res.ok) {
+        setIsLoading(false);
+        throw new Error("Error submitting Location.");
       }
-    );
-    if (!res.ok) {
-      setIsLoading(false);
-      throw new Error("Error submitting Location.");
-    }
-    const locData = await res.json();
-    const newDevice = {
-      brand: data.brand,
-      model: data.model,
-      location: locData.uuid,
-      device_type: data.deviceType,
-      name: data.name,
-      active_channels: data.deviceType === 2 ? 0 : data.dataChannel,
-      crawler_type: 1,
-      write_count: data.quantityChannels,
-    };
-    const resDevice = await makeAuthenticatedRequest(
-      `https://api.holocrow.com/api/devices/device-customer/onboarding/`,
-      {
-        method: "POST",
-        body: JSON.stringify({ ...newDevice }),
+      const locData = await res.json();
+      const newDevice = {
+        brand: data.brand,
+        model: data.model,
+        location: locData.uuid,
+        device_type: data.deviceType,
+        name: data.name,
+        active_channels: data.deviceType === 2 ? 0 : data.dataChannel,
+        crawler_type: 1,
+        write_count: data.quantityChannels,
+      };
+      const resDevice = await makeAuthenticatedRequest(
+        `https://api.holocrow.com/api/devices/device-customer/onboarding/`,
+        {
+          method: "POST",
+          body: JSON.stringify({ ...newDevice }),
+        }
+      );
+      if (!resDevice.ok) {
+        setIsLoading(false);
+        throw new Error("Error submitting Device.");
       }
-    );
-    if (!resDevice.ok) {
-      setIsLoading(false);
-      throw new Error("Error submitting Device.");
-    }
-    const dataDevice = await resDevice.json();
+      const dataDevice = await resDevice.json();
 
-    // GETTING AN ONE TIME LOGIN TOKEN WITH REDIRECTING
-    const resLogin = await makeAuthenticatedRequest(
-      `https://api.holocrow.com/api/accounts/customer-register/login-token/`,
-      {
-        method: "POST",
+      // GETTING AN ONE TIME LOGIN TOKEN WITH REDIRECTING
+      const resLogin = await makeAuthenticatedRequest(
+        `https://api.holocrow.com/api/accounts/customer-register/login-token/`,
+        {
+          method: "POST",
+        }
+      );
+
+      if (!res.ok) {
+        setIsLoading(false);
+
+        throw new Error("Error submitting Location.");
       }
-    );
-
-    if (!res.ok) {
+      const LoginData = await resLogin.json();
       setIsLoading(false);
-
-      throw new Error("Error submitting Location.");
+      window.location.href = `https://app.holocrow.com/token-login?token=${LoginData.code}`;
+    } catch (err) {
+      console.error("An unexpected error occurred:", err);
+      setIsLoading(false);
     }
-    const LoginData = await resLogin.json();
-    setIsLoading(false);
-    window.location.href = `https://app.holocrow.com/token-login?token=${LoginData.code}`;
   }
 
   return (

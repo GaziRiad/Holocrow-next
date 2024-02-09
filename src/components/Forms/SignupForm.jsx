@@ -3,8 +3,6 @@ import Button from "../Button";
 import FormRow from "../FormRow";
 import Input from "../Input";
 import { useForm } from "react-hook-form";
-import { useAuth } from "@/contexts/AuthContext";
-import { useRouter } from "next/navigation";
 
 function SignupForm({ setCurrStep }) {
   const [err, setErr] = useState("");

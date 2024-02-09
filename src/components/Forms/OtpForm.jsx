@@ -35,43 +35,48 @@ function OtpForm({ setCurrStep }) {
   }, [timer]);
 
   async function handleOtp(data, e) {
-    e.preventDefault();
-    setIsLoading(true);
-    setOtpError(false);
+    try {
+      e.preventDefault();
+      setIsLoading(true);
+      setOtpError(false);
 
-    const res = await makeAuthenticatedRequest(
-      "https://api.holocrow.com/api/accounts/customer-register/check-verify-token/",
-      {
-        method: "PATCH",
-        body: JSON.stringify({ code: data.otpCode }),
+      const res = await makeAuthenticatedRequest(
+        "https://api.holocrow.com/api/accounts/customer-register/check-verify-token/",
+        {
+          method: "PATCH",
+          body: JSON.stringify({ code: data.otpCode }),
+        }
+      );
+
+      setOtpCount((otpCount) => otpCount + 1);
+      if (!res.ok && otpCount === 3) {
+        setOtpCount(0);
+        dispatch({
+          type: "UNAUTH/USER",
+        });
+        setIsLoading(false);
+        return;
       }
-    );
-
-    setOtpCount((otpCount) => otpCount + 1);
-    if (!res.ok && otpCount === 3) {
-      setOtpCount(0);
+      if (!res.ok) {
+        setOtpError(true);
+        setIsLoading(false);
+        return;
+      }
+      await res.json();
       dispatch({
-        type: "UNAUTH/USER",
+        type: "VALIDATE/USER",
+        payload: {
+          isVerified: true,
+        },
       });
+      setOtpCount(0);
+      setCurrStep(3);
       setIsLoading(false);
-      return;
-    }
-    if (!res.ok) {
-      setOtpError(true);
+      reset();
+    } catch (err) {
+      console.error("An unexpected error occurred:", err);
       setIsLoading(false);
-      return;
     }
-    await res.json();
-    dispatch({
-      type: "VALIDATE/USER",
-      payload: {
-        isVerified: true,
-      },
-    });
-    setOtpCount(0);
-    setCurrStep(3);
-    setIsLoading(false);
-    reset();
   }
 
   async function handleResendOtp() {
