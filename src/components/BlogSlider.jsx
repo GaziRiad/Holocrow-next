@@ -12,7 +12,6 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Link from "next/link";
 import { FiLink } from "react-icons/fi";
-import Image from "next/image";
 
 function BlogSlider({ posts }) {
   const breakpoints = {

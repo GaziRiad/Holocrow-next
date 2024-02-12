@@ -74,9 +74,7 @@ function Process() {
               {currStep === 4 && <DeviceForm />}
             </div>
             <div className="">
-              <Image
-                height={500}
-                width={500}
+              <img
                 alt="holocrow signup form pages"
                 src={`/assets/process/${
                   currStep === 1
