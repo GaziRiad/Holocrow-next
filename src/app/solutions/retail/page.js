@@ -51,9 +51,7 @@ function Retail() {
           <p className="text-lg text-center leading-relaxed lg:text-left 2xl:text-xl">
             {content.thirdSection.content.text}
           </p>
-          <Image
-            height={500}
-            width={500}
+          <img
             src={content.thirdSection.content.img}
             className="w-full rounded-2xl lg:w-[40%]"
             alt={content.thirdSection.heading}

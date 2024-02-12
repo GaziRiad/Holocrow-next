@@ -45,9 +45,7 @@ function BlogSlider({ posts }) {
               color="#fff"
             />
             <div className="flex flex-col items-center overflow-hidden h-[440px] lg:h-[520px]">
-              <Image
-                height={500}
-                width={500}
+              <img
                 src={post.mainImage.asset?.url}
                 alt={post.mainImage.alt}
                 className="w-full h-72 rounded-2xl mb-4"

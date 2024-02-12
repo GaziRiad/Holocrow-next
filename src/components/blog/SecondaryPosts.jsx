@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FiLink } from "react-icons/fi";
 
@@ -18,9 +17,7 @@ function SecondaryPosts({ posts }) {
             color="#fff"
           />
           <div className="relative rounded-2xl overflow-hidden">
-            <Image
-              height={500}
-              width={500}
+            <img
               className="w-full h-[280px] lg:h-[360px] object-fill"
               src={post.mainImage.asset?.url}
               alt={post.mainImage.alt}

@@ -46,15 +46,7 @@ export const serializers = {
     },
 
     image: ({ node }) => {
-      return (
-        <Image
-          height={500}
-          width={1000}
-          src={node.asset.url}
-          className=" mb-4"
-          alt={node.alt}
-        />
-      );
+      return <img src={node.asset.url} className=" mb-4" alt={node.alt} />;
     },
     // Add serializers for other custom types as needed
   },
