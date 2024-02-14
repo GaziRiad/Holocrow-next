@@ -56,20 +56,27 @@ function DeviceForm() {
 
   useEffect(() => {
     // Fetch models for the selected brand
-    const fetchModels = async () => {
+    const fetchModels = async (url) => {
       if (selectedBrand) {
-        const res = await makeAuthenticatedRequest(
-          `https://api.holocrow.com/api/devices/models/?brand=23dd5807-189e-4a93-bd10-afe093e800fd`,
-          {
-            method: "GET",
-          }
-        );
+        const res = await makeAuthenticatedRequest(url, {
+          method: "GET",
+        });
         const data = await res.json();
+        // Update models with new results
+        setModels((prevBrands) => {
+          const uniqueResults = data.results.filter(
+            (result) =>
+              !prevBrands.some((prevResult) => prevResult.uuid === result.uuid)
+          );
+          return [...prevBrands, ...uniqueResults];
+        });
         setModels(data.results);
       }
     };
 
-    fetchModels();
+    fetchModels(
+      `https://api.holocrow.com/api/devices/models/?brand=23dd5807-189e-4a93-bd10-afe093e800fd`
+    );
   }, [selectedBrand]);
 
   // handlers

@@ -25,53 +25,89 @@ function LocationForm({ setCurrStep }) {
   } = useForm();
 
   useEffect(() => {
-    async function getCountries() {
-      const res = await makeAuthenticatedRequest(
-        "https://api.holocrow.com/api/regions/countries-authenticated/",
-        {
-          method: "GET",
-        }
-      );
+    async function getCountries(url) {
+      const res = await makeAuthenticatedRequest(url, {
+        method: "GET",
+      });
       if (!res.ok) throw new Error("Error fetching countries...");
       const data = await res.json();
+
+      // Update countries with new results
+      setCountries((prev) => {
+        const uniqueResults = data.results.filter(
+          (result) => !prev.some((prevResult) => prevResult.id === result.id)
+        );
+        return [...prev, ...uniqueResults];
+      });
+
+      if (data.next) {
+        getCountries(data.next);
+      }
+
       setCountries(data.results);
     }
-    getCountries();
+    getCountries(
+      "https://api.holocrow.com/api/regions/countries-authenticated/"
+    );
   }, []);
 
   useEffect(() => {
     // Fetch cities for the selected country
-    const fetchCities = async () => {
+    const fetchCities = async (url) => {
       if (selectedCountry) {
         const res = await makeAuthenticatedRequest(
-          `https://api.holocrow.com/api/regions/cities-authenticated?country=${selectedCountry}`,
+          // ,
+          url,
           {
             method: "GET",
           }
         );
         const data = await res.json();
-        setCities(data.results);
+
+        // Update cities with new results
+        setCities((prev) => {
+          const uniqueResults = data.results.filter(
+            (result) => !prev.some((prevResult) => prevResult.id === result.id)
+          );
+          return [...prev, ...uniqueResults];
+        });
+
+        if (data.next) {
+          fetchCities(data.next);
+        }
       }
     };
 
-    fetchCities();
+    fetchCities(
+      `https://api.holocrow.com/api/regions/cities-authenticated?country=${selectedCountry}`
+    );
   }, [selectedCountry]);
 
   useEffect(() => {
-    const fetchDistricts = async () => {
+    const fetchDistricts = async (url) => {
       if (selectedCountry && selectedCity) {
-        const res = await makeAuthenticatedRequest(
-          `https://api.holocrow.com/api/regions/districts-authenticated/?city=${selectedCity}&country=${selectedCountry}`,
-          {
-            method: "GET",
-          }
-        );
+        const res = await makeAuthenticatedRequest(url, {
+          method: "GET",
+        });
         const data = await res.json();
+        // Update districts with new results
+        setDistricts((prev) => {
+          const uniqueResults = data.results.filter(
+            (result) => !prev.some((prevResult) => prevResult.id === result.id)
+          );
+          return [...prev, ...uniqueResults];
+        });
+
+        if (data.next) {
+          fetchDistricts(data.next);
+        }
         setDistricts(data.results);
       }
     };
 
-    fetchDistricts();
+    fetchDistricts(
+      `https://api.holocrow.com/api/regions/districts-authenticated/?city=${selectedCity}&country=${selectedCountry}`
+    );
   }, [selectedCountry, selectedCity]);
 
   // handlers
