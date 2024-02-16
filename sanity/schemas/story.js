@@ -53,10 +53,10 @@ export const story = {
     },
     {
       name: "body",
-      title: "Body",
+      title: "Body (Please max 700 char)",
       type: "blockContent",
       validation: (Rule) =>
-        Rule.max(700).warning(`A title shouldn't be more than 120 characters.`),
+        Rule.max(700).warning(`A title shouldn't be more than 700 characters.`),
     },
     {
       name: "client",
