@@ -110,7 +110,7 @@ function SuccessStories() {
           </motion.div>
         </section>
       </motion.div>
-      <section className="mb-24 mt-40 lg:mt-20 flex flex-col items-center justify-center">
+      <section className="mb-24 mt-40 lg:mt-20 flex flex-col items-center justify-center text-center">
         <p className=" text-primary text-3xl font-semibold mb-4">
           {stories[currStory]?.client}
         </p>
