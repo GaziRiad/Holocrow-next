@@ -36,7 +36,7 @@ function Navigation({ sticky, home = false }) {
   return (
     <nav>
       <ul
-        className={`hidden ${textColor} gap-4 items-center justify-center lg:flex xl:gap-6 2xl:gap-8 xl:text-base 2xl:text-lg relative`}
+        className={`hidden ${textColor} font-spartan text-slate-500 gap-4 items-center justify-center lg:flex xl:gap-6 2xl:gap-8 xl:text-base 2xl:text-lg relative`}
       >
         {navigation[activeLanguage].links.map((nav) => (
           <Link key={nav.text} href={nav.path}>

@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         main: ["Poppins", "sans-serif"],
         secondary: ["Montserrat", "sans-serif"],
+        spartan: ["League Spartan", "sans-serif"],
       },
       colors: {
         primary: "#FFB800",
