@@ -33,7 +33,7 @@
   "statics": [
     { "title": "Active Users", "number": "+1k" },
     { "title": "CONNECTED CAMERAS", "number": "+7500" },
-    { "title": "images generated", "number": "2B Per min" }
+    { "title": "Images Processed", "number": "2B Per min" }
   ],
 
   "howItWorksSection": {
