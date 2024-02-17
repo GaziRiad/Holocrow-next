@@ -112,11 +112,14 @@ function LocationForm({ setCurrStep }) {
 
   // handlers
   const handleCountryChange = async (event) => {
+    setCities([]);
+    setDistricts([]);
     const newCountry = event.target.value;
     setSelectedCountry(newCountry);
   };
 
   const handleCityChange = (event) => {
+    setDistricts([]);
     const newCity = event.target.value;
     setSelectedCity(newCity);
   };

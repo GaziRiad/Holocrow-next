@@ -70,10 +70,10 @@ function SuccessStories() {
               {stories.map((story, index) => {
                 return (
                   <SwiperSlide
-                    className={`transition-transform duration-300 transform`}
+                    className={`transition-transform duration-300 `}
                     key={index}
                   >
-                    <div className="bg-white/50 h-full flex flex-col items-center justify-center gap-2 px-6 py-8 xl:flex-row xl:p-10 2xl:p-20 2xl:gap-20">
+                    <div className="bg-white/50 h-screen flex flex-col items-center justify-center gap-2 px-6 py-8 lg:h-full xl:flex-row xl:p-10 2xl:p-20 2xl:gap-20">
                       <div className="xl:w-1/2 flex items-center justify-center">
                         <motion.img
                           whileHover={{
