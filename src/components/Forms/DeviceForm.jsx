@@ -81,6 +81,7 @@ function DeviceForm() {
 
   // handlers
   const handleBrandChange = async (event) => {
+    setModels([]);
     const newBrand = event.target.value;
     setSelectedBrand(newBrand);
   };
