@@ -84,6 +84,10 @@ function About() {
 
   console.log(posts);
 
+  useEffect(() => {
+    document.title = "Holocrow — Blog";
+  });
+
   return (
     <>
       <div className="mb-20 bg-slate-400">

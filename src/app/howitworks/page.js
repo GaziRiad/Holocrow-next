@@ -31,10 +31,15 @@ import SubHero from "@/components/SubHero";
 
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 function HowItWorks() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];
+
+  useEffect(() => {
+    document.title = "Holocrow — How It Works";
+  });
 
   return (
     <AnimatePresence>

@@ -15,6 +15,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 const translations = {
   en: enHome,
@@ -23,6 +24,10 @@ const translations = {
 export default function Home() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];
+
+  useEffect(() => {
+    document.title = "Holocrow — Home";
+  });
 
   return (
     <AnimatePresence>

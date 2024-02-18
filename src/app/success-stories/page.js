@@ -11,7 +11,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 //
 import { useEffect, useState } from "react";
 import { client } from "../../../sanity/lib/client";
-import Image from "next/image";
 import SanityBlockContent from "@sanity/block-content-to-react";
 import { serializers } from "../blog/page";
 import { AnimatePresence } from "framer-motion";
@@ -34,6 +33,10 @@ function SuccessStories() {
     getStories();
   }, [activeLanguage]);
   console.log(stories);
+
+  useEffect(() => {
+    document.title = "Holocrow — Success Stories";
+  });
   return (
     <AnimatePresence>
       <motion.div

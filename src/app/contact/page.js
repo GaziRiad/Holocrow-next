@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 //
 import enContact from "../../../public/translations/en/contact.json";
 import trContact from "../../../public/translations/tr/contact.json";
+import { useEffect } from "react";
 const translations = {
   en: enContact,
   tr: trContact,
@@ -19,6 +20,9 @@ function Contact() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];
 
+  useEffect(() => {
+    document.title = "Holocrow — Contact us page";
+  });
   return (
     <AnimatePresence>
       <motion.section

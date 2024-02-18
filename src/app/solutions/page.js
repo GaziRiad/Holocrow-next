@@ -10,6 +10,7 @@ import Link from "next/link";
 import enSolutions from "../../../public/translations/en/solutions.json";
 import trSolutions from "../../../public/translations/tr/solutions.json";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useEffect } from "react";
 const translations = {
   en: enSolutions,
   tr: trSolutions,
@@ -18,6 +19,10 @@ const translations = {
 function Solutions() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];
+
+  useEffect(() => {
+    document.title = "Holocrow — Solutions";
+  });
 
   return (
     <div className="relative">

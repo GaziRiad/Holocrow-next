@@ -15,6 +15,7 @@ import trWorkplace from "../../../../public/translations/tr/workplace-safety.jso
 import { useLanguage } from "@/contexts/LanguageContext";
 import OtherSolutions from "@/components/OtherSolutions";
 import Footer from "@/components/Footer";
+import { useEffect } from "react";
 const translations = {
   en: enWorkplace,
   tr: trWorkplace,
@@ -23,6 +24,10 @@ const translations = {
 function WorkplaceSafety() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];
+
+  useEffect(() => {
+    document.title = "Holocrow — Workplace Safety";
+  });
 
   return (
     <>

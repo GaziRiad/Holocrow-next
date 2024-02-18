@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 //
 import enAbout from "../../../public/translations/en/about.json";
 import trAbout from "../../../public/translations/tr/about.json";
+import { useEffect } from "react";
 const translations = {
   en: enAbout,
   tr: trAbout,
@@ -20,6 +21,10 @@ const translations = {
 function About() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];
+
+  useEffect(() => {
+    document.title = "Holocrow — About page";
+  });
 
   return (
     <AnimatePresence>

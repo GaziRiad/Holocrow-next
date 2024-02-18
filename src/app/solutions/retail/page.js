@@ -16,6 +16,7 @@ import OtherSolutions from "@/components/OtherSolutions";
 import SwipingSlider from "@/components/SwipingSlider";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import { useEffect } from "react";
 
 const translations = {
   en: enRetail,
@@ -25,6 +26,11 @@ const translations = {
 function Retail() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];
+
+  useEffect(() => {
+    document.title = "Holocrow — Retail";
+  });
+
   return (
     <>
       <Hero

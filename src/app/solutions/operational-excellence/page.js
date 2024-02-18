@@ -15,6 +15,7 @@ import enOperational from "../../../../public/translations/en/operational-excell
 import trOperational from "../../../../public/translations/tr/operational-excellence.json";
 import OtherSolutions from "@/components/OtherSolutions";
 import Footer from "@/components/Footer";
+import { useEffect } from "react";
 const translations = {
   en: enOperational,
   tr: trOperational,
@@ -23,6 +24,10 @@ const translations = {
 function OperationalExcellence() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];
+
+  useEffect(() => {
+    document.title = "Holocrow — Operational Excellence";
+  });
 
   return (
     <>

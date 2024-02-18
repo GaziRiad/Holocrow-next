@@ -14,6 +14,7 @@ import enSecurity from "../../../../public/translations/en/security.json";
 import trSecurity from "../../../../public/translations/tr/security.json";
 import { useLanguage } from "@/contexts/LanguageContext";
 import OtherSolutions from "@/components/OtherSolutions";
+import { useEffect } from "react";
 const translations = {
   en: enSecurity,
   tr: trSecurity,
@@ -22,6 +23,10 @@ const translations = {
 function Security() {
   const { activeLanguage } = useLanguage();
   const content = translations[activeLanguage];
+
+  useEffect(() => {
+    document.title = "Holocrow — Security";
+  });
 
   return (
     <>
