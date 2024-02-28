@@ -4,8 +4,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import SanityBlockContent from "@sanity/block-content-to-react";
 
 function MainPost({ post }) {
-  const { activeLanguage } = useLanguage();
-
   function printText(body) {
     let fullBodyText = "";
     body

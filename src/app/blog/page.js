@@ -1,14 +1,9 @@
-"use client";
-
 import BlogSlider from "@/components/BlogSlider";
 import Hero from "@/components/Hero";
 import MainFooter from "@/components/MainFooter";
-import { useEffect, useState } from "react";
-import { client, urlFor } from "../../../sanity/lib/client";
-import { format } from "date-fns";
+import { client } from "../../../sanity/lib/client";
 import MainPost from "@/components/blog/MainPost";
 import SecondaryPosts from "@/components/blog/SecondaryPosts";
-import Image from "next/image";
 
 export const serializers = {
   types: {
@@ -68,25 +63,15 @@ export const serializers = {
   },
 };
 
-function About() {
-  const [posts, setPosts] = useState([]);
+async function getPosts() {
+  const data = await client.fetch(
+    `*[_type == "post"] {title, slug, body, publishedAt, mainImage {asset -> {_id, url}, alt,}, "name": author -> name, } | order(publishedAt asc)`
+  );
 
-  useEffect(() => {
-    async function getPosts() {
-      const data = await client.fetch(
-        `*[_type == "post"] {title, slug, body, publishedAt, mainImage {asset -> {_id, url}, alt,}, "name": author -> name, } | order(publishedAt asc)`
-      );
-
-      setPosts(data);
-    }
-    getPosts();
-  }, []);
-
-  console.log(posts);
-
-  useEffect(() => {
-    document.title = "Holocrow — Blog";
-  });
+  return data;
+}
+async function Blog() {
+  const data = await getPosts();
 
   return (
     <>
@@ -94,16 +79,16 @@ function About() {
         <Hero herobg="" noPattern={true} />
       </div>
 
-      {posts[0] && <MainPost post={posts[0]} />}
+      {data[0] && <MainPost post={data[0]} />}
 
-      <SecondaryPosts posts={posts.slice(1, 3)} />
+      <SecondaryPosts posts={data.slice(1, 3)} />
 
       <section className="container mx-auto flex items-center justify-center mb-12 px-4 xl:px-16">
-        <BlogSlider posts={posts} />
+        <BlogSlider posts={data} />
       </section>
 
       <MainFooter />
     </>
   );
 }
-export default About;
+export default Blog;

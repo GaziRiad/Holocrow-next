@@ -1,58 +1,49 @@
-"use client";
 import SanityBlockContent from "@sanity/block-content-to-react";
-import { HiArrowLongLeft } from "react-icons/hi2";
 
-import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
 import { client } from "../../../../sanity/lib/client";
 import { format } from "date-fns";
 import { serializers } from "../page";
-import { useRouter } from "next/navigation";
 import Hero from "@/components/Hero";
 import Image from "next/image";
+import BackButton from "@/components/BackButton";
 
-function PostPage() {
-  const [singlePost, setSinglePost] = useState([]);
-  const { slug } = useParams();
-
-  const router = useRouter();
-
-  useEffect(() => {
-    async function getPost() {
-      const data = await client.fetch(
-        `*[slug.current == "${slug}"] {
-          title,
-          body[]{
-            ...,
-            // Adjust the serializers for different block types
-            _type == "image" => {
-              // Include the URL directly in the "asset" field
-              "_key": _key,
-              "_type": _type,
-              "asset": {
-                "_id": asset._ref,
-                "url": asset->url
-              },
-              "alt": alt
-            },
+async function getPost(slug) {
+  const data = await client.fetch(
+    `*[slug.current == "${slug}"] {
+      title,
+      body[]{
+        ...,
+        // Adjust the serializers for different block types
+        _type == "image" => {
+          // Include the URL directly in the "asset" field
+          "_key": _key,
+          "_type": _type,
+          "asset": {
+            "_id": asset._ref,
+            "url": asset->url
           },
-          publishedAt,
-          "name": author -> name,
-          mainImage {
-            asset -> {
-              _id,
-              url
-            },
-            alt
-          }
-        }`
-      );
-      setSinglePost(...data);
-    }
-    getPost();
-  }, [slug]);
+          "alt": alt
+        },
+      },
+      publishedAt,
+      "name": author -> name,
+      mainImage {
+        asset -> {
+          _id,
+          url
+        },
+        alt
+      }
+    }`
+  );
+  return data;
+}
 
-  console.log(singlePost);
+async function PostPage({ params }) {
+  const { slug } = params;
+  const data = await getPost(slug);
+  const singlePost = data[0];
+
   return (
     <>
       <div className="mb-24 bg-slate-400">
@@ -89,13 +80,7 @@ function PostPage() {
           />
         </article>
 
-        <button
-          className=" bg-stone-700 uppercase text-white px-4 py-2 font-semibold rounded-lg flex items-center justify-center gap-2 ml-auto hover:bg-stone-600 transition-all"
-          onClick={() => router.back()}
-        >
-          <HiArrowLongLeft />
-          Go back
-        </button>
+        <BackButton />
       </section>
     </>
   );
