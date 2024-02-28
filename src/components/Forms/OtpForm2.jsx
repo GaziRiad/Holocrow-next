@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Button from "../Button";
+import FormRow from "../FormRow";
+import Input from "../Input";
 import { useForm } from "react-hook-form";
 import { formatTime, makeAuthenticatedRequest } from "../../../utils/funcs";
 import { useAuth } from "@/contexts/AuthContext";
-import { useRouter } from "next/navigation";
-import ReCAPTCHA from "react-google-recaptcha";
 
 function OtpForm({ setCurrStep }) {
   const { dispatch } = useAuth();
@@ -19,11 +19,6 @@ function OtpForm({ setCurrStep }) {
   const [isTimerExpired, setIsTimerExpired] = useState(false);
 
   const { register, handleSubmit, reset } = useForm();
-
-  const [otpValues, setOtpValues] = useState(["", "", "", "", "", ""]);
-  const [recaptchaIsVerified, setRecaptchaIsVerified] = useState(false);
-
-  const router = useRouter();
 
   useEffect(() => {
     let interval;
@@ -39,38 +34,17 @@ function OtpForm({ setCurrStep }) {
     return () => clearInterval(interval);
   }, [timer]);
 
-  const handleInputChange = (index, value) => {
-    const newOtpValues = [...otpValues];
-    newOtpValues[index] = value;
-    setOtpValues(newOtpValues);
-  };
-
-  const handlePaste = (event) => {
-    const pastedData = event.clipboardData.getData("Text");
-    const pastedDigits = pastedData.match(/\d/g);
-
-    if (pastedDigits && pastedDigits.length === 6) {
-      const newOtpValues = pastedDigits.slice(0, 6);
-      setOtpValues(newOtpValues);
-    }
-
-    event.preventDefault();
-  };
-
   async function handleOtp(data, e) {
     try {
       e.preventDefault();
       setIsLoading(true);
       setOtpError(false);
 
-      const otpCode = otpValues.join("");
-      console.log(otpCode);
-
       const res = await makeAuthenticatedRequest(
         "https://api.holocrow.com/api/accounts/customer-register/check-verify-token/",
         {
           method: "PATCH",
-          body: JSON.stringify({ code: otpCode }),
+          body: JSON.stringify({ code: data.otpCode }),
         }
       );
 
@@ -81,7 +55,6 @@ function OtpForm({ setCurrStep }) {
           type: "UNAUTH/USER",
         });
         setIsLoading(false);
-        router.push("/");
         return;
       }
       if (!res.ok) {
@@ -108,7 +81,6 @@ function OtpForm({ setCurrStep }) {
 
   async function handleResendOtp() {
     setIsLoading(true);
-    setOtpValues(["", "", "", "", "", ""]);
     const res = await makeAuthenticatedRequest(
       "https://api.holocrow.com/api/accounts/customer-register/send-verify-token/",
       {
@@ -129,31 +101,28 @@ function OtpForm({ setCurrStep }) {
       <form className="flex flex-col mb-12" onSubmit={handleSubmit(handleOtp)}>
         <>
           {otpError && <p className="text-red-400 mb-6">OTP code is wrong.</p>}
-          <div className="flex space-x-2 mb-8">
-            {[0, 1, 2, 3, 4, 5].map((index) => (
-              <input
-                key={index}
-                autoFocus={index === 0 ? true : false}
-                type="text"
-                maxLength="1"
-                value={otpValues[index]}
-                onChange={(e) => handleInputChange(index, e.target.value)}
-                onPaste={handlePaste}
-                className="w-12 h-12 border border-gray-400 text-2xl text-center font-main text-black-800 focus:outline-none"
-              />
-            ))}
-          </div>
-          <div className="mb-4">
-            <ReCAPTCHA
-              sitekey="6LcX34MpAAAAACaaDl_Ufp17ZC8n2SCCCJdZ64p7"
-              size="normal"
-              onChange={(value) => setRecaptchaIsVerified(!!value)}
+          <FormRow label="Enter the verification code sent to your email">
+            <Input
+              type="number"
+              id="otpCode"
+              register={register}
+              validation={{
+                required: "This field is required",
+                minLength: {
+                  value: 6,
+                  message: "Code must have 6 characters",
+                },
+                maxLength: {
+                  value: 6,
+                  message: "Code must have 6 characters",
+                },
+              }}
             />
-          </div>
+          </FormRow>
         </>
 
         <div className="flex items-center justify-between">
-          <Button type="signup" disabled={isLoading || !recaptchaIsVerified}>
+          <Button type="signup" disabled={isLoading}>
             confirm
           </Button>
         </div>
@@ -163,7 +132,7 @@ function OtpForm({ setCurrStep }) {
         <button
           className="text-md capitalize underline text-primary hover:text-yellow-500 transition-all disabled:cursor-not-allowed disabled:opacity-75"
           onClick={handleResendOtp}
-          disabled={isLoading || !isTimerExpired}
+          disabled={isLoading}
         >
           Resend
         </button>

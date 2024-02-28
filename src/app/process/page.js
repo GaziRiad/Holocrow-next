@@ -3,7 +3,6 @@
 import Logo from "@/components/Logo";
 import Navigation from "@/components/Navigation";
 import { navigation } from "@/constants/navigation";
-import Image from "next/image";
 import LocationForm from "@/components/Forms/LocationForm";
 import { useEffect, useState } from "react";
 import { getUserData } from "../../../utils/funcs";

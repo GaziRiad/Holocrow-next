@@ -33,7 +33,6 @@ function SignupForm({ setCurrStep }) {
   async function handleRegister(data, e) {
     try {
       e.preventDefault();
-      reset();
       setIsLoading(true);
       setErr("");
       const newAccount = {
@@ -62,6 +61,7 @@ function SignupForm({ setCurrStep }) {
           "Error trying to register, please check your internet connexion."
         );
         setIsLoading(false);
+        return;
       }
       if (!res.ok && res.status === 400) {
         setErr("Error trying to register, please try another username.");
@@ -74,7 +74,6 @@ function SignupForm({ setCurrStep }) {
       localStorage.setItem("refreshToken", registerData.refresh);
 
       setCurrStep(2);
-      reset();
       setIsLoading(false);
     } catch (err) {
       console.error("An unexpected error occurred:", err);
