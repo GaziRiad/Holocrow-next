@@ -1,11 +1,26 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Heading from "../Heading";
 import Static from "./Static";
-
 import { motion } from "framer-motion";
+import { client } from "../../../sanity/lib/client";
 
 function Statics({ content }) {
+  const [stats, setStats] = useState(null);
+
+  useEffect(() => {
+    async function getStats() {
+      const data = await client.fetch(
+        `*[_type == "stats"] {active_users, cameras, processed_imgs }`
+      );
+
+      setStats(...data);
+      return data;
+    }
+    getStats();
+  }, []);
+
   return (
     <motion.section
       initial={{ opacity: 0, translateY: 150 }}
@@ -16,11 +31,8 @@ function Statics({ content }) {
       <Heading type="tag">#EmpoweredbyAI</Heading>
       <div className="flex flex-col items-center justify-center gap-28 lg:flex-row lg:flex-wrap lg:gap-40">
         {content.statics.map((stat) => (
-          <Static key={stat.title} number={stat.number} name={stat.title} />
+          <Static key={stat.title} stats={stats} name={stat.title} />
         ))}
-        {/* <Static number="1K+" name="active users" />
-        <Static number="10" name="years of experience" />
-        <Static number={`2B Per min`} name="images generated" /> */}
       </div>
     </motion.section>
   );

@@ -145,7 +145,7 @@ function OtpForm({ setCurrStep }) {
           </div>
           <div className="mb-4">
             <ReCAPTCHA
-              sitekey="6LcX34MpAAAAACaaDl_Ufp17ZC8n2SCCCJdZ64p7"
+              sitekey="6Le3e4QpAAAAAI58DHA-ObHW-niEUCbcWiGtquSa"
               size="normal"
               onChange={(value) => setRecaptchaIsVerified(!!value)}
             />

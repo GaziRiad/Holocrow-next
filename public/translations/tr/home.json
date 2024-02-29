@@ -31,9 +31,9 @@
   },
 
   "statics": [
-    { "title": "AKTİF KULLANICI", "number": "+1k" },
-    { "title": "Bağlı Kamera", "number": "+7500" },
-    { "title": "İşlenen Görüntü", "number": "2B Dakikada " }
+    { "title": "AKTİF KULLANICI" },
+    { "title": "Bağlı Kamera" },
+    { "title": "İşlenen Görüntü" }
   ],
 
   "howItWorksSection": {
