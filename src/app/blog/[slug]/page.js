@@ -54,9 +54,7 @@ async function PostPage({ params }) {
           <p className="text-2xl md:text-3xl font-bold text-center lg:text-5xl mb-8">
             {singlePost.title}
           </p>
-          <Image
-            height={500}
-            width={500}
+          <img
             src={singlePost.mainImage?.asset.url}
             alt={singlePost.mainImage?.alt}
             className="w-full mb-4"
