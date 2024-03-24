@@ -28,7 +28,7 @@ function BlogSlider({ posts }) {
   return (
     <Swiper
       slidesPerView={1}
-      loop={true}
+      // loop={true}
       navigation={true}
       modules={[Navigation]}
       className="blogSwiper w-full 3xl:mx-36 md:!px-24 "
